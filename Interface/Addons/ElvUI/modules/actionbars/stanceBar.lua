@@ -2,7 +2,6 @@ local E, L, V, P, G, _ = unpack(select(2, ...)); --Inport: Engine, Locales, Priv
 local AB = E:GetModule('ActionBars');
 
 local ceil = math.ceil;
-local format = string.format
 
 local bar = CreateFrame('Frame', 'ElvUI_StanceBar', E.UIParent, 'SecureHandlerStateTemplate');
 
@@ -13,10 +12,10 @@ function AB:StyleShapeShift()
 	local start, duration, enable;
 	
 	for i = 1, NUM_STANCE_SLOTS do
-		buttonName = ("ElvUI_StanceBarButton%d"):format(i);
+		buttonName = "ElvUI_StanceBarButton"..i;
 		button = _G[buttonName];
-		icon = _G[("%sIcon"):format(buttonName)];
-		cooldown = _G[("%sCooldown"):format(buttonName)];
+		icon = _G[buttonName.."Icon"];
+		cooldown = _G[buttonName.."Cooldown"];
 		
 		if i <= numForms then
 			texture, name, isActive, isCastable = GetShapeshiftFormInfo(i);
@@ -108,9 +107,9 @@ function AB:PositionAndSizeBarShapeShift()
 	
 	local button, lastButton, lastColumnButton;
 	for i=1, NUM_STANCE_SLOTS do
-		button = _G[("ElvUI_StanceBarButton%d"):format(i)];
-		lastButton = _G[("ElvUI_StanceBarButton%d"):format(i-1)];
-		lastColumnButton = _G[("ElvUI_StanceBarButton%d"):format(i-buttonsPerRow)];
+		button = _G["ElvUI_StanceBarButton"..i];
+		lastButton = _G["ElvUI_StanceBarButton"..i-1];
+		lastColumnButton = _G["ElvUI_StanceBarButton"..i-buttonsPerRow];
 		button:SetParent(bar);
 		button:ClearAllPoints();
 		button:Size(size);
@@ -190,7 +189,6 @@ end
 function AB:AdjustMaxStanceButtons(event)
 	if InCombatLockdown() then return; end
 	
-	local initialCreate = false
 	for i=1, #bar.buttons do
 		bar.buttons[i]:Hide()
 	end
@@ -198,7 +196,7 @@ function AB:AdjustMaxStanceButtons(event)
 	local numButtons = GetNumShapeshiftForms()
 	for i = 1, NUM_STANCE_SLOTS do
 		if not bar.buttons[i] then
-			bar.buttons[i] = CreateFrame("CheckButton", format("%sButton%d", bar:GetName(), i), bar, "StanceButtonTemplate")
+			bar.buttons[i] = CreateFrame("CheckButton", format(bar:GetName().."Button%d", i), bar, "StanceButtonTemplate")
 			bar.buttons[i]:SetID(i)
 			initialCreate = true;
 		end
@@ -229,16 +227,14 @@ function AB:AdjustMaxStanceButtons(event)
 end
 
 function AB:UpdateStanceBindings()
-	local button
 	for i = 1, NUM_STANCE_SLOTS do
-		button = _G[("ElvUI_StanceBarButton%dHotKey"):format(i)]
 		if self.db.hotkeytext then
-			button:Show()
-			local key = GetBindingKey(("CLICK ElvUI_StanceBarButton%d:LeftButton"):format(i))
-			button:SetText(key)	
-			self:FixKeybindText(_G[("ElvUI_StanceBarButton%d"):format(i)])
+			_G["ElvUI_StanceBarButton"..i.."HotKey"]:Show()
+			local key = GetBindingKey("CLICK ElvUI_StanceBarButton"..i..":LeftButton")
+			_G["ElvUI_StanceBarButton"..i.."HotKey"]:SetText(key)	
+			self:FixKeybindText(_G["ElvUI_StanceBarButton"..i])
 		else
-			button:Hide()
+			_G["ElvUI_StanceBarButton"..i.."HotKey"]:Hide()
 		end		
 	end
 end

@@ -4,10 +4,11 @@ local DT = E:GetModule('DataTexts')
 local lastPanel
 local displayString = '';
 local hitRating, hitRatingBonus;
-local join = string.join
-local hitString = join("", L['Hit'], ': ')
 
 local function OnEvent(self, event, unit)
+	if event == "UNIT_AURA" and unit ~= 'player' then return end
+	lastPanel = self
+
 	if E.role == "Caster" then
 		local expertise = GetExpertise();
 		hitRating = GetCombatRating(CR_HIT_SPELL)
@@ -22,8 +23,7 @@ local function OnEvent(self, event, unit)
 		end
 	end
 
-	self.text:SetFormattedText(displayString, hitString, hitRatingBonus)
-	lastPanel = self
+	self.text:SetFormattedText(displayString, L['Hit']..': ', hitRatingBonus)
 end
 
 

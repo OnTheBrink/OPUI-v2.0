@@ -17,13 +17,13 @@ function THREAT:UpdatePosition()
 end
 
 function THREAT:Update()
-	local _, threatstatus, percent = UnitDetailedThreatSituation('player', 'target')
+	local _, status, percent = UnitDetailedThreatSituation('player', 'target')
 	
-	if percent and percent > 0 and (IsInGroup() or threatstatus < 2 or UnitExists('pet')) then
+	if percent and percent > 0 and (IsInGroup() or UnitExists('pet')) then
 		local name = UnitName('target')
 		self.bar:Show()
-		self.bar:SetStatusBarColor(GetThreatStatusColor(threatstatus))
-		self.bar.text:SetFormattedText('%s: %.0f%%', name, percent)
+		self.bar:SetStatusBarColor(GetThreatStatusColor(status))
+		self.bar.text:SetFormattedText('%s: %d%%', name, E:TrimFloatingPoint(percent / 100 * 100))
 		self.bar:SetValue(percent)
 	else
 		self.bar:Hide()

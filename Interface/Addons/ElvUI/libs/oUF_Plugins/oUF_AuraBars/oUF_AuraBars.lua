@@ -2,27 +2,24 @@ local _, ns = ...
 local oUF = ns.oUF or oUF
 assert(oUF, 'oUF_AuraBars was unable to locate oUF install.')
 
-local floor = math.floor
-local min = math.min
-
 local function Round(number, decimalPlaces)
 	if decimalPlaces and decimalPlaces > 0 then
 		local mult = 10^decimalPlaces
-		return floor(number * mult + .5) / mult
+		return math.floor(number * mult + .5) / mult
 	end
-	return floor(num + .5)
+	return math.floor(num + .5)
 end
 
 local function FormatTime(timeInSec)
-	local h = floor(timeInSec / 3600)
-	local m = floor((timeInSec - (3600 * h)) / 60)
-	local s = floor(timeInSec - ((3600 * h) + (60 * m)))
+	local h = math.floor(timeInSec / 3600)
+	local m = math.floor((timeInSec - (3600 * h)) / 60)
+	local s = math.floor(timeInSec - ((3600 * h) + (60 * m)))
 	if h > 0 then
-		return format("%d:%.2dh", h, m)
+		return h .. ":" .. m .. "h"
 	elseif m > 0 then
-		return format("%dm", m)
+		return m .. "m"
 	else
-		return format("%ds", s)
+		return s .. "s"
 	end
 end
 
@@ -144,11 +141,7 @@ local function CreateAuraBar(oUF, anchor)
 	return frame
 end
 
-local function UpdateBars(auraBars, elapsed)
-	auraBars.elapsed = (auraBars.elapsed or 0) + elapsed
-	if auraBars.elapsed < .03333 then return end
-	auraBars.elapsed = 0
-	
+local function UpdateBars(auraBars)
 	local bars = auraBars.bars
 	local timenow = GetTime()
 
@@ -265,7 +258,7 @@ local function Update(self, event, unit)
 			bar:SetValue(1)
 		else
 			if auraBars.scaleTime then
-				local maxvalue = min(auraBars.scaleTime, bar.aura.duration)
+				local maxvalue = math.min(auraBars.scaleTime, bar.aura.duration)
 				bar:SetMinMaxValues(0, maxvalue)
 				bar:SetWidth(
 					( maxvalue / auraBars.scaleTime ) *

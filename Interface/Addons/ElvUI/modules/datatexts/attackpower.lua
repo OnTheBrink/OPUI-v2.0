@@ -6,6 +6,7 @@ local displayModifierString = ''
 local lastPanel;
 
 local function OnEvent(self, event, unit)	
+	if event == "UNIT_AURA" and unit ~= 'player' then return end
 	if E.myclass == "HUNTER" then
 		Rbase, RposBuff, RnegBuff = UnitRangedAttackPower("player");
 		Reffective = Rbase + RposBuff + RnegBuff;

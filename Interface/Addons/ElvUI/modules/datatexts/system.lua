@@ -1,10 +1,6 @@
 local E, L, V, P, G, _ = unpack(select(2, ...)); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB, Localize Underscore
 local DT = E:GetModule('DataTexts')
 
-local format = string.format
-local sort = table.sort
-local join = string.join
-
 -- initial delay for update (let the ui load)
 local int, int2 = 6, 5
 local statusColors = {
@@ -25,10 +21,10 @@ local function formatMem(memory)
 	local mult = 10^1
 	if memory > 999 then
 		local mem = ((memory/1024) * mult) / mult
-		return format(megaByteString, mem)
+		return string.format(megaByteString, mem)
 	else
 		local mem = (memory * mult) / mult
-		return format(kiloByteString, mem)
+		return string.format(kiloByteString, mem)
 	end
 end
 
@@ -59,7 +55,7 @@ local function UpdateMemory()
 		totalMemory = totalMemory + addOnMem
 	end
 	-- Sort the table to put the largest addon on top
-	sort(memoryTable, function(a, b)
+	table.sort(memoryTable, function(a, b)
 		if a and b then
 			return a[3] > b[3]
 		end
@@ -81,7 +77,7 @@ local function UpdateCPU()
 	end
 	
 	-- Sort the table to put the largest addon on top
-	sort(cpuTable, function(a, b)
+	table.sort(cpuTable, function(a, b)
 		if a and b then
 			return a[3] > b[3]
 		end
@@ -102,11 +98,11 @@ local function OnEnter(self)
 	local bandwidth = GetAvailableBandwidth()
 	local home_latency = select(3, GetNetStats()) 
 	
-	GameTooltip:AddDoubleLine(L['Home Latency:'], format(homeLatencyString, home_latency), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
+	GameTooltip:AddDoubleLine(L['Home Latency:'], string.format(homeLatencyString, home_latency), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 	
 	if bandwidth ~= 0 then
-		GameTooltip:AddDoubleLine(L['Bandwidth'] , format(bandwidthString, bandwidth),0.69, 0.31, 0.31,0.84, 0.75, 0.65)
-		GameTooltip:AddDoubleLine(L['Download'] , format(percentageString, GetDownloadedPercentage() *100),0.69, 0.31, 0.31, 0.84, 0.75, 0.65)
+		GameTooltip:AddDoubleLine(L['Bandwidth'] , string.format(bandwidthString, bandwidth),0.69, 0.31, 0.31,0.84, 0.75, 0.65)
+		GameTooltip:AddDoubleLine(L['Download'] , string.format(percentageString, GetDownloadedPercentage() *100),0.69, 0.31, 0.31, 0.84, 0.75, 0.65)
 		GameTooltip:AddLine(" ")
 	end
 	
@@ -115,7 +111,7 @@ local function OnEnter(self)
 	GameTooltip:AddDoubleLine(L['Total Memory:'], formatMem(totalMemory), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 	if cpuProfiling then
 		totalCPU = UpdateCPU()
-		GameTooltip:AddDoubleLine(L['Total CPU:'], format(homeLatencyString, totalCPU), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
+		GameTooltip:AddDoubleLine(L['Total CPU:'], string.format(homeLatencyString, totalCPU), 0.69, 0.31, 0.31,0.84, 0.75, 0.65)
 	end
 	
 	if IsShiftKeyDown() or not cpuProfiling then
@@ -135,7 +131,7 @@ local function OnEnter(self)
 			if (cpuTable[i][4]) then
 				local red = cpuTable[i][3] / totalCPU
 				local green = 1 - red
-				GameTooltip:AddDoubleLine(cpuTable[i][2], format(homeLatencyString, cpuTable[i][3]), 1, 1, 1, red, green + .5, 0)
+				GameTooltip:AddDoubleLine(cpuTable[i][2], string.format(homeLatencyString, cpuTable[i][3]), 1, 1, 1, red, green + .5, 0)
 			end						
 		end
 		GameTooltip:AddLine(" ")
@@ -178,7 +174,8 @@ local function Update(self, t)
 		elseif framerate >= 10 and framerate < 20 then
 			fpscolor = 3
 		end
-		self.text:SetFormattedText(join("", "FPS: ", statusColors[fpscolor], "%d|r MS: ", statusColors[latencycolor], "%d|r"), framerate, latency)
+		local displayFormat = string.join("", "FPS: ", statusColors[fpscolor], "%d|r MS: ", statusColors[latencycolor], "%d|r")
+		self.text:SetFormattedText(displayFormat, framerate, latency)
 		int2 = 1
 		if enteredFrame then
 			OnEnter(self)

@@ -18,6 +18,7 @@ function IsWearingShield()
 end
 
 local function OnEvent(self, event, unit)
+	if event == "UNIT_AURA" and unit ~= 'player' then return end
 	targetlv, playerlv = UnitLevel("target"), UnitLevel("player")
 			
 	-- the 5 is for base miss chance
