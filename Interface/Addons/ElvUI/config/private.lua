@@ -10,6 +10,8 @@ V['general'] = {
 	["dmgfont"] = "ElvUI Combat",
 	["namefont"] = "ElvUI Font",
 	['bubbles'] = true,
+	['pvpautorelease'] = true,
+	['autorepchange'] = true,
 	['pixelPerfect'] = true,
 
 	['minimap'] = {

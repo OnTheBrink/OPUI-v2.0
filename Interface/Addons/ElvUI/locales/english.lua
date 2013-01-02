@@ -471,6 +471,10 @@ L["Send ADDON_ACTION_BLOCKED errors to the Lua Error frame. These errors are les
 L["Skin the blizzard chat bubbles."] = true;
 L["The font that appears on the text above players heads. |cffFF0000WARNING: This requires a game restart or re-log for this change to take effect.|r"] = true;
 L["Tiny Map"] = true;
+L['PvP Autorelease'] = true;
+L['Automatically release body when killed inside a battleground.'] = true;
+L['Track Reputation'] = true;
+L['Automatically change your watched faction on the reputation bar to the faction you got reputation points for.'] = true;
 L['Toggle Tutorials'] = true;
 L['Top Panel'] = true;
 L["Welcome to ElvUI version %s!"] = true;
@@ -521,6 +525,7 @@ L["Your items have been repaired using guild bank funds for: "] = true;
 L["Your version of ElvUI is out of date. You can download the latest version from http://www.tukui.org"] = true; --core\core.lua
 
 --Movers
+L[' Frames'] = true;
 L["Left Chat"] = true;
 L["Right Chat"] = true;
 L["Bar "] = true;
@@ -547,6 +552,8 @@ L["Target Castbar"] = true;
 L["Focus Castbar"] = true;
 
 --NamePlates
+L["Small Plates"] = true;
+L["Adjust nameplate size on smaller mobs to scale down. This will only adjust the health bar width not the actual nameplate hitbox you click on."] = true;
 L["Class Icons"] = true;
 L["Display a class icon on nameplates."] = true;
 L["Add Name"] = true;
@@ -784,7 +791,6 @@ L["Color the unit healthbar if there is a debuff that can be dispelled by you."]
 L["Color"] = true;
 L['Colored Icon'] = true;
 L["Column Point"] = true;
-L["Column Spacing"] = true;
 L["Combat Fade"] = true;
 L["Combobar"] = true;
 L["Copy From"] = true;
@@ -953,7 +959,6 @@ L["Text Toggle On NPC"] = true;
 L['Text'] = true;
 L['Textured Icon'] = true;
 L["The alpha to set units that are out of range to."] = true;
-L["The amount of space (in pixels) between the columns."] = true;
 L["The anchor point for each new column. A value of LEFT will cause the columns to grow to the right."] = true;
 L["The following macro must be true in order for the group to be shown, in addition to any filter that may already be set."] = true;
 L["The font that the unitframes will use."] = true;

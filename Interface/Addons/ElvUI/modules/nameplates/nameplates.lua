@@ -2,6 +2,8 @@ local E, L, V, P, G, _ = unpack(select(2, ...)); --Inport: Engine, Locales, Priv
 local NP = E:NewModule('NamePlates', 'AceHook-3.0', 'AceEvent-3.0', 'AceTimer-3.0')
 local LSM = LibStub("LibSharedMedia-3.0")
 
+local wipe = table.wipe
+
 local OVERLAY = [=[Interface\TargetingFrame\UI-TargetingFrame-Flash]=]
 local numChildren = -1
 local backdrop
@@ -19,18 +21,6 @@ NP.Healers = {
 	[L['Mistweaver']] = true,
 }
 
-ClassIconTable = {
-	DEATHKNIGHT = "Interface\\Icons\\Spell_Deathknight_ClassIcon",
-	DRUID = "Interface\\Icons\\INV_Misc_MonsterClaw_04",
-	WARLOCK = "Interface\\Icons\\Spell_Nature_FaerieFire",
-	HUNTER = "Interface\\Icons\\INV_Weapon_Bow_07",
-	MAGE = "Interface\\Icons\\INV_Staff_13",
-	PRIEST = "Interface\\Icons\\INV_Staff_30",
-	WARRIOR = "Interface\\Icons\\INV_Sword_27",
-	SHAMAN = "Interface\\Icons\\Spell_Nature_BloodLust",
-	PALADIN = "Interface\\AddOns\\addon\\UI-CharacterCreate-Classes_Paladin",
-	ROGUE = "Interface\\AddOns\\addon\\UI-CharacterCreate-Classes_Rogue",
-}
 
 function NP:Initialize()
 	self.db = E.db["nameplate"]
@@ -42,8 +32,9 @@ function NP:Initialize()
 	end
 	
 	CreateFrame('Frame'):SetScript('OnUpdate', function(self, elapsed)
-		if(WorldFrame:GetNumChildren() ~= numChildren) then
-			numChildren = WorldFrame:GetNumChildren()
+		local count = WorldFrame:GetNumChildren()
+		if(count ~= numChildren) then
+			numChildren = count
 			NP:HookFrames(WorldFrame:GetChildren())
 		end	
 		
@@ -70,10 +61,8 @@ function NP:QueueObject(frame, object)
 	if not frame.queue then frame.queue = {} end
 	frame.queue[object] = true
 	
-	if object.OldShow then
-		object.Show = object.OldShow
-		object:Show()
-	end
+	object.allowShow = true;
+	object:Show();
 	
 	if object.OldTexture then
 		object:SetTexture(object.OldTexture)
@@ -84,7 +73,7 @@ function NP:CreateVirtualFrame(parent, point)
 	if point == nil then point = parent end
 	local noscalemult = E.mult * UIParent:GetScale()
 	
-	if point.backdrop then return end
+	if point.bordertop then return end
 
 	
 	point.backdrop2 = parent:CreateTexture(nil, "BORDER")
@@ -178,16 +167,25 @@ function NP:ForEachPlate(functionToRun, ...)
 	end
 end
 
+local function RehideFrame(self)
+	if not self.allowShow then
+		self:Hide()
+	end
+	
+	self.allowShow = nil;
+end
+
 function NP:HideObjects(frame)
+	local objectType
 	for object in pairs(frame.queue) do
-		object.OldShow = object.Show
-		object.Show = E.noop
+		hooksecurefunc(object, "Show", RehideFrame)
 		
-		if object:GetObjectType() == "Texture" then
+		objectType = object:GetObjectType()
+		if objectType == "Texture" then
 			object.OldTexture = object:GetTexture()
 			object:SetTexture(nil)
 			object:SetTexCoord(0, 0, 0, 0)
-		elseif object:GetObjectType() == 'FontString' then
+		elseif objectType == 'FontString' then
 			object:SetWidth(0.001)
 		end
 		
@@ -212,7 +210,7 @@ function NP:Update_LevelText(frame)
 				frame.hp.level:Hide()
 				frame.hp.level:SetText(nil)
 			elseif level then
-				frame.hp.level:SetText(level..(elite and "+" or ""))
+				frame.hp.level:SetFormattedText("%d%s", level, (elite and "+" or ""))
 				frame.hp.level:SetTextColor(frame.hp.oldlevel:GetTextColor())
 				frame.hp.level:Show()
 			end
@@ -321,10 +319,19 @@ function NP:HealthBar_OnShow(frame)
 	end
 	
 	--Set the name text
-	frame.hp.name:SetText(frame.hp.oldname:GetText())	
+	frame.hp.name:SetText(frame.hp.oldname:GetText())
+	local isSmallNP
 	while frame.hp:GetEffectiveScale() < 1 do
 		frame.hp:SetScale(frame.hp:GetScale() + 0.01)
+		isSmallNP = true;
 	end
+	
+	frame.isSmallNP = isSmallNP and NP.db.smallPlates
+	
+	if frame.isSmallNP then
+		frame.hp:Width(frame:GetWidth() * frame:GetEffectiveScale())
+	end
+	
 	frame.AuraWidget:SetScale(frame.hp:GetScale())
 	
 	--Level Text
@@ -353,6 +360,7 @@ function NP:OnHide(frame)
 	frame.cb:Hide()
 	frame.unit = nil
 	frame.isMarked = nil
+	frame.isSmallNP = nil
 	frame.raidIconType = nil
 	frame.threatStatus = nil
 	frame.guid = nil
@@ -547,10 +555,14 @@ function NP:SkinPlate(frame, nameFrame)
 		frame.AuraWidget = f
 	end
 	
-	for index = 1, NP.MAX_DISPLAYABLE_DEBUFFS do 
-		if frame.AuraWidget.AuraIconFrames and frame.AuraWidget.AuraIconFrames[index] then
-			frame.AuraWidget.AuraIconFrames[index].TimeLeft:FontTemplate(LSM:Fetch("font", self.db.auraFont), self.db.auraFontSize, self.db.auraFontOutline)
-			frame.AuraWidget.AuraIconFrames[index].Stacks:FontTemplate(LSM:Fetch("font", self.db.auraFont), self.db.auraFontSize, self.db.auraFontOutline)
+	if frame.AuraWidget.AuraIconFrames then
+		local auraIconFont, auraIconFrame = LSM:Fetch("font", self.db.auraFont)
+		for index = 1, NP.MAX_DISPLAYABLE_DEBUFFS do
+			auraIconFrame = frame.AuraWidget.AuraIconFrames[index]
+			if auraIconFrame then
+				auraIconFrame.TimeLeft:FontTemplate(auraIconFont, self.db.auraFontSize, self.db.auraFontOutline)
+				auraIconFrame.Stacks:FontTemplate(auraIconFont, self.db.auraFontSize, self.db.auraFontOutline)
+			end
 		end
 	end
 		
@@ -858,10 +870,10 @@ function NP:PLAYER_ENTERING_WORLD()
 	self:UpdateRoster()
 	self:CleanAuraLists()
 	
-	table.wipe(self.BattleGroundHealers)
+	wipe(self.BattleGroundHealers)
 	local inInstance, instanceType = IsInInstance()
 	if inInstance and instanceType == 'pvp' and self.db.markBGHealers then
-		self.CheckHealerTimer = self:ScheduleRepeatingTimer("CheckBGHealers", 1)
+		self.CheckHealerTimer = self:ScheduleRepeatingTimer("CheckBGHealers", 3)
 		self:CheckBGHealers()
 	else
 		if self.CheckHealerTimer then
@@ -897,8 +909,9 @@ function NP:HookFrames(...)
 	for index = 1, select('#', ...) do
 		local frame = select(index, ...)
 		local region = frame:GetRegions()
+		local name = frame:GetName()
 		
-		if(not NP.Handled[frame:GetName()] and (frame:GetName() and frame:GetName():find("NamePlate%d"))) then
+		if(not NP.Handled[name] and (name and name:find("NamePlate%d"))) then
 			NP:SkinPlate(frame:GetChildren())
 		end
 	end

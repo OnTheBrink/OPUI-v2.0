@@ -14,7 +14,6 @@ E.resolution = GetCVar("gxResolution")
 E.screenheight = tonumber(string.match(E.resolution, "%d+x(%d+)"))
 E.screenwidth = tonumber(string.match(E.resolution, "(%d+)x+%d"))
 
-
 --Tables
 E["media"] = {};
 E["frames"] = {};
@@ -284,7 +283,7 @@ E.UIParent = CreateFrame('Frame', 'ElvUIParent', UIParent);
 E.UIParent:SetFrameLevel(UIParent:GetFrameLevel());
 E.UIParent:SetPoint('CENTER', UIParent, 'CENTER');
 E.UIParent:SetSize(UIParent:GetSize());
-tinsert(E['snapBars'], E.UIParent)
+E['snapBars'][#E['snapBars'] + 1] = E.UIParent
 
 E.HiddenFrame = CreateFrame('Frame')
 E.HiddenFrame:Hide()
@@ -569,12 +568,12 @@ function E:RegisterModule(name)
 	if self.initialized then
 		self:GetModule(name):Initialize()
 	else
-		tinsert(self['RegisteredModules'], name)
+		self['RegisteredModules'][#self['RegisteredModules'] + 1] = name
 	end
 end
 
 function E:RegisterInitialModule(name)
-	tinsert(self['RegisteredInitialModules'], name)
+	self['RegisteredInitialModules'][#self['RegisteredInitialModules'] + 1] = name
 end
 
 function E:InitializeInitialModules()
@@ -677,6 +676,6 @@ function E:Initialize()
 	collectgarbage("collect");
 	
 	if self.db.general.loginmessage then
-		print(select(2, E:GetModule('Chat'):FindURL(nil, format(L['LOGIN_MSG'], self["media"].hexvaluecolor, self["media"].hexvaluecolor, self.version)))..'.')
+		print(select(2, E:GetModule('Chat'):FindURL("CHAT_MSG_DUMMY", format(L['LOGIN_MSG'], self["media"].hexvaluecolor, self["media"].hexvaluecolor, self.version)))..'.')
 	end	
 end

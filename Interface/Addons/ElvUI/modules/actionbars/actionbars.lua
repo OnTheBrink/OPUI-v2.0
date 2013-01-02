@@ -257,7 +257,12 @@ function AB:CreateVehicleLeave()
 	RegisterStateDriver(vehicle, "visibility", "[vehicleui] show;[target=vehicle,exists] show;hide")
 end
 
-function AB:ReassignBindings()
+function AB:ReassignBindings(event)
+	if event == "UPDATE_BINDINGS" then
+		self:UpdatePetBindings();
+		self:UpdateStanceBindings();
+	end
+
 	if InCombatLockdown() then return end	
 	for _, bar in pairs(self["handledBars"]) do
 		if not bar then return end
@@ -334,14 +339,15 @@ function AB:UpdateButtonSettings()
 			self["handledbuttons"][button] = nil
 		end
 	end
-
+	
 	for i=1, 5 do
-		self:PositionAndSizeBar('bar'..i)
+		self:PositionAndSizeBar(('bar%d'):format(i))
 	end	
 	self:PositionAndSizeBarPet()
 	self:PositionAndSizeBarShapeShift()
-		
-	for barName, bar in pairs(self["handledBars"]) do
+	self:UpdatePetBindings()	
+	self:UpdateStanceBindings()
+	for _, bar in pairs(self["handledBars"]) do
 		self:UpdateButtonConfig(bar, bar.bindButtons)
 	end
 end
@@ -688,8 +694,7 @@ function AB:StyleFlyout(button)
 	SpellFlyoutBackgroundEnd:SetAlpha(0)
 	
 	for i=1, GetNumFlyouts() do
-		local x = GetFlyoutID(i)
-		local _, _, numSlots, isKnown = GetFlyoutInfo(x)
+		local _, _, numSlots, isKnown = GetFlyoutInfo(GetFlyoutID(i))
 		if isKnown then
 			buttons = numSlots
 			break
