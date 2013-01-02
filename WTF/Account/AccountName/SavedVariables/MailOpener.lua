@@ -7,18 +7,21 @@ MailOpenerDB = {
 			["profiles"] = {
 				["Default"] = {
 					["filter"] = {
+						["normalMoney"] = false,
 						["AH"] = {
 							["expired"] = false,
 							["canceled"] = false,
 							["outbid"] = false,
 						},
-						["normalMoney"] = false,
 					},
 				},
 			},
 		},
 		["FailSafe"] = {
 		},
+	},
+	["global"] = {
+		["currentTip"] = 6,
 	},
 	["profileKeys"] = {
 		["Mileiance - Zuluhed"] = "Default",
@@ -41,18 +44,20 @@ MailOpenerDB = {
 		["Jedentiott - Laughing Skull"] = "Default",
 		["Maulls - Kel'Thuzad"] = "Default",
 		["Guincy - Kel'Thuzad"] = "Default",
+		["Alterboi - Kel'Thuzad"] = "OPUI 2.0",
+		["Lindsonna - Burning Legion"] = "Default",
 		["Löckness - Laughing Skull"] = "Default",
 		["Ðreaded - Kel'Thuzad"] = "Default",
-		["Praedatør - Kel'Thuzad"] = "Default",
-		["Spacebar - Draka"] = "Default",
+		["Rhodara - Blackhand"] = "Default",
 		["Veterinarian - Laughing Skull"] = "Default",
+		["Pubick - Kel'Thuzad"] = "OPUI 2.0",
 		["Powlk - Arygos"] = "Default",
 		["Koredishton - Kel'Thuzad"] = "Default",
 		["Eanwor - Burning Legion"] = "Default",
-		["Instaq - Laughing Skull"] = "Default",
+		["Clashadrey - Tichondrius"] = "Default",
 		["Vsuper - Tichondrius"] = "Default",
 		["Ðreaded - Laughing Skull"] = "Default",
-		["Clashadrey - Tichondrius"] = "Default",
+		["Halvinravis - Terenas"] = "Default",
 		["Melicelicity - Drenden"] = "Default",
 		["Instaque - Kel'Thuzad"] = "Default",
 		["Opacuss - Draka"] = "Default",
@@ -61,17 +66,17 @@ MailOpenerDB = {
 		["Holneantus - Kel'Thuzad"] = "Default",
 		["Shãmwøw - Kel'Thuzad"] = "Default",
 		["Twocents - Kel'Thuzad"] = "Default",
-		["Halvinravis - Terenas"] = "Default",
-		["Pubick - Kel'Thuzad"] = "Default",
-		["Rhodara - Blackhand"] = "Default",
-		["Lindsonna - Burning Legion"] = "Default",
-	},
-	["global"] = {
-		["currentTip"] = 6,
+		["Elylarina - Kel'Thuzad"] = "Default",
+		["Instaq - Laughing Skull"] = "Default",
+		["Spacebar - Draka"] = "Default",
+		["Praedatør - Kel'Thuzad"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["uses"] = 2177,
+			["uses"] = 2196,
+		},
+		["OPUI 2.0"] = {
+			["uses"] = 6,
 		},
 	},
 }

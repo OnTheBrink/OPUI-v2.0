@@ -1,0 +1,11 @@
+
+UInstallDB = {
+	["Backups"] = {
+	},
+	["profiles"] = {
+		["Elylarina - Kel'Thuzad"] = {
+			["declined"] = false,
+			["installed"] = true,
+		},
+	},
+}

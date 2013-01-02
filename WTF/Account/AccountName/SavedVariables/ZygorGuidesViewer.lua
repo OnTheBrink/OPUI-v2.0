@@ -37,295 +37,13 @@ ZygorGuidesViewerSettings = {
 			["maint_fetchitemdata"] = true,
 		},
 		["Opacus - Kel'Thuzad"] = {
-			["taxis_were_update"] = true,
 			["guidename"] = "EVENTS\\Feast of Winter Veil (December 15th - January 2nd)\\Feast of Winter Veil Achievements",
+			["taxis_were_update"] = true,
 			["guides_history_ZGV4clear"] = true,
-			["step"] = 2,
-			["debuglog"] = {
-				"19:22:33> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [1]
-				"19:22:43> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.4,14.1 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [2]
-				"19:22:43> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [3]
-				"19:22:43> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,14|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [4]
-				"19:22:43> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [5]
-				"19:27:03> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.9,14.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [6]
-				"19:27:03> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [7]
-				"19:27:03> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,14|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [8]
-				"19:27:03> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [9]
-				"19:28:03> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.7,15.2 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [10]
-				"19:28:03> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [11]
-				"19:28:03> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,15|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [12]
-				"19:28:03> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [13]
-				"19:28:13> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 40.1,15.3 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [14]
-				"19:28:13> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [15]
-				"19:28:13> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 40,15|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [16]
-				"19:28:13> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [17]
-				"19:28:23> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.1,22.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [18]
-				"19:28:23> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [19]
-				"19:28:23> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,22|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [20]
-				"19:28:23> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [21]
-				"19:28:25> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.1,23.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [22]
-				"19:28:25> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [23]
-				"19:28:25> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,23|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [24]
-				"19:28:25> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [25]
-				"19:28:33> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.7,42.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [26]
-				"19:28:33> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [27]
-				"19:28:33> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,42|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [28]
-				"19:28:33> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [29]
-				"19:28:43> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 40.2,41.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [30]
-				"19:28:43> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [31]
-				"19:28:43> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 40,41|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [32]
-				"19:28:43> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [33]
-				"19:28:53> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.7,39.6 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [34]
-				"19:28:53> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [35]
-				"19:28:53> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,39|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [36]
-				"19:28:53> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [37]
-				"19:29:03> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.1,25.6 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [38]
-				"19:29:03> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [39]
-				"19:29:03> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,25|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [40]
-				"19:29:03> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [41]
-				"19:29:04> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.1,23.0 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [42]
-				"19:29:04> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [43]
-				"19:29:04> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,23|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [44]
-				"19:29:04> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [45]
-				"19:29:06> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.1,23.2 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [46]
-				"19:29:06> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [47]
-				"19:29:06> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,23|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [48]
-				"19:29:06> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [49]
-				"19:29:13> [LibRover] [LibRover] FindLastPath from Scarlet Halls/2 39.3,33.5 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [50]
-				"19:29:13> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [51]
-				"19:29:13> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddScarlet Halls 39,33|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [52]
-				"19:29:13> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [53]
-				"19:29:31> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [54]
-				"19:29:33> PLAYER_ENTERING_WORLD (not dead) (Pointer.lua:1265:<local>)", -- [55]
-				"19:29:33> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [56]
-				"19:29:33> [itemscore] AutoEquip: PLAYER_ENTERING_WORLD (ItemScore.lua:275:Debug)", -- [57]
-				"19:29:33> PLAYER_ALIVE (not dead) (Pointer.lua:1265:<local>)", -- [58]
-				"19:29:33> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [59]
-				"19:29:33> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [60]
-				"19:29:33> CacheQuestLog cached 14 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [61]
-				"19:29:33> CacheQuestLog cached 14 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [62]
-				"19:29:34> ZONE_CHANGED_NEW_AREA (not dead) (Pointer.lua:1265:<local>)", -- [63]
-				"19:29:34> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [64]
-				"19:29:34> [LibRover] [LibRover] FindLastPath from Siege of Niuzao Temple/2 65.2,86.8 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [65]
-				"19:29:34> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [66]
-				"19:29:34> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddSiege of Niuzao Temple 65,86|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [67]
-				"19:29:34> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [68]
-				"19:29:50> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [69]
-				"19:29:50> [itemscore] AutoEquip: ITEM_PUSH (ItemScore.lua:275:Debug)", -- [70]
-				"19:29:51> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [71]
-				"19:29:51> [itemscore] AutoEquip: ITEM_PUSH (ItemScore.lua:275:Debug)", -- [72]
-				"19:29:51> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [73]
-				"19:29:51> [itemscore] AutoEquip: ITEM_PUSH (ItemScore.lua:275:Debug)", -- [74]
-				"19:29:53> [LibRover] [LibRover] FindLastPath from Siege of Niuzao Temple/2 63.6,81.9 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [75]
-				"19:29:53> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [76]
-				"19:29:53> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddSiege of Niuzao Temple 63,81|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [77]
-				"19:29:53> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [78]
-				"19:30:03> [LibRover] [LibRover] FindLastPath from Siege of Niuzao Temple/2 63.6,80.8 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [79]
-				"19:30:03> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [80]
-				"19:30:03> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddSiege of Niuzao Temple 63,80|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [81]
-				"19:30:03> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [82]
-				"19:30:12> [itemscore] AutoEquip: PLAYER_REGEN_DISABLED (ItemScore.lua:275:Debug)", -- [83]
-				"19:30:29> [step_setup] Preparing goals... (Step.lua:144:PrepareCompletion)", -- [84]
-				"19:30:29> [step_setup] Goals prepared. (Step.lua:148:PrepareCompletion)", -- [85]
-				"19:30:29> [step_setup] Step 2 prepared. (Step.lua:187:PrepareCompletion)", -- [86]
-				"19:30:29> [itemscore] AutoEquip: PLAYER_REGEN_ENABLED (ItemScore.lua:275:Debug)", -- [87]
-				"19:30:29> [LibRover] [LibRover] FindLastPath from Siege of Niuzao Temple/2 65.6,51.6 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [88]
-				"19:30:29> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [89]
-				"19:30:29> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddSiege of Niuzao Temple 65,51|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [90]
-				"19:30:29> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [91]
-				"19:30:38> [itemscore] AutoEquip: PLAYER_REGEN_DISABLED (ItemScore.lua:275:Debug)", -- [92]
-				"19:30:45> [step_setup] Preparing goals... (Step.lua:144:PrepareCompletion)", -- [93]
-				"19:30:45> [step_setup] Goals prepared. (Step.lua:148:PrepareCompletion)", -- [94]
-				"19:30:45> [step_setup] Step 2 prepared. (Step.lua:187:PrepareCompletion)", -- [95]
-				"19:30:45> [itemscore] AutoEquip: PLAYER_REGEN_ENABLED (ItemScore.lua:275:Debug)", -- [96]
-				"19:30:45> [LibRover] [LibRover] FindLastPath from Siege of Niuzao Temple/2 64.7,49.2 to Ironforge/0 19.9,53.8 (LibRover-1.0.lua:2458:Debug)", -- [97]
-				"19:30:45> [LibRover] - Found hearth node [361] \"Vale of Eternal Blossoms 36,66\" = Vale of Eternal Blossoms /0 36.4,66.8 [inn] (LibRover-1.0.lua:2458:Debug)", -- [98]
-				"19:30:45> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddSiege of Niuzao Temple 64,49|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [99]
-				"19:30:45> [LibRover] 1. |cff88ff88Go to Ironforge 19,53|cffff88dd -- |cff88ccddIronforge 19,53|cffff88dd  (dist 0, time -9999999.0, total -9999999.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [100]
+			["goodbadguides"] = {
+				["LEVELING\\Pandaria 85-90\\Kun-Lai Summit (87-88)"] = true,
 			},
-			["ignoredguides"] = {
-				["LEVELING\\Pandaria 85-90\\Krasarang Wilds (87)"] = true,
-				["LEVELING\\Pandaria 85-90\\Valley of the Four Winds (86-87)"] = true,
-				["LEVELING\\Pandaria 85-90\\Townlong Steppes (88-89)"] = true,
-			},
-			["maint_fetchquestdata"] = true,
-			["guides_history"] = {
-				["ACHIEVEMENTS"] = {
-					"ACHIEVEMENTS\\Pet Battle System\\Big City Pet Brawlin' - Alliance", -- [1]
-					3, -- [2]
-				},
-				["PETSMOUNTS"] = {
-					"PETSMOUNTS\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord", -- [1]
-					4, -- [2]
-				},
-				["LEVELING"] = {
-					"LEVELING\\Eastern Kingdoms 1-60\\Western Plaguelands (34-39)\\Western Plaguelands (34-39)", -- [1]
-					74, -- [2]
-				},
-				["DUNGEONS"] = {
-					"DUNGEONS\\Classic Dungeons\\Ragefire Chasm (RFC) 15-18", -- [1]
-					11, -- [2]
-				},
-				["REPUTATIONS"] = {
-					"REPUTATIONS\\Mists of Pandaria\\Operation:Shieldwall", -- [1]
-					59, -- [2]
-				},
-				["EVENTS"] = {
-					"EVENTS\\Feast of Winter Veil (December 15th - January 2nd)\\Feast of Winter Veil Achievements", -- [1]
-					2, -- [2]
-				},
-				["DAILIES"] = {
-					"DAILIES\\Pandaria (85 - 90)\\Operation:Shieldwall", -- [1]
-					23, -- [2]
-				},
-				["LOREMASTER"] = {
-					"LOREMASTER\\Eastern Kingdoms 1-60\\Badlands", -- [1]
-					92, -- [2]
-				},
-			},
-			["stephistory"] = {
-				1, -- [1]
-			},
-			["RecipesKnown"] = {
-				[104309] = true,
-				[88021] = true,
-				[45549] = true,
-				[6412] = true,
-				[45565] = true,
-				[15856] = true,
-				[6415] = true,
-				[125602] = true,
-				[104310] = true,
-				[88006] = true,
-				[124232] = true,
-				[125603] = true,
-				[125141] = true,
-				[58523] = true,
-				[104311] = true,
-				[18241] = true,
-				[18245] = true,
-				[45550] = true,
-				[45566] = true,
-				[125078] = true,
-				[7213] = true,
-				[125142] = true,
-				[104312] = true,
-				[25704] = true,
-				[104297] = true,
-				[88025] = true,
-				[45551] = true,
-				[7751] = true,
-				[7753] = true,
-				[125080] = true,
-				[7755] = true,
-				[104298] = true,
-				[88042] = true,
-				[124029] = true,
-				[6499] = true,
-				[6500] = true,
-				[104299] = true,
-				[18238] = true,
-				[18242] = true,
-				[18246] = true,
-				[45552] = true,
-				[45560] = true,
-				[104300] = true,
-				[46684] = true,
-				[88028] = true,
-				[125067] = true,
-				[3399] = true,
-				[3400] = true,
-				[104237] = true,
-				[104301] = true,
-				[20916] = true,
-				[21175] = true,
-				[45553] = true,
-				[45561] = true,
-				[45569] = true,
-				[125594] = true,
-				[42302] = true,
-				[104302] = true,
-				[7827] = true,
-				[7828] = true,
-				[57435] = true,
-				[125595] = true,
-				[125117] = true,
-				[104303] = true,
-				[33290] = true,
-				[88015] = true,
-				[18247] = true,
-				[45554] = true,
-				[45562] = true,
-				[58065] = true,
-				[125596] = true,
-				[104304] = true,
-				[124226] = true,
-				[2538] = true,
-				[125597] = true,
-				[2539] = true,
-				[2540] = true,
-				[2541] = true,
-				[58512] = true,
-				[104305] = true,
-				[33291] = true,
-				[124227] = true,
-				[2544] = true,
-				[45563] = true,
-				[2546] = true,
-				[125598] = true,
-				[125120] = true,
-				[42296] = true,
-				[105190] = true,
-				[8604] = true,
-				[88022] = true,
-				[104306] = true,
-				[88012] = true,
-				[124228] = true,
-				[124234] = true,
-				[18239] = true,
-				[57421] = true,
-				[88047] = true,
-				[124053] = true,
-				[125599] = true,
-				[64358] = true,
-				[125121] = true,
-				[124231] = true,
-				[58525] = true,
-				[124032] = true,
-				[37836] = true,
-				[58521] = true,
-				[104307] = true,
-				[33292] = true,
-				[18244] = true,
-				[88035] = true,
-				[43779] = true,
-				[45564] = true,
-				[124230] = true,
-				[124054] = true,
-				[125600] = true,
-				[93741] = true,
-				[125122] = true,
-				[4094] = true,
-				[42305] = true,
-				[124233] = true,
-				[124223] = true,
-				[45695] = true,
-				[104308] = true,
-				[25954] = true,
-				[46688] = true,
-				[88036] = true,
-				[124229] = true,
-				[18240] = true,
-				[45022] = true,
-				[124225] = true,
-				[125601] = true,
-				[124224] = true,
-				[125123] = true,
-				[18243] = true,
-				[124052] = true,
-				[88011] = true,
-				[88024] = true,
-			},
+			["step"] = 10,
 			["taxis"] = {
 				["Kharanos"] = true,
 				["Morgan's Vigil"] = true,
@@ -654,8 +372,300 @@ ZygorGuidesViewerSettings = {
 				["The Incursion"] = true,
 				["Feathermoon"] = true,
 			},
-			["goodbadguides"] = {
-				["LEVELING\\Pandaria 85-90\\Kun-Lai Summit (87-88)"] = true,
+			["RecipesKnown"] = {
+				[104309] = true,
+				[88021] = true,
+				[45549] = true,
+				[6412] = true,
+				[45565] = true,
+				[15856] = true,
+				[6415] = true,
+				[125602] = true,
+				[104310] = true,
+				[88006] = true,
+				[88022] = true,
+				[125603] = true,
+				[125141] = true,
+				[58523] = true,
+				[104311] = true,
+				[18241] = true,
+				[18245] = true,
+				[45550] = true,
+				[45566] = true,
+				[125078] = true,
+				[7213] = true,
+				[125142] = true,
+				[104312] = true,
+				[88024] = true,
+				[104297] = true,
+				[88025] = true,
+				[45551] = true,
+				[7751] = true,
+				[7753] = true,
+				[125080] = true,
+				[7755] = true,
+				[104298] = true,
+				[88042] = true,
+				[124029] = true,
+				[64358] = true,
+				[6500] = true,
+				[58525] = true,
+				[18238] = true,
+				[18242] = true,
+				[18246] = true,
+				[45552] = true,
+				[45560] = true,
+				[104300] = true,
+				[46684] = true,
+				[88028] = true,
+				[125067] = true,
+				[3399] = true,
+				[21143] = true,
+				[104237] = true,
+				[104301] = true,
+				[20916] = true,
+				[124223] = true,
+				[45553] = true,
+				[45561] = true,
+				[124032] = true,
+				[125594] = true,
+				[42302] = true,
+				[104302] = true,
+				[7827] = true,
+				[124224] = true,
+				[57435] = true,
+				[125595] = true,
+				[125117] = true,
+				[104303] = true,
+				[18239] = true,
+				[124225] = true,
+				[18247] = true,
+				[45554] = true,
+				[45562] = true,
+				[58065] = true,
+				[125596] = true,
+				[104304] = true,
+				[124226] = true,
+				[2538] = true,
+				[125597] = true,
+				[2539] = true,
+				[21144] = true,
+				[2540] = true,
+				[2541] = true,
+				[58512] = true,
+				[104305] = true,
+				[33291] = true,
+				[124227] = true,
+				[2544] = true,
+				[45563] = true,
+				[2546] = true,
+				[125598] = true,
+				[125120] = true,
+				[42296] = true,
+				[124052] = true,
+				[25704] = true,
+				[8604] = true,
+				[37836] = true,
+				[104306] = true,
+				[88012] = true,
+				[124228] = true,
+				[104299] = true,
+				[105190] = true,
+				[57421] = true,
+				[6499] = true,
+				[124053] = true,
+				[125599] = true,
+				[7828] = true,
+				[125121] = true,
+				[21175] = true,
+				[124231] = true,
+				[45022] = true,
+				[43779] = true,
+				[58521] = true,
+				[104307] = true,
+				[18240] = true,
+				[18244] = true,
+				[88035] = true,
+				[46688] = true,
+				[45564] = true,
+				[124229] = true,
+				[124054] = true,
+				[125600] = true,
+				[93741] = true,
+				[125122] = true,
+				[4094] = true,
+				[42305] = true,
+				[124234] = true,
+				[33290] = true,
+				[45569] = true,
+				[104308] = true,
+				[25954] = true,
+				[124230] = true,
+				[88036] = true,
+				[33292] = true,
+				[124232] = true,
+				[3400] = true,
+				[124233] = true,
+				[125601] = true,
+				[88011] = true,
+				[125123] = true,
+				[18243] = true,
+				[45695] = true,
+				[88015] = true,
+				[88047] = true,
+			},
+			["guides_history"] = {
+				["ACHIEVEMENTS"] = {
+					"ACHIEVEMENTS\\Pet Battle System\\Big City Pet Brawlin' - Alliance", -- [1]
+					3, -- [2]
+				},
+				["PETSMOUNTS"] = {
+					"PETSMOUNTS\\Mounts\\Ground Mounts\\Dungeon Mounts\\Raven Lord", -- [1]
+					4, -- [2]
+				},
+				["LEVELING"] = {
+					"LEVELING\\Eastern Kingdoms 1-60\\Western Plaguelands (34-39)\\Western Plaguelands (34-39)", -- [1]
+					74, -- [2]
+				},
+				["DUNGEONS"] = {
+					"DUNGEONS\\Classic Dungeons\\Ragefire Chasm (RFC) 15-18", -- [1]
+					11, -- [2]
+				},
+				["REPUTATIONS"] = {
+					"REPUTATIONS\\Mists of Pandaria\\Operation:Shieldwall", -- [1]
+					59, -- [2]
+				},
+				["EVENTS"] = {
+					"EVENTS\\Feast of Winter Veil (December 15th - January 2nd)\\Feast of Winter Veil Achievements", -- [1]
+					10, -- [2]
+				},
+				["DAILIES"] = {
+					"DAILIES\\Pandaria (85 - 90)\\Operation:Shieldwall", -- [1]
+					23, -- [2]
+				},
+				["LOREMASTER"] = {
+					"LOREMASTER\\Eastern Kingdoms 1-60\\Badlands", -- [1]
+					92, -- [2]
+				},
+			},
+			["stephistory"] = {
+				1, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				5, -- [5]
+				6, -- [6]
+				7, -- [7]
+				8, -- [8]
+				9, -- [9]
+			},
+			["maint_fetchquestdata"] = true,
+			["ignoredguides"] = {
+				["LEVELING\\Pandaria 85-90\\Krasarang Wilds (87)"] = true,
+				["LEVELING\\Pandaria 85-90\\Valley of the Four Winds (86-87)"] = true,
+				["LEVELING\\Pandaria 85-90\\Townlong Steppes (88-89)"] = true,
+			},
+			["debuglog"] = {
+				"18:06:21> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,54|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [1]
+				"18:06:21> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [2]
+				"18:06:22> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.3,51.3 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [3]
+				"18:06:22> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [4]
+				"18:06:22> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,51|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [5]
+				"18:06:22> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [6]
+				"18:06:22> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.2,50.8 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [7]
+				"18:06:22> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [8]
+				"18:06:22> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,50|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [9]
+				"18:06:22> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [10]
+				"18:06:25> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.7,50.1 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [11]
+				"18:06:25> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [12]
+				"18:06:25> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,50|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [13]
+				"18:06:25> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [14]
+				"18:06:26> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.5,51.8 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [15]
+				"18:06:26> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [16]
+				"18:06:26> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,51|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [17]
+				"18:06:26> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [18]
+				"18:06:28> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.1,56.9 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [19]
+				"18:06:28> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [20]
+				"18:06:28> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,56|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [21]
+				"18:06:28> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [22]
+				"18:06:29> [LibRover] [LibRover] FindLastPath from Stormwind City/0 66.8,59.7 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [23]
+				"18:06:29> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [24]
+				"18:06:29> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 66,59|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [25]
+				"18:06:29> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [26]
+				"19:29:36> Viewer started. ---------------------------", -- [27]
+				"19:29:38> PLAYER_ENTERING_WORLD (not dead) (Pointer.lua:1265:<local>)", -- [28]
+				"19:29:38> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [29]
+				"19:29:38> [itemscore] AutoEquip: PLAYER_ENTERING_WORLD (ItemScore.lua:275:Debug)", -- [30]
+				"19:29:38> PLAYER_ALIVE (not dead) (Pointer.lua:1265:<local>)", -- [31]
+				"19:29:38> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [32]
+				"19:29:38> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [33]
+				"19:29:38> CacheQuestLog cached 15 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [34]
+				"19:29:39> [itemscore] ItemScore caching DONE. (ItemScore.lua:275:Debug)", -- [35]
+				"19:29:39> [parser] #include not found in |cffffaa00PROFESSIONS\\Leatherworking\\Leatherworking 500-525 Leveling Guide|cffff88dd: '|cffff5500lw_500-600|cffff88dd' in line '|cffaaaaaa\"lw_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [36]
+				"19:29:39> [parser] #include not found in |cffffaa00PROFESSIONS\\Mining\\Mining with Smelting 500-525 Leveling Guide|cffff88dd: '|cffff5500sm_500-600|cffff88dd' in line '|cffaaaaaa\"sm_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [37]
+				"19:29:39> [parser] #include not found in |cffffaa00ACHIEVEMENTS\\Profession Achievements\\Cooking\\Now I Am the Master|cffff88dd: '|cffff5500Pandaren_Cooking_1-520|cffff88dd' in line '|cffaaaaaa\"Pandaren_Cooking_1-520\"|cffff88dd' (Parser.lua:418:<local>)", -- [38]
+				"19:29:39> ZONE_CHANGED_NEW_AREA (not dead) (Pointer.lua:1265:<local>)", -- [39]
+				"19:29:39> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [40]
+				"19:29:39> CacheQuestLog cached 15 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [41]
+				"19:29:39> [LibRover] No route found. (LibRover-1.0.lua:2458:Debug)", -- [42]
+				"19:29:39> [LibRover] LibRover stopping gracefully, will update (LibRover-1.0.lua:2458:Debug)", -- [43]
+				"19:29:39> Guides loaded. --------- (ZygorGuidesViewer.lua:4002:<local>)", -- [44]
+				"19:29:39> Querying for quests... (ZygorGuidesViewer.lua:4004:<local>)", -- [45]
+				"19:29:40> Parsing guide: EVENTS\\Feast of Winter Veil (December 15th - January 2nd)\\Feast of Winter Veil Achievements (Guide.lua:179:Parse)", -- [46]
+				"19:29:40> Guide loaded: Events\\Feast of Winter Veil (December 15th - January 2nd)\\Feast of Winter Veil Achievements (ZygorGuidesViewer.lua:489:SetGuide)", -- [47]
+				"19:29:40> FocusStep 10 (ZygorGuidesViewer.lua:573:FocusStep)", -- [48]
+				"19:29:40> [step_setup] Preparing goals... (Step.lua:144:PrepareCompletion)", -- [49]
+				"19:29:40> [step_setup] Goals prepared. (Step.lua:148:PrepareCompletion)", -- [50]
+				"19:29:40> [step_setup] Step 10 prepared. (Step.lua:187:PrepareCompletion)", -- [51]
+				"19:29:40> [step_setup] Step 10 OnEnter (Step.lua:338:OnEnter)", -- [52]
+				"19:29:40> [step_setup] Clearing macros (Step.lua:423:OnEnter)", -- [53]
+				"19:29:40> [step_setup] Running goals' OnEnter (Step.lua:427:OnEnter)", -- [54]
+				"19:29:40> [step_setup] Step 10 OnEnter ended (Step.lua:433:OnEnter)", -- [55]
+				"19:29:40> unpausing (ZygorGuidesViewer.lua:611:FocusStep)", -- [56]
+				"19:29:40> Step:GetNext: step 10 says nil so going with +1 (Step.lua:445:GetNext)", -- [57]
+				"19:29:40> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [58]
+				"19:29:40> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [59]
+				"19:29:40> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [60]
+				"19:29:40> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [61]
+				"19:29:40> WAY showing goal(s) (Waypoints.lua:881:setwaypoint)", -- [62]
+				"19:29:40> setting wayps, waypath=nil, cpt=nil (Waypoints.lua:892:setwaypoint)", -- [63]
+				"19:29:40> [pointer] FindTravelPath (Pointer.lua:3192:FindTravelPath)", -- [64]
+				"19:29:40> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.0,58.4 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [65]
+				"19:29:40> goal 3 loading script: DoEmote(\"KISS\") (Goal.lua:1765:Prepare)", -- [66]
+				"19:29:40> goal 5 loading script: DoEmote(\"DANCE\") (Goal.lua:1765:Prepare)", -- [67]
+				"19:29:40> Startup complete. (ZygorGuidesViewer.lua:4057:StartupStep)", -- [68]
+				"19:29:40> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [69]
+				"19:29:40> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 66,58|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [70]
+				"19:29:40> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [71]
+				"19:29:41> [LibRover] [LibRover] FindLastPath from Stormwind City/0 67.3,58.6 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [72]
+				"19:29:41> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [73]
+				"19:29:41> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 67,58|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [74]
+				"19:29:41> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [75]
+				"19:29:42> [LibRover] [LibRover] FindLastPath from Stormwind City/0 66.9,60.2 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [76]
+				"19:29:42> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [77]
+				"19:29:42> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 66,60|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [78]
+				"19:29:42> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [79]
+				"19:29:49> [LibRover] [LibRover] FindLastPath from Stormwind City/0 66.3,62.6 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [80]
+				"19:29:49> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [81]
+				"19:29:49> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 66,62|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [82]
+				"19:29:49> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [83]
+				"19:29:49> [LibRover] [LibRover] FindLastPath from Stormwind City/0 66.0,62.9 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [84]
+				"19:29:49> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [85]
+				"19:29:49> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 66,62|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [86]
+				"19:29:49> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [87]
+				"19:29:50> [LibRover] [LibRover] FindLastPath from Stormwind City/0 65.2,64.0 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [88]
+				"19:29:50> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [89]
+				"19:29:50> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 65,64|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [90]
+				"19:29:50> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [91]
+				"19:29:52> [LibRover] [LibRover] FindLastPath from Stormwind City/0 65.0,64.3 to Dun Morogh/0 60.3,33.9 (LibRover-1.0.lua:2458:Debug)", -- [92]
+				"19:29:52> [LibRover] - Found hearth node [264] \"Ironforge 18,51\" = Ironforge /0 18.6,51.6 [inn] (LibRover-1.0.lua:2458:Debug)", -- [93]
+				"19:29:52> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStormwind City 64,64|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [94]
+				"19:29:52> [LibRover] 1. |cff88ff88Go to Dun Morogh 60,33|cffff88dd -- |cff88ccddDun Morogh 60,33|cffff88dd  (dist 0, time -29999997.0, total -29999997.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [95]
+				"19:29:52> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [96]
+				"19:29:52> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [97]
+				"19:29:52> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [98]
+				"19:29:52> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [99]
+				"19:29:52> [itemscore] AutoEquip: PLAYER_SPECIALIZATION_CHANGED (ItemScore.lua:275:Debug)", -- [100]
 			},
 			["maint_fetchitemdata"] = true,
 		},
@@ -695,15 +705,15 @@ ZygorGuidesViewerSettings = {
 			["maint_fetchitemdata"] = true,
 		},
 		["Melicelicity - Drenden"] = {
-			["maint_fetchquestdata"] = true,
+			["taxis_were_update"] = true,
 			["guides_history"] = {
 				["LEVELING"] = {
 					"LEVELING\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Human (1-5)", -- [1]
 					1, -- [2]
 				},
 			},
+			["maint_fetchquestdata"] = true,
 			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Human (1-5)",
-			["taxis_were_update"] = true,
 			["guides_history_ZGV4clear"] = true,
 			["debuglog"] = {
 				"02:13:22> Viewer started. ---------------------------", -- [1]
@@ -869,6 +879,148 @@ ZygorGuidesViewerSettings = {
 				"15:31:31> CacheQuestLog cached 3 quests", -- [17]
 				"15:31:31> Startup complete.", -- [18]
 				"15:31:31> ZONE_CHANGED_NEW_AREA (not dead)", -- [19]
+			},
+			["maint_fetchitemdata"] = true,
+		},
+		["Elylarina - Kel'Thuzad"] = {
+			["maint_fetchquestdata"] = true,
+			["taxis"] = {
+				["Fairbreeze Village"] = true,
+				["Kharanos"] = true,
+				["Forsaken Forward Command"] = false,
+				["Goldshire"] = true,
+				["Falconwing Square"] = true,
+				["Silvermoon City"] = true,
+				["Dalaran"] = true,
+				["Ironforge"] = true,
+				["Rut'theran Village"] = true,
+				["Sen'jin Village"] = true,
+				["Undercity"] = true,
+				["Shattrath"] = true,
+				["Brill"] = true,
+				["Dolanaar"] = true,
+				["Bloodhoof Village"] = true,
+				["Stormwind"] = true,
+				["Gol'Bolar Quarry"] = true,
+				["Eastvale Logging Camp"] = true,
+				["Azure Watch"] = true,
+				["Orgrimmar"] = true,
+				["The Exodar"] = true,
+				["Thunder Bluff"] = true,
+				["The Bulwark"] = true,
+				["Razor Hill"] = true,
+				["Darnassus"] = true,
+			},
+			["guides_history"] = {
+				["LEVELING"] = {
+					"LEVELING\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11)", -- [1]
+					1, -- [2]
+				},
+			},
+			["guidename"] = "LEVELING\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11)",
+			["taxis_were_update"] = true,
+			["guides_history_ZGV4clear"] = true,
+			["debuglog"] = {
+				"13:17:39> PLAYER_ALIVE (not dead) (Pointer.lua:1265:<local>)", -- [1]
+				"13:17:39> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [2]
+				"13:17:39> CacheQuestLog cached 0 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [3]
+				"13:17:39> [parser] #include not found in |cffffaa00PROFESSIONS\\Leatherworking\\Leatherworking 500-525 Leveling Guide|cffff88dd: '|cffff5500lw_500-600|cffff88dd' in line '|cffaaaaaa\"lw_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [4]
+				"13:17:39> [parser] #include not found in |cffffaa00PROFESSIONS\\Mining\\Mining with Smelting 500-525 Leveling Guide|cffff88dd: '|cffff5500sm_500-600|cffff88dd' in line '|cffaaaaaa\"sm_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [5]
+				"13:17:39> [parser] #include not found in |cffffaa00ACHIEVEMENTS\\Profession Achievements\\Cooking\\Now I Am the Master|cffff88dd: '|cffff5500Pandaren_Cooking_1-520|cffff88dd' in line '|cffaaaaaa\"Pandaren_Cooking_1-520\"|cffff88dd' (Parser.lua:418:<local>)", -- [6]
+				"13:17:40> ZONE_CHANGED_NEW_AREA (not dead) (Pointer.lua:1265:<local>)", -- [7]
+				"13:17:40> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [8]
+				"13:17:40> [itemscore] AutoEquip: BAG_UPDATE_DELAYED (ItemScore.lua:275:Debug)", -- [9]
+				"13:17:40> [itemscore] AutoEquip: Finding current equipped. (ItemScore.lua:275:Debug)", -- [10]
+				"13:17:40> [itemscore] AutoEquip: In slot |cffaaffaaChestSlot|cffff88dd, |cffffffff|Hitem:6123:0:0:0:0:0:0:0:1:0:0|h[Novice's Robe]|h|cffff88dd got scored at |cffff000040 (ItemScore.lua:275:Debug)", -- [11]
+				"13:17:40> [itemscore] AutoEquip: In slot |cffaaffaaLegsSlot|cffff88dd, |cffffffff|Hitem:6124:0:0:0:0:0:0:0:1:0:0|h[Novice's Pants]|h|cffff88dd got scored at |cffff000034 (ItemScore.lua:275:Debug)", -- [12]
+				"13:17:40> [itemscore] AutoEquip: In slot |cffaaffaaMainHandSlot|cffff88dd, |cffffffff|Hitem:3661:0:0:0:0:0:0:0:1:0:0|h[Handcrafted Staff]|h|cffff88dd got scored at |cffff00001 (ItemScore.lua:275:Debug)", -- [13]
+				"13:17:40> [itemscore] AutoEquip: Scanning bags (ItemScore.lua:275:Debug)", -- [14]
+				"13:17:40> CacheQuestLog cached 0 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [15]
+				"13:17:40> [LibRover] No route found. (LibRover-1.0.lua:2458:Debug)", -- [16]
+				"13:17:40> [LibRover] LibRover stopping gracefully, will update (LibRover-1.0.lua:2458:Debug)", -- [17]
+				"13:17:40> [itemscore] ItemScore caching DONE. (ItemScore.lua:275:Debug)", -- [18]
+				"13:17:40> Guides loaded. --------- (ZygorGuidesViewer.lua:4002:<local>)", -- [19]
+				"13:17:40> Querying for quests... (ZygorGuidesViewer.lua:4004:<local>)", -- [20]
+				"13:17:40> Parsing guide: LEVELING\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11) (Guide.lua:179:Parse)", -- [21]
+				"13:17:40> Guide loaded: Leveling\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11) (ZygorGuidesViewer.lua:489:SetGuide)", -- [22]
+				"13:17:40> FocusStep 1 (ZygorGuidesViewer.lua:573:FocusStep)", -- [23]
+				"13:17:40> [step_setup] Preparing goals... (Step.lua:144:PrepareCompletion)", -- [24]
+				"13:17:40> [step_setup] Goals prepared. (Step.lua:148:PrepareCompletion)", -- [25]
+				"13:17:40> [step_setup] Step 1 prepared. (Step.lua:187:PrepareCompletion)", -- [26]
+				"13:17:40> [step_setup] Step 1 OnEnter (Step.lua:338:OnEnter)", -- [27]
+				"13:17:40> [step_setup] Clearing macros (Step.lua:423:OnEnter)", -- [28]
+				"13:17:40> [step_setup] Running goals' OnEnter (Step.lua:427:OnEnter)", -- [29]
+				"13:17:40> [step_setup] goal 2 sets makeshift macro... should show up below... (Goal.lua:1881:OnEnter)", -- [30]
+				"13:17:40> [step_setup] goal 2 macro: set up macro ZGVMacro2 [37]: /target Ilthalaine \\n/run ZGV:MRM() (Goal.lua:1949:OnEnter)", -- [31]
+				"13:17:40> [step_setup] Step 1 OnEnter ended (Step.lua:433:OnEnter)", -- [32]
+				"13:17:40> unpausing (ZygorGuidesViewer.lua:611:FocusStep)", -- [33]
+				"13:17:40> Step:GetNext: step 1 says nil so going with +1 (Step.lua:445:GetNext)", -- [34]
+				"13:17:40> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [35]
+				"13:17:40> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [36]
+				"13:17:40> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [37]
+				"13:17:40> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [38]
+				"13:17:40> WAY showing goal(s) (Waypoints.lua:881:setwaypoint)", -- [39]
+				"13:17:40> setting wayps, waypath=nil, cpt=nil (Waypoints.lua:892:setwaypoint)", -- [40]
+				"13:17:40> [pointer] FindTravelPath (Pointer.lua:3192:FindTravelPath)", -- [41]
+				"13:17:40> [LibRover] [LibRover] FindLastPath from Shadowglen/0 45.5,74.7 to Shadowglen/0 45.6,74.6 (LibRover-1.0.lua:2458:Debug)", -- [42]
+				"13:17:40> Startup complete. (ZygorGuidesViewer.lua:4057:StartupStep)", -- [43]
+				"13:17:40> [LibRover] - Found hearth node [260] \"Teldrassil 45,74\" = Teldrassil /0 45.5,74.7 [inn] (LibRover-1.0.lua:2458:Debug)", -- [44]
+				"13:17:40> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [45]
+				"13:17:40> [LibRover] 1. |cff88ff88Go to Shadowglen 45,74|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.4, total 0.4)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [46]
+				"13:17:40> [LibRover] Arrived. (LibRover-1.0.lua:2458:Debug)", -- [47]
+				"13:17:40> Waypoints: Arrived at destination! (Pointer.lua:3162:PathFoundHandler)", -- [48]
+				"13:17:40> [LibRover] LibRover stopping gracefully, will update (LibRover-1.0.lua:2458:Debug)", -- [49]
+				"13:17:51> Viewer started. ---------------------------", -- [50]
+				"13:17:51> PLAYER_ENTERING_WORLD (not dead) (Pointer.lua:1265:<local>)", -- [51]
+				"13:17:51> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [52]
+				"13:17:52> [itemscore] AutoEquip: PLAYER_ENTERING_WORLD (ItemScore.lua:275:Debug)", -- [53]
+				"13:17:52> [itemscore] AutoEquip: Finding current equipped. (ItemScore.lua:275:Debug)", -- [54]
+				"13:17:52> [itemscore] AutoEquip: In slot |cffaaffaaChestSlot|cffff88dd, |cffffffff|Hitem:6123:0:0:0:0:0:0:0:1:0:0|h[Novice's Robe]|h|cffff88dd got scored at |cffff000040 (ItemScore.lua:275:Debug)", -- [55]
+				"13:17:52> [itemscore] AutoEquip: In slot |cffaaffaaLegsSlot|cffff88dd, |cffffffff|Hitem:6124:0:0:0:0:0:0:0:1:0:0|h[Novice's Pants]|h|cffff88dd got scored at |cffff000034 (ItemScore.lua:275:Debug)", -- [56]
+				"13:17:52> [itemscore] AutoEquip: In slot |cffaaffaaMainHandSlot|cffff88dd, |cffffffff|Hitem:3661:0:0:0:0:0:0:0:1:0:0|h[Handcrafted Staff]|h|cffff88dd got scored at |cffff00001 (ItemScore.lua:275:Debug)", -- [57]
+				"13:17:52> [itemscore] ItemScore caching DONE. (ItemScore.lua:275:Debug)", -- [58]
+				"13:17:52> [parser] #include not found in |cffffaa00PROFESSIONS\\Leatherworking\\Leatherworking 500-525 Leveling Guide|cffff88dd: '|cffff5500lw_500-600|cffff88dd' in line '|cffaaaaaa\"lw_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [59]
+				"13:17:52> [parser] #include not found in |cffffaa00PROFESSIONS\\Mining\\Mining with Smelting 500-525 Leveling Guide|cffff88dd: '|cffff5500sm_500-600|cffff88dd' in line '|cffaaaaaa\"sm_500-600\"|cffff88dd' (Parser.lua:418:<local>)", -- [60]
+				"13:17:52> [parser] #include not found in |cffffaa00ACHIEVEMENTS\\Profession Achievements\\Cooking\\Now I Am the Master|cffff88dd: '|cffff5500Pandaren_Cooking_1-520|cffff88dd' in line '|cffaaaaaa\"Pandaren_Cooking_1-520\"|cffff88dd' (Parser.lua:418:<local>)", -- [61]
+				"13:17:52> CacheQuestLog cached 0 quests (QuestTracking.lua:179:QuestTracking_CacheQuestLog)", -- [62]
+				"13:17:52> Guides loaded. --------- (ZygorGuidesViewer.lua:4002:<local>)", -- [63]
+				"13:17:52> Querying for quests... (ZygorGuidesViewer.lua:4004:<local>)", -- [64]
+				"13:17:52> Parsing guide: LEVELING\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11) (Guide.lua:179:Parse)", -- [65]
+				"13:17:52> Guide loaded: Leveling\\Kalimdor 1-60\\Teldrassil (1-11)\\Night Elf (1-11) (ZygorGuidesViewer.lua:489:SetGuide)", -- [66]
+				"13:17:52> FocusStep 1 (ZygorGuidesViewer.lua:573:FocusStep)", -- [67]
+				"13:17:52> [step_setup] Preparing goals... (Step.lua:144:PrepareCompletion)", -- [68]
+				"13:17:52> [step_setup] Goals prepared. (Step.lua:148:PrepareCompletion)", -- [69]
+				"13:17:52> [step_setup] Step 1 prepared. (Step.lua:187:PrepareCompletion)", -- [70]
+				"13:17:52> [step_setup] Step 1 OnEnter (Step.lua:338:OnEnter)", -- [71]
+				"13:17:52> [step_setup] Clearing macros (Step.lua:423:OnEnter)", -- [72]
+				"13:17:52> [step_setup] Running goals' OnEnter (Step.lua:427:OnEnter)", -- [73]
+				"13:17:52> [step_setup] goal 2 sets makeshift macro... should show up below... (Goal.lua:1881:OnEnter)", -- [74]
+				"13:17:52> [step_setup] goal 2 macro: set up macro ZGVMacro2 [37]: /target Ilthalaine \\n/run ZGV:MRM() (Goal.lua:1949:OnEnter)", -- [75]
+				"13:17:52> [step_setup] Step 1 OnEnter ended (Step.lua:433:OnEnter)", -- [76]
+				"13:17:52> unpausing (ZygorGuidesViewer.lua:611:FocusStep)", -- [77]
+				"13:17:52> Step:GetNext: step 1 says nil so going with +1 (Step.lua:445:GetNext)", -- [78]
+				"13:17:52> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [79]
+				"13:17:52> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [80]
+				"13:17:52> Using waypointerredux. (Waypoints.lua:811:setwaypoint)", -- [81]
+				"13:17:52> [pointer] ClearWaypoints way (Pointer.lua:514:ClearWaypoints)", -- [82]
+				"13:17:52> WAY showing goal(s) (Waypoints.lua:881:setwaypoint)", -- [83]
+				"13:17:52> setting wayps, waypath=nil, cpt=nil (Waypoints.lua:892:setwaypoint)", -- [84]
+				"13:17:52> [pointer] FindTravelPath (Pointer.lua:3192:FindTravelPath)", -- [85]
+				"13:17:52> [LibRover] [LibRover] FindLastPath from Shadowglen/0 45.5,74.7 to Shadowglen/0 45.6,74.6 (LibRover-1.0.lua:2458:Debug)", -- [86]
+				"13:17:52> Startup complete. (ZygorGuidesViewer.lua:4057:StartupStep)", -- [87]
+				"13:17:52> [LibRover] - Found hearth node [260] \"Teldrassil 45,74\" = Teldrassil /0 45.5,74.7 [inn] (LibRover-1.0.lua:2458:Debug)", -- [88]
+				"13:17:52> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [89]
+				"13:17:52> [LibRover] 1. |cff88ff88Go to Shadowglen 45,74|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.4, total 0.4)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [90]
+				"13:17:52> [LibRover] Arrived. (LibRover-1.0.lua:2458:Debug)", -- [91]
+				"13:17:52> Waypoints: Arrived at destination! (Pointer.lua:3162:PathFoundHandler)", -- [92]
+				"13:17:52> [LibRover] LibRover stopping gracefully, will update (LibRover-1.0.lua:2458:Debug)", -- [93]
+				"13:18:15> [LibRover] [LibRover] FindLastPath from Shadowglen/0 45.7,74.4 to Shadowglen/0 45.6,74.6 (LibRover-1.0.lua:2458:Debug)", -- [94]
+				"13:18:15> [LibRover] - Found hearth node [260] \"Teldrassil 45,74\" = Teldrassil /0 45.5,74.7 [inn] (LibRover-1.0.lua:2458:Debug)", -- [95]
+				"13:18:15> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [96]
+				"13:18:15> [LibRover] 1. |cff88ff88Go to Shadowglen 45,74|cffff88dd -- |cff88ccddShadowglen 45,74|cffff88dd  (dist 0, time 0.8, total 0.8)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [97]
+				"13:18:15> [LibRover] Arrived. (LibRover-1.0.lua:2458:Debug)", -- [98]
+				"13:18:15> Waypoints: Arrived at destination! (Pointer.lua:3162:PathFoundHandler)", -- [99]
+				"13:18:15> [LibRover] LibRover stopping gracefully, will update (LibRover-1.0.lua:2458:Debug)", -- [100]
 			},
 			["maint_fetchitemdata"] = true,
 		},
@@ -1379,15 +1531,15 @@ ZygorGuidesViewerSettings = {
 			["maint_fetchitemdata"] = true,
 		},
 		["Ellence - Blade's Edge"] = {
-			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Human (1-5)",
+			["maint_fetchquestdata"] = true,
 			["guides_history"] = {
 				["LEVELING"] = {
 					"LEVELING\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Human (1-5)", -- [1]
 					1, -- [2]
 				},
 			},
+			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Elwynn Forest (1-10)\\Human (1-5)",
 			["taxis_were_update"] = true,
-			["maint_fetchquestdata"] = true,
 			["guides_history_ZGV4clear"] = true,
 			["debuglog"] = {
 				"21:01:52> Viewer started. ---------------------------", -- [1]
@@ -1422,10 +1574,73 @@ ZygorGuidesViewerSettings = {
 			["maint_fetchitemdata"] = true,
 		},
 		["Ponk - Kel'Thuzad"] = {
-			["taxis_were_update"] = true,
-			["maint_fetchquestdata"] = true,
 			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)",
+			["taxis_were_update"] = true,
+			["guides_history"] = {
+				["LEVELING"] = {
+					"LEVELING\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)", -- [1]
+					1, -- [2]
+				},
+			},
 			["guides_history_ZGV4clear"] = true,
+			["maint_fetchquestdata"] = true,
+			["taxis"] = {
+				["Camp Everstill"] = true,
+				["Darkshore Cat 4"] = true,
+				["Kharanos"] = true,
+				["Forsaken Rear Guard"] = false,
+				["Blood Watch"] = true,
+				["The Forsaken Front"] = false,
+				["Southern Rocketway"] = true,
+				["Northern Rocketway"] = true,
+				["Silvermoon City"] = false,
+				["Orgrimmar"] = true,
+				["Undercity"] = false,
+				["Zul'Aman"] = false,
+				["Brill"] = false,
+				["Dolanaar"] = true,
+				["Darkshore Cat 1"] = true,
+				["Sen'jin Village"] = true,
+				["Eastvale Logging Camp"] = true,
+				["Azure Watch"] = true,
+				["Grove of the Ancients"] = true,
+				["Moonbrook"] = true,
+				["Ratchet"] = true,
+				["Lor'danel"] = true,
+				["Darnassus"] = true,
+				["Falconwing Square"] = false,
+				["Fairbreeze Village"] = false,
+				["Thunder Bluff"] = true,
+				["The Crossroads"] = true,
+				["Goldshire"] = true,
+				["Bilgewater Harbor"] = true,
+				["Stormwind"] = true,
+				["Razor Hill"] = true,
+				["The Mor'Shan Ramparts"] = true,
+				["Lakeshire"] = true,
+				["Dalaran"] = true,
+				["Bloodhoof Village"] = true,
+				["Ironforge"] = true,
+				["Furlbrow's Pumpkin Farm"] = true,
+				["Thelsamar"] = true,
+				["Rut'theran Village"] = true,
+				["Darkshore Cat 2"] = true,
+				["Forsaken Forward Command"] = false,
+				["Shattrath"] = true,
+				["The Exodar"] = true,
+				["Farstrider Lodge"] = true,
+				["Forsaken High Command"] = false,
+				["The Sepulcher"] = false,
+				["Gol'Bolar Quarry"] = true,
+				["Nozzlepot's Outpost"] = true,
+				["Darkshore Cat 3"] = true,
+				["Tranquillien"] = false,
+				["Sentinel Hill"] = true,
+				["Valormok"] = true,
+				["The Bulwark"] = false,
+				["Shalewind Canyon"] = true,
+				["Darkshore Cat 5"] = true,
+			},
 			["debuglog"] = {
 				"16:04:22> [pointer] ClearWaypoints corpse (Pointer.lua:514:ClearWaypoints)", -- [1]
 				"16:04:22> ZONE_CHANGED_NEW_AREA (not dead) (Pointer.lua:1265:<local>)", -- [2]
@@ -1528,68 +1743,328 @@ ZygorGuidesViewerSettings = {
 				"17:47:44> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddRedridge Mountains 29,53|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [99]
 				"17:47:44> [LibRover] 1. |cff88ff88Go to Redridge Mountains 16,64|cffff88dd -- |cff88ccddRedridge Mountains 16,64|cffff88dd  (dist 0, time 104.2, total 104.2)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [100]
 			},
+			["maint_fetchitemdata"] = true,
+		},
+		["Alterboi - Kel'Thuzad"] = {
+			["taxis_were_update"] = true,
+			["step"] = 52,
+			["stephistory"] = {
+				1, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				5, -- [5]
+				6, -- [6]
+				7, -- [7]
+				8, -- [8]
+				9, -- [9]
+				10, -- [10]
+				11, -- [11]
+				12, -- [12]
+				13, -- [13]
+				14, -- [14]
+				15, -- [15]
+				16, -- [16]
+				17, -- [17]
+				18, -- [18]
+				19, -- [19]
+				20, -- [20]
+				21, -- [21]
+				22, -- [22]
+				23, -- [23]
+				24, -- [24]
+				25, -- [25]
+				26, -- [26]
+				27, -- [27]
+				28, -- [28]
+				29, -- [29]
+				30, -- [30]
+				31, -- [31]
+				32, -- [32]
+				33, -- [33]
+				34, -- [34]
+				35, -- [35]
+				36, -- [36]
+				37, -- [37]
+				38, -- [38]
+				39, -- [39]
+				40, -- [40]
+				41, -- [41]
+				42, -- [42]
+				43, -- [43]
+				44, -- [44]
+				45, -- [45]
+				46, -- [46]
+				47, -- [47]
+				48, -- [48]
+				49, -- [49]
+				50, -- [50]
+				51, -- [51]
+			},
+			["maint_fetchquestdata"] = true,
+			["guidename"] = "LEVELING\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)",
+			["guides_history_ZGV4clear"] = true,
+			["debuglog"] = {
+				"20:16:32> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.1,86.3 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [1]
+				"20:16:32> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [2]
+				"20:16:32> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [3]
+				"20:16:32> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,86|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [4]
+				"20:16:32> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 64.1, total 64.1)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [5]
+				"20:16:32> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 79.1)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [6]
+				"20:16:32> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 165.6)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [7]
+				"20:16:32> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 207.2)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [8]
+				"20:16:32> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 322.5)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [9]
+				"20:17:05> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.1,85.2 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [10]
+				"20:17:05> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [11]
+				"20:17:05> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [12]
+				"20:17:05> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,85|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [13]
+				"20:17:05> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 64.9, total 64.9)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [14]
+				"20:17:05> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 79.9)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [15]
+				"20:17:05> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 166.4)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [16]
+				"20:17:05> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 208.0)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [17]
+				"20:17:05> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 323.3)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [18]
+				"20:17:15> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.2,81.4 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [19]
+				"20:17:15> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [20]
+				"20:17:15> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [21]
+				"20:17:15> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,81|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [22]
+				"20:17:15> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 68.0, total 68.0)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [23]
+				"20:17:15> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 83.0)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [24]
+				"20:17:15> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 169.5)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [25]
+				"20:17:15> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 211.1)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [26]
+				"20:17:15> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 326.4)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [27]
+				"20:17:55> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.2,80.8 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [28]
+				"20:17:55> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [29]
+				"20:17:55> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [30]
+				"20:17:55> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,80|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [31]
+				"20:17:55> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 68.5, total 68.5)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [32]
+				"20:17:55> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 83.5)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [33]
+				"20:17:55> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 169.9)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [34]
+				"20:17:55> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 211.5)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [35]
+				"20:17:55> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 326.9)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [36]
+				"20:18:05> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.1,78.6 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [37]
+				"20:18:05> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [38]
+				"20:18:05> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [39]
+				"20:18:05> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,78|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [40]
+				"20:18:05> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 70.1, total 70.1)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [41]
+				"20:18:05> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 85.1)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [42]
+				"20:18:05> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 171.6)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [43]
+				"20:18:05> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 213.2)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [44]
+				"20:18:05> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 328.5)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [45]
+				"20:18:06> ZTA:ShowButton (Popout.lua:100:ShowButton)", -- [46]
+				"20:18:15> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.1,72.3 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [47]
+				"20:18:15> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [48]
+				"20:18:15> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [49]
+				"20:18:15> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,72|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [50]
+				"20:18:15> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 75.2, total 75.2)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [51]
+				"20:18:15> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 90.2)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [52]
+				"20:18:15> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 176.6)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [53]
+				"20:18:15> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 218.2)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [54]
+				"20:18:15> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 333.6)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [55]
+				"20:18:15> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.1,71.9 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [56]
+				"20:18:15> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [57]
+				"20:18:15> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [58]
+				"20:18:15> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,71|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [59]
+				"20:18:15> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 75.4, total 75.4)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [60]
+				"20:18:15> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 90.4)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [61]
+				"20:18:15> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 176.9)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [62]
+				"20:18:15> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 218.5)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [63]
+				"20:18:15> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 333.8)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [64]
+				"20:18:17> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.2,70.4 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [65]
+				"20:18:17> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [66]
+				"20:18:17> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [67]
+				"20:18:17> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,70|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [68]
+				"20:18:17> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 76.6, total 76.6)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [69]
+				"20:18:17> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 91.6)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [70]
+				"20:18:17> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 178.1)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [71]
+				"20:18:17> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 219.7)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [72]
+				"20:18:17> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 335.1)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [73]
+				"20:18:23> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.2,70.8 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [74]
+				"20:18:23> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [75]
+				"20:18:23> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [76]
+				"20:18:23> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,70|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [77]
+				"20:18:23> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 76.4, total 76.4)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [78]
+				"20:18:23> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 91.4)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [79]
+				"20:18:23> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 177.9)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [80]
+				"20:18:23> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 219.5)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [81]
+				"20:18:23> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 334.8)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [82]
+				"20:18:30> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.4,70.2 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [83]
+				"20:18:30> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [84]
+				"20:18:30> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [85]
+				"20:18:30> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,70|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [86]
+				"20:18:30> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 76.9, total 76.9)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [87]
+				"20:18:30> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 91.9)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [88]
+				"20:18:30> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 178.4)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [89]
+				"20:18:30> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 220.0)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [90]
+				"20:18:30> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 335.3)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [91]
+				"20:18:35> [LibRover] [LibRover] FindLastPath from Stratholme/1 66.3,76.9 to Eastern Plaguelands/0 32.2,83.4 (LibRover-1.0.lua:2458:Debug)", -- [92]
+				"20:18:35> [LibRover] [LR_TAXIFINAL] Taxi result 5 is new final Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [93]
+				"20:18:35> [LibRover] [LR_TAXIFINAL] Taxi result 4 is Northpass Tower, final = Crown Guard Tower (LibRover-1.0.lua:2458:Debug)", -- [94]
+				"20:18:35> [LibRover] 0. |cff88ff88START|cffff88dd -- |cff88ccddStratholme 66,76|cffff88dd  (dist 0, time 0.0, total 0.0)|cffff88dd |cff8888dd{walk_start__walk_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [95]
+				"20:18:35> [LibRover] 1. |cff88ff88Use the portal to exit Stratholme|cffff88dd -- |cff88ccddPortal to Eastern Plaguelands|cffff88dd  (dist 0, time 71.6, total 71.6)|cffff88dd |cff8888dd{walk_portal__portalDungeonExit_portal}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [96]
+				"20:18:35> [LibRover] |cff8888882. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddPortal from Stratholme|cffff88dd  (dist 0, time 15.0, total 86.6)|cffff88dd |cff8888dd{portalDungeonExit_portal__walk_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [97]
+				"20:18:35> [LibRover] 3. |cff88ff88Talk to Grayson Ironwing\nFly to Crown Guard Tower, Eastern Plaguelands|cffff88dd -- |cff88ccddNorthpass Tower flight point|cffff88dd  (dist 0, time 86.5, total 173.1)|cffff88dd |cff8888dd{walk_taxi__taxi_taxi}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [98]
+				"20:18:35> [LibRover] |cff8888884. |cff88ff88Arrive at Eastern Plaguelands|cffff88dd -- |cff88ccddCrown Guard Tower flight point|cffff88dd  (dist 0, time 41.6, total 214.7)|cffff88dd |cff8888dd{taxi_taxi__walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [99]
+				"20:18:35> [LibRover] 5. |cff88ff88Go to Eastern Plaguelands 32,83|cffff88dd -- |cff88ccddEastern Plaguelands 32,83|cffff88dd  (dist 0, time 115.3, total 330.0)|cffff88dd |cff8888dd{walk_end}|cffff88dd (LibRover-1.0.lua:2458:Debug)", -- [100]
+			},
 			["guides_history"] = {
 				["LEVELING"] = {
-					"LEVELING\\Eastern Kingdoms 1-60\\Redridge Mountains (15-21)\\Redridge Mountains (15-16)", -- [1]
-					1, -- [2]
+					"LEVELING\\Eastern Kingdoms 1-60\\Eastern Plaguelands (39-44)\\Eastern Plaguelands (39-44)", -- [1]
+					52, -- [2]
 				},
 			},
 			["taxis"] = {
 				["Camp Everstill"] = true,
-				["Darkshore Cat 4"] = true,
 				["Kharanos"] = true,
-				["Forsaken Rear Guard"] = false,
-				["Blood Watch"] = true,
 				["The Forsaken Front"] = false,
-				["Southern Rocketway"] = true,
-				["Northern Rocketway"] = true,
-				["Silvermoon City"] = false,
+				["Fort Livingston"] = true,
+				["Thunk's Abode"] = true,
 				["Orgrimmar"] = true,
 				["Undercity"] = false,
 				["Zul'Aman"] = false,
 				["Brill"] = false,
-				["Dolanaar"] = true,
-				["Darkshore Cat 1"] = true,
-				["Sen'jin Village"] = true,
-				["Eastvale Logging Camp"] = true,
-				["Azure Watch"] = true,
+				["Westreach Summit"] = true,
+				["Andorhal"] = false,
+				["Hiri'watha Research Station"] = false,
 				["Grove of the Ancients"] = true,
 				["Moonbrook"] = true,
-				["Ratchet"] = true,
-				["Lor'danel"] = true,
+				["Feathermoon"] = true,
 				["Darnassus"] = true,
-				["The Sepulcher"] = false,
-				["Fairbreeze Village"] = false,
-				["Thunder Bluff"] = true,
-				["Goldshire"] = true,
-				["Falconwing Square"] = false,
-				["Bilgewater Harbor"] = true,
-				["Stormwind"] = true,
-				["The Crossroads"] = true,
-				["The Mor'Shan Ramparts"] = true,
+				["Dustwind Dig"] = true,
+				["Fuselight"] = true,
+				["Northpass Tower"] = true,
+				["Aerie Peak"] = true,
 				["Lakeshire"] = true,
-				["Razor Hill"] = true,
-				["Bloodhoof Village"] = true,
+				["Krom'gar Fortress"] = true,
 				["Ironforge"] = true,
 				["Dalaran"] = true,
-				["Thelsamar"] = true,
-				["Rut'theran Village"] = true,
-				["Darkshore Cat 2"] = true,
-				["Forsaken Forward Command"] = false,
-				["Shattrath"] = true,
-				["The Exodar"] = true,
-				["Farstrider Lodge"] = true,
-				["Forsaken High Command"] = false,
-				["Furlbrow's Pumpkin Farm"] = true,
 				["Gol'Bolar Quarry"] = true,
-				["Nozzlepot's Outpost"] = true,
-				["Darkshore Cat 3"] = true,
-				["Tranquillien"] = false,
+				["Windshear Hold"] = true,
+				["Thal'darah Overlook"] = true,
+				["Whisperwind Grove"] = true,
+				["Tower of Estulan"] = true,
+				["Strahnbrad"] = false,
+				["Karnum's Glade"] = true,
+				["Light's Shield Tower"] = true,
+				["Southern Rocketway"] = true,
+				["Northern Rocketway"] = true,
+				["Ruins of Southshore"] = false,
+				["Dun Modr"] = true,
+				["Chillwind Camp"] = true,
+				["Nijel's Point"] = true,
+				["Gadgetzan"] = true,
+				["Northwatch Expedition Base Camp"] = true,
+				["Darkshore Cat 1"] = true,
+				["Sen'jin Village"] = true,
+				["Silverwind Refuge"] = true,
+				["Azure Watch"] = true,
+				["Falconwing Square"] = false,
+				["Dragon's Mouth"] = true,
+				["Sun Rock Retreat"] = true,
+				["Honor's Stand"] = true,
+				["Theramore"] = true,
+				["Brackenwall Village"] = true,
+				["Southpoint Gate"] = false,
+				["Furlbrow's Pumpkin Farm"] = true,
+				["Thargad's Camp"] = true,
+				["Forest Song"] = true,
+				["Stormwind"] = true,
 				["Sentinel Hill"] = true,
 				["Valormok"] = true,
-				["The Bulwark"] = false,
+				["Gunstan's Dig"] = true,
+				["Bootlegger Outpost"] = true,
+				["Darkshore Cat 4"] = true,
+				["Mirkfallon Post"] = true,
+				["Light's Hope Chapel"] = true,
+				["Forsaken Rear Guard"] = false,
+				["Blood Watch"] = true,
+				["Ratchet"] = true,
+				["Irontree Clearing"] = true,
+				["Revantusk Village"] = false,
+				["Hammerfall"] = false,
+				["Silvermoon City"] = false,
+				["The Crossroads"] = true,
+				["Whelgar's Retreat"] = true,
+				["Fort Triumph"] = true,
 				["Shalewind Canyon"] = true,
+				["Ethel Rethor"] = true,
+				["Stormfeather Outpost"] = true,
+				["Acherus: The Ebon Hold"] = false,
+				["Goldshire"] = true,
+				["Malaka'jin"] = true,
+				["The Sludgewerks"] = true,
+				["Menethil Harbor"] = true,
+				["Thondroril River"] = true,
+				["Shattrath"] = true,
+				["The Exodar"] = true,
+				["Forsaken High Command"] = false,
+				["Stonemaul Hold"] = true,
+				["The Mor'Shan Ramparts"] = true,
+				["Darkshore Cat 3"] = true,
+				["Tranquillien"] = false,
+				["Greenwarden's Grove"] = true,
+				["Northwatch Hold"] = true,
+				["Rebel Camp"] = true,
+				["Camp Mojache"] = true,
+				["Eastwall Tower"] = true,
+				["Forsaken Forward Command"] = false,
+				["Furien's Post"] = true,
+				["Dawnrise Expedition"] = true,
+				["Explorers' League Digsite"] = true,
+				["Wildheart Point"] = true,
+				["Eastpoint Tower"] = false,
+				["Talonbranch Glade"] = true,
+				["Raven Hill"] = true,
+				["Emerald Sanctuary"] = true,
+				["New Kargath"] = true,
+				["Farstrider Lodge"] = true,
+				["Bloodwatcher Point"] = true,
+				["Lor'danel"] = true,
+				["Thorium Point"] = true,
+				["Thelsamar"] = true,
+				["Dolanaar"] = true,
+				["Hunter's Hill"] = true,
+				["Tarren Mill"] = false,
+				["The Bulwark"] = false,
+				["Eastvale Logging Camp"] = true,
+				["Iron Summit"] = true,
+				["Bambala"] = false,
+				["Fizzle & Pozzik's Speedbarge"] = true,
+				["Crown Guard Tower"] = true,
+				["Mudsprocket"] = true,
+				["Splintertree Post"] = true,
+				["Razor Hill"] = true,
+				["Grom'gol"] = false,
+				["Fairbreeze Village"] = false,
+				["Slabchisel's Survey"] = true,
+				["Refuge Pointe"] = true,
+				["Shadowprey Village"] = true,
+				["Bilgewater Harbor"] = true,
+				["Astranaar"] = true,
+				["Vendetta Point"] = true,
+				["Zoram'gar Outpost"] = true,
+				["Thunder Bluff"] = true,
+				["Farwatcher's Glen"] = true,
+				["Stardust Spire"] = true,
+				["Booty Bay"] = true,
+				["The Sepulcher"] = false,
+				["Hellscream's Watch"] = true,
+				["Rut'theran Village"] = true,
+				["The Menders' Stead"] = true,
+				["Dreamer's Rest"] = true,
+				["Cliffwalker Post"] = true,
+				["Darkshire"] = true,
+				["Hardwrench Hideaway"] = false,
+				["Bloodhoof Village"] = true,
+				["Blackfathom Camp"] = true,
+				["Darkshore Cat 2"] = true,
 				["Darkshore Cat 5"] = true,
+				["Shadebough"] = true,
+				["Desolation Hold"] = true,
+				["Hearthglen"] = true,
+				["Plaguewood Tower"] = true,
+				["Galen's Fall"] = false,
+				["Nozzlepot's Outpost"] = true,
+				["Camp Ataya"] = true,
 			},
 			["maint_fetchitemdata"] = true,
 		},
@@ -1602,10 +2077,12 @@ ZygorGuidesViewerSettings = {
 		["Instaque - Kel'Thuzad"] = "Instaque - Kel'Thuzad",
 		["Halvinravis - Terenas"] = "Halvinravis - Terenas",
 		["Löckness - Laughing Skull"] = "Löckness - Laughing Skull",
+		["Elylarina - Kel'Thuzad"] = "Elylarina - Kel'Thuzad",
 		["Snô - Kel'Thuzad"] = "OPUI 1080",
 		["Rhodara - Blackhand"] = "Rhodara - Blackhand",
 		["Ellence - Blade's Edge"] = "Ellence - Blade's Edge",
 		["Ponk - Kel'Thuzad"] = "OPUI 1080",
+		["Alterboi - Kel'Thuzad"] = "OPUI 2.0",
 	},
 	["profiles"] = {
 		["Mileiance - Zuluhed"] = {
@@ -1759,13 +2236,43 @@ ZygorGuidesViewerSettings = {
 			},
 			["showcountsteps"] = 2,
 		},
+		["OPUI 2.0"] = {
+			["currentbuild"] = "Leveling Discipline",
+			["tmp__was_sheened"] = true,
+			["mv_enabled"] = false,
+			["minicons"] = true,
+			["autoselectitem"] = true,
+			["visible"] = false,
+			["arrowfreeze"] = true,
+			["autoturnin"] = true,
+			["magickey_bind"] = "",
+			["autoaccept"] = true,
+			["magicmarker_mob"] = 8,
+			["magicmarker_npc"] = 4,
+			["ranconfig"] = true,
+			["windowlocked"] = true,
+			["skipauxsteps"] = true,
+			["badupgrade"] = {
+				{
+					[51992] = "|cff0070dd|Hitem:51992:0:0:0:0:0:-78:1997471758:41:0:0|h[Tumultuous Ring of the Monkey]|h|r",
+					[51973] = "|cff0070dd|Hitem:51973:0:0:0:0:0:-84:-2011365361:35:0:0|h[Enumerated Handwraps of Stamina]|h|r",
+					[5009] = "|cff1eff00|Hitem:5009:0:0:0:0:0:0:919113728:34:0:0|h[Mindbender Loop]|h|r",
+				}, -- [1]
+				[3] = {
+					[61958] = "|cffe6cc80|Hitem:61958:0:0:0:0:0:0:0:27:0:0|h[Tattered Dreadmist Mask]|h|r",
+					[51992] = "|cff0070dd|Hitem:51992:0:0:0:0:0:-78:1997471758:41:0:0|h[Tumultuous Ring of the Monkey]|h|r",
+				},
+			},
+			["autoacceptshowobjective"] = true,
+			["contractmobs"] = true,
+		},
 		["OPUI"] = {
 			["autoacceptturninall"] = false,
 			["autosell"] = true,
 			["arrowfontsize"] = 8,
 			["autoaccept"] = true,
 			["magicmarker_mob"] = 8,
-			["pathfinding"] = false,
+			["analyzereps"] = true,
 			["arrowfreeze"] = true,
 			["tmp__was_sheened"] = true,
 			["resizeup"] = false,
@@ -1780,8 +2287,8 @@ ZygorGuidesViewerSettings = {
 			},
 			["skipflysteps"] = true,
 			["dispsecondary"] = {
-				["hideborder"] = false,
 				["nevershowborder"] = false,
+				["hideborder"] = false,
 			},
 			["arrowcolordist"] = true,
 			["autoturnin"] = true,
@@ -1790,8 +2297,11 @@ ZygorGuidesViewerSettings = {
 			["magickey_bind"] = "",
 			["foglight"] = false,
 			["showcountsteps"] = 3,
-			["autogear"] = false,
-			["windowlocked"] = true,
+			["mv_enabled"] = false,
+			["dispmode"] = {
+				["showcountsteps"] = 3,
+				["hidecompletedinbrief"] = false,
+			},
 			["visible"] = false,
 			["autoacceptshowobjective"] = true,
 			["badupgrade"] = {
@@ -1800,15 +2310,15 @@ ZygorGuidesViewerSettings = {
 					[48685] = "|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:80:0:0|h[Polished Breastplate of Valor]|h|r",
 				}, -- [1]
 				{
-					[86741] = "|cffa335ee|Hitem:86741:4444:0:0:0:0:0:1138111232:90:139:0|h[Dagger of the Seven Stars]|h|r",
-					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
 					[86762] = "|cffa335ee|Hitem:86762:0:0:0:0:0:0:427396160:90:0:0|h[Gara'kal, Fist of the Spiritbinder]|h|r",
+					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
 					[77534] = "|cffa335ee|Hitem:77534:0:4656:4900:4902:0:0:1575389696:90:0:0|h[Agile Retinal Armor]|h|r",
+					[86741] = "|cffa335ee|Hitem:86741:4444:0:0:0:0:0:1138111232:90:139:0|h[Dagger of the Seven Stars]|h|r",
 				}, -- [2]
 			},
-			["hidecompletedinbrief"] = false,
-			["analyzereps"] = true,
 			["ranconfig"] = true,
+			["pathfinding"] = false,
+			["hidecompletedinbrief"] = false,
 			["minimapzoom"] = true,
 			["contractmobs"] = true,
 			["suggestiondungeonnum"] = {
@@ -1818,11 +2328,8 @@ ZygorGuidesViewerSettings = {
 					["allow"] = true,
 				},
 			},
-			["dispmode"] = {
-				["showcountsteps"] = 3,
-				["hidecompletedinbrief"] = false,
-			},
-			["mv_enabled"] = false,
+			["windowlocked"] = false,
+			["autogear"] = false,
 		},
 		["Rhodara - Blackhand"] = {
 			["arrowsmooth"] = true,
@@ -1834,26 +2341,34 @@ ZygorGuidesViewerSettings = {
 			["visible"] = false,
 		},
 		["OPUI 1080"] = {
-			["mv_enabled"] = false,
-			["minicons"] = true,
 			["visible"] = false,
+			["mv_enabled"] = false,
+			["windowlocked"] = true,
 			["autoturnin"] = true,
+			["minicons"] = true,
+			["autoacceptshowobjective"] = true,
 			["magickey_bind"] = "",
 			["autoaccept"] = true,
-			["ranconfig"] = true,
-			["windowlocked"] = true,
 			["skipauxsteps"] = true,
+			["ranconfig"] = true,
+			["contractmobs"] = true,
 			["badupgrade"] = {
 				{
 					[42943] = "|cffe6cc80|Hitem:42943:3369:0:0:0:0:0:0:80:0:0|h[Bloodied Arcanite Reaper]|h|r",
 				}, -- [1]
 			},
-			["autoacceptshowobjective"] = true,
-			["tmp__was_sheened"] = true,
 			["arrowfreeze"] = true,
-			["contractmobs"] = true,
+			["tmp__was_sheened"] = true,
 		},
 		["Opacus - Kel'Thuzad"] = {
+		},
+		["Elylarina - Kel'Thuzad"] = {
+			["tmp__was_sheened"] = true,
+			["ranconfig"] = true,
+			["skipauxsteps"] = true,
+			["magickey_bind"] = "",
+			["minicons"] = true,
+			["visible"] = false,
 		},
 		["Letheliarah - Khadgar"] = {
 			["arrowsmooth"] = true,
@@ -1865,11 +2380,6 @@ ZygorGuidesViewerSettings = {
 			["skipauxsteps"] = true,
 		},
 		["Instaque - Kel'Thuzad"] = {
-		},
-		["Halvinravis - Terenas"] = {
-			["skipauxsteps"] = true,
-			["magickey_bind"] = "",
-			["detectcreatures"] = false,
 		},
 		["OPUI 1200"] = {
 			["autoacceptturninall"] = false,
@@ -1896,10 +2406,10 @@ ZygorGuidesViewerSettings = {
 					[48685] = "|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:80:0:0|h[Polished Breastplate of Valor]|h|r",
 				}, -- [1]
 				{
-					[77534] = "|cffa335ee|Hitem:77534:0:4656:4900:4902:0:0:1575389696:90:0:0|h[Agile Retinal Armor]|h|r",
-					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
 					[86741] = "|cffa335ee|Hitem:86741:4444:0:0:0:0:0:1138111232:90:139:0|h[Dagger of the Seven Stars]|h|r",
+					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
 					[86762] = "|cffa335ee|Hitem:86762:0:0:0:0:0:0:427396160:90:0:0|h[Gara'kal, Fist of the Spiritbinder]|h|r",
+					[77534] = "|cffa335ee|Hitem:77534:0:4656:4900:4902:0:0:1575389696:90:0:0|h[Agile Retinal Armor]|h|r",
 				}, -- [2]
 			},
 			["tmp__was_sheened"] = true,
@@ -1921,54 +2431,36 @@ ZygorGuidesViewerSettings = {
 			},
 			["visible"] = false,
 		},
-		["OPUI TEST"] = {
-			["visible"] = false,
-			["dispsecondary"] = {
-				["hideborder"] = false,
-				["nevershowborder"] = false,
-			},
-			["windowlocked"] = true,
-			["autosell"] = true,
-			["arrowfontsize"] = 8,
-			["autoaccept"] = true,
-			["fontsize"] = 14,
+		["Halvinravis - Terenas"] = {
 			["skipauxsteps"] = true,
 			["magickey_bind"] = "",
-			["arrowfreeze"] = true,
-			["tmp__was_sheened"] = true,
-			["autogear"] = false,
+			["detectcreatures"] = false,
+		},
+		["Snô - Kel'Thuzad"] = {
+			["showcountsteps"] = 2,
+			["detectcreatures"] = false,
 			["resizeup"] = false,
-			["analyzereps"] = true,
+			["windowlocked"] = true,
 			["fixblizzardautoaccept"] = true,
-			["autoacceptshowobjective"] = true,
-			["badupgrade"] = {
-				{
-					[42943] = "|cffe6cc80|Hitem:42943:3369:0:0:0:0:0:0:80:0:0|h[Bloodied Arcanite Reaper]|h|r",
-					[48685] = "|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:80:0:0|h[Polished Breastplate of Valor]|h|r",
-				}, -- [1]
-				{
-					[77534] = "|cffa335ee|Hitem:77534:0:4656:4900:4902:0:0:1575389696:90:0:0|h[Agile Retinal Armor]|h|r",
-					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
-					[86741] = "|cffa335ee|Hitem:86741:4444:0:0:0:0:0:1138111232:90:139:0|h[Dagger of the Seven Stars]|h|r",
-					[86762] = "|cffa335ee|Hitem:86762:0:0:0:0:0:0:427396160:90:0:0|h[Gara'kal, Fist of the Spiritbinder]|h|r",
-				}, -- [2]
-			},
-			["ranconfig"] = true,
-			["dispmode"] = {
-				["hidecompletedinbrief"] = false,
-			},
-			["mv_enabled"] = false,
-			["autoselectitem"] = true,
-			["contractmobs"] = true,
-			["hidecompletedinbrief"] = false,
-			["dispprimary"] = {
-				["hidecompletedinbrief"] = false,
-			},
 			["autoturnin"] = true,
+			["arrowfreeze"] = true,
+			["autoaccept"] = true,
+			["skipauxsteps"] = true,
+			["minimapzoom"] = true,
+			["contractmobs"] = true,
+			["magickey_bind"] = "",
+			["dispprimary"] = {
+				["showcountsteps"] = 2,
+			},
+			["dispmode"] = {
+				["showcountsteps"] = 2,
+			},
+		},
+		["Löckness - Laughing Skull"] = {
 		},
 		["Default"] = {
 			["autogearframe"] = false,
-			["currentbuild"] = "Leveling Combat",
+			["pathfinding"] = false,
 			["windowlocked"] = true,
 			["autosell"] = true,
 			["autoacceptshowobjective"] = true,
@@ -1977,7 +2469,7 @@ ZygorGuidesViewerSettings = {
 			["autoaccept"] = true,
 			["fontsize"] = 14,
 			["magicmarker_mob"] = 8,
-			["pathfinding"] = false,
+			["skipauxsteps"] = true,
 			["magickey_bind"] = "",
 			["arrowfreeze"] = true,
 			["magicmarker_npc"] = 4,
@@ -2028,9 +2520,7 @@ ZygorGuidesViewerSettings = {
 				["showcountsteps"] = 2,
 				["hidecompletedinbrief"] = false,
 			},
-			["skipauxsteps"] = true,
-		},
-		["Löckness - Laughing Skull"] = {
+			["currentbuild"] = "Leveling Combat",
 		},
 		["\"OPUI DPS\""] = {
 			["visible"] = false,
@@ -2100,31 +2590,63 @@ ZygorGuidesViewerSettings = {
 			},
 			["autogear"] = false,
 		},
+		["OPUI TEST"] = {
+			["visible"] = false,
+			["dispsecondary"] = {
+				["hideborder"] = false,
+				["nevershowborder"] = false,
+			},
+			["windowlocked"] = true,
+			["autosell"] = true,
+			["arrowfontsize"] = 8,
+			["autoaccept"] = true,
+			["fontsize"] = 14,
+			["skipauxsteps"] = true,
+			["magickey_bind"] = "",
+			["arrowfreeze"] = true,
+			["tmp__was_sheened"] = true,
+			["autogear"] = false,
+			["resizeup"] = false,
+			["analyzereps"] = true,
+			["fixblizzardautoaccept"] = true,
+			["autoacceptshowobjective"] = true,
+			["badupgrade"] = {
+				{
+					[42943] = "|cffe6cc80|Hitem:42943:3369:0:0:0:0:0:0:80:0:0|h[Bloodied Arcanite Reaper]|h|r",
+					[48685] = "|cffe6cc80|Hitem:48685:0:0:0:0:0:0:0:80:0:0|h[Polished Breastplate of Valor]|h|r",
+				}, -- [1]
+				{
+					[86741] = "|cffa335ee|Hitem:86741:4444:0:0:0:0:0:1138111232:90:139:0|h[Dagger of the Seven Stars]|h|r",
+					[86743] = "|cffa335ee|Hitem:86743:4880:4617:4593:0:0:0:1848921344:90:145:0|h[Stoneflesh Leggings]|h|r",
+					[86762] = "|cffa335ee|Hitem:86762:0:0:0:0:0:0:427396160:90:0:0|h[Gara'kal, Fist of the Spiritbinder]|h|r",
+					[77534] = "|cffa335ee|Hitem:77534:0:4656:4900:4902:0:0:1575389696:90:0:0|h[Agile Retinal Armor]|h|r",
+				}, -- [2]
+			},
+			["ranconfig"] = true,
+			["dispmode"] = {
+				["hidecompletedinbrief"] = false,
+			},
+			["mv_enabled"] = false,
+			["autoselectitem"] = true,
+			["contractmobs"] = true,
+			["hidecompletedinbrief"] = false,
+			["dispprimary"] = {
+				["hidecompletedinbrief"] = false,
+			},
+			["autoturnin"] = true,
+		},
 		["\"OPUI\""] = {
 			["tmp__was_sheened"] = true,
 			["magickey_bind"] = "",
 			["skipauxsteps"] = true,
 			["visible"] = false,
 		},
-		["Snô - Kel'Thuzad"] = {
-			["showcountsteps"] = 2,
-			["detectcreatures"] = false,
-			["resizeup"] = false,
-			["windowlocked"] = true,
-			["fixblizzardautoaccept"] = true,
-			["dispmode"] = {
-				["showcountsteps"] = 2,
-			},
-			["arrowfreeze"] = true,
-			["autoturnin"] = true,
+		["Alterboi - Kel'Thuzad"] = {
+			["tmp__was_sheened"] = true,
 			["skipauxsteps"] = true,
-			["minimapzoom"] = true,
-			["contractmobs"] = true,
 			["magickey_bind"] = "",
-			["dispprimary"] = {
-				["showcountsteps"] = 2,
-			},
-			["autoaccept"] = true,
+			["minicons"] = true,
+			["visible"] = false,
 		},
 	},
 }

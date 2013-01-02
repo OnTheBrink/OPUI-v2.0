@@ -1,24 +1,33 @@
 
 ElvUI_FarmModeDB = {
 	["profileKeys"] = {
-		["Opacus - Kel'Thuzad"] = "OPUI 2.0",
+		["Alterboi - Kel'Thuzad"] = "OPUI 2.0",
 		["Ponk - Kel'Thuzad"] = "OPUI",
 		["Snô - Kel'Thuzad"] = "OPUI 1200",
+		["Pubick - Kel'Thuzad"] = "OPUI 2.0",
+		["Opacus - Kel'Thuzad"] = "OPUI 2.0",
+		["Elylarina - Kel'Thuzad"] = "Elylarina - Kel'Thuzad",
 	},
 	["profiles"] = {
 		["OPUI TEST"] = {
 		},
-		["Ponk - Kel'Thuzad"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+		["OPUI 1200"] = {
+		},
+		["Elylarina - Kel'Thuzad"] = {
 		},
 		["OPUI 2.0"] = {
 		},
-		["OPUI"] = {
-		},
-		["Opacus - Kel'Thuzad"] = {
+		["Ponk - Kel'Thuzad"] = {
 		},
 		["Snô - Kel'Thuzad"] = {
 		},
-		["OPUI 1200"] = {
+		["Pubick - Kel'Thuzad"] = {
+		},
+		["OPUI"] = {
+		},
+		["Alterboi - Kel'Thuzad"] = {
 		},
 		["OPUI 1080"] = {
 		},

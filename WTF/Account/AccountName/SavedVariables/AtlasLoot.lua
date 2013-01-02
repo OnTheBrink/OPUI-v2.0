@@ -3,13 +3,18 @@ AtlasLootDB = {
 	["namespaces"] = {
 		["DefaultFrame"] = {
 			["profiles"] = {
-				["Praedatør - Kel'Thuzad"] = {
-					["instance"] = "BlackwingDescent",
+				["Alterboi - Kel'Thuzad"] = {
+					["NEWpoint"] = {
+						nil, -- [1]
+						nil, -- [2]
+						"CENTER", -- [3]
+						-6.747709267074242e-005, -- [4]
+						0, -- [5]
+					},
 				},
 				["Opacus - Kel'Thuzad"] = {
 					["instance"] = "MoguShanVaults",
 					["module"] = "AtlasLootMoP",
-					["DefaultFrameLocked"] = true,
 					["NEWpoint"] = {
 						"TOP", -- [1]
 						nil, -- [2]
@@ -17,20 +22,7 @@ AtlasLootDB = {
 						5.607516765594482, -- [4]
 						-89.87725830078125, -- [5]
 					},
-				},
-				["Ðreaded - Kel'Thuzad"] = {
-					["instance"] = "BlackwingDescent",
-				},
-				["OPUI"] = {
-					["instance"] = "TerraceofEndlessSpring",
-					["NEWpoint"] = {
-						"TOP", -- [1]
-						nil, -- [2]
-						"TOP", -- [3]
-						-7.00014066696167, -- [4]
-						-134.5000610351563, -- [5]
-					},
-					["module"] = "AtlasLootMoP",
+					["DefaultFrameLocked"] = true,
 				},
 				["Maulls - Kel'Thuzad"] = {
 					["instance"] = "ThroneOfTheFourWinds",
@@ -45,6 +37,23 @@ AtlasLootDB = {
 						-134.5000610351563, -- [5]
 					},
 					["instance"] = "TerraceofEndlessSpring",
+				},
+				["Praedatør - Kel'Thuzad"] = {
+					["instance"] = "BlackwingDescent",
+				},
+				["Ðreaded - Kel'Thuzad"] = {
+					["instance"] = "BlackwingDescent",
+				},
+				["OPUI"] = {
+					["instance"] = "TerraceofEndlessSpring",
+					["NEWpoint"] = {
+						"TOP", -- [1]
+						nil, -- [2]
+						"TOP", -- [3]
+						-8.000151634216309, -- [4]
+						-134.5000610351563, -- [5]
+					},
+					["module"] = "AtlasLootMoP",
 				},
 				["Opacus - Laughing Skull"] = {
 					["instance"] = "BlackwingDescent",
@@ -173,6 +182,7 @@ AtlasLootDB = {
 	},
 	["showWarning"] = true,
 	["profileKeys"] = {
+		["Alterboi - Kel'Thuzad"] = "Alterboi - Kel'Thuzad",
 		["Shemail - Draka"] = "Shemail - Draka",
 		["Gho - Ysondre"] = "Gho - Ysondre",
 		["Praedator - Laughing Skull"] = "Praedator - Laughing Skull",
@@ -209,6 +219,8 @@ AtlasLootDB = {
 		["Clashadrey - Tichondrius"] = "Clashadrey - Tichondrius",
 	},
 	["profiles"] = {
+		["Alterboi - Kel'Thuzad"] = {
+		},
 		["Shemail - Draka"] = {
 		},
 		["OPUI 1200"] = {
@@ -275,11 +287,11 @@ AtlasLootDB = {
 		},
 		["Ðreaded - Laughing Skull"] = {
 		},
-		["Bostagus - Burning Legion"] = {
+		["Clashadrey - Tichondrius"] = {
 		},
 		["Opacuss - Draka"] = {
 		},
-		["Clashadrey - Tichondrius"] = {
+		["Bostagus - Burning Legion"] = {
 		},
 		["Toknight - Laughing Skull"] = {
 		},

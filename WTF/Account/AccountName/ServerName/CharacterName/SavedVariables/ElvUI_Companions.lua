@@ -1,8 +1,8 @@
 
 mountdb = {
-	["id"] = 33,
-	["text"] = "Grand Armored Gryphon",
-	["icon"] = "Interface\\Icons\\inv_misc_elitegryphonarmored",
+	["id"] = 29,
+	["text"] = "Golden Cloud Serpent",
+	["icon"] = "Interface\\Icons\\inv_pandarenserpentmount_yellow",
 }
 petdb = {
 	["id"] = "0x0000000000131a1f",

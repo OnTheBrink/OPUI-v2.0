@@ -4,6 +4,10 @@ AtlasLootCharDB = {
 		["WishList"] = {
 		},
 	},
+	["AtlasLootVersion"] = "70401",
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "OPUI",
+	},
 	["profiles"] = {
 		["OPUI TEST"] = {
 		},
@@ -14,8 +18,4 @@ AtlasLootCharDB = {
 		["OPUI"] = {
 		},
 	},
-	["profileKeys"] = {
-		["Opacus - Kel'Thuzad"] = "OPUI",
-	},
-	["AtlasLootVersion"] = "70401",
 }

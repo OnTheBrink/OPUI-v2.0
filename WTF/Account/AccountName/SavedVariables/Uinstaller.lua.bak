@@ -1,0 +1,4 @@
+
+UinstallerDB = {
+	["declined"] = true,
+}

@@ -28,16 +28,6 @@ vexpower_profiles = {
 				},
 				["vehicleCps"] = true,
 				["intMode"] = true,
-				["vehiclehide"] = false,
-				["border"] = {
-					["color"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["size"] = 1,
-				},
 				["posSize"] = {
 					["1"] = {
 						["height"] = 30,
@@ -195,6 +185,13 @@ vexpower_profiles = {
 						},
 					},
 				},
+				["measure"] = {
+					["height"] = 24,
+					["y"] = 40,
+					["gap"] = 2,
+					["offset"] = 92,
+				},
+				["vehiclehide"] = false,
 				["show"] = true,
 				["targetSetshow"] = true,
 				["fadeout"] = true,
@@ -263,11 +260,14 @@ vexpower_profiles = {
 					["cpchangeOnMax"] = true,
 					["cpchange"] = "3",
 				},
-				["measure"] = {
-					["height"] = 24,
-					["y"] = 40,
-					["gap"] = 2,
-					["offset"] = 92,
+				["border"] = {
+					["color"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["size"] = 1,
 				},
 			},
 			["energy"] = {
@@ -314,6 +314,15 @@ vexpower_profiles = {
 				["vehicleEnergy"] = true,
 				["text"] = {
 				},
+				["bg2"] = "None",
+				["position"] = {
+					["y"] = -269,
+					["x"] = 200.0001373291016,
+					["anchor"] = "CENTER",
+					["anchorFrame"] = "CENTER",
+				},
+				["show"] = false,
+				["targetSetshow"] = true,
 				["altcolors"] = {
 					["classcolored"] = {
 						false, -- [1]
@@ -379,15 +388,6 @@ vexpower_profiles = {
 						false, -- [5]
 						false, -- [6]
 					},
-				},
-				["bg2"] = "None",
-				["show"] = false,
-				["targetSetshow"] = true,
-				["position"] = {
-					["y"] = -269,
-					["x"] = 200.0001373291016,
-					["anchor"] = "CENTER",
-					["anchorFrame"] = "CENTER",
 				},
 				["stealthshow"] = true,
 				["bg"] = "Solid",
@@ -459,6 +459,12 @@ vexpower_profiles = {
 				},
 				["vehicleCps"] = true,
 				["intMode"] = true,
+				["measure"] = {
+					["height"] = 24,
+					["offset"] = 92,
+					["gap"] = 2,
+					["y"] = 40,
+				},
 				["border"] = {
 					["color"] = {
 						["a"] = 1,
@@ -467,12 +473,6 @@ vexpower_profiles = {
 						["r"] = 0,
 					},
 					["size"] = 1,
-				},
-				["measure"] = {
-					["height"] = 24,
-					["offset"] = 92,
-					["gap"] = 2,
-					["y"] = 40,
 				},
 				["bg"] = {
 					["allowchange"] = true,
@@ -542,6 +542,7 @@ vexpower_profiles = {
 					["anchorFrame"] = "CENTER",
 				},
 				["infightshow"] = false,
+				["vehiclehide"] = false,
 				["posSize"] = {
 					["1"] = {
 						["height"] = 30,
@@ -699,7 +700,6 @@ vexpower_profiles = {
 						["width"] = 60,
 					},
 				},
-				["vehiclehide"] = false,
 			},
 			["energy"] = {
 				["classcolored"] = false,
@@ -780,14 +780,6 @@ vexpower_profiles = {
 				["show"] = false,
 				["targetSetshow"] = true,
 				["stealthshow"] = true,
-				["position"] = {
-					["y"] = -269,
-					["x"] = 200.0001373291016,
-					["anchor"] = "CENTER",
-					["anchorFrame"] = "CENTER",
-				},
-				["bg"] = "Solid",
-				["typecolored"] = true,
 				["altcolors"] = {
 					["classcolored"] = {
 						false, -- [1]
@@ -854,6 +846,14 @@ vexpower_profiles = {
 						false, -- [6]
 					},
 				},
+				["bg"] = "Solid",
+				["typecolored"] = true,
+				["position"] = {
+					["y"] = -269,
+					["x"] = 200.0001373291016,
+					["anchor"] = "CENTER",
+					["anchorFrame"] = "CENTER",
+				},
 				["bg2"] = "None",
 			},
 			["fadeout"] = true,
@@ -906,16 +906,6 @@ vexpower_profiles = {
 				},
 				["vehicleCps"] = true,
 				["intMode"] = true,
-				["vehiclehide"] = false,
-				["border"] = {
-					["color"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
-					["size"] = 1,
-				},
 				["posSize"] = {
 					["1"] = {
 						["height"] = 30,
@@ -1073,6 +1063,13 @@ vexpower_profiles = {
 						},
 					},
 				},
+				["measure"] = {
+					["height"] = 24,
+					["y"] = 40,
+					["gap"] = 2,
+					["offset"] = 92,
+				},
+				["vehiclehide"] = false,
 				["show"] = true,
 				["targetSetshow"] = true,
 				["fadeout"] = true,
@@ -1141,11 +1138,14 @@ vexpower_profiles = {
 					["cpchangeOnMax"] = true,
 					["cpchange"] = "3",
 				},
-				["measure"] = {
-					["height"] = 24,
-					["y"] = 40,
-					["gap"] = 2,
-					["offset"] = 92,
+				["border"] = {
+					["color"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["size"] = 1,
 				},
 			},
 			["energy"] = {
@@ -1192,6 +1192,15 @@ vexpower_profiles = {
 				["vehicleEnergy"] = true,
 				["text"] = {
 				},
+				["bg2"] = "None",
+				["position"] = {
+					["y"] = -269,
+					["x"] = 200.0001373291016,
+					["anchor"] = "CENTER",
+					["anchorFrame"] = "CENTER",
+				},
+				["show"] = false,
+				["targetSetshow"] = true,
 				["altcolors"] = {
 					["classcolored"] = {
 						false, -- [1]
@@ -1257,15 +1266,6 @@ vexpower_profiles = {
 						false, -- [5]
 						false, -- [6]
 					},
-				},
-				["bg2"] = "None",
-				["show"] = false,
-				["targetSetshow"] = true,
-				["position"] = {
-					["y"] = -269,
-					["x"] = 200.0001373291016,
-					["anchor"] = "CENTER",
-					["anchorFrame"] = "CENTER",
 				},
 				["stealthshow"] = true,
 				["bg"] = "Solid",

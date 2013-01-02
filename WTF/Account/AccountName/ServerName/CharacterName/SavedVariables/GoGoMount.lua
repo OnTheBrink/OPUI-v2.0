@@ -5,7 +5,7 @@ GoGo_Prefs = {
 	["DruidFlightForm"] = false,
 	["GlobalExclude"] = {
 	},
-	["DisableWaterFlight"] = 1,
+	["DisableWaterFlight"] = false,
 	["DruidFormNotRandomize"] = false,
 	["Zones"] = {
 		["The Great Sea"] = {
@@ -63,6 +63,13 @@ GoGo_Prefs = {
 			["Excluded"] = {
 			},
 			["ZoneID"] = 14,
+		},
+		["The Eye of Eternity"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 486,
 		},
 		["Undercity"] = {
 			["Preferred"] = {
@@ -174,14 +181,14 @@ GoGo_Prefs = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 485,
+			["ZoneID"] = 806,
 		},
 		["Shrine of Seven Stars"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 811,
+			["ZoneID"] = 14,
 		},
 		["Crypt of Forgotten Kings"] = {
 			["Preferred"] = {
@@ -322,6 +329,13 @@ GoGo_Prefs = {
 			["Excluded"] = {
 			},
 			["ZoneID"] = 811,
+		},
+		["Terrace of Endless Spring"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 873,
 		},
 		["Nagrand Arena"] = {
 			["Preferred"] = {
@@ -498,12 +512,47 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 862,
 		},
+		["Eye of the Storm"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 14,
+		},
+		["Hillsbrad Foothills"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 24,
+		},
+		["The Oculus"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 486,
+		},
+		["Blackrock Mountain"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 29,
+		},
 		["Heart of Fear"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 858,
+			["ZoneID"] = 14,
+		},
+		["Wildhammer Stronghold"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 626,
 		},
 		["Stonetalon Mountains"] = {
 			["Preferred"] = {
@@ -512,12 +561,12 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 81,
 		},
-		["Dun Morogh"] = {
+		["The Hinterlands"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 862,
+			["ZoneID"] = 26,
 		},
 		["Caverns of Time"] = {
 			["Preferred"] = {
@@ -526,12 +575,12 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 734,
 		},
-		["Ashenvale"] = {
+		["Arathi Highlands"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 43,
+			["ZoneID"] = 16,
 		},
 		["City of Ironforge"] = {
 			["Preferred"] = {
@@ -551,7 +600,7 @@ GoGo_Prefs = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 862,
+			["ZoneID"] = 341,
 		},
 		["Moonglade"] = {
 			["Preferred"] = {
@@ -567,54 +616,26 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 61,
 		},
-		["Zul'Aman"] = {
+		["Siege of Niuzao Temple"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 862,
+			["ZoneID"] = 810,
 		},
-		["Arathi Highlands"] = {
+		["Zul'Drak"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 16,
+			["ZoneID"] = 496,
 		},
-		["Eye of the Storm"] = {
+		["Fizzle & Pozzik's Speedbarge"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
 			["ZoneID"] = 14,
-		},
-		["Dragonblight"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 488,
-		},
-		["Old Hillsbrad Foothills"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 485,
-		},
-		["Well of Eternity"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 14,
-		},
-		["Loch Modan"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 35,
 		},
 		["The Storm Peaks"] = {
 			["Preferred"] = {
@@ -623,7 +644,35 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 495,
 		},
+		["Scarlet Monastery"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = -1,
+		},
+		["Well of Eternity"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 14,
+		},
+		["Stratholme"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 485,
+		},
 		["Badlands"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
+		},
+		["The Nexus"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
@@ -651,13 +700,6 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = -1,
 		},
-		["Stratholme"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 485,
-		},
 		["Northern Stranglethorn"] = {
 			["Preferred"] = {
 			},
@@ -672,201 +714,12 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 28,
 		},
-		["Valley of the Four Winds"] = {
+		["Winterspring"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 807,
-		},
-		["Tirisfal Glades"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 466,
-		},
-		["The Molten Core"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 485,
-		},
-		["Twisting Nether"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = -1,
-		},
-		["Azshara"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 181,
-		},
-		["Shadowmoon Valley"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 796,
-		},
-		["Twilight Highlands"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 862,
-		},
-		["Teldrassil"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 41,
-		},
-		["Sholazar Basin"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 493,
-		},
-		["Southern Barrens"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 607,
-		},
-		["Sethekk Halls"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 862,
-		},
-		["Isle of Quel'Danas"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 499,
-		},
-		["Icecrown"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 492,
-		},
-		["Strand of the Ancients"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 14,
-		},
-		["Netherstorm"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 479,
-		},
-		["Dread Wastes"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 858,
-		},
-		["Ahn'Qiraj: The Fallen Kingdom"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 772,
-		},
-		["Duskwood"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 34,
-		},
-		["Burning Steppes"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 29,
-		},
-		["The Obsidian Sanctum"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 488,
-		},
-		["Ghostlands"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 463,
-		},
-		["Redridge Mountains"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 36,
-		},
-		["Vashj'ir"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 613,
-		},
-		["Scholomance"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 862,
-		},
-		["Dalaran Arena"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 14,
-		},
-		["Zangarmarsh"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 467,
-		},
-		["Felwood"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 182,
-		},
-		["Kun-Lai Summit"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 809,
+			["ZoneID"] = 281,
 		},
 		["Mount Hyjal"] = {
 			["Preferred"] = {
@@ -875,12 +728,208 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 14,
 		},
-		["Winterspring"] = {
+		["Tirisfal Glades"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 281,
+			["ZoneID"] = 466,
+		},
+		["Felwood"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 182,
+		},
+		["Azshara"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 181,
+		},
+		["Kun-Lai Summit"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 809,
+		},
+		["Scholomance"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
+		},
+		["Zangarmarsh"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 467,
+		},
+		["Redridge Mountains"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 36,
+		},
+		["Sholazar Basin"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 493,
+		},
+		["Sethekk Halls"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
+		},
+		["The Obsidian Sanctum"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 488,
+		},
+		["Strand of the Ancients"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 14,
+		},
+		["Icecrown"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 492,
+		},
+		["Vashj'ir"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 613,
+		},
+		["Netherstorm"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 479,
+		},
+		["Duskwood"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 34,
+		},
+		["Ahn'Qiraj: The Fallen Kingdom"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 772,
+		},
+		["Dread Wastes"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 858,
+		},
+		["Burning Steppes"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 29,
+		},
+		["Dalaran Arena"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 14,
+		},
+		["Ghostlands"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 463,
+		},
+		["Isle of Quel'Danas"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 499,
+		},
+		["Teldrassil"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 41,
+		},
+		["Southern Barrens"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 607,
+		},
+		["Twilight Highlands"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
+		},
+		["Shadowmoon Valley"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 796,
+		},
+		["Valley of the Four Winds"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 807,
+		},
+		["Twisting Nether"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = -1,
+		},
+		["The Molten Core"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
+		},
+		["Tol Barad"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 862,
 		},
 		["Shado-Pan Monastery"] = {
 			["Preferred"] = {
@@ -896,12 +945,12 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 510,
 		},
-		["Tol Barad"] = {
+		["Howling Fjord"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 862,
+			["ZoneID"] = 14,
 		},
 		["Northshire"] = {
 			["Preferred"] = {
@@ -910,33 +959,19 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 864,
 		},
-		["Howling Fjord"] = {
+		["Loch Modan"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 14,
+			["ZoneID"] = 35,
 		},
-		["Fizzle & Pozzik's Speedbarge"] = {
+		["Dragonblight"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 14,
-		},
-		["Zul'Drak"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 496,
-		},
-		["Feralas"] = {
-			["Preferred"] = {
-			},
-			["Excluded"] = {
-			},
-			["ZoneID"] = 121,
+			["ZoneID"] = 488,
 		},
 		["Tol Barad Peninsula"] = {
 			["Preferred"] = {
@@ -945,19 +980,33 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 709,
 		},
-		["The Hinterlands"] = {
+		["Feralas"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 26,
+			["ZoneID"] = 121,
 		},
-		["Wildhammer Stronghold"] = {
+		["Zul'Aman"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 626,
+			["ZoneID"] = 862,
+		},
+		["Ashenvale"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 43,
+		},
+		["Old Hillsbrad Foothills"] = {
+			["Preferred"] = {
+			},
+			["Excluded"] = {
+			},
+			["ZoneID"] = 485,
 		},
 		["Krasarang Wilds"] = {
 			["Preferred"] = {
@@ -966,46 +1015,80 @@ GoGo_Prefs = {
 			},
 			["ZoneID"] = 857,
 		},
-		["Hillsbrad Foothills"] = {
+		["Dun Morogh"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 24,
+			["ZoneID"] = 27,
 		},
-		["Blackrock Mountain"] = {
+		["Mogu'shan Palace"] = {
 			["Preferred"] = {
 			},
 			["Excluded"] = {
 			},
-			["ZoneID"] = 29,
+			["ZoneID"] = 14,
 		},
 	},
 	["DisableMountNotice"] = false,
-	["UnknownMounts"] = {
-	},
+	["DruidDisableInCombat"] = false,
 	["DisableUpdateNotice"] = false,
 	["autodismount"] = 1,
-	["version"] = "5.0.12",
-	["RemoveBuffs"] = 1,
+	["version"] = "5.1.5",
+	["DruidClickForm"] = true,
 	["GlobalPrefMounts"] = {
 		75207, -- [1]
 		98204, -- [2]
 		88990, -- [3]
 		63956, -- [4]
-		64731, -- [5]
-		63963, -- [6]
-		61425, -- [7]
-		107203, -- [8]
-		92155, -- [9]
-		88331, -- [10]
-		98727, -- [11]
-		59791, -- [12]
-		84751, -- [13]
+		63963, -- [5]
+		61425, -- [6]
+		107203, -- [7]
+		92155, -- [8]
+		88331, -- [9]
+		98727, -- [10]
+		59791, -- [11]
+		84751, -- [12]
+		123886, -- [13]
+		60114, -- [14]
+		123992, -- [15]
+		127174, -- [16]
+		118089, -- [17]
+		130138, -- [18]
+		127220, -- [19]
+		25953, -- [20]
+		129934, -- [21]
+		6648, -- [22]
+		123993, -- [23]
+		127176, -- [24]
+		135416, -- [25]
+		35710, -- [26]
+		127295, -- [27]
+		127302, -- [28]
+		127308, -- [29]
+		127293, -- [30]
+		127310, -- [31]
+		120822, -- [32]
+		17453, -- [33]
+		124659, -- [34]
+		127216, -- [35]
+		129932, -- [36]
+		26056, -- [37]
+		113199, -- [38]
+		120043, -- [39]
+		121820, -- [40]
+		127154, -- [41]
+		130985, -- [42]
+		41252, -- [43]
+		127177, -- [44]
+		129918, -- [45]
+		130137, -- [46]
+		26055, -- [47]
 	},
-	["DruidClickForm"] = true,
+	["RemoveBuffs"] = 1,
 	["PaladinUseCrusaderAura"] = false,
-	["DruidDisableInCombat"] = false,
+	["UnknownMounts"] = {
+	},
 }
 GoGo_DebugLog = {
 }

@@ -55,60 +55,60 @@ DBM_SavedOptions = {
 	["LatencyThreshold"] = 250,
 	["BlockVersionUpdateNotice"] = false,
 	["HPFrameMaxEntries"] = 5,
-	["LastRevision"] = 8187,
+	["ShowEngageMessage"] = true,
 	["RangeFramePoint"] = "CENTER",
-	["SpecialWarningFontColor"] = {
-		0, -- [1]
-		0, -- [2]
-		1, -- [3]
-	},
-	["SpamBlockBossWhispers"] = false,
-	["WarningColors"] = {
-		{
-			["r"] = 0.4117647058823529,
-			["g"] = 0.8,
-			["b"] = 0.9411764705882353,
-		}, -- [1]
-		{
-			["r"] = 0.9490196078431372,
-			["g"] = 0.9490196078431372,
-			["b"] = 0,
-		}, -- [2]
-		{
-			["r"] = 1,
-			["g"] = 0.5019607843137255,
-			["b"] = 0,
-		}, -- [3]
-		{
-			["r"] = 1,
-			["g"] = 0.1019607843137255,
-			["b"] = 0.1019607843137255,
-		}, -- [4]
-	},
+	["ShowRecoveryMessage"] = true,
+	["InfoFrameLocked"] = true,
+	["DontSendBossWhispers"] = false,
 	["AutoRespond"] = true,
 	["DontSendBossAnnounces"] = false,
 	["ShowPizzaMessage"] = true,
 	["RangeFrameSound2"] = "none",
 	["ShowLHFrame"] = true,
-	["ShowLoadMessage"] = true,
-	["ArrowPosY"] = -150,
+	["DontShowBossAnnounces"] = false,
+	["ShowSpecialWarnings"] = true,
 	["Enabled"] = true,
-	["HealthFrameLocked"] = false,
+	["RangeFrameFrames"] = "radar",
 	["RangeFrameLocked"] = true,
 	["DisableCinematics"] = false,
 	["MovieFilters"] = {
 	},
 	["RangeFrameRadarY"] = -116.9998092651367,
 	["ShowWipeMessage"] = true,
-	["RangeFrameFrames"] = "radar",
-	["ShowSpecialWarnings"] = true,
-	["DontShowBossAnnounces"] = false,
+	["HealthFrameLocked"] = false,
+	["ArrowPosY"] = -150,
+	["ShowLoadMessage"] = true,
 	["AlwaysShowHealthFrame"] = false,
 	["HPFrameX"] = -106.0002975463867,
-	["DontSendBossWhispers"] = false,
-	["InfoFrameLocked"] = true,
-	["ShowRecoveryMessage"] = true,
-	["ShowEngageMessage"] = true,
+	["WarningColors"] = {
+		{
+			["b"] = 0.9411764705882353,
+			["g"] = 0.8,
+			["r"] = 0.4117647058823529,
+		}, -- [1]
+		{
+			["b"] = 0,
+			["g"] = 0.9490196078431372,
+			["r"] = 0.9490196078431372,
+		}, -- [2]
+		{
+			["b"] = 0,
+			["g"] = 0.5019607843137255,
+			["r"] = 1,
+		}, -- [3]
+		{
+			["b"] = 0.1019607843137255,
+			["g"] = 0.1019607843137255,
+			["r"] = 1,
+		}, -- [4]
+	},
+	["SpamBlockBossWhispers"] = false,
+	["SpecialWarningFontColor"] = {
+		0, -- [1]
+		0, -- [2]
+		1, -- [3]
+	},
+	["LastRevision"] = 8187,
 }
 DBT_SavedOptions = {
 	["DBM"] = {
@@ -125,16 +125,16 @@ DBT_SavedOptions = {
 		["TimerY"] = -145.9998474121094,
 		["TimerPoint"] = "TOPLEFT",
 		["StartColorG"] = 0.7019607843137254,
-		["HugeScale"] = 1.100000023841858,
-		["StartColorB"] = 0,
+		["TimerX"] = 182.0001220703125,
+		["HugeTimerX"] = 0,
 		["EndColorR"] = 1,
 		["Width"] = 174,
 		["HugeTimerPoint"] = "CENTER",
 		["Font"] = "Interface\\AddOns\\ElvUI\\media\\fonts\\PT_Sans_Narrow.ttf",
-		["FontSize"] = 14,
 		["HugeBarYOffset"] = 0,
-		["HugeTimerX"] = 0,
-		["TimerX"] = 182.0001220703125,
+		["FontSize"] = 14,
+		["StartColorB"] = 0,
+		["HugeScale"] = 1.100000023841858,
 		["BarXOffset"] = 0,
 		["EndColorB"] = 0,
 	},
