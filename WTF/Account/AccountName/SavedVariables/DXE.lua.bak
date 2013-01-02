@@ -1,0 +1,65 @@
+
+DXEDB = {
+	["namespaces"] = {
+		["Alerts"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["BarFontSize"] = 16,
+				},
+			},
+		},
+		["AutoResponder"] = {
+		},
+		["RaidIcons"] = {
+		},
+		["LibDualSpec-1.0"] = {
+		},
+		["Distributor"] = {
+		},
+		["RDB"] = {
+		},
+		["Arrows"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["Positions"] = {
+				["DXEPane"] = {
+					["point"] = "BOTTOMRIGHT",
+					["relativePoint"] = "BOTTOMRIGHT",
+					["yOfs"] = 123.3766587327198,
+					["xOfs"] = -96.77023523708462,
+				},
+				["DXEAlertsWarningStackAnchor"] = {
+					["point"] = "TOP",
+					["relativePoint"] = "TOP",
+					["yOfs"] = -226.1077391231676,
+				},
+				["DXEAlertsCenterStackAnchor"] = {
+					["yOfs"] = 263.4459799153036,
+					["xOfs"] = -1.969251533575019,
+				},
+			},
+			["Globals"] = {
+				["BackgroundTexture"] = "Solid",
+				["BarTexture"] = "Glamour4",
+				["Border"] = "Boarders A",
+				["Font"] = "BigNoodleTitling",
+				["BorderColor"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+				["TimerFont"] = "BigNoodleTitling",
+			},
+			["Pane"] = {
+				["TitleFontSize"] = 16,
+				["Show"] = false,
+				["HealthFontSize"] = 16,
+			},
+		},
+	},
+}

@@ -1,0 +1,68 @@
+
+ZygorGuidesViewerSettings = {
+	["char"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["maint_fetchitemdata"] = true,
+			["guidename"] = "Zygor's Alliance Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)",
+			["maint_fetchquestdata"] = true,
+			["debuglog"] = {
+				"02:40:01> Viewer started. ---------------------------", -- [1]
+				"02:40:02> PLAYER_ENTERING_WORLD (not dead)", -- [2]
+				"02:40:02> PLAYER_ALIVE (not dead)", -- [3]
+				"02:40:02> ZONE_CHANGED_NEW_AREA (not dead)", -- [4]
+				"02:40:03> CacheQuestLog cached 0 quests", -- [5]
+				"02:40:03> chains start", -- [6]
+				"02:40:03> Starting parsing quest chains; 14 lines", -- [7]
+				"02:40:03> Pruning duplicates in quest chains", -- [8]
+				"02:40:03> Parsed quest chains.", -- [9]
+				"02:40:03> chains stop", -- [10]
+				"02:40:04> Got completed quests list", -- [11]
+				"02:40:04> CacheQuestLog cached 20 quests", -- [12]
+				"02:40:04> New Quest: Manalicious id 11380", -- [13]
+				"02:40:04> New Quest: Elemental Bonds: Desire id 29328", -- [14]
+				"02:40:04> New Quest: Blackwatch id 13106", -- [15]
+				"02:40:04> New Quest: Honor Challenge id 12939", -- [16]
+				"02:40:04> New Quest: Blackfin's Booty id 25503", -- [17]
+				"02:40:04> New Quest: The Eyes of Skettis id 10847", -- [18]
+				"02:40:04> New Quest: Assault on the Sanctum id 26013", -- [19]
+				"02:40:04> New Quest: A Shiny Reward id 29155", -- [20]
+				"02:40:04> New Quest: Prison Revolt id 28188", -- [21]
+				"02:40:04> New Quest: Svarnos id 28185", -- [22]
+				"02:40:04> New Quest: Swamp Bait id 28162", -- [23]
+				"02:40:04> New Quest: The Imprisoned Archmage id 28118", -- [24]
+				"02:40:04> New Quest: The Leftovers id 28163", -- [25]
+				"02:40:04> New Quest: The Warden id 28223", -- [26]
+				"02:40:04> New Quest: Magnets, How Do They Work? id 27992", -- [27]
+				"02:40:04> New Quest: Beer Run id 28864", -- [28]
+				"02:40:04> New Quest: In Unending Numbers id 30099", -- [29]
+				"02:40:04> New Quest: Break Their Spirits id 29175", -- [30]
+				"02:40:04> New Quest: The Beasts Within id 29172", -- [31]
+				"02:40:04> New Quest: Strange Life Forces id 28656", -- [32]
+				"02:40:04> CacheQuestLog cached 20 quests", -- [33]
+				"02:40:04> Guides loaded. ---------", -- [34]
+				"02:40:04> Querying for quests...", -- [35]
+				"02:40:04> CacheQuestLog cached 20 quests", -- [36]
+				"02:40:05> Guide loaded: Zygor's Alliance Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)", -- [37]
+				"02:40:05> FocusStep 1", -- [38]
+				"02:40:05> Startup complete.", -- [39]
+				"02:40:05> Translating step 1 goal 3, try 10 - success", -- [40]
+			},
+			["guides_history"] = {
+				{
+					"Zygor's Alliance Leveling Guides\\Cataclysm 80-85\\Twilight Highlands (84-85)", -- [1]
+					1, -- [2]
+				}, -- [1]
+			},
+			["taxis"] = {
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["arrowsmooth"] = true,
+		},
+	},
+}

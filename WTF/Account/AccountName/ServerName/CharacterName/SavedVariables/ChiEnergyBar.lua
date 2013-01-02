@@ -1,0 +1,2 @@
+
+ChiEnergyBarDB = nil

@@ -1,0 +1,7 @@
+## Interface: 50100
+## Title: |cffC495DDOp|rUI
+## Author: 
+## Notes: 
+## RequiredDeps: ElvUI
+
+Core.lua

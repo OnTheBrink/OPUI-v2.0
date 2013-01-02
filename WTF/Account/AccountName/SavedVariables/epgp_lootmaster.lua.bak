@@ -1,0 +1,10 @@
+
+EPGPLootMaster = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

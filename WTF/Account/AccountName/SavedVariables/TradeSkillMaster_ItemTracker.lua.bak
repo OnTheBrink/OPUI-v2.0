@@ -1,0 +1,46 @@
+
+TradeSkillMaster_ItemTrackerDB = {
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Pubick - Kel'Thuzad"] = "Default",
+	},
+	["factionrealm"] = {
+		["Alliance - Kel'Thuzad"] = {
+			["characters"] = {
+				["Pubick"] = {
+					["auctions"] = {
+					},
+					["bags"] = {
+						[52987] = 149,
+						[52988] = 145,
+						[3371] = 101,
+						[52327] = 42,
+						[52983] = 249,
+						[57191] = 5,
+						[52984] = 427,
+						[52985] = 76,
+						[58145] = 2,
+						[58146] = 18,
+						[17032] = 51,
+						[58489] = 4,
+					},
+					["guild"] = "Dysfunction",
+					["bank"] = {
+					},
+				},
+			},
+			["guilds"] = {
+				["Dysfunction"] = {
+					["items"] = {
+					},
+					["characters"] = {
+						["Pubick"] = true,
+					},
+				},
+			},
+		},
+	},
+}

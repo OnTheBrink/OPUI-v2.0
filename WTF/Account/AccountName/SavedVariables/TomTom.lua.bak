@@ -1,0 +1,19 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+TomTomWaypoints = {
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Opacus - Laughing Skull",
+	},
+	["profiles"] = {
+		["Opacus - Laughing Skull"] = {
+		},
+	},
+}

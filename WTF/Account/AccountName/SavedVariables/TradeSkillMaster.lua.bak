@@ -1,0 +1,10 @@
+
+TradeSkillMasterDB = {
+	["profileKeys"] = {
+		["Pubick - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

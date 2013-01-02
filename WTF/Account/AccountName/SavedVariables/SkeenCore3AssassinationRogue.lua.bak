@@ -1,0 +1,6 @@
+
+SkeenAssassinationRoguedb = {
+	["SuggestVanish"] = false,
+	["MasterPoison"] = true,
+	["SuggestVendetta"] = false,
+}

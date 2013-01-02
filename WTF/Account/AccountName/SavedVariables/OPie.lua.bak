@@ -1,0 +1,97 @@
+
+OneRing_Config = {
+	["ProfileStorage"] = {
+		["default"] = {
+			["Bindings"] = {
+				["RaidSymbols"] = "CTRL-R",
+				["WorldMarkers"] = "CTRL-Y",
+				["CommonTrades"] = "CTRL-T",
+				["OPieTracker"] = false,
+				["OPieAutoQuest"] = "CTRL-Q",
+			},
+		},
+	},
+	["PersistentStorage"] = {
+		["RingKeeper"] = {
+			["RaidSymbols"] = {
+				{
+					"raidmark", -- [1]
+					1, -- [2]
+					["c"] = "ffff00",
+				}, -- [1]
+				{
+					"raidmark", -- [1]
+					2, -- [2]
+					["c"] = "ff7f0c",
+				}, -- [2]
+				{
+					"raidmark", -- [1]
+					3, -- [2]
+					["c"] = "ff4cff",
+				}, -- [3]
+				{
+					"raidmark", -- [1]
+					4, -- [2]
+					["c"] = "33ff33",
+				}, -- [4]
+				{
+					"raidmark", -- [1]
+					5, -- [2]
+					["c"] = "a5d6ff",
+				}, -- [5]
+				{
+					"raidmark", -- [1]
+					6, -- [2]
+					["c"] = "3333ff",
+				}, -- [6]
+				{
+					"raidmark", -- [1]
+					7, -- [2]
+					["c"] = "ff1919",
+				}, -- [7]
+				{
+					"raidmark", -- [1]
+					8, -- [2]
+					["c"] = "bcb299",
+				}, -- [8]
+				{
+					"worldmark", -- [1]
+					2, -- [2]
+					["c"] = "e5ff00",
+				}, -- [9]
+				{
+					"worldmark", -- [1]
+					1, -- [2]
+					["c"] = "e5ff00",
+				}, -- [10]
+				{
+					"worldmark", -- [1]
+					3, -- [2]
+					["c"] = "e5ff00",
+				}, -- [11]
+				{
+					"worldmark", -- [1]
+					5, -- [2]
+					["c"] = "e5ff00",
+				}, -- [12]
+				{
+					"worldmark", -- [1]
+					4, -- [2]
+					["c"] = "e5ff00",
+				}, -- [13]
+				{
+					"worldmark", -- [1]
+					6, -- [2]
+					["c"] = "e5ff00",
+				}, -- [14]
+				["version"] = 2,
+				["lastUpdateToken"] = 1935,
+				["save"] = true,
+				["hotkey"] = "ALT-R",
+				["name"] = "Raid Markers",
+			},
+		},
+	},
+	["CharProfiles"] = {
+	},
+}

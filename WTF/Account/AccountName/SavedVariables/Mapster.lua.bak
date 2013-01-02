@@ -1,0 +1,32 @@
+
+MapsterDB = {
+	["namespaces"] = {
+		["GroupIcons"] = {
+		},
+		["Coords"] = {
+		},
+		["FogClear"] = {
+		},
+		["BattleMap"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["point"] = "CENTER",
+			["scale"] = 1.5,
+			["mini"] = {
+				["y"] = -95.0636150728327,
+				["x"] = 135.5252645793639,
+				["scale"] = 1.435073375701904,
+			},
+			["modules"] = {
+				["Coords"] = false,
+			},
+			["x"] = -48.99997560984355,
+			["y"] = -1.999786181971217,
+		},
+	},
+}

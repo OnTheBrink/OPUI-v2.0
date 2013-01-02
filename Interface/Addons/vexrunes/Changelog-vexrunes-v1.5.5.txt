@@ -1,0 +1,111 @@
+------------------------------------------------------------------------
+r29 | fuda01 | 2012-09-11 07:50:46 +0000 (Tue, 11 Sep 2012) | 1 line
+Changed paths:
+   A /tags/v1.5.5 (from /trunk:28)
+
+deleted login message
+------------------------------------------------------------------------
+r28 | fuda01 | 2012-09-11 07:50:29 +0000 (Tue, 11 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+deleted login message
+------------------------------------------------------------------------
+r26 | fuda01 | 2012-09-10 16:04:23 +0000 (Mon, 10 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+changed saved data handling - they are global settings now
+------------------------------------------------------------------------
+r24 | fuda01 | 2012-09-01 13:41:01 +0000 (Sat, 01 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+
+fixed border color bug with death runes
+------------------------------------------------------------------------
+r22 | fuda01 | 2012-09-01 13:21:01 +0000 (Sat, 01 Sep 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_general.lua
+   M /trunk/vexrunes.toc
+   M /trunk/vexrunes.xml
+
+added func to hide runes in vehicle
+------------------------------------------------------------------------
+r20 | fuda01 | 2012-09-01 10:37:24 +0000 (Sat, 01 Sep 2012) | 2 lines
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_colors.lua
+   M /trunk/vexrunes.toc
+
+added funcs to alter the border colors
+fixed a bug that wouldn start the fill animation of a rune
+------------------------------------------------------------------------
+r18 | fuda01 | 2012-08-29 18:46:49 +0000 (Wed, 29 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/vexrunes.toc
+
+changed interface version
+------------------------------------------------------------------------
+r17 | fuda01 | 2012-08-20 10:55:53 +0000 (Mon, 20 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/options/options_cds.lua
+
+added text effect
+------------------------------------------------------------------------
+r15 | fuda01 | 2012-08-17 23:28:05 +0000 (Fri, 17 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/defaults.lua
+   M /trunk/options/options_cds.lua
+   M /trunk/options/options_colors.lua
+   M /trunk/options/options_general.lua
+   M /trunk/options/options_main.lua
+   M /trunk/options/options_positions.lua
+   M /trunk/options/options_show.lua
+   M /trunk/vexrunes.toc
+   M /trunk/vexrunes.xml
+
+-
+------------------------------------------------------------------------
+r14 | fuda01 | 2012-08-17 23:27:07 +0000 (Fri, 17 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+
+-
+------------------------------------------------------------------------
+r13 | fuda01 | 2012-08-17 23:13:41 +0000 (Fri, 17 Aug 2012) | 1 line
+Changed paths:
+   M /trunk
+   M /trunk/core.lua
+   D /trunk/debug.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_main.lua
+   M /trunk/vexrunes.toc
+
+removed bugs
+------------------------------------------------------------------------
+r12 | fuda01 | 2012-08-12 15:01:04 +0000 (Sun, 12 Aug 2012) | 1 line
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/vexrunes.toc
+   M /trunk/vexrunes.xml
+
++changed the out-of-combat event
+------------------------------------------------------------------------
+r11 | fuda01 | 2012-08-09 13:19:00 +0000 (Thu, 09 Aug 2012) | 4 lines
+Changed paths:
+   M /trunk/core.lua
+   M /trunk/defaults.lua
+   M /trunk/options/options_cds.lua
+   M /trunk/options/options_general.lua
+   M /trunk/vexrunes.toc
+
+added hide blizz rune frame option
+added vertical rune filling option
+added reverse rune filling option
+added font shadow option
+------------------------------------------------------------------------

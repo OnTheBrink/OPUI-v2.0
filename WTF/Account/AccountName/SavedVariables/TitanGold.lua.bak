@@ -1,0 +1,8 @@
+
+GoldSave = {
+	["Opacus_Kel'Thuzad::Alliance"] = {
+		["show"] = true,
+		["name"] = "Opacus",
+		["gold"] = 737564355,
+	},
+}

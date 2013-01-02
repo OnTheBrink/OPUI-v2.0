@@ -1,0 +1,11 @@
+
+LUICONFIG = {
+	["Versions"] = {
+		["swing"] = 2,
+		["vengeance"] = 2,
+		["interrupt"] = 2,
+		["bars"] = 2.4,
+		["threatbar"] = 2,
+		["auras"] = 1.4,
+	},
+}

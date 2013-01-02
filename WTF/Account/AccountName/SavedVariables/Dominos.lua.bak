@@ -1,0 +1,216 @@
+
+DominosDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Rogue",
+	},
+	["profiles"] = {
+		["Rogue"] = {
+			["showMinimap"] = 1,
+			["frames"] = {
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 0,
+					["pages"] = {
+						["ROGUE"] = {
+							["page2"] = 1,
+							["shadowdance"] = 6,
+							["page5"] = 4,
+							["page4"] = 3,
+							["stealth"] = 6,
+							["page3"] = 2,
+							["page6"] = 5,
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [1]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 40.00000056230908,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [2]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 80.00000112461817,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [3]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 119.9999971884546,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [4]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 160.0000022492363,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [5]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 199.9999893161274,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [6]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 239.9999943769092,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [7]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 279.9999994376909,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [8]
+				{
+					["point"] = "BOTTOMLEFT",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 320.0000044984727,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [9]
+				{
+					["point"] = "BOTTOMLEFT",
+					["anchor"] = "9TC",
+					["padW"] = 2,
+					["x"] = 705.2308136099323,
+					["spacing"] = 4,
+					["padH"] = 2,
+					["y"] = 359.9999915653638,
+					["pages"] = {
+						["ROGUE"] = {
+						},
+					},
+					["numButtons"] = 12,
+				}, -- [10]
+				["extra"] = {
+					["y"] = -564.7692795927982,
+					["x"] = 675.2307513342013,
+					["point"] = "TOPLEFT",
+				},
+				["class"] = {
+					["y"] = -575.7692328508556,
+					["x"] = 930.2308128367572,
+					["point"] = "TOPLEFT",
+					["spacing"] = 2,
+					["numButtons"] = 1,
+				},
+				["pet"] = {
+					["y"] = 543.7692935802367,
+					["x"] = 768.2308076353983,
+					["point"] = "BOTTOMLEFT",
+					["spacing"] = 6,
+				},
+				["cast"] = {
+					["y"] = -548.7692559758167,
+					["x"] = 838.2307850024577,
+					["showText"] = true,
+					["point"] = "TOPLEFT",
+				},
+				["menu"] = {
+					["y"] = 567.1385351749987,
+					["x"] = -306.030735392739,
+					["disabled"] = {
+					},
+					["clickThrough"] = false,
+					["point"] = "BOTTOMRIGHT",
+				},
+				["roll"] = {
+					["y"] = -419.7692544997553,
+					["x"] = 0,
+					["point"] = "TOPLEFT",
+					["spacing"] = 2,
+					["numButtons"] = 4,
+					["columns"] = 1,
+				},
+				["vehicle"] = {
+					["y"] = -575.7692328508556,
+					["x"] = 656.2307862676531,
+					["point"] = "TOPLEFT",
+					["numButtons"] = 3,
+				},
+				["xp"] = {
+					["y"] = -31.99990328283752,
+					["x"] = 236.3077919661636,
+					["point"] = "TOPLEFT",
+					["height"] = 14,
+					["texture"] = "blizzard",
+					["alwaysShowText"] = true,
+					["width"] = 0.75,
+				},
+				["bags"] = {
+					["y"] = 0,
+					["x"] = -0.0001439511252101511,
+					["point"] = "BOTTOMRIGHT",
+					["spacing"] = 2,
+					["numButtons"] = 5,
+				},
+			},
+			["showgrid"] = false,
+			["sticky"] = 1,
+		},
+	},
+}
+DominosVersion = "4.3.4"

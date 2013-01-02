@@ -1,0 +1,18 @@
+
+ZygorTalentAdvisorSettings = {
+	["char"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["debuglog"] = {
+				"02:40:01> Viewer started. ---------------------------", -- [1]
+				"02:40:02> PLAYER_ALIVE", -- [2]
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

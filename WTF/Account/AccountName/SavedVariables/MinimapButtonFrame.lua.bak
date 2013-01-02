@@ -1,0 +1,37 @@
+
+MBFDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["addonScale"] = 1,
+			["locked"] = true,
+			["MBFHideMiniMapTracking"] = true,
+			["MBF_FrameLocation"] = {
+				nil, -- [1]
+				nil, -- [2]
+				-86.1535608468684, -- [3]
+				-243.69234073878, -- [4]
+			},
+			["colorLocked"] = "All",
+			["currentTexture"] = "Entropy",
+			["customChildren"] = {
+				"MinimapButtonFrameDragButton", -- [1]
+				"MiniMapMailFrameDisabled", -- [2]
+				"LibDBIcon10_Bartender4", -- [3]
+				"LibDBIcon10_BigWigs", -- [4]
+				"LibDBIcon10_Raven", -- [5]
+				"LibDBIcon10_Skada", -- [6]
+				"MiniMapMailFrame", -- [7]
+				"GameTimeFrame", -- [8]
+				"MiniMapWorldMapButton", -- [9]
+				"MinimapZoomIn", -- [10]
+				"MinimapZoomOut", -- [11]
+				"MiniMapVoiceChatFrame", -- [12]
+				"MiniMapLFGFrame", -- [13]
+			},
+			["disabledMail"] = false,
+		},
+	},
+}

@@ -1,0 +1,15 @@
+
+TradeSkillMaster_ShoppingDB = {
+	["profileKeys"] = {
+		["Pubick - Kel'Thuzad"] = "Pubick - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Pubick - Kel'Thuzad"] = {
+			["dealfinding"] = {
+				["DealfindingList"] = {
+				},
+			},
+			["version"] = 1,
+		},
+	},
+}

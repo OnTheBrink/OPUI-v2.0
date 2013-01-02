@@ -1,0 +1,86 @@
+
+SexyMapDB = {
+	["namespaces"] = {
+		["Ping"] = {
+		},
+		["Coordinates"] = {
+		},
+		["Buttons"] = {
+			["profiles"] = {
+				["Opacus - Laughing Skull"] = {
+					["dragPositions"] = {
+						["DBMMinimapButton"] = 123.245916883867,
+						["LibDBIcon10_Omen"] = 10.41028723216423,
+						["LibDBIcon10_AtlasLoot"] = 224.3481338448776,
+						["WIM3MinimapButton"] = 197.860218965164,
+						["LibDBIcon10_WoWProIcon"] = 242.1346938046883,
+					},
+				},
+			},
+		},
+		["AutoZoom"] = {
+		},
+		["Shapes"] = {
+			["profiles"] = {
+				["Opacus - Laughing Skull"] = {
+					["shape"] = "Textures\\MinimapMask",
+				},
+			},
+		},
+		["Fader"] = {
+		},
+		["Movers"] = {
+		},
+		["Borders"] = {
+			["profiles"] = {
+				["Opacus - Laughing Skull"] = {
+					["applyPreset"] = false,
+					["borders"] = {
+						{
+							["a"] = 1,
+							["r"] = 0.3098039215686275,
+							["name"] = "Rune 1",
+							["b"] = 1,
+							["scale"] = 1.4,
+							["rotSpeed"] = -16,
+							["g"] = 0.4784313725490196,
+							["texture"] = "SPELLS\\AURARUNE256.BLP",
+						}, -- [1]
+						{
+							["a"] = 0.3799999952316284,
+							["r"] = 0.196078431372549,
+							["rotSpeed"] = 4,
+							["b"] = 1,
+							["scale"] = 2.1,
+							["name"] = "Rune 2",
+							["g"] = 0.2901960784313725,
+							["texture"] = "SPELLS\\AuraRune_A.blp",
+						}, -- [2]
+						{
+							["a"] = 0.3,
+							["name"] = "Fade",
+							["b"] = 1,
+							["scale"] = 1.6,
+							["r"] = 0,
+							["g"] = 0.2235294117647059,
+							["texture"] = "SPELLS\\T_VFX_HERO_CIRCLE.BLP",
+						}, -- [3]
+					},
+				},
+			},
+		},
+		["HudMap"] = {
+			["profiles"] = {
+				["Opacus - Laughing Skull"] = {
+					["setNewScale"] = true,
+					["scale"] = 1.4,
+				},
+			},
+		},
+		["ZoneText"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Opacus - Laughing Skull",
+	},
+}

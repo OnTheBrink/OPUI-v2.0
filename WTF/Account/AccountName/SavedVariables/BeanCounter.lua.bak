@@ -1,0 +1,65 @@
+
+BeanCounterDB = {
+	["Laughing Skull"] = {
+		["Opacus"] = {
+			["vendorsell"] = {
+			},
+			["postedBids"] = {
+				["60838"] = {
+					["item:60838:0:0:0:0:0:0:347747104:80:0"] = {
+					},
+				},
+			},
+			["postedAuctions"] = {
+			},
+			["completedBidsBuyoutsNeutral"] = {
+			},
+			["vendorbuy"] = {
+			},
+			["failedAuctions"] = {
+			},
+			["failedBidsNeutral"] = {
+			},
+			["failedBids"] = {
+			},
+			["completedAuctions"] = {
+			},
+			["failedAuctionsNeutral"] = {
+			},
+			["completedAuctionsNeutral"] = {
+			},
+			["completedBidsBuyouts"] = {
+				["60838"] = {
+					["item:60838:0:0:0:0:0:0:347747104:80:0"] = {
+						"1;;;;454999;454999;Xrage;1292974105;;A", -- [1]
+					},
+				},
+			},
+		},
+	},
+}
+BeanCounterDBSettings = {
+	["Laughing Skull"] = {
+		["Opacus"] = {
+			["mailbox"] = {
+				{
+					["read"] = 2,
+					["sender"] = "Alliance Auction House",
+					["time"] = 29.99991989135742,
+					["subject"] = "Auction won: Mysterious Fortune Card",
+				}, -- [1]
+			},
+			["wealth"] = 3748608,
+			["version"] = 3,
+			["faction"] = "Alliance",
+		},
+	},
+	["profile.Default"] = {
+		["configator.left"] = 560.0001068387257,
+		["configator.top"] = 825.0000211568793,
+	},
+}
+BeanCounterDBNames = {
+	["60838:0"] = "cffffffff;Mysterious Fortune Card",
+}
+BeanCounterAccountDB = nil

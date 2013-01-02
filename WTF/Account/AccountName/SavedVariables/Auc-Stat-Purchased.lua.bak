@@ -1,0 +1,13 @@
+
+AucAdvancedStatPurchasedData = {
+	["Version"] = "2.0",
+	["RealmData"] = {
+		["Laughing Skull-Alliance"] = {
+			["means"] = {
+			},
+			["daily"] = {
+				["created"] = 1292972734,
+			},
+		},
+	},
+}

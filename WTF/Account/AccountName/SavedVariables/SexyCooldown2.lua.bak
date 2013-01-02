@@ -1,0 +1,47 @@
+
+SexyCooldown2DB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["global"] = {
+		["dbVersion"] = 3,
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["bars"] = {
+				{
+					["events"] = {
+					},
+					["blacklist"] = {
+						["item:40768"] = "MOLL-E",
+					},
+					["eventColors"] = {
+					},
+					["icon"] = {
+						["sizeOffset"] = 8,
+						["borderInset"] = 0,
+						["fontColor"] = {
+						},
+						["borderColor"] = {
+						},
+					},
+					["bar"] = {
+						["outline"] = "OUTLINE",
+						["fontColor"] = {
+						},
+						["width"] = 444,
+						["y"] = -197.4998779296875,
+						["x"] = -19.00006103515625,
+						["name"] = "Bar 0",
+						["borderColor"] = {
+						},
+						["height"] = 28.00000762939453,
+						["backgroundColor"] = {
+						},
+						["font"] = "ElvUI Font",
+					},
+				}, -- [1]
+			},
+		},
+	},
+}

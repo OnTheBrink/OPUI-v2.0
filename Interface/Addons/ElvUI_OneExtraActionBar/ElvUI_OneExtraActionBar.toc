@@ -1,0 +1,10 @@
+## Interface: 50100
+## Author: Blazeflack
+## Version: 2.08
+## Title: |cff1784d1ElvUI|r OneExtraActionBar
+## Notes: Adds a 6th actionbar to ElvUI.
+## RequiredDeps: ElvUI
+
+locales\load_locales.xml
+ElvUI_OneExtraActionBar.lua
+Options.lua

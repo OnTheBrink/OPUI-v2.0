@@ -1,0 +1,10 @@
+
+AucAdvancedStatHistogramData = {
+	["version"] = 2,
+	["Laughing Skull-Alliance"] = {
+		[60838] = {
+			[0] = "84;84;5657;12;4",
+		},
+	},
+}
+AucAdvancedStatHistogramTotalData = ""

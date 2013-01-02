@@ -1,0 +1,14 @@
+
+SpamMeNotDB = {
+	["global"] = {
+		["totalSpamsBlocked"] = 1,
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "profile",
+	},
+	["profiles"] = {
+		["profile"] = {
+			["filterLevel"] = 5,
+		},
+	},
+}

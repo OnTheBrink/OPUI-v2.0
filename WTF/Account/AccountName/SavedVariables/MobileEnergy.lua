@@ -1,0 +1,22 @@
+
+MobileE = {
+	["deathKnight"] = 1,
+	["rogue"] = 1,
+	["hunter"] = 1,
+	["warrior"] = 1,
+	["paladin"] = 1,
+	["shaman"] = 1,
+	["barSize"] = 4,
+	["disableOption"] = false,
+	["mage"] = 1,
+	["alpha"] = 0.5,
+	["incombat"] = false,
+	["alphaSlider"] = 5,
+	["warlock"] = 1,
+	["borderStyle"] = 1,
+	["lockFrame"] = 0,
+	["priest"] = 1,
+	["font"] = 0,
+	["druid"] = 1,
+	["deathknight"] = 1,
+}

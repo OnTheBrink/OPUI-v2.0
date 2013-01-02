@@ -1,0 +1,9 @@
+
+SkeenCore3Database = {
+	["DefaultGUIName"] = "SkeenCore3GUIDefault",
+	["bottom"] = 356.1928081933494,
+	["locked"] = true,
+	["scale"] = 1,
+	["left"] = 1160.524038889015,
+	["update_interval"] = 0.1,
+}

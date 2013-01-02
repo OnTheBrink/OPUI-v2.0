@@ -1,0 +1,115 @@
+
+POISONER_CONFIG = {
+	["Enabled"] = 1,
+	["Buttons"] = {
+		["FreeButton"] = {
+			["Active"] = 1,
+			["Scale"] = 1,
+			["Lock"] = 0,
+			["Alpha"] = 1,
+			["Position"] = {
+				["RelativeTo"] = "UIParent",
+				["XPos"] = 316.9985875498724,
+				["RelativePoint"] = "BOTTOM",
+				["Anchor"] = "BOTTOM",
+				["YPos"] = 177.0002342720217,
+			},
+		},
+		["QuickButton"] = {
+			["Scale"] = 1,
+			["Lock"] = 1,
+			["Alpha"] = 1,
+			["Position"] = {
+				["RelativeTo"] = "UIParent",
+				["XPos"] = 280.7861525202939,
+				["RelativePoint"] = "BOTTOM",
+				["Anchor"] = "BOTTOM",
+				["YPos"] = 176.0236878324257,
+			},
+		},
+		["LDBIcon"] = {
+			["hide"] = "true",
+		},
+	},
+	["Preset"] = {
+		["Normal"] = {
+			["Throwweapon"] = 4,
+			["Offhand"] = 4,
+			["Mainhand"] = 5,
+		},
+		["CTRL"] = {
+			["Throwweapon"] = 2,
+			["Offhand"] = 2,
+			["Mainhand"] = 3,
+		},
+		["Overwrite"] = 0,
+		["ALT"] = {
+			["Throwweapon"] = 1,
+			["Offhand"] = 1,
+			["Mainhand"] = 1,
+		},
+		["SHIFT"] = {
+			["Throwweapon"] = 2,
+			["Offhand"] = 2,
+			["Mainhand"] = 6,
+		},
+	},
+	["TooltipType"] = "full",
+	["Version"] = "4.1",
+	["Menu"] = {
+		["Position"] = "right",
+		["Parent"] = "Poisoner_FreeButton",
+		["Scale"] = 1,
+		["Spacing"] = 1,
+		["AutoHide"] = {
+			["Active"] = 0,
+			["Time"] = 10,
+			["inCombat"] = 0,
+		},
+	},
+	["PrintClickedPoison"] = 1,
+	["Timer"] = {
+		["Active"] = 1,
+		["Scale"] = 1,
+		["WarningThreshold"] = 2,
+		["Alpha"] = 1,
+		["Output"] = {
+			["Chat"] = 1,
+			["ErrorFrame"] = 1,
+			["Audio"] = 0,
+			["Aura"] = 0,
+		},
+		["IgnoreWhileFishing"] = 0,
+		["Lock"] = 1,
+		["Position"] = {
+			["RelativeTo"] = "UIParent",
+			["XPos"] = 0,
+			["RelativePoint"] = "CENTER",
+			["Anchor"] = "CENTER",
+			["YPos"] = 100,
+		},
+		["Weapon"] = {
+			["MainHand"] = 1,
+			["OffHand"] = 1,
+			["ThrowWeapon"] = 1,
+		},
+	},
+	["Poisons"] = {
+		["WPName"] = "Wound Poison",
+		["MPName"] = "Mind-Numbing Poison",
+		["DPName"] = "Deadly Poison",
+		["CPName"] = "Crippling Poison",
+		["IPName"] = "Instant Poison",
+	},
+	["StartedOnce"] = 1,
+	["Buy"] = {
+		["Active"] = 1,
+		["WP"] = 40,
+		["DP"] = 40,
+		["MP"] = 40,
+		["Check"] = 1,
+		["Prompt"] = 0,
+		["CP"] = 40,
+		["IP"] = 40,
+	},
+}

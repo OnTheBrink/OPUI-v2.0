@@ -1,0 +1,53 @@
+
+CoolLineCharDB = {
+	["hidebag"] = true,
+	["bgcolor"] = {
+		["a"] = 1,
+		["b"] = 0.1019607843137255,
+		["g"] = 0.1019607843137255,
+		["r"] = 0.1019607843137255,
+	},
+	["border"] = "Boarders A",
+	["statusbar"] = "Glamour4",
+	["fontsize"] = 16,
+	["perchar"] = true,
+	["block"] = {
+		["Hearthstone"] = true,
+	},
+	["iconplus"] = 16,
+	["spellcolor"] = {
+		["a"] = 1,
+		["b"] = 0.03529411764705882,
+		["g"] = 0.03529411764705882,
+		["r"] = 0.0392156862745098,
+	},
+	["hideinv"] = true,
+	["nospellcolor"] = {
+		["a"] = 1,
+		["b"] = 0,
+		["g"] = 0,
+		["r"] = 0,
+	},
+	["inactivealpha"] = 0.9999999999999999,
+	["bordercolor"] = {
+		["a"] = 1,
+		["b"] = 0.1333333333333333,
+		["g"] = 0.1333333333333333,
+		["r"] = 0.1333333333333333,
+	},
+	["w"] = 360,
+	["hidepet"] = true,
+	["y"] = -412,
+	["font"] = "Accidental Presidency",
+	["dbinit"] = 1,
+	["hidefail"] = true,
+	["x"] = 4,
+	["h"] = 18,
+	["fontcolor"] = {
+		["a"] = 0.8,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["activealpha"] = 0.9999999999999999,
+}

@@ -1,0 +1,55 @@
+
+Chinchilla2DB = {
+	["namespaces"] = {
+		["Ping"] = {
+			["profiles"] = {
+				["Default"] = {
+					["chat"] = true,
+				},
+			},
+		},
+		["Coordinates"] = {
+			["profiles"] = {
+				["Default"] = {
+					["enabled"] = false,
+				},
+			},
+		},
+		["Appearance"] = {
+		},
+		["WheelZoom"] = {
+		},
+		["AutoZoom"] = {
+		},
+		["TrackingDots"] = {
+		},
+		["QuestTracker"] = {
+		},
+		["RangeCircle"] = {
+		},
+		["ShowHide"] = {
+		},
+		["Position"] = {
+		},
+		["Location"] = {
+			["profiles"] = {
+				["Default"] = {
+					["borderTexture"] = "Boarders A",
+				},
+			},
+		},
+		["Compass"] = {
+		},
+		["MoveButtons"] = {
+		},
+		["Expander"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

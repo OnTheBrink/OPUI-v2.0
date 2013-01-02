@@ -1,0 +1,1791 @@
+
+AUCTIONATOR_SAVEDVARS = {
+	["_10000"] = 200,
+	["_50000"] = 500,
+	["_500"] = 5,
+	["_1000000"] = 2500,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_5000000"] = 10000,
+	["_2000"] = 100,
+}
+AUCTIONATOR_PRICING_HISTORY = {
+	["Razzashi Hatchling"] = {
+		["is"] = "48126:0",
+		["1285850"] = "19930000:1",
+	},
+	["Dark Whelpling"] = {
+		["is"] = "10822:0",
+		["1285852"] = "38990000:1",
+	},
+	["Snowman Kit"] = {
+		["is"] = "21309:0",
+		["1285856"] = "1427500:1",
+	},
+	["Five of Stones"] = {
+		["is"] = "62000:0",
+		["1285851"] = "7240000:1",
+	},
+	["Pungent Seal Whey"] = {
+		["is"] = "33444:0",
+		["1285873"] = "49692:5",
+	},
+	["Snowfall Ink"] = {
+		["is"] = "43127:0",
+		["1285873"] = "458000:1",
+		["1285872"] = "458000:15",
+	},
+}
+AUCTIONATOR_SHOPPING_LISTS = {
+	{
+		["items"] = {
+		},
+		["isRecents"] = 1,
+		["name"] = "Recent Searches",
+	}, -- [1]
+	{
+		["items"] = {
+		},
+		["name"] = "Resekk",
+		["isSorted"] = true,
+	}, -- [2]
+	{
+		["items"] = {
+			"Greater Cosmic Essence", -- [1]
+			"Infinite Dust", -- [2]
+			"Dream Shard", -- [3]
+			"Abyss Crystal", -- [4]
+		},
+		["name"] = "Sample Shopping List #1",
+		["isSorted"] = false,
+	}, -- [3]
+}
+AUCTIONATOR_PRICE_DATABASE = {
+	["__dbversion"] = 4,
+	["Laughing Skull_Alliance"] = {
+		["Amy's Blanket"] = {
+			["H56"] = 1260000,
+			["mr"] = 1260000,
+		},
+		["Soul's Anguish"] = {
+			["H56"] = 25000000,
+			["mr"] = 25000000,
+		},
+		["Impetuous Query"] = {
+			["H56"] = 2860000,
+			["mr"] = 2860000,
+		},
+		["Safety Catch Removal Kit"] = {
+			["H56"] = 94594,
+			["mr"] = 94594,
+		},
+		["Scytheclaw Boots"] = {
+			["H56"] = 188360,
+			["mr"] = 188360,
+		},
+		["Spidersilk Boots"] = {
+			["H56"] = 700000,
+			["mr"] = 700000,
+		},
+		["Dark Arctic Chestpiece"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Greaves of the Outcast Knight"] = {
+			["H56"] = 6200000,
+			["mr"] = 6200000,
+		},
+		["Myrmidon's Signet"] = {
+			["H56"] = 4250000,
+			["mr"] = 4250000,
+		},
+		["Toughened Leather Gloves"] = {
+			["H56"] = 546800,
+			["mr"] = 546800,
+		},
+		["Heavy Silver Ring of the Boar"] = {
+			["H56"] = 66463,
+			["mr"] = 66463,
+		},
+		["Cloak of Harsh Winds"] = {
+			["H56"] = 565387,
+			["mr"] = 565387,
+		},
+		["Jaina's Firestarter"] = {
+			["H56"] = 1143803,
+			["mr"] = 1143803,
+		},
+		["Band of Sorrow"] = {
+			["H56"] = 1105544,
+			["mr"] = 1105544,
+		},
+		["Titansteel Shanker"] = {
+			["H56"] = 650000,
+			["mr"] = 650000,
+		},
+		["Emberfire Cowl"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Sapphire Signet of the Bear"] = {
+			["H56"] = 244292,
+			["mr"] = 244292,
+		},
+		["Void Crystal"] = {
+			["H56"] = 110100,
+			["mr"] = 110100,
+		},
+		["Bone-Inlaid Sarcophagus Key"] = {
+			["H56"] = 3000000,
+			["mr"] = 3000000,
+		},
+		["Zulian Swirling Shield"] = {
+			["H56"] = 12000000,
+			["mr"] = 12000000,
+		},
+		["Signet of High Arcanist Savor"] = {
+			["H56"] = 200000000,
+			["mr"] = 200000000,
+		},
+		["Hi-Tech Supergun"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Kang the Decapitator"] = {
+			["H56"] = 6700000,
+			["mr"] = 6700000,
+		},
+		["Ace of Waves"] = {
+			["H56"] = 18490000,
+			["mr"] = 18490000,
+		},
+		["Sapphire Signet of Fire Resistance"] = {
+			["H56"] = 238011,
+			["mr"] = 238011,
+		},
+		["Emberfire Robe"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Elementium Ingot"] = {
+			["H56"] = 5000000,
+			["mr"] = 5000000,
+		},
+		["Ace of Furies"] = {
+			["H56"] = 3206440,
+			["mr"] = 3206440,
+		},
+		["Hessonite Band of the Flameblaze"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Vambraces of Prophecy"] = {
+			["H56"] = 333604,
+			["mr"] = 333604,
+		},
+		["Killmaim"] = {
+			["H56"] = 1370000,
+			["mr"] = 1370000,
+		},
+		["Sapphire Signet of the Boar"] = {
+			["H56"] = 238011,
+			["mr"] = 238011,
+		},
+		["Fireweave Gloves"] = {
+			["H56"] = 3497500,
+			["mr"] = 3497500,
+		},
+		["Heart of the Vile"] = {
+			["H56"] = 24500000,
+			["mr"] = 24500000,
+		},
+		["The Needler"] = {
+			["H56"] = 544500,
+			["mr"] = 544500,
+		},
+		["Shortsword of Vengeance"] = {
+			["H56"] = 1470000,
+			["mr"] = 1470000,
+		},
+		["Agin's Crushing Carapace"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Berto's Staff"] = {
+			["H56"] = 700000,
+			["mr"] = 700000,
+		},
+		["Grips of the Warming Heart"] = {
+			["H56"] = 420000,
+			["mr"] = 420000,
+		},
+		["Titanium Spellshock Ring"] = {
+			["H56"] = 5239500,
+			["mr"] = 5239500,
+		},
+		["Bloodied Pyrium Bracers"] = {
+			["H56"] = 4996221,
+			["mr"] = 4996221,
+		},
+		["Buc-Zakai Choker"] = {
+			["H56"] = 69250000,
+			["mr"] = 69250000,
+		},
+		["Shock-Inducing Girdle"] = {
+			["H56"] = 349599,
+			["mr"] = 349599,
+		},
+		["Wand of Arcane Potency"] = {
+			["H56"] = 660000,
+			["mr"] = 660000,
+		},
+		["Scales of the Beast"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Pattern: Truefaith Vestments"] = {
+			["H56"] = 2499999,
+			["mr"] = 2499999,
+		},
+		["Zom's Electrostatic Cloak"] = {
+			["H56"] = 83187500,
+			["mr"] = 83187500,
+		},
+		["Titansteel Bonecrusher"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Chestguard of Exile"] = {
+			["H56"] = 3999900,
+			["mr"] = 3999900,
+		},
+		["Abandoned Dark Iron Ring"] = {
+			["H56"] = 4000000,
+			["mr"] = 4000000,
+		},
+		["Hessonite Band of the Earthshaker"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Adept Ember Topaz"] = {
+			["H56"] = 1997500,
+			["mr"] = 1997500,
+		},
+		["Death Pyre Mace"] = {
+			["H56"] = 2722500,
+			["mr"] = 2722500,
+		},
+		["Grim Reaper"] = {
+			["H56"] = 939660,
+			["mr"] = 939660,
+		},
+		["Manual of the Planes"] = {
+			["H56"] = 1900000,
+			["mr"] = 1900000,
+		},
+		["Firebane Cloak"] = {
+			["H56"] = 950000,
+			["mr"] = 950000,
+		},
+		["Razzashi Hatchling"] = {
+			["L56"] = 19930000,
+			["mr"] = 19930000,
+			["sc"] = 3,
+			["H56"] = 19940000,
+			["id"] = "48126",
+			["cc"] = 11,
+		},
+		["Aviary Guardsman's Hauberk"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Gut Ripper"] = {
+			["H56"] = 4000000,
+			["mr"] = 4000000,
+		},
+		["Tempered Saronite Bracers"] = {
+			["H56"] = 30500000,
+			["mr"] = 30500000,
+		},
+		["Emberfire Pants"] = {
+			["H56"] = 9700000,
+			["mr"] = 9700000,
+		},
+		["Prospector Axe"] = {
+			["H56"] = 1780000,
+			["mr"] = 1780000,
+		},
+		["Ring of the Great Whale"] = {
+			["H56"] = 1450000,
+			["mr"] = 1450000,
+		},
+		["Gargoyle's Bite"] = {
+			["H56"] = 916603,
+			["mr"] = 916603,
+		},
+		["Bloodrazor"] = {
+			["H56"] = 6780000,
+			["mr"] = 6780000,
+		},
+		["Claw of the Shadowmancer"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Adamantite Breastplate"] = {
+			["H56"] = 740000,
+			["mr"] = 740000,
+		},
+		["Winged Helm"] = {
+			["H56"] = 350000,
+			["mr"] = 350000,
+		},
+		["Eternal Belt Buckle"] = {
+			["H56"] = 449999,
+			["mr"] = 449999,
+		},
+		["Bloodied Pyrium Belt"] = {
+			["H56"] = 5254558,
+			["mr"] = 5254558,
+		},
+		["Sapphire Spellthread"] = {
+			["H56"] = 2999000,
+			["mr"] = 2999000,
+		},
+		["Amulet of the Howling Watch"] = {
+			["H56"] = 800000,
+			["mr"] = 800000,
+		},
+		["Bloodied Dragonscale Legs"] = {
+			["H56"] = 30000000,
+			["mr"] = 30000000,
+		},
+		["Tsunami Shoulders of the Zephyr"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Darkmoon Card: Volcano"] = {
+			["H56"] = 300000000,
+			["mr"] = 300000000,
+		},
+		["Runed Dragonscale"] = {
+			["H56"] = 813935,
+			["mr"] = 813935,
+		},
+		["Wand of Dark Worship"] = {
+			["H56"] = 999000,
+			["mr"] = 999000,
+		},
+		["Scorched Leg Armor"] = {
+			["H56"] = 1250000,
+			["mr"] = 1250000,
+		},
+		["Tigerstrike Mantle"] = {
+			["H56"] = 1890000,
+			["mr"] = 1890000,
+		},
+		["Elementium Earthguard"] = {
+			["H56"] = 45999800,
+			["mr"] = 45999800,
+		},
+		["Jasper Ring of the Earthshaker"] = {
+			["H56"] = 1997500,
+			["mr"] = 1997500,
+		},
+		["Azure Spellthread"] = {
+			["H56"] = 150000,
+			["mr"] = 150000,
+		},
+		["Fireweave Shoulders"] = {
+			["H56"] = 9700000,
+			["mr"] = 9700000,
+		},
+		["Storm Lord's Girdle"] = {
+			["H56"] = 300000,
+			["mr"] = 300000,
+		},
+		["Bloodied Wyrmhide Chest"] = {
+			["H56"] = 10000000,
+			["mr"] = 10000000,
+		},
+		["Lord Rottington's Pressed Wisp Book"] = {
+			["H56"] = 1007500,
+			["mr"] = 1007500,
+		},
+		["Nightblade"] = {
+			["H56"] = 2890000,
+			["mr"] = 2890000,
+		},
+		["Hydralick Armor"] = {
+			["H56"] = 2740000,
+			["mr"] = 2740000,
+		},
+		["Heavy Silver Ring of the Falcon"] = {
+			["H56"] = 10000,
+			["mr"] = 10000,
+		},
+		["Redsteel Breastplate"] = {
+			["H56"] = 4875000,
+			["mr"] = 4875000,
+		},
+		["Petrified Shinbone"] = {
+			["H56"] = 350000,
+			["mr"] = 350000,
+		},
+		["Elementium Destroyer's Ring"] = {
+			["H56"] = 57550000,
+			["mr"] = 57550000,
+		},
+		["Uther's Strength"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Fireweave Pants"] = {
+			["H56"] = 9700000,
+			["mr"] = 9700000,
+		},
+		["Kuang's Locket of Secrets"] = {
+			["H56"] = 3000000,
+			["mr"] = 3000000,
+		},
+		["Kickback 5000"] = {
+			["H56"] = 45000000,
+			["mr"] = 45000000,
+		},
+		["Librarian's Paper Cutter"] = {
+			["H56"] = 540000,
+			["mr"] = 540000,
+		},
+		["Tattooed Eyeball"] = {
+			["H56"] = 20500000,
+			["mr"] = 20500000,
+		},
+		["Skullcage of Eternal Terror"] = {
+			["H56"] = 510000,
+			["mr"] = 510000,
+		},
+		["Sinman's Helm of Succor"] = {
+			["H56"] = 10000000,
+			["mr"] = 10000000,
+		},
+		["Headdress of the Sleeper"] = {
+			["H56"] = 340000,
+			["mr"] = 340000,
+		},
+		["Divine Companion"] = {
+			["H56"] = 5500000,
+			["mr"] = 5500000,
+		},
+		["Deadmines Cleaver"] = {
+			["H56"] = 2520000,
+			["mr"] = 2520000,
+		},
+		["King's Amber"] = {
+			["H56"] = 105000,
+			["mr"] = 105000,
+		},
+		["Bloodied Dragonscale Bracers"] = {
+			["H56"] = 1300000,
+			["mr"] = 1300000,
+		},
+		["Nethersteel-Lined Handwraps of the Eagle"] = {
+			["H56"] = 1249999,
+			["mr"] = 1249999,
+		},
+		["Frosthide Leg Armor"] = {
+			["H56"] = 1990000,
+			["mr"] = 1990000,
+		},
+		["Scarlet Signet"] = {
+			["H56"] = 220000,
+			["mr"] = 220000,
+		},
+		["Pungent Seal Whey"] = {
+			["mr"] = 49692,
+			["sc"] = 1,
+			["H56"] = 49692,
+			["id"] = "33444",
+			["cc"] = 4,
+		},
+		["Braxxis' Staff of Slumber"] = {
+			["H56"] = 700000,
+			["mr"] = 700000,
+		},
+		["Tol'Vir Heriditary Girdle"] = {
+			["H56"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Enchanted Thorium Platemail"] = {
+			["H56"] = 4000000,
+			["mr"] = 4000000,
+		},
+		["Temple Band"] = {
+			["H56"] = 10000000,
+			["mr"] = 10000000,
+		},
+		["Five of Stones"] = {
+			["L56"] = 7240000,
+			["mr"] = 7240000,
+			["sc"] = 0,
+			["H56"] = 7250000,
+			["id"] = "62000",
+			["cc"] = 12,
+		},
+		["Dreadstone"] = {
+			["H56"] = 154903,
+			["mr"] = 154903,
+		},
+		["Weighted Sap"] = {
+			["H56"] = 705500,
+			["mr"] = 705500,
+		},
+		["Chain Gang Legguards"] = {
+			["H56"] = 2220509,
+			["mr"] = 2220509,
+		},
+		["Ghostly Spellthread"] = {
+			["H56"] = 2775000,
+			["mr"] = 2775000,
+		},
+		["Pattern: Merlin's Robe"] = {
+			["H56"] = 55000000,
+			["mr"] = 55000000,
+		},
+		["Dark Whelpling"] = {
+			["mr"] = 39000000,
+			["sc"] = 3,
+			["H56"] = 39000000,
+			["id"] = "10822",
+			["cc"] = 11,
+		},
+		["Cardinal Ruby"] = {
+			["H56"] = 633750,
+			["mr"] = 633750,
+		},
+		["Skin of Stone"] = {
+			["H56"] = 990000,
+			["mr"] = 990000,
+		},
+		["Notched Jawbone"] = {
+			["H56"] = 25000000,
+			["mr"] = 25000000,
+		},
+		["Earthborn Kilt"] = {
+			["H56"] = 499000,
+			["mr"] = 499000,
+		},
+		["Unheeded Warning"] = {
+			["H56"] = 124999995,
+			["mr"] = 124999995,
+		},
+		["Powerful Ghostly Spellthread"] = {
+			["H56"] = 8950000,
+			["mr"] = 8950000,
+		},
+		["Toughened Leather Armor"] = {
+			["H56"] = 20000,
+			["mr"] = 20000,
+		},
+		["Skeletal Club"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Purified Dreadstone"] = {
+			["H56"] = 530000,
+			["mr"] = 530000,
+		},
+		["Drape of Fiery Dreams"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Belt of Nefarious Whispers"] = {
+			["H56"] = 44990000,
+			["mr"] = 44990000,
+		},
+		["Eaglebane Bracers"] = {
+			["H56"] = 358183,
+			["mr"] = 358183,
+		},
+		["Soulcloth Gloves"] = {
+			["H56"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Shadowforge's Lightbound Smock"] = {
+			["H56"] = 89999500,
+			["mr"] = 89999500,
+		},
+		["Heavy Silver Ring of the Monkey"] = {
+			["H56"] = 225833,
+			["mr"] = 225833,
+		},
+		["Nexus Crystal"] = {
+			["H56"] = 1950,
+			["mr"] = 1950,
+		},
+		["Battle Tome"] = {
+			["H56"] = 5850000,
+			["mr"] = 5850000,
+		},
+		["Egg-Warming Blanket of the Necromancer"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Heavy Silver Ring of the Wolf"] = {
+			["H56"] = 56600,
+			["mr"] = 56600,
+		},
+		["Elementium Girdle of Pain"] = {
+			["H56"] = 92634600,
+			["mr"] = 92634600,
+		},
+		["Safecracker's Gloves"] = {
+			["H56"] = 8000000,
+			["mr"] = 8000000,
+		},
+		["Lifestone"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Nightstone Choker of the Faultline"] = {
+			["H56"] = 1250000,
+			["mr"] = 1250000,
+		},
+		["Powerful Enchanted Spellthread"] = {
+			["H56"] = 9250000,
+			["mr"] = 9250000,
+		},
+		["Witchfury"] = {
+			["H56"] = 1370000,
+			["mr"] = 1370000,
+		},
+		["Darkbrand Gloves of the Undertow"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Majestic Zircon"] = {
+			["H56"] = 341250,
+			["mr"] = 341250,
+		},
+		["Staff of Old Woes"] = {
+			["H56"] = 85120000,
+			["mr"] = 85120000,
+		},
+		["Etched Horn"] = {
+			["H56"] = 799000,
+			["mr"] = 799000,
+		},
+		["Tome of Kings"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Girdle of Heated Deeds"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Tsunami Shoulders of the Wavecrest"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Burning War Axe"] = {
+			["H56"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Starfaller"] = {
+			["H56"] = 107553,
+			["mr"] = 107553,
+		},
+		["Beguiler Robes"] = {
+			["H56"] = 1670000,
+			["mr"] = 1670000,
+		},
+		["Talonite's Boots of the Grove"] = {
+			["H56"] = 292500,
+			["mr"] = 292500,
+		},
+		["Flying Machine Control"] = {
+			["H56"] = 5000000,
+			["mr"] = 5000000,
+		},
+		["Obsidium Bladespear"] = {
+			["H56"] = 5500000,
+			["mr"] = 5500000,
+		},
+		["Brawler Gloves"] = {
+			["H56"] = 500000,
+			["mr"] = 500000,
+		},
+		["Assassin's Chestplate"] = {
+			["H56"] = 96778226,
+			["mr"] = 96778226,
+		},
+		["Hessonite Band of the Feverflare"] = {
+			["H56"] = 1170000,
+			["mr"] = 1170000,
+		},
+		["Dragonscale Leg Armor"] = {
+			["H56"] = 12690000,
+			["mr"] = 12690000,
+		},
+		["Fireweave Boots"] = {
+			["H56"] = 4399900,
+			["mr"] = 4399900,
+		},
+		["Darksky Treads"] = {
+			["H56"] = 1200000,
+			["mr"] = 1200000,
+		},
+		["Empyrean Sapphire"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Hellslayer Battle Axe"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Elementium Stormshield"] = {
+			["H56"] = 68500000,
+			["mr"] = 68500000,
+		},
+		["Titansteel Guardian"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Ebonsteel Belt Buckle"] = {
+			["H56"] = 3400000,
+			["mr"] = 3400000,
+		},
+		["Ace of Embers"] = {
+			["H56"] = 11690250,
+			["mr"] = 11690250,
+		},
+		["Bloodied Pyrium Legguards"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Horizon Choker"] = {
+			["H56"] = 1470000,
+			["mr"] = 1470000,
+		},
+		["Saronite Protector"] = {
+			["H56"] = 90000,
+			["mr"] = 90000,
+		},
+		["Mercury-Coated Hood"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Umbral Crystal"] = {
+			["H56"] = 934531,
+			["mr"] = 934531,
+		},
+		["Nightrend Choker"] = {
+			["H56"] = 25000000,
+			["mr"] = 25000000,
+		},
+		["Bloodied Leather Bracers"] = {
+			["H56"] = 9500000,
+			["mr"] = 9500000,
+		},
+		["Ranger Bow"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Alicite Pendant of the Landslide"] = {
+			["H56"] = 2987500,
+			["mr"] = 2987500,
+		},
+		["Gnomish X-Ray Scope"] = {
+			["H56"] = 1260000,
+			["mr"] = 1260000,
+		},
+		["Wodin's Lucky Necklace"] = {
+			["H56"] = 5000000,
+			["mr"] = 5000000,
+		},
+		["Medallion of Grand Marshal Morris"] = {
+			["H56"] = 600000,
+			["mr"] = 600000,
+		},
+		["Jasper Ring of the Bedrock"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Dense Triangle Mace"] = {
+			["H56"] = 2490000,
+			["mr"] = 2490000,
+		},
+		["The Perforator"] = {
+			["H56"] = 1989999,
+			["mr"] = 1989999,
+		},
+		["Quick King's Amber"] = {
+			["H56"] = 2250000,
+			["mr"] = 2250000,
+		},
+		["Pattern: Knightbane Carapace"] = {
+			["H56"] = 4500000,
+			["mr"] = 4500000,
+		},
+		["Skullance Shield"] = {
+			["H56"] = 699999,
+			["mr"] = 699999,
+		},
+		["Vial of the Sands"] = {
+			["H56"] = 800000000,
+			["mr"] = 800000000,
+		},
+		["Durable Nerubhide Cape"] = {
+			["H56"] = 1216108,
+			["mr"] = 1216108,
+		},
+		["Spiritmend Shoulders"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Darkmoon Card: Illusion"] = {
+			["H56"] = 9359072,
+			["mr"] = 9359072,
+		},
+		["Bloodied Pyrium Breastplate"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Eidolon Cloak"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Thousand Bandage Drape"] = {
+			["H56"] = 3376000,
+			["mr"] = 3376000,
+		},
+		["Eye of Zul"] = {
+			["H56"] = 87750,
+			["mr"] = 87750,
+		},
+		["Mekgineer's Chopper"] = {
+			["H56"] = 187500000,
+			["mr"] = 187500000,
+		},
+		["Dungeoneering Guide"] = {
+			["H56"] = 4497500,
+			["mr"] = 4497500,
+		},
+		["Moonsoul Crown"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Skein Woven Mantle"] = {
+			["H56"] = 514266,
+			["mr"] = 514266,
+		},
+		["Royal Guide of Escape Routes"] = {
+			["H56"] = 550000,
+			["mr"] = 550000,
+		},
+		["Barnacle Pendant"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Bloodied Dragonscale Chest"] = {
+			["H56"] = 33000000,
+			["mr"] = 33000000,
+		},
+		["Hessonite Band of the Fireflash"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Aquamarine Signet of the Whale"] = {
+			["H56"] = 240474,
+			["mr"] = 240474,
+		},
+		["Leggings of Concentrated Darkness"] = {
+			["H56"] = 250000,
+			["mr"] = 250000,
+		},
+		["Raine's Signet of Blasting"] = {
+			["H56"] = 300000,
+			["mr"] = 300000,
+		},
+		["Fumblub's Seat Cushion of the Marksman"] = {
+			["H56"] = 300000,
+			["mr"] = 300000,
+		},
+		["Bloodied Wyrmhide Boots"] = {
+			["H56"] = 14500000,
+			["mr"] = 14500000,
+		},
+		["Hessonite Band of the Stormblast"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Darkmoon Executioner"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Gartic's Resplendent Leggings"] = {
+			["H56"] = 6000000,
+			["mr"] = 6000000,
+		},
+		["Bracers of Accurate Fire"] = {
+			["H56"] = 450000,
+			["mr"] = 450000,
+		},
+		["Dark Frostscale Breastplate"] = {
+			["H56"] = 550000,
+			["mr"] = 550000,
+		},
+		["Curse-Tainted Leggings"] = {
+			["H56"] = 1799999,
+			["mr"] = 1799999,
+		},
+		["Book of Stars"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Bottled Lightning"] = {
+			["H56"] = 12000000,
+			["mr"] = 12000000,
+		},
+		["Band of the Hierophant"] = {
+			["H56"] = 250000,
+			["mr"] = 250000,
+		},
+		["Ornate Pyrium Shoulders"] = {
+			["H56"] = 2750000,
+			["mr"] = 2750000,
+		},
+		["Icy Scale Belt"] = {
+			["H56"] = 4633688,
+			["mr"] = 4633688,
+		},
+		["Black Duskwood Staff"] = {
+			["H56"] = 2770000,
+			["mr"] = 2770000,
+		},
+		["Seaspray Emerald"] = {
+			["H56"] = 164219,
+			["mr"] = 164219,
+		},
+		["Gronn-Blessed Warbeads of the Wolf"] = {
+			["H56"] = 800000,
+			["mr"] = 800000,
+		},
+		["Combatant Claymore"] = {
+			["H56"] = 1009999,
+			["mr"] = 1009999,
+		},
+		["Twilight Leg Armor"] = {
+			["H56"] = 1100000,
+			["mr"] = 1100000,
+		},
+		["Alicite Pendant of the Feverflare"] = {
+			["H56"] = 2647500,
+			["mr"] = 2647500,
+		},
+		["Fiery War Axe"] = {
+			["H56"] = 5780000,
+			["mr"] = 5780000,
+		},
+		["Book of Origination"] = {
+			["H56"] = 975000,
+			["mr"] = 975000,
+		},
+		["Stormforged Helm"] = {
+			["H56"] = 700000,
+			["mr"] = 700000,
+		},
+		["Potentate's Letter Opener"] = {
+			["H56"] = 2250000,
+			["mr"] = 2250000,
+		},
+		["Finely-Tuned Throat Needler"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Bloodied Wyrmhide Belt"] = {
+			["H56"] = 4750000,
+			["mr"] = 4750000,
+		},
+		["Fire-Etched Dagger"] = {
+			["H56"] = 4158000,
+			["mr"] = 4158000,
+		},
+		["Delicate Blade of Meaning"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Mantle of the Eternal Sentinel"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Serpent Slicer"] = {
+			["H56"] = 850000,
+			["mr"] = 850000,
+		},
+		["Endwyn's Flickering Gauntlets"] = {
+			["H56"] = 12500000,
+			["mr"] = 12500000,
+		},
+		["Emberfire Shoulders"] = {
+			["H56"] = 669000,
+			["mr"] = 669000,
+		},
+		["Six Demon Bag"] = {
+			["H56"] = 3002941,
+			["mr"] = 3002941,
+		},
+		["Nightstone Choker of the Galeburst"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Cloak of Beasts"] = {
+			["H56"] = 409900,
+			["mr"] = 409900,
+		},
+		["Supercharger Battle Axe"] = {
+			["H56"] = 1370000,
+			["mr"] = 1370000,
+		},
+		["Dalewind Trousers"] = {
+			["H56"] = 350000,
+			["mr"] = 350000,
+		},
+		["Abyss Crystal"] = {
+			["H56"] = 100000,
+			["mr"] = 100000,
+		},
+		["Jasper Ring of the Fireflash"] = {
+			["H56"] = 1250000,
+			["mr"] = 1250000,
+		},
+		["Bloodied Pyrium Helm"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Vilerend Slicer"] = {
+			["H56"] = 959500,
+			["mr"] = 959500,
+		},
+		["Armbraces of the Vibrant Flame"] = {
+			["H56"] = 1176084,
+			["mr"] = 1176084,
+		},
+		["Belt of the Blood Nova"] = {
+			["H56"] = 5000000,
+			["mr"] = 5000000,
+		},
+		["Mace of Apotheosis"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Brilliant Spellthread"] = {
+			["H56"] = 2999000,
+			["mr"] = 2999000,
+		},
+		["Bloodied Leather Helm"] = {
+			["H56"] = 3550000,
+			["mr"] = 3550000,
+		},
+		["Hardened Obsidium Helm"] = {
+			["H56"] = 1800000,
+			["mr"] = 1800000,
+		},
+		["Charscale Leg Armor"] = {
+			["H56"] = 12990000,
+			["mr"] = 12990000,
+		},
+		["Maelstrom Crystal"] = {
+			["H56"] = 9750000,
+			["mr"] = 9750000,
+		},
+		["Downfall Hammer"] = {
+			["H56"] = 9200000,
+			["mr"] = 9200000,
+		},
+		["Hardened Elementium Girdle"] = {
+			["H56"] = 55750000,
+			["mr"] = 55750000,
+		},
+		["Heavy Silver Ring of the Owl"] = {
+			["H56"] = 10000,
+			["mr"] = 10000,
+		},
+		["Lady La-La's Singing Shell"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Sparkleshell Mantle"] = {
+			["H56"] = 1640000,
+			["mr"] = 1640000,
+		},
+		["Funeral Pyre Vestment"] = {
+			["H56"] = 950000,
+			["mr"] = 950000,
+		},
+		["Titansteel Spellblade"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Sand Tracker's Spear"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Emberfire Gloves"] = {
+			["H56"] = 1657500,
+			["mr"] = 1657500,
+		},
+		["Deathsilk Robe"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Fireweave Bracers"] = {
+			["H56"] = 1497500,
+			["mr"] = 1497500,
+		},
+		["Darkbrand Gloves of the Galeburst"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Moonshroud Gloves"] = {
+			["H56"] = 1684938,
+			["mr"] = 1684938,
+		},
+		["Crystalline Geoknife"] = {
+			["H56"] = 6000000,
+			["mr"] = 6000000,
+		},
+		["R19 Threatfinder"] = {
+			["H56"] = 96512,
+			["mr"] = 96512,
+		},
+		["Flurry Axe"] = {
+			["H56"] = 4370000,
+			["mr"] = 4370000,
+		},
+		["Acanthia's Lost Pendant"] = {
+			["H56"] = 350000,
+			["mr"] = 350000,
+		},
+		["Bludstone Hammer"] = {
+			["H56"] = 501600,
+			["mr"] = 501600,
+		},
+		["Silver Inlaid Leaf"] = {
+			["H56"] = 14959875,
+			["mr"] = 14959875,
+		},
+		["Fletcher's Gloves"] = {
+			["H56"] = 147500,
+			["mr"] = 147500,
+		},
+		["Sulfuron Ingot"] = {
+			["H56"] = 40001905,
+			["mr"] = 40001905,
+		},
+		["Dark Iceborne Leggings"] = {
+			["H56"] = 180000,
+			["mr"] = 180000,
+		},
+		["Halted Clock"] = {
+			["H56"] = 30000000,
+			["mr"] = 30000000,
+		},
+		["Girdle of Gale Force"] = {
+			["H56"] = 169599,
+			["mr"] = 169599,
+		},
+		["Searing Blade"] = {
+			["H56"] = 990000,
+			["mr"] = 990000,
+		},
+		["Ace of Stones"] = {
+			["H56"] = 3997500,
+			["mr"] = 3997500,
+		},
+		["Blackfang"] = {
+			["H56"] = 500000,
+			["mr"] = 500000,
+		},
+		["Belt of the Depths"] = {
+			["H56"] = 85004436,
+			["mr"] = 85004436,
+		},
+		["Tome of Polymorph: Turtle"] = {
+			["H56"] = 20000000,
+			["mr"] = 20000000,
+		},
+		["Dreamless Belt"] = {
+			["H56"] = 61000000,
+			["mr"] = 61000000,
+		},
+		["Trek's Shiv"] = {
+			["H56"] = 3156250,
+			["mr"] = 3156250,
+		},
+		["Nightshock Girdle"] = {
+			["H56"] = 550000,
+			["mr"] = 550000,
+		},
+		["Fireweave Robe"] = {
+			["H56"] = 9700000,
+			["mr"] = 9700000,
+		},
+		["Razorstrike Breastplate"] = {
+			["H56"] = 240735,
+			["mr"] = 240735,
+		},
+		["Sealing Heartstaff"] = {
+			["H56"] = 15040351,
+			["mr"] = 15040351,
+		},
+		["Rod of Molten Fire"] = {
+			["H56"] = 218000,
+			["mr"] = 218000,
+		},
+		["Cloak of Entropy"] = {
+			["H56"] = 610000,
+			["mr"] = 610000,
+		},
+		["Guttbuster"] = {
+			["H56"] = 1410000,
+			["mr"] = 1410000,
+		},
+		["Sussurating Treads of Shok'sharak"] = {
+			["H56"] = 8000000,
+			["mr"] = 8000000,
+		},
+		["High Bergg Helm"] = {
+			["H56"] = 810000,
+			["mr"] = 810000,
+		},
+		["Seafoam Gauntlets"] = {
+			["H56"] = 390000,
+			["mr"] = 390000,
+		},
+		["Stormbringer Belt"] = {
+			["H56"] = 1270000,
+			["mr"] = 1270000,
+		},
+		["Giantmaim Bracers"] = {
+			["H56"] = 291210,
+			["mr"] = 291210,
+		},
+		["Nether Vortex"] = {
+			["H56"] = 150000,
+			["mr"] = 150000,
+		},
+		["Alicite Pendant of the Flameblaze"] = {
+			["H56"] = 999900,
+			["mr"] = 999900,
+		},
+		["Lhakaz's Swiftblade"] = {
+			["H56"] = 4000000,
+			["mr"] = 4000000,
+		},
+		["Toxidunk Dagger"] = {
+			["H56"] = 350000,
+			["mr"] = 350000,
+		},
+		["Triple-Loop Belt"] = {
+			["H56"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Skullflame Shield"] = {
+			["H56"] = 99999900,
+			["mr"] = 99999900,
+		},
+		["Mammoth-Riding Boots of the Necromancer"] = {
+			["H56"] = 650000,
+			["mr"] = 650000,
+		},
+		["Bugsquashers"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Black Velvet Robes"] = {
+			["H56"] = 1760000,
+			["mr"] = 1760000,
+		},
+		["Condor-Bone Chestguard"] = {
+			["H56"] = 107000,
+			["mr"] = 107000,
+		},
+		["Snowmelt Silken Cinch"] = {
+			["H56"] = 307494,
+			["mr"] = 307494,
+		},
+		["Lord Alexander's Battle Axe"] = {
+			["H56"] = 1100000,
+			["mr"] = 1100000,
+		},
+		["Troll's Bane Leggings"] = {
+			["H56"] = 3030000,
+			["mr"] = 3030000,
+		},
+		["Moccasins of the White Hare"] = {
+			["H56"] = 244000,
+			["mr"] = 244000,
+		},
+		["Titanium Plating"] = {
+			["H56"] = 295000,
+			["mr"] = 295000,
+		},
+		["Crystalpine Stinger"] = {
+			["H56"] = 500000,
+			["mr"] = 500000,
+		},
+		["The Bringer of Death"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Blackwater Cutlass"] = {
+			["H56"] = 100000,
+			["mr"] = 100000,
+		},
+		["Stormforged Gauntlets"] = {
+			["H56"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Dark Arctic Leggings"] = {
+			["H56"] = 550000,
+			["mr"] = 550000,
+		},
+		["Drakehide Tunic of the Bandit"] = {
+			["H56"] = 463911,
+			["mr"] = 463911,
+		},
+		["Snowman Kit"] = {
+			["mr"] = 1430000,
+			["sc"] = 4,
+			["H56"] = 1430000,
+			["id"] = "21309",
+			["cc"] = 11,
+		},
+		["Sentry Cloak"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Frenzied Striker"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Potent Ametrine"] = {
+			["H56"] = 999999,
+			["mr"] = 999999,
+		},
+		["Wolffear Harness"] = {
+			["H56"] = 3670000,
+			["mr"] = 3670000,
+		},
+		["Assassination Blade"] = {
+			["H56"] = 250000,
+			["mr"] = 250000,
+		},
+		["Legguards of the Forlorn Seas"] = {
+			["H56"] = 500000,
+			["mr"] = 500000,
+		},
+		["Crown of Endless Knowledge"] = {
+			["H56"] = 1200000,
+			["mr"] = 1200000,
+		},
+		["Enchanted Spellthread"] = {
+			["H56"] = 2249000,
+			["mr"] = 2249000,
+		},
+		["Leggings of Violent Exsanguination"] = {
+			["H56"] = 650000,
+			["mr"] = 650000,
+		},
+		["Darkmoon Card: Earthquake"] = {
+			["H56"] = 129990000,
+			["mr"] = 129990000,
+		},
+		["Antipodean Rod"] = {
+			["H56"] = 19900,
+			["mr"] = 19900,
+		},
+		["Helm of the Broken Ram"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Spaulders of the Unseen"] = {
+			["H56"] = 149945,
+			["mr"] = 149945,
+		},
+		["Shocking Claws"] = {
+			["H56"] = 400000,
+			["mr"] = 400000,
+		},
+		["Sun Scope"] = {
+			["H56"] = 450000,
+			["mr"] = 450000,
+		},
+		["Ornate Saronite Waistguard"] = {
+			["H56"] = 273249,
+			["mr"] = 273249,
+		},
+		["Cloak of War"] = {
+			["H56"] = 1860000,
+			["mr"] = 1860000,
+		},
+		["Chestguard of the Talon"] = {
+			["H56"] = 413230,
+			["mr"] = 413230,
+		},
+		["Greathelm of the Unyielding Bull"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Chimaerahide Leggings of the Whale"] = {
+			["H56"] = 164456,
+			["mr"] = 164456,
+		},
+		["Felstone Mantle of the Whale"] = {
+			["H56"] = 222222,
+			["mr"] = 222222,
+		},
+		["Gauntlets of Chattering Valves"] = {
+			["H56"] = 780000,
+			["mr"] = 780000,
+		},
+		["Ethereal Terror Handwraps of the Foreseer"] = {
+			["H56"] = 200929,
+			["mr"] = 200929,
+		},
+		["Alpheus Legguards"] = {
+			["H56"] = 2450000,
+			["mr"] = 2450000,
+		},
+		["Girdle of Chained Thunder"] = {
+			["H56"] = 2100000,
+			["mr"] = 2100000,
+		},
+		["Executioner's Cleaver"] = {
+			["H56"] = 450000,
+			["mr"] = 450000,
+		},
+		["Unquenchable Flame"] = {
+			["H56"] = 4999999,
+			["mr"] = 4999999,
+		},
+		["Claws of Agony"] = {
+			["H56"] = 180000000,
+			["mr"] = 180000000,
+		},
+		["Tsunami Shoulders of the Windstorm"] = {
+			["H56"] = 5360000,
+			["mr"] = 5360000,
+		},
+		["Darkmoon Card: Hurricane"] = {
+			["H56"] = 349900000,
+			["mr"] = 349900000,
+		},
+		["Rakzur Club"] = {
+			["H56"] = 946477,
+			["mr"] = 946477,
+		},
+		["Black Malice"] = {
+			["H56"] = 1420000,
+			["mr"] = 1420000,
+		},
+		["Ced's Carver"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Hessonite Band of the Zephyr"] = {
+			["H56"] = 2200000,
+			["mr"] = 2200000,
+		},
+		["Brilliant Pearl Band"] = {
+			["H56"] = 190000,
+			["mr"] = 190000,
+		},
+		["Soulheart Bindings"] = {
+			["H56"] = 5000000,
+			["mr"] = 5000000,
+		},
+		["Dark Nerubian Chestpiece"] = {
+			["H56"] = 499999,
+			["mr"] = 499999,
+		},
+		["Brilliant Saronite Legplates"] = {
+			["H56"] = 422830,
+			["mr"] = 422830,
+		},
+		["Don Gonzales' Shiny Shield"] = {
+			["H56"] = 4950000,
+			["mr"] = 4950000,
+		},
+		["Heavy Netherweave Bandage"] = {
+			["mr"] = 4620,
+			["sc"] = 5,
+			["H56"] = 4620,
+			["id"] = "21991",
+			["cc"] = 4,
+		},
+		["Heavy Geode Mace"] = {
+			["H56"] = 4400000,
+			["mr"] = 4400000,
+		},
+		["Spirewind Fetter"] = {
+			["H56"] = 560000,
+			["mr"] = 560000,
+		},
+		["Snowfall Ink"] = {
+			["L56"] = 458000,
+			["mr"] = 458000,
+			["sc"] = 9,
+			["H56"] = 458819,
+			["id"] = "43127",
+			["cc"] = 6,
+		},
+		["Bloodied Wyrmhide Shoulders"] = {
+			["H56"] = 15000000,
+			["mr"] = 15000000,
+		},
+		["Serenity Belt"] = {
+			["H56"] = 600000,
+			["mr"] = 600000,
+		},
+		["Khoo's Point"] = {
+			["H56"] = 450000,
+			["mr"] = 450000,
+		},
+		["Jasper Ring of the Zephyr"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Jasper Ring of the Wildfire"] = {
+			["H56"] = 899999,
+			["mr"] = 899999,
+		},
+		["Je'Tze's Sparkling Tiara"] = {
+			["H56"] = 159990000,
+			["mr"] = 159990000,
+		},
+		["Accurate Demonseye"] = {
+			["H56"] = 1413750,
+			["mr"] = 1413750,
+		},
+		["Shroud of Dark Memories"] = {
+			["H56"] = 580000,
+			["mr"] = 580000,
+		},
+		["Blade Dancer's Wristguards"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Vrykul Shackles"] = {
+			["H56"] = 657999,
+			["mr"] = 657999,
+		},
+		["Bloodied Leather Gloves"] = {
+			["H56"] = 7500000,
+			["mr"] = 7500000,
+		},
+		["Lydia's Sharpened Swordbreaker"] = {
+			["H56"] = 1000000,
+			["mr"] = 1000000,
+		},
+		["Parrot Cage (Hyacinth Macaw)"] = {
+			["H56"] = 48500000,
+			["mr"] = 48500000,
+		},
+		["Dark Frostscale Leggings"] = {
+			["H56"] = 550000,
+			["mr"] = 550000,
+		},
+		["Shimmerthread Girdle"] = {
+			["H56"] = 590000,
+			["mr"] = 590000,
+		},
+		["Book of Clever Tricks"] = {
+			["H56"] = 310000,
+			["mr"] = 310000,
+		},
+		["Twisted Sabre"] = {
+			["H56"] = 80000,
+			["mr"] = 80000,
+		},
+		["Jasper Ring of the Earthbreaker"] = {
+			["H56"] = 901421,
+			["mr"] = 901421,
+		},
+		["Bloodspiller"] = {
+			["H56"] = 950000,
+			["mr"] = 950000,
+		},
+		["Cenarion Bracers"] = {
+			["H56"] = 474195,
+			["mr"] = 474195,
+		},
+		["Underworld Band"] = {
+			["H56"] = 7880400,
+			["mr"] = 7880400,
+		},
+		["Nagahide Leggings of Fire Protection"] = {
+			["H56"] = 226682,
+			["mr"] = 226682,
+		},
+		["Legguards of the Vault"] = {
+			["H56"] = 7660000,
+			["mr"] = 7660000,
+		},
+		["Demon-Cured Tunic of the Owl"] = {
+			["H56"] = 203045,
+			["mr"] = 203045,
+		},
+		["Fire Eater's Guide"] = {
+			["H56"] = 770000,
+			["mr"] = 770000,
+		},
+		["Polished Jazeraint Armor"] = {
+			["H56"] = 2270000,
+			["mr"] = 2270000,
+		},
+		["Windripper Leggings"] = {
+			["H56"] = 1109999,
+			["mr"] = 1109999,
+		},
+		["Gloves of Holy Might"] = {
+			["H56"] = 5870000,
+			["mr"] = 5870000,
+		},
+		["Alicite Pendant of the Faultline"] = {
+			["H56"] = 750000,
+			["mr"] = 750000,
+		},
+		["Basilisk Hide Pants"] = {
+			["H56"] = 4550000,
+			["mr"] = 4550000,
+		},
+		["Dream Signet of the Marksman"] = {
+			["H56"] = 687700,
+			["mr"] = 687700,
+		},
+		["Glowworm Cavern Bindings"] = {
+			["H56"] = 304044,
+			["mr"] = 304044,
+		},
+		["Ametrine"] = {
+			["H56"] = 97500,
+			["mr"] = 97500,
+		},
+		["Emberfire Belt"] = {
+			["H56"] = 1090000,
+			["mr"] = 1090000,
+		},
+		["Tome of the Dawn"] = {
+			["H56"] = 446860,
+			["mr"] = 446860,
+		},
+		["Volatile Thunderstick"] = {
+			["H56"] = 5500000,
+			["mr"] = 5500000,
+		},
+		["Ace of the Winds"] = {
+			["H56"] = 15000000,
+			["mr"] = 15000000,
+		},
+		["Stormforged Legguards"] = {
+			["H56"] = 449000,
+			["mr"] = 449000,
+		},
+		["Soulkeeper"] = {
+			["H56"] = 500000,
+			["mr"] = 500000,
+		},
+		["Ace of Storms"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Ice Striker's Cloak"] = {
+			["H56"] = 1241401,
+			["mr"] = 1241401,
+		},
+		["Chesterfall Musket"] = {
+			["H56"] = 450000,
+			["mr"] = 450000,
+		},
+		["Scaled Icewalkers"] = {
+			["H56"] = 290000,
+			["mr"] = 290000,
+		},
+		["Darkmoon Card: Tsunami"] = {
+			["H56"] = 400000000,
+			["mr"] = 400000000,
+		},
+		["Book of Survival"] = {
+			["H56"] = 200000,
+			["mr"] = 200000,
+		},
+		["Ornate Pyrium Belt"] = {
+			["H56"] = 999000,
+			["mr"] = 999000,
+		},
+		["Smooth King's Amber"] = {
+			["H56"] = 1111111,
+			["mr"] = 1111111,
+		},
+		["Heavy Silver Ring of the Whale"] = {
+			["H56"] = 56600,
+			["mr"] = 56600,
+		},
+		["Petrolspill Leggings"] = {
+			["H56"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Bloodied Leather Boots"] = {
+			["H56"] = 8500000,
+			["mr"] = 8500000,
+		},
+		["Razor's Edge"] = {
+			["H56"] = 650000,
+			["mr"] = 650000,
+		},
+		["Guardian Blade"] = {
+			["H56"] = 250000,
+			["mr"] = 250000,
+		},
+		["Belt of Tasseled Lanterns"] = {
+			["H56"] = 298978,
+			["mr"] = 298978,
+		},
+		["Emberfire Boots"] = {
+			["H56"] = 780000,
+			["mr"] = 780000,
+		},
+		["Hood of the Crying Rogue"] = {
+			["H56"] = 6142866,
+			["mr"] = 6142866,
+		},
+		["Charm of the Muse"] = {
+			["H56"] = 4500000,
+			["mr"] = 4500000,
+		},
+	},
+}
+AUCTIONATOR_LAST_SCAN_TIME = 1294714064
+AUCTIONATOR_TOONS = {
+	["Opacus"] = {
+		["firstSeen"] = 1294713996,
+		["firstVersion"] = "2.8.7",
+	},
+}
+AUCTIONATOR_STACKING_PREFS = {
+	["snowfall ink"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["five of stones"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+}
+AUCTIONATOR_SCAN_MINLEVEL = 1
+AUCTIONATOR_DB_MAXITEM_AGE = 180
+AUCTIONATOR_DB_MAXHIST_AGE = -1
+AUCTIONATOR_DB_MAXHIST_DAYS = 5
+AUCTIONATOR_DC_PAUSE = 200
+AUCTIONATOR_DE_DATA = nil
+AUCTIONATOR_DE_DATA_BAK = nil

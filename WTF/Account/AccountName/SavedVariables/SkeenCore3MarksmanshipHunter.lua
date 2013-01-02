@@ -1,0 +1,2 @@
+
+SkeenMarksmanshipHunterdb = nil

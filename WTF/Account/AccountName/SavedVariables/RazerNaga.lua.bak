@@ -1,0 +1,11 @@
+
+RazerNagaDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Rogue",
+	},
+	["profiles"] = {
+		["Rogue"] = {
+		},
+	},
+}
+RazerNagaVersion = "2.3.4"

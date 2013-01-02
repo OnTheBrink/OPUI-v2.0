@@ -1,0 +1,12 @@
+
+nibChatTabsDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

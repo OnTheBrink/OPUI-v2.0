@@ -1,0 +1,10 @@
+
+nibMicroMenuDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

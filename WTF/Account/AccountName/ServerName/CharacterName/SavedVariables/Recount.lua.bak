@@ -1,0 +1,375 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["The Innkeeper's Daughter <Opacus>"] = {
+			["GUID"] = "0xF130C84B005033FB",
+			["LastEventHealth"] = {
+				"???", -- [1]
+			},
+			["LastEventType"] = {
+				"MISC", -- [1]
+			},
+			["TimeWindows"] = {
+				["DeathCount"] = {
+					1, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["level"] = 1,
+			["LastFightIn"] = 0,
+			["type"] = "Pet",
+			["DeathLogs"] = {
+				{
+					["MessageTimes"] = {
+						0, -- [1]
+					},
+					["MessageIncoming"] = {
+						true, -- [1]
+					},
+					["Messages"] = {
+						"The Innkeeper's Daughter <Opacus> dies.", -- [1]
+					},
+					["EventNum"] = {
+						0, -- [1]
+					},
+					["DeathAt"] = 1306088988,
+					["HealthNum"] = {
+						0, -- [1]
+					},
+					["Health"] = {
+						"???", -- [1]
+					},
+					["MessageType"] = {
+						"MISC", -- [1]
+					},
+				}, -- [1]
+			},
+			["Owner"] = "Opacus",
+			["NextEventNum"] = 2,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+			},
+			["LastEvents"] = {
+				"The Innkeeper's Daughter <Opacus> dies.", -- [1]
+			},
+			["Name"] = "The Innkeeper's Daughter",
+			["TimeLast"] = {
+				["OVERALL"] = 1306088986,
+				["DeathCount"] = 1306088986,
+			},
+			["LastEventIncoming"] = {
+				true, -- [1]
+			},
+			["LastEventTimes"] = {
+				62357.402, -- [1]
+			},
+			["UnitLockout"] = 1306088986,
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DeathCount"] = 1,
+				},
+				["OverallData"] = {
+					["DeathCount"] = 1,
+				},
+			},
+		},
+		["Opacus"] = {
+			["type"] = "Self",
+			["Owner"] = false,
+			["enClass"] = "ROGUE",
+			["Name"] = "Opacus",
+			["Pet"] = {
+				"The Innkeeper's Daughter <Opacus>", -- [1]
+			},
+			["Fights"] = {
+			},
+			["level"] = 85,
+			["UnitLockout"] = 1306088986,
+			["LastFightIn"] = 0,
+		},
+		["Interrogator Vishas"] = {
+			["GUID"] = "0xF1300F8F00000000",
+			["LastEventHealth"] = {
+				"???", -- [1]
+				"???", -- [2]
+				"???", -- [3]
+				"???", -- [4]
+				"???", -- [5]
+			},
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+			},
+			["TimeWindows"] = {
+				["Damage"] = {
+					46, -- [1]
+				},
+				["TimeDamage"] = {
+					10.2, -- [1]
+				},
+				["DOT_Time"] = {
+					15, -- [1]
+				},
+				["ActiveTime"] = {
+					10.2, -- [1]
+				},
+			},
+			["enClass"] = "MOB",
+			["level"] = -1,
+			["LastFightIn"] = 0,
+			["type"] = "Boss",
+			["TimeLast"] = {
+				["ActiveTime"] = 1306088998,
+				["TimeDamage"] = 1306088998,
+				["OVERALL"] = 1306088998,
+				["DOT_Time"] = 1306088998,
+				["Damage"] = 1306088998,
+			},
+			["Owner"] = false,
+			["LastAbility"] = 62368.847,
+			["NextEventNum"] = 6,
+			["LastEventHealthNum"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+			},
+			["LastEvents"] = {
+				"Interrogator Vishas Shadow Word: Pain (DoT) Unknown Tick -9 (Shadow)", -- [1]
+				"Interrogator Vishas Shadow Word: Pain (DoT) Unknown Tick -9 (Shadow)", -- [2]
+				"Interrogator Vishas Shadow Word: Pain (DoT) Unknown Tick -9 (Shadow)", -- [3]
+				"Interrogator Vishas Shadow Word: Pain (DoT) Mipxie Tick -9 (Shadow)", -- [4]
+				"Interrogator Vishas Shadow Word: Pain (DoT) Mipxie Tick -10 (Shadow)", -- [5]
+			},
+			["Name"] = "Interrogator Vishas",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+			},
+			["LastEventTimes"] = {
+				62360.24, -- [1]
+				62365.64, -- [2]
+				62366.254, -- [3]
+				62368.815, -- [4]
+				62368.847, -- [5]
+			},
+			["Fights"] = {
+				["CurrentFightData"] = {
+					["DOTs"] = {
+						["Shadow Word: Pain (DoT)"] = {
+							["Details"] = {
+								["Mipxie"] = {
+									["count"] = 6,
+								},
+								["Unknown"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["TimeSpent"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 2.59,
+								},
+							},
+							["amount"] = 2.59,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 7.61,
+								},
+							},
+							["amount"] = 7.61,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["Attacks"] = {
+						["Shadow Word: Pain (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 10,
+									["min"] = 9,
+									["count"] = 5,
+									["amount"] = 46,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 46,
+						},
+					},
+					["ElementDone"] = {
+						["Shadow"] = 46,
+					},
+					["DamagedWho"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 19,
+								},
+							},
+							["amount"] = 19,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 27,
+								},
+							},
+							["amount"] = 27,
+						},
+					},
+					["ActiveTime"] = 10.2,
+					["TimeDamaging"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 2.59,
+								},
+							},
+							["amount"] = 2.59,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 7.61,
+								},
+							},
+							["amount"] = 7.61,
+						},
+					},
+					["TimeDamage"] = 10.2,
+					["DOT_Time"] = 15,
+					["Damage"] = 46,
+				},
+				["OverallData"] = {
+					["DOTs"] = {
+						["Shadow Word: Pain (DoT)"] = {
+							["Details"] = {
+								["Mipxie"] = {
+									["count"] = 6,
+								},
+								["Unknown"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["TimeSpent"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 2.59,
+								},
+							},
+							["amount"] = 2.59,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 7.61,
+								},
+							},
+							["amount"] = 7.61,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Shadow"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["Attacks"] = {
+						["Shadow Word: Pain (DoT)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 10,
+									["min"] = 9,
+									["count"] = 5,
+									["amount"] = 46,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 46,
+						},
+					},
+					["ElementDone"] = {
+						["Shadow"] = 46,
+					},
+					["DamagedWho"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 19,
+								},
+							},
+							["amount"] = 19,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 27,
+								},
+							},
+							["amount"] = 27,
+						},
+					},
+					["ActiveTime"] = 10.2,
+					["TimeDamaging"] = {
+						["Mipxie"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 2.59,
+								},
+							},
+							["amount"] = 2.59,
+						},
+						["Unknown"] = {
+							["Details"] = {
+								["Shadow Word: Pain (DoT)"] = {
+									["count"] = 7.61,
+								},
+							},
+							["amount"] = 7.61,
+						},
+					},
+					["TimeDamage"] = 10.2,
+					["DOT_Time"] = 15,
+					["Damage"] = 46,
+				},
+			},
+			["UnitLockout"] = 1306088998,
+			["LastActive"] = 1306088998,
+		},
+	},
+	["FightNum"] = 0,
+	["CombatTimes"] = {
+	},
+	["FoughtWho"] = {
+	},
+}

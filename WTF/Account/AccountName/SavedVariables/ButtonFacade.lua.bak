@@ -1,0 +1,11 @@
+
+ButtonFacadeDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["Gloss"] = 0,
+		},
+	},
+}

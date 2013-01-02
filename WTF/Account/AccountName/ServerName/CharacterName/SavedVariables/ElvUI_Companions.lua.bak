@@ -1,0 +1,11 @@
+
+mountdb = {
+	["id"] = 52,
+	["text"] = "Pandaren Kite",
+	["icon"] = "Interface\\Icons\\ability_mount_pandarenkitemount_blue",
+}
+petdb = {
+	["id"] = "0x0000000000131a1f",
+	["text"] = "Phoenix Hatchling",
+	["icon"] = "INTERFACE\\ICONS\\INV_MISC_PHEONIXPET_01.BLP",
+}

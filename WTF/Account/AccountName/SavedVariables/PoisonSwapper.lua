@@ -1,0 +1,3 @@
+
+PoisonSwapperEnabled = nil
+PoisonSwapperOptions = nil

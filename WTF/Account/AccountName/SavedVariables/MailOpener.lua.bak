@@ -1,0 +1,22 @@
+
+MailOpenerDB = {
+	["namespaces"] = {
+		["Collected"] = {
+		},
+		["OpenAll"] = {
+		},
+		["FailSafe"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["general"] = {
+				["defaultStatus"] = "_enabled",
+			},
+			["uses"] = 1,
+		},
+	},
+}

@@ -1,0 +1,7 @@
+## Interface: 40000
+## Title: WIM_Elvui
+## Notes: WIM Skin
+## Author: Stef67
+## Dependencies: WIM
+skin.xml
+skin.lua

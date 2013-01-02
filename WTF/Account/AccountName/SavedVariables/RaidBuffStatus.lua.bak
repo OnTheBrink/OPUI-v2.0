@@ -1,0 +1,24 @@
+
+RaidBuffStatusDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["checkflaskir"] = false,
+			["MiniMapAngle"] = 181.7762142030658,
+			["abouttorunoutdash"] = false,
+			["y"] = 723.9403686523438,
+			["x"] = 1739.814575195313,
+			["TellWizard"] = false,
+			["tankwarn"] = true,
+			["bossonly"] = true,
+			["guildmembers"] = true,
+			["checkfood"] = false,
+		},
+	},
+}
+RaidBuffStatusDefaultProfile = {
+	false, -- [1]
+	"Modders: In your SavedVars, replace the first argument of this table with the profile you want loaded by default, like 'Default'.", -- [2]
+}

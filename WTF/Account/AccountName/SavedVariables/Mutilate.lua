@@ -1,0 +1,23 @@
+
+Mutilatedb = {
+	["PoolEnergyThreshold"] = 90,
+	["scale"] = 1,
+	["range"] = true,
+	["RuptureTimer"] = 2,
+	["RuptureClipTimer"] = 0,
+	["SuggestVanish"] = true,
+	["locked"] = true,
+	["SuggestVendetta"] = true,
+	["RuptureCp"] = 1,
+	["ColdBloodEnergyCap"] = 90,
+	["SuggestMutAsStealthOpener"] = true,
+	["BackstabEnvenomCp"] = 5,
+	["y"] = 100,
+	["x"] = 100,
+	["MasterPoison"] = true,
+	["EnvenomTimer"] = 0,
+	["SuggestColdBlood"] = false,
+	["TargetHealthThreshold"] = 35,
+	["EnvenomCp"] = 4,
+	["SliceAndDiceTimer"] = 0.75,
+}

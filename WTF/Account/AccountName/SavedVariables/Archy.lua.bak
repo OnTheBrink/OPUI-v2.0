@@ -1,0 +1,34 @@
+
+ArchyDB = {
+	["char"] = {
+		["Opacus - Laughing Skull"] = {
+			["digsites"] = {
+				["counter"] = {
+					["Oneiros Digsite"] = 0,
+					["Wyrmbog Fossil Field"] = 0,
+					["Upper Lakkari Tar Pits"] = 0,
+					["Kodo Graveyard"] = 0,
+				},
+				["blacklist"] = {
+				},
+			},
+		},
+	},
+	["global"] = {
+		["surveyNodes"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["tomtom"] = {
+				["enable"] = true,
+			},
+			["digsites"] = {
+				["show"] = false,
+			},
+		},
+	},
+}

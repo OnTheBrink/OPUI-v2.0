@@ -1,0 +1,10 @@
+
+Poisoner_ButtonFacade = {
+	[0] = nil --[[ skipped userdata ]],
+	["QuickButton"] = {
+		["SkinID"] = "Blizzard",
+	},
+	["Menu Buttons"] = {
+		["SkinID"] = "Blizzard",
+	},
+}

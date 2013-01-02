@@ -1,0 +1,10 @@
+
+CPDB = {
+	["profileKeys"] = {
+		["Ðreaded - Kel'Thuzad"] = "Ðreaded - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Ðreaded - Kel'Thuzad"] = {
+		},
+	},
+}

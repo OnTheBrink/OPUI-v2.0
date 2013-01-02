@@ -1,0 +1,11 @@
+
+Mutilatedb = {
+	["y"] = 100,
+	["x"] = 100,
+	["MasterPoison"] = true,
+	["SuggestVanish"] = false,
+	["scale"] = 1,
+	["locked"] = false,
+	["range"] = true,
+	["SuggestVendetta"] = false,
+}

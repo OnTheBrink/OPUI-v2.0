@@ -1,0 +1,5 @@
+
+SkeenCombatRoguedb = {
+	["SuggestRupture"] = true,
+	["SuppressVanish"] = false,
+}

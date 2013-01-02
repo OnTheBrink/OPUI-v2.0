@@ -1,0 +1,20 @@
+
+AtlasLootDB = {
+	["namespaces"] = {
+		["WishList"] = {
+		},
+		["AtlasLootPanel"] = {
+		},
+		["DefaultFrame"] = {
+		},
+		["Filter"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Opacus - Laughing Skull",
+	},
+	["profiles"] = {
+		["Opacus - Laughing Skull"] = {
+		},
+	},
+}

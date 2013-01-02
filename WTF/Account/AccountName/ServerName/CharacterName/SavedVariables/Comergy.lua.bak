@@ -1,0 +1,144 @@
+
+Comergy_Config = {
+	{
+		["Point"] = "CENTER",
+		["ComboColor1"] = {
+			0.99609375, -- [1]
+			0.9765625, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["StealthSound"] = false,
+		["VersionInternal"] = 15800,
+		["ComboBGAlpha"] = 0.07999999821186066,
+		["SoundCombo1"] = true,
+		["EnergyBGColorAlpha"] = {
+			0.3, -- [1]
+			0.3, -- [2]
+			1, -- [3]
+			0.5, -- [4]
+		},
+		["ComboFlash"] = true,
+		["EnergyText"] = false,
+		["EnergyThreshold3"] = 40,
+		["ComboColor5"] = {
+			0.996078431372549, -- [1]
+			0.00392156862745098, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["UnifiedEnergyColor"] = false,
+		["DurationScale"] = 0.800000011920929,
+		["SplitEnergy4"] = false,
+		["SoundCombo5"] = true,
+		["FlipOrientation"] = false,
+		["ComboHeight"] = 21,
+		["EnergyColor5"] = {
+			0, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["TextCenterUp"] = true,
+		["Locked"] = false,
+		["UnifiedComboColor"] = false,
+		["SoundCombo4"] = true,
+		["EnergyColor0"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["ComboColor2"] = {
+			0.99609375, -- [1]
+			0.9765625, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["EnergyColor1"] = {
+			1, -- [1]
+			0, -- [2]
+			0, -- [3]
+		},
+		["Version"] = "1.58r",
+		["BGColorAlpha"] = {
+			0, -- [1]
+			0, -- [2]
+			0, -- [3]
+			0.6800000071525574, -- [4]
+		},
+		["HealthBarHeight"] = 1,
+		["ComboColor4"] = {
+			0.99609375, -- [1]
+			0.9765625, -- [2]
+			0, -- [3]
+		},
+		["ComboText"] = false,
+		["ComboDiff"] = -1.862645149230957e-008,
+		["TextCenter"] = true,
+		["Spacing"] = 4,
+		["SplitEnergy3"] = false,
+		["ComboColor3"] = {
+			0.99609375, -- [1]
+			0.9765625, -- [2]
+			0, -- [3]
+		},
+		["SoundCombo2"] = true,
+		["Width"] = 203,
+		["EnergyColor2"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0, -- [3]
+		},
+		["TextColor"] = {
+			1, -- [1]
+			1, -- [2]
+			1, -- [3]
+		},
+		["TextHeight"] = 16,
+		["ShowTargetHealthBar"] = false,
+		["SoundEnergy2"] = false,
+		["SoundEnergy5"] = false,
+		["SplitEnergy1"] = false,
+		["ShowOnlyInCombat"] = true,
+		["ShowWhenEnergyNotFull"] = true,
+		["ShowInStealth"] = true,
+		["EnergyThreshold1"] = 25,
+		["SplitEnergy2"] = false,
+		["EnergyColor3"] = {
+			1, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["EnergyFlash"] = false,
+		["FlipBars"] = false,
+		["EnergyThreshold4"] = 60,
+		["VerticalBars"] = false,
+		["SoundEnergy4"] = false,
+		["EnergyColor4"] = {
+			1, -- [1]
+			1, -- [2]
+			0, -- [3]
+		},
+		["CritSound"] = false,
+		["EnergyFlashColor"] = {
+			1, -- [1]
+			0.2, -- [2]
+			0.2, -- [3]
+		},
+		["SoundEnergy1"] = false,
+		["BarTexture"] = 11,
+		["SoundEnergy3"] = false,
+		["SoundCombo3"] = true,
+		["Y"] = -258.9541110100751,
+		["X"] = 112.2459438712914,
+		["EnergyThreshold2"] = 35,
+		["EnergyBGFlash"] = false,
+		["ComboColor0"] = {
+			0.5, -- [1]
+			0.5, -- [2]
+			0.5, -- [3]
+		},
+		["TextFont"] = 3,
+		["EnergyHeight"] = 0,
+		["ShowPlayerHealthBar"] = false,
+	}, -- [1]
+}

@@ -1,0 +1,181 @@
+
+Bartender4DB = {
+	["namespaces"] = {
+		["ActionBars"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["actionbars"] = {
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.5000403105323,
+								["point"] = "BOTTOM",
+								["y"] = 189.3599678527897,
+							},
+						}, -- [1]
+						{
+							["rows"] = 4,
+							["version"] = 3,
+							["position"] = {
+								["x"] = 255.4653115392641,
+								["point"] = "BOTTOM",
+								["scale"] = 0.75,
+								["y"] = 229.2729004767045,
+							},
+						}, -- [2]
+						{
+							["rows"] = 4,
+							["version"] = 3,
+							["position"] = {
+								["x"] = 342.4653050024213,
+								["point"] = "BOTTOM",
+								["scale"] = 0.75,
+								["y"] = 229.2729004767045,
+							},
+						}, -- [3]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.5000403105323,
+								["point"] = "BOTTOM",
+								["y"] = 107.9423900286855,
+							},
+						}, -- [4]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.5000403105323,
+								["point"] = "BOTTOM",
+								["y"] = 147.6895989196918,
+							},
+						}, -- [5]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.5000403105323,
+								["point"] = "BOTTOM",
+								["y"] = 230.4800206311203,
+							},
+						}, -- [6]
+						{
+							["version"] = 3,
+							["position"] = {
+								["x"] = -231.5000403105323,
+								["point"] = "CENTER",
+								["y"] = 0.4999242639954673,
+							},
+						}, -- [7]
+						{
+							["rows"] = 4,
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -443.1598008610499,
+								["point"] = "BOTTOMRIGHT",
+								["scale"] = 0.75,
+								["y"] = 229.2729004767045,
+							},
+						}, -- [8]
+						{
+							["rows"] = 4,
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["x"] = 429.4654064289218,
+								["point"] = "BOTTOM",
+								["scale"] = 0.75,
+								["y"] = 229.2729004767045,
+							},
+						}, -- [9]
+						{
+							["rows"] = 4,
+							["enabled"] = true,
+							["version"] = 3,
+							["position"] = {
+								["x"] = -356.1599153612367,
+								["point"] = "BOTTOMRIGHT",
+								["scale"] = 0.75,
+								["y"] = 229.2729004767045,
+							},
+						}, -- [10]
+					},
+				},
+			},
+		},
+		["MicroMenu"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -104.8000483795245,
+						["point"] = "BOTTOM",
+						["scale"] = 0.800000011920929,
+						["y"] = 49.58745303664962,
+					},
+				},
+			},
+		},
+		["XPBar"] = {
+		},
+		["BlizzardArt"] = {
+		},
+		["BagBar"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["x"] = 112.1001033875537,
+						["point"] = "BOTTOM",
+						["y"] = 36.00000365500904,
+					},
+				},
+			},
+		},
+		["Vehicle"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -381.7401202821302,
+						["point"] = "BOTTOM",
+						["y"] = 110.7600443689982,
+					},
+				},
+			},
+		},
+		["StanceBar"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -231.2499882090815,
+						["point"] = "BOTTOM",
+						["y"] = 280.9800546859641,
+					},
+				},
+			},
+		},
+		["PetBar"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["version"] = 3,
+					["position"] = {
+						["x"] = -92.19914822825899,
+						["point"] = "BOTTOM",
+						["y"] = 281.2207769551118,
+					},
+				},
+			},
+		},
+		["RepBar"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

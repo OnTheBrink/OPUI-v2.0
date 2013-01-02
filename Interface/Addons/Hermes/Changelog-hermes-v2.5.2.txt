@@ -1,0 +1,14 @@
+tag v2.5.2
+0c06e42045e419e4bedced5c98004a6384ec0cb0
+Virtual <virtual@wipeinprogress.com>
+2012-12-01 01:20:49 -0600
+
+Tagging as v2.5.2
+
+
+--------------------
+
+Virtual:
+	- Not true or false, just nil.
+	- Cross realm support for LFR ... (Huge thank you to Tisha for the help testing this fix).
+	Also thanks to everyone for the bug reports.

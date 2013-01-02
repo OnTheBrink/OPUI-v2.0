@@ -1,0 +1,16 @@
+
+TradeSkillMaster_AuctionDBDB = {
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Pubick - Kel'Thuzad"] = "Default",
+	},
+	["factionrealm"] = {
+		["Alliance - Kel'Thuzad"] = {
+			["scanData"] = "",
+			["time"] = 10,
+		},
+	},
+}

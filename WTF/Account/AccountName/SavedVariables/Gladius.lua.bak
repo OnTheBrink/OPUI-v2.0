@@ -1,0 +1,18 @@
+
+Gladius2DB = {
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Opacus - Laughing Skull",
+	},
+	["profiles"] = {
+		["Opacus - Laughing Skull"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 1,
+			["y"] = {
+				["arena1"] = 648.9600796926291,
+			},
+			["x"] = {
+				["arena1"] = 1081.599533984381,
+			},
+		},
+	},
+}

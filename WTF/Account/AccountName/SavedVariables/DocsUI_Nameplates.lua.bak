@@ -1,0 +1,56 @@
+
+DocsUI_NameplatesDB = {
+	["realm"] = {
+		["Kel'Thuzad"] = {
+			["playerList"] = {
+				["Opacus"] = "0x05800000075C0E33",
+				["0x0580000007B0ED8C"] = "^1^SMorbìd^S0x0580000007B0ED8C^SROGUE^SIntent^SKel'Thuzad^^",
+				["Morbìd"] = "0x0580000007B0ED8C",
+				["0x05800000075C0E33"] = "^1^SOpacus^S0x05800000075C0E33^SROGUE^SIndestructible^SKel'Thuzad^^",
+			},
+		},
+	},
+	["global"] = {
+		["npcList"] = {
+			["Mojo"] = "Opacus's Companion",
+			["Raider's Training Dummy"] = "NONE",
+			["Ironforge Guard"] = "NONE",
+		},
+		["agressiveList"] = {
+			["Raider's Training Dummy"] = true,
+		},
+		["spellList"] = {
+			[61574] = "^1^SINV_BannerPVP_01^b^^",
+			[58683] = "^1^SAbility_Creature_Disease_03^b^^",
+			[2818] = "^1^SAbility_Rogue_DualWeild^N12^^",
+			[99173] = "^1^SSpell_Fire_Burnout^N4^^",
+			[97493] = "^1^Sinv_misc_orb_05^b^^",
+			[109959] = "^1^SSpell_Shadow_ChillTouch^N30^^",
+			[79058] = "^1^SSpell_Holy_MagicalSentry^N3600^^",
+			[79061] = "^1^SSpell_Nature_Regeneration^N3600^^",
+			[97341] = "^1^Sinv_epicguildtabard^b^^",
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["font"] = "Caith",
+			["dataConverted"] = 1,
+			["texture"] = "Caith",
+			["fontsizeHealth"] = 11,
+			["height"] = 11,
+			["fonti"] = "Caith",
+			["border"] = "Caith",
+			["showHpBar"] = true,
+			["presetChosen"] = 5.01,
+			["borderColor"] = {
+				["b"] = 1,
+				["g"] = 1,
+				["r"] = 1,
+			},
+			["fontb"] = "Caith",
+		},
+	},
+}

@@ -1,0 +1,6 @@
+
+EnergyWatchConfig = {
+	["barPosPoint"] = "BOTTOMRIGHT",
+	["barPosX"] = -362.4310741558458,
+	["barPosY"] = 267.8617346630725,
+}

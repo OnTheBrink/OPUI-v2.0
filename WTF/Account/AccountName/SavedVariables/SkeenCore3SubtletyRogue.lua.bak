@@ -1,0 +1,10 @@
+
+SkeenSubRoguedb = {
+	["SuggestHemorrhage"] = true,
+	["UseHemorrhageAsCPBuilder"] = false,
+	["SuggestVanish"] = true,
+	["SuggestRupture"] = true,
+	["SuggestGarrote"] = false,
+	["SuggestRecuperate"] = true,
+	["SuggestSlice_and_Dice"] = true,
+}

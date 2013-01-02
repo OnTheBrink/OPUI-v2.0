@@ -1,0 +1,13 @@
+
+RavenDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["global"] = {
+		["Version"] = "5",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

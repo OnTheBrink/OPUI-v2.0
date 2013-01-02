@@ -1,0 +1,45 @@
+
+ThreatPlatesDB = {
+	["char"] = {
+		["Opacus - Laughing Skull"] = {
+			["spec"] = {
+				["primary"] = false,
+			},
+			["specInfo"] = {
+				{
+					31, -- [1]
+					2, -- [2]
+					8, -- [3]
+				}, -- [1]
+				{
+					8, -- [1]
+					2, -- [2]
+					31, -- [3]
+				}, -- [2]
+			},
+			["specName"] = {
+				"Assassination", -- [1]
+				"Combat", -- [2]
+				"Subtlety", -- [3]
+			},
+			["welcome"] = true,
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["nameplate"] = {
+				["toggle"] = {
+					["Totem"] = true,
+				},
+			},
+			["cache"] = {
+			},
+			["castbarSettings"] = {
+				["toggle"] = false,
+			},
+		},
+	},
+}

@@ -1,0 +1,7 @@
+
+TidyPlatesOptions = {
+	["WelcomeShown"] = true,
+	["primary"] = "Grey/|cFFFF4400Damage",
+	["EnableCastWatcher"] = 1,
+	["secondary"] = "Neon/|cFF3782D1Tank",
+}

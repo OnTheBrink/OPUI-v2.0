@@ -1,0 +1,374 @@
+------------------------------------------------------------------------
+r95 | lockslap | 2012-12-12 20:11:37 +0000 (Wed, 12 Dec 2012) | 1 line
+Changed paths:
+   A /tags/5.54 (from /trunk:94)
+
+Tagged as version 5.54.
+------------------------------------------------------------------------
+r94 | lockslap | 2012-12-12 20:10:59 +0000 (Wed, 12 Dec 2012) | 3 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/Companions.lua
+   M /trunk/Modules/SpamLog.lua
+
+Fixed locale issue with namespaces for the Spam Log module.
+Removed the listing commands from the Companions module, Pet Journal is better used.
+Updated locales.
+------------------------------------------------------------------------
+r93 | lockslap | 2012-12-12 09:29:57 +0000 (Wed, 12 Dec 2012) | 1 line
+Changed paths:
+   M /trunk/Modules/SpamLog.lua
+
+Initial test of Spam Log Lua error fix.
+------------------------------------------------------------------------
+r91 | lockslap | 2012-12-12 00:38:30 +0000 (Wed, 12 Dec 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+
+Addon should now correctly use instance chat for reporting it's version; should fix the "You are not in a party." spam.
+------------------------------------------------------------------------
+r89 | lockslap | 2012-12-10 00:23:59 +0000 (Mon, 10 Dec 2012) | 5 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   A /trunk/Modules/Companions.lua
+   M /trunk/Modules/PetBattles.lua
+   M /trunk/Modules/PlayerNames.lua
+   D /trunk/Modules/RaidHelper.lua
+   M /trunk/Modules/SpamLog.lua
+   M /trunk/Modules.xml
+
+Moved some features from the Pet Battles module into the new Companions module.
+Removed Raid Helper module, there are just better other options out there.
+Fixed issue with Spam Log module when one of the spam-related modules is disabled.
+Other various bug fixes.
+Updated locales.
+------------------------------------------------------------------------
+r87 | lockslap | 2012-12-05 19:49:38 +0000 (Wed, 05 Dec 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules.xml
+
+Added modifications by NinjaFish to fix the Player Names module, and it has been reactivated.
+------------------------------------------------------------------------
+r85 | lockslap | 2012-12-05 09:50:16 +0000 (Wed, 05 Dec 2012) | 7 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   D /trunk/Locales.xml
+   M /trunk/Modules/CrapCleaner.lua
+   M /trunk/Modules/GuildSpam.lua
+   M /trunk/Modules/PetBattles.lua
+   M /trunk/Modules/PlayerNames.lua
+   A /trunk/Modules/ReleaseCommand.lua
+   M /trunk/Modules/SpamFilter.lua
+   M /trunk/Modules/SpamLog.lua
+   D /trunk/Modules/StripLinks.lua
+   M /trunk/Modules/Substitutions.lua
+   M /trunk/Modules/Timestamps.lua
+   M /trunk/Modules/WhisperFilter.lua
+   M /trunk/Modules.xml
+
+Removed Strip Links module.
+Disabled Player Names module until further notice due to severe issues with patch 5.1.
+Locale files are now called by the TOC file instead of passing it off to an XML file.
+Spam Log module should now load the spam module's defaults if it is unable to get it's config.  This is caused by using the default settings of the modules. 
+Added zone list of available battle pets to the Pet Battles module.  I plan to add filters for pets you do or don't own.
+Fixed taint with the Substitutions module, but substitions are only made client side now instead of making them before the message is sent to the server.
+Added Release Command module.
+------------------------------------------------------------------------
+r83 | lockslap | 2012-12-02 10:26:37 +0000 (Sun, 02 Dec 2012) | 7 lines
+Changed paths:
+   M /trunk/Bindings.xml
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/ChannelColors.lua
+   M /trunk/Modules/ChannelSounds.lua
+   M /trunk/Modules/CustomFiltersNamed.lua
+   M /trunk/Modules/DeveloperTools.lua
+   M /trunk/Modules/GroupSay.lua
+   M /trunk/Modules/Keybinds.lua
+   M /trunk/Modules/Magic8Ball.lua
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules/PopupMessages.lua
+   M /trunk/Modules/Substitutions.lua
+   M /trunk/Modules/Timestamps.lua
+   M /trunk/Modules.xml
+
+Updated modules to remove the Battleground channel.
+Removed Battleground keybind.
+Fixed bug with Popup Messages not using all ElvUI keywords.
+Substitutions module is now disabled until I can fix the taint issue.
+(Hopefully) Fixed Lua error from Player Names module.
+Fixed Group Say module to now properly use the Instance Chat added in 5.1.
+Other small bug fixes that I can't remember.
+------------------------------------------------------------------------
+r81 | lockslap | 2012-12-01 19:48:24 +0000 (Sat, 01 Dec 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Modules/CrapCleaner.lua
+
+Fixed small bug in Crap Cleaner module.
+------------------------------------------------------------------------
+r79 | lockslap | 2012-12-01 08:26:11 +0000 (Sat, 01 Dec 2012) | 4 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/CrapCleaner.lua
+   M /trunk/Modules/GuildSpam.lua
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules/SpamFilter.lua
+   A /trunk/Modules/SpamLog.lua
+   M /trunk/Modules/Timestamps.lua
+   M /trunk/Modules/WhisperFilter.lua
+
+Added Spam Log module to allow the modules that deal with spam to log the messages that are found to be spam.
+Magic 8-Ball module is now disabled by default.
+Various bug fixes.
+Updated locales.
+------------------------------------------------------------------------
+r77 | lockslap | 2012-11-30 00:46:54 +0000 (Fri, 30 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+
+Forgot to update locales with previous release.
+------------------------------------------------------------------------
+r75 | lockslap | 2012-11-30 00:41:59 +0000 (Fri, 30 Nov 2012) | 2 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Modules/AutoProfessionLink.lua
+   M /trunk/Modules/ChannelColors.lua
+   M /trunk/Modules/ChannelSounds.lua
+   M /trunk/Modules/CustomFiltersNamed.lua
+   M /trunk/Modules/DamageMeters.lua
+   M /trunk/Modules/GuildSpam.lua
+   M /trunk/Modules/Magic8Ball.lua
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules/SpamFilter.lua
+   M /trunk/Modules.xml
+
+Added Instance and Instance Leader chats to the necessary modules.
+Updated Spam Filter, Crap Cleaner, and Guild Spam module triggers.
+------------------------------------------------------------------------
+r73 | lockslap | 2012-11-27 18:37:45 +0000 (Tue, 27 Nov 2012) | 3 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/DeveloperTools.lua
+   A /trunk/Modules/Magic8Ball.lua
+   M /trunk/Modules.xml
+
+Added Magic 8-Ball module.
+Updated locales.
+Updated TOC for 5.1.
+------------------------------------------------------------------------
+r71 | lockslap | 2012-11-26 18:42:45 +0000 (Mon, 26 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.toc
+
+Forgot to change addon version.
+------------------------------------------------------------------------
+r70 | lockslap | 2012-11-26 18:41:56 +0000 (Mon, 26 Nov 2012) | 2 lines
+Changed paths:
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/DeveloperTools.lua
+   M /trunk/StaticPopups.lua
+
+Fixed locale issue.
+Added more Developer Tools.
+------------------------------------------------------------------------
+r68 | lockslap | 2012-11-26 02:21:03 +0000 (Mon, 26 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/Modules/SpamFilter.lua
+
+Removed debugging line from Spam Filter module.
+------------------------------------------------------------------------
+r67 | lockslap | 2012-11-25 22:22:14 +0000 (Sun, 25 Nov 2012) | 5 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Libraries/LibDBIcon-1.0/LibDBIcon-1.0.lua
+   M /trunk/Locales/enUS.lua
+   M /trunk/Modules/AFKDND_Filter.lua
+   M /trunk/Modules/AchievementFilter.lua
+   M /trunk/Modules/AddonMessages.lua
+   M /trunk/Modules/AltNames.lua
+   M /trunk/Modules/AuctionMessageFilter.lua
+   M /trunk/Modules/AutoCongratulate.lua
+   M /trunk/Modules/AutoDing.lua
+   M /trunk/Modules/AutoFarewell.lua
+   M /trunk/Modules/AutoLogChat.lua
+   M /trunk/Modules/AutoProfessionLink.lua
+   M /trunk/Modules/AutoWelcome.lua
+   M /trunk/Modules/Calculator.lua
+   M /trunk/Modules/ChannelColors.lua
+   M /trunk/Modules/ChannelNoticeFilter.lua
+   M /trunk/Modules/ChannelSounds.lua
+   M /trunk/Modules/ChannelSpam.lua
+   M /trunk/Modules/ChatFading.lua
+   M /trunk/Modules/ChatFonts.lua
+   M /trunk/Modules/ClearChat.lua
+   M /trunk/Modules/ColorRolls.lua
+   M /trunk/Modules/CrapCleaner.lua
+   M /trunk/Modules/CustomEmotes.lua
+   M /trunk/Modules/CustomFilters.lua
+   M /trunk/Modules/CustomFiltersNamed.lua
+   M /trunk/Modules/DamageMeters.lua
+   D /trunk/Modules/DataBroker.lua
+   A /trunk/Modules/Datatext.lua
+   M /trunk/Modules/DeveloperTools.lua
+   M /trunk/Modules/EditBoxHistory.lua
+   M /trunk/Modules/EmoteFilter.lua
+   M /trunk/Modules/GInvCommand.lua
+   M /trunk/Modules/GKickCommand.lua
+   M /trunk/Modules/GoldCalculator.lua
+   M /trunk/Modules/GroupSay.lua
+   M /trunk/Modules/GuildSpam.lua
+   M /trunk/Modules/IdentifyChatFrames.lua
+   M /trunk/Modules/ImprovedAuctionMessages.lua
+   M /trunk/Modules/InCommand.lua
+   M /trunk/Modules/InviteLinks.lua
+   M /trunk/Modules/Justify.lua
+   M /trunk/Modules/Keybinds.lua
+   M /trunk/Modules/LootIcons.lua
+   M /trunk/Modules/MaterialsFarming.lua
+   A /trunk/Modules/MinimapButton.lua
+   M /trunk/Modules/MultipleInviteCommand.lua
+   M /trunk/Modules/PetBattles.lua
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules/PopupMessages.lua
+   M /trunk/Modules/RaidHelper.lua
+   M /trunk/Modules/RepeatCommand.lua
+   M /trunk/Modules/Reputation.lua
+   M /trunk/Modules/RerouteAuctionMessages.lua
+   M /trunk/Modules/ScrollReminder.lua
+   M /trunk/Modules/Search.lua
+   M /trunk/Modules/SpamFilter.lua
+   M /trunk/Modules/StripLinks.lua
+   M /trunk/Modules/Substitutions.lua
+   M /trunk/Modules/TellTarget.lua
+   M /trunk/Modules/Timestamps.lua
+   M /trunk/Modules/WhisperFilter.lua
+   M /trunk/Modules/XPLeftToLevel.lua
+   M /trunk/Modules.xml
+   A /trunk/StaticPopups.lua
+   A /trunk/Textures/icon.tga
+
+Various bug fixes.
+Added Datatext module for an ElvUI Datatext.lua
+Added Minimap Button module for a minimap button.
+Standardized code a little bit more.
+More preparations for 5.4's release.
+------------------------------------------------------------------------
+r66 | lockslap | 2012-11-23 21:55:44 +0000 (Fri, 23 Nov 2012) | 1 line
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   A /trunk/Libraries/LibDBIcon-1.0
+   A /trunk/Libraries/LibDBIcon-1.0/LibDBIcon-1.0.lua
+   A /trunk/Libraries/LibDataBroker-1.1
+   A /trunk/Libraries/LibDataBroker-1.1/LibDataBroker-1.1.lua
+   A /trunk/Libraries/LibDataBroker-1.1/README.textile
+   M /trunk/Modules/AFKDND_Filter.lua
+   M /trunk/Modules/AchievementFilter.lua
+   M /trunk/Modules/AddonMessages.lua
+   M /trunk/Modules/AltNames.lua
+   M /trunk/Modules/AuctionMessageFilter.lua
+   M /trunk/Modules/AutoCongratulate.lua
+   M /trunk/Modules/AutoDing.lua
+   M /trunk/Modules/AutoFarewell.lua
+   M /trunk/Modules/AutoLogChat.lua
+   M /trunk/Modules/AutoProfessionLink.lua
+   M /trunk/Modules/AutoWelcome.lua
+   M /trunk/Modules/Calculator.lua
+   M /trunk/Modules/ChannelColors.lua
+   M /trunk/Modules/ChannelNoticeFilter.lua
+   M /trunk/Modules/ChannelSounds.lua
+   M /trunk/Modules/ChannelSpam.lua
+   M /trunk/Modules/ChatFading.lua
+   M /trunk/Modules/ChatFonts.lua
+   M /trunk/Modules/ClearChat.lua
+   M /trunk/Modules/ColorRolls.lua
+   M /trunk/Modules/CrapCleaner.lua
+   M /trunk/Modules/CustomEmotes.lua
+   M /trunk/Modules/CustomFilters.lua
+   M /trunk/Modules/CustomFiltersNamed.lua
+   M /trunk/Modules/DamageMeters.lua
+   A /trunk/Modules/DataBroker.lua
+   M /trunk/Modules/DeveloperTools.lua
+   M /trunk/Modules/EditBoxHistory.lua
+   M /trunk/Modules/EmoteFilter.lua
+   M /trunk/Modules/GInvCommand.lua
+   M /trunk/Modules/GKickCommand.lua
+   M /trunk/Modules/GoldCalculator.lua
+   M /trunk/Modules/GroupSay.lua
+   M /trunk/Modules/GuildSpam.lua
+   M /trunk/Modules/IdentifyChatFrames.lua
+   M /trunk/Modules/ImprovedAuctionMessages.lua
+   M /trunk/Modules/InCommand.lua
+   M /trunk/Modules/InviteLinks.lua
+   M /trunk/Modules/Justify.lua
+   M /trunk/Modules/Keybinds.lua
+   M /trunk/Modules/LootIcons.lua
+   M /trunk/Modules/MaterialsFarming.lua
+   M /trunk/Modules/MultipleInviteCommand.lua
+   M /trunk/Modules/PetBattles.lua
+   M /trunk/Modules/PlayerNames.lua
+   M /trunk/Modules/RaidHelper.lua
+   M /trunk/Modules/RepeatCommand.lua
+   M /trunk/Modules/Reputation.lua
+   M /trunk/Modules/RerouteAuctionMessages.lua
+   M /trunk/Modules/ScrollReminder.lua
+   M /trunk/Modules/Search.lua
+   M /trunk/Modules/SpamFilter.lua
+   M /trunk/Modules/StripLinks.lua
+   A /trunk/Modules/Substitutions.lua
+   M /trunk/Modules/TellTarget.lua
+   M /trunk/Modules/Timestamps.lua
+   M /trunk/Modules/WhisperFilter.lua
+   M /trunk/Modules/XPLeftToLevel.lua
+   M /trunk/Modules.xml
+
+Pushing updates for later additions.
+------------------------------------------------------------------------
+r64 | lockslap | 2012-11-15 00:56:04 +0000 (Thu, 15 Nov 2012) | 5 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   A /trunk/Modules/AddonMessages.lua
+   M /trunk/Modules/AutoLogChat.lua
+   M /trunk/Modules/PetBattles.lua
+   M /trunk/Modules/PopupMessages.lua
+   A /trunk/Modules/Search.lua
+   M /trunk/Modules.xml
+
+Added Addon Messages module.
+Added Search module.
+Improved the Pet Battle module's output at the beginning of a pet battle.
+Minor bug fixes.
+Updated locales.
+------------------------------------------------------------------------
+r62 | lockslap | 2012-11-13 03:50:19 +0000 (Tue, 13 Nov 2012) | 5 lines
+Changed paths:
+   M /trunk/ElvUI_ChatTweaks.lua
+   M /trunk/ElvUI_ChatTweaks.toc
+   M /trunk/Locales/enUS.lua
+   D /trunk/Modules/InterruptAnnounce.lua
+   A /trunk/Modules/MultipleInviteCommand.lua
+   M /trunk/Modules/PopupMessages.lua
+   M /trunk/Modules.xml
+
+Added Multiple Invite Command module courtesy of Bjoern Hiller.
+Removed Interrupt Announce module.  There better addons for this functionality.
+Minor bug fixes.
+Updated locales.
+Added global function to check the status of a given module.
+------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+
+AucAdvancedStatSimpleData = {
+	["Version"] = "2.0",
+	["RealmData"] = {
+		["Laughing Skull-Alliance"] = {
+			["means"] = {
+			},
+			["daily"] = {
+				["created"] = 1292972734,
+				[60838] = "0:26043554;50;454999",
+			},
+		},
+	},
+}

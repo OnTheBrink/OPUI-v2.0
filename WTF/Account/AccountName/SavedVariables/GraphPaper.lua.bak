@@ -1,0 +1,10 @@
+
+GraphPaperSettings = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

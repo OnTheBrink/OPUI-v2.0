@@ -1,0 +1,12 @@
+
+FonterDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["FontChat"] = "Arial Narrow",
+			["ChatOutline2"] = "OUTLINE",
+		},
+	},
+}

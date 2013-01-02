@@ -1,0 +1,43 @@
+
+AucAdvancedConfig = {
+	["profile.Default"] = {
+		["matcherlist"] = {
+			"Undercut", -- [1]
+			"BeanCount", -- [2]
+		},
+		["util"] = {
+			["automagic"] = {
+				["uierrormsg"] = 1,
+			},
+			["pricelevel"] = {
+			},
+		},
+		["stat"] = {
+			["sales"] = {
+				["ignoredsigs"] = {
+				},
+			},
+		},
+	},
+	["version"] = 1,
+}
+AucAdvancedData = {
+	["AserArbitrageRealms"] = {
+		["Laughing Skull"] = "Opacus",
+	},
+	["Stats"] = {
+	},
+	["UtilSearchUiData"] = {
+		["Global"] = {
+			["configator.left"] = 509.9999790539866,
+			["configator.top"] = 850.0000130736862,
+		},
+		["Current"] = {
+			["snatch.itemsList"] = {
+			},
+		},
+		["Version"] = 1,
+		["SavedSearches"] = {
+		},
+	},
+}

@@ -1,0 +1,19 @@
+
+ARLDB2 = {
+	["global"] = {
+		["tradeskill"] = {
+			["Kel'Thuzad"] = {
+				["Pubick"] = {
+					["Alchemy"] = "|cffffd000|Htrade:80731:525:525:580000007DC3245:WN9CyBvHZFE7PAMAAEADBAAAAyB/oAC+7+DAAM8P47+///36MzOwF|h[Alchemy]|h|r",
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Pubick - Kel'Thuzad"] = "Pubick - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Pubick - Kel'Thuzad"] = {
+		},
+	},
+}

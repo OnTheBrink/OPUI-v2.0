@@ -1,0 +1,9 @@
+
+AucAdvancedFilterBasic = {
+}
+AucAdvancedFilterBasic_IgnoreList = {
+	["Laughing Skull"] = {
+		["Alliance"] = {
+		},
+	},
+}

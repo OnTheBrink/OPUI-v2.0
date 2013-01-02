@@ -1,0 +1,133 @@
+
+ElvData = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["gold"] = {
+		["Kel'Thuzad"] = {
+			["Opacus"] = 1155189927,
+		},
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["global"] = {
+		["newThemePrompt"] = true,
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["nameplate"] = {
+				["fontSize"] = 7,
+				["fontOutline"] = "MONOCHROMEOUTLINE",
+				["width"] = 112,
+				["font"] = "ElvUI Pixel",
+				["height"] = 7,
+			},
+			["movers"] = {
+				["ElvUF_PetMover"] = "BOTTOMElvUIParentBOTTOM0104",
+				["AurasMover"] = "TOPRIGHTElvUIParentTOPRIGHT-221-5",
+				["ElvUF_TargetMover"] = "BOTTOMElvUIParentBOTTOM27864",
+				["ElvUF_PlayerMover"] = "BOTTOMElvUIParentBOTTOM-27865",
+				["ElvUF_TargetTargetMover"] = "BOTTOMElvUIParentBOTTOM064",
+			},
+			["bags"] = {
+				["bankSize"] = 34,
+				["bagSize"] = 34,
+			},
+			["unitframe"] = {
+				["units"] = {
+					["player"] = {
+						["classbar"] = {
+							["fill"] = "fill",
+						},
+					},
+					["target"] = {
+						["combobar"] = {
+							["fill"] = "fill",
+						},
+					},
+				},
+				["colors"] = {
+					["auraBarBuff"] = {
+						["b"] = 0.31,
+						["g"] = 0.31,
+						["r"] = 0.31,
+					},
+					["castColor"] = {
+						["b"] = 0.31,
+						["g"] = 0.31,
+						["r"] = 0.31,
+					},
+					["health"] = {
+						["b"] = 0.31,
+						["g"] = 0.31,
+						["r"] = 0.31,
+					},
+				},
+			},
+			["actionbar"] = {
+				["bar3"] = {
+					["buttonspacing"] = 2,
+					["backdrop"] = false,
+					["buttonsize"] = 32,
+				},
+				["bar1"] = {
+					["buttonspacing"] = 2,
+					["backdrop"] = false,
+					["buttonsize"] = 32,
+				},
+				["bar2"] = {
+					["buttonspacing"] = 2,
+					["buttonsize"] = 32,
+				},
+				["bar5"] = {
+					["buttonspacing"] = 2,
+					["backdrop"] = false,
+					["buttonsize"] = 32,
+				},
+				["stanceBar"] = {
+					["buttonspacing"] = 2,
+					["buttonsize"] = 32,
+				},
+				["barPet"] = {
+					["buttonspacing"] = 2,
+					["buttonsize"] = 32,
+				},
+				["bar4"] = {
+					["buttonspacing"] = 2,
+					["buttonsize"] = 32,
+				},
+			},
+			["general"] = {
+				["bottomPanel"] = true,
+				["backdropfadecolor"] = {
+					["b"] = 0.06,
+					["g"] = 0.06,
+					["r"] = 0.06,
+				},
+				["valuecolor"] = {
+					["b"] = 0.819,
+					["g"] = 0.513,
+					["r"] = 0.09,
+				},
+			},
+		},
+	},
+}
+ElvPrivateData = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["nameplate"] = {
+				["enable"] = false,
+			},
+			["auras"] = {
+				["size"] = 30,
+			},
+			["theme"] = "pixelPerfect",
+		},
+	},
+}

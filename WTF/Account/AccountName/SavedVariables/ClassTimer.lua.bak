@@ -1,0 +1,156 @@
+
+ClassTimerDB = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+			["Abilities"] = {
+				["Crippling Poison"] = false,
+				["Deadly Poison"] = false,
+				["Riposte"] = false,
+				["Dismantle"] = false,
+				["Slice and Dice"] = true,
+				["Silenced - Improved Kick"] = false,
+				["Waylay"] = false,
+				["Garrote"] = false,
+				["Cloak of Shadows"] = false,
+				["Deadly Throw"] = false,
+				["Blind"] = false,
+				["Expose Armor"] = false,
+				["Gouge"] = false,
+				["Envenom"] = false,
+				["Hemorrhage"] = false,
+				["Kidney Shot"] = false,
+				["Mind-numbing Poison"] = false,
+				["Sap"] = false,
+				["Recuperate"] = true,
+				["Wound Poison"] = false,
+				["Garrote - Silence"] = false,
+				["Cheap Shot"] = false,
+				["Evasion"] = false,
+			},
+			["Group"] = {
+				["target"] = true,
+				["player"] = true,
+			},
+			["AllInOneOwner"] = "player",
+			["Units"] = {
+				["player"] = {
+					["backgroundcolor"] = {
+						0.1725490196078431, -- [1]
+						0.1725490196078431, -- [2]
+						0.1725490196078431, -- [3]
+					},
+					["growup"] = true,
+					["y"] = 348.0000818159716,
+					["font"] = "SCT Emblem",
+					["fontsize"] = 12,
+					["x"] = 708.9993101170439,
+					["buffcolor"] = {
+						0.8745098039215686, -- [1]
+						0.8431372549019608, -- [2]
+						0.1294117647058823, -- [3]
+					},
+					["width"] = 230,
+					["texture"] = "Armory",
+					["height"] = 25,
+					["debuffcolor"] = {
+						0.7254901960784314, -- [1]
+						0.07058823529411765, -- [2]
+					},
+				},
+				["general"] = {
+					["texture"] = "Armory",
+					["debuffcolor"] = {
+						0.7254901960784314, -- [1]
+						0.07058823529411765, -- [2]
+					},
+					["backgroundcolor"] = {
+						0.1725490196078431, -- [1]
+						0.1725490196078431, -- [2]
+						0.1725490196078431, -- [3]
+					},
+					["growup"] = true,
+					["buffcolor"] = {
+						0.8745098039215686, -- [1]
+						0.8431372549019608, -- [2]
+						0.1294117647058823, -- [3]
+					},
+				},
+				["focus"] = {
+					["debuffs"] = false,
+					["backgroundcolor"] = {
+						0.1725490196078431, -- [1]
+						0.1725490196078431, -- [2]
+						0.1725490196078431, -- [3]
+					},
+					["growup"] = true,
+					["y"] = 366.9999029313946,
+					["buffs"] = false,
+					["enable"] = false,
+					["click"] = false,
+					["x"] = 475.0002782727074,
+					["buffcolor"] = {
+						0.8745098039215686, -- [1]
+						0.8431372549019608, -- [2]
+						0.1294117647058823, -- [3]
+					},
+					["texture"] = "Armory",
+					["debuffcolor"] = {
+						0.7254901960784314, -- [1]
+						0.07058823529411765, -- [2]
+					},
+				},
+				["target"] = {
+					["backgroundcolor"] = {
+						0.1725490196078431, -- [1]
+						0.1725490196078431, -- [2]
+						0.1725490196078431, -- [3]
+					},
+					["growup"] = true,
+					["y"] = 375.9999791945639,
+					["font"] = "SCT Emblem",
+					["fontsize"] = 12,
+					["x"] = 708.9995980192944,
+					["buffcolor"] = {
+						0.8745098039215686, -- [1]
+						0.8431372549019608, -- [2]
+						0.1294117647058823, -- [3]
+					},
+					["width"] = 230,
+					["alwaysshowndebuffcolor"] = {
+						0.6470588235294118, -- [1]
+						0.07843137254901961, -- [2]
+						0, -- [3]
+					},
+					["texture"] = "Armory",
+					["height"] = 25,
+					["debuffcolor"] = {
+						0.7254901960784314, -- [1]
+						0.07058823529411765, -- [2]
+					},
+				},
+				["sticky"] = {
+					["texture"] = "Armory",
+					["enable"] = true,
+					["debuffcolor"] = {
+						0.7254901960784314, -- [1]
+						0.07058823529411765, -- [2]
+					},
+					["backgroundcolor"] = {
+						0.1725490196078431, -- [1]
+						0.1725490196078431, -- [2]
+						0.1725490196078431, -- [3]
+					},
+					["growup"] = true,
+					["buffcolor"] = {
+						0.8745098039215686, -- [1]
+						0.8431372549019608, -- [2]
+						0.1294117647058823, -- [3]
+					},
+				},
+			},
+		},
+	},
+}

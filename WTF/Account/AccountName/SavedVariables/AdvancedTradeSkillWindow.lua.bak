@@ -1,0 +1,96 @@
+
+atsw_orderby = {
+	["Pubick"] = {
+		["Alchemy"] = "nothing",
+	},
+}
+atsw_bankitemlist = {
+	["Kel'Thuzad"] = {
+		["Pubick"] = {
+			["Mana Potion"] = 3,
+			["Elixir of Wisdom"] = 9,
+			["Ancient Bloodmoon Cloak"] = 1,
+			["Obsidian Warbeads"] = 22,
+			["Nagrand Cherry"] = 5,
+			["Super Mana Potion"] = 6,
+			["Scroll of Stamina"] = 19,
+			["Dried Gnoll Rations"] = 2,
+			["Fish Oil"] = 3,
+			["Mana Gem"] = 1,
+			["Stranglekelp"] = 1,
+			["Lesser Mana Potion"] = 21,
+			["Major Mana Potion"] = 14,
+			["Potion of Water Breathing"] = 1,
+			["Greater Mana Potion"] = 4,
+			["Dalaran Firework"] = 5,
+			["Tainted Helboar Meat"] = 2,
+			["Mountain Silversage"] = 5,
+			["Archmage Vargoth's Staff"] = 1,
+			["Purified Helboar Meat"] = 6,
+			["Briarthorn"] = 3,
+			["Volatile Fire"] = 144,
+			["Mageweave Cloth"] = 320,
+			["Volatile Earth"] = 442,
+			["Cinderbloom"] = 968,
+			["Talandra's Rose"] = 17,
+			["Tattered Dreadmist Robe"] = 1,
+			["Elixir of Detect Demon"] = 20,
+			["Runic Mana Potion"] = 20,
+			["Elixir of Impossible Accuracy"] = 5,
+			["Volatile Water"] = 159,
+			["Twilight Jasmine"] = 280,
+			["Elixir of Greater Defense"] = 10,
+			["Lichbloom"] = 1,
+			["Dignified Headmaster's Charge"] = 1,
+		},
+	},
+}
+atsw_merchantlist = {
+	["Crystal Vial"] = true,
+}
+atsw_itemlist = {
+	["Kel'Thuzad"] = {
+		["Pubick"] = {
+			["Flask of Enhancement"] = 1,
+			["Seth's Graphite Fishing Pole"] = 1,
+			["Whiptail"] = 134,
+			["Bloodmaul Brutebane Brew"] = 4,
+			["OOX-09/HL Distress Beacon"] = 1,
+			["Volatile Life"] = 3,
+			["Crystal Vial"] = 76,
+			["Virtuoso Inking Set"] = 1,
+			["Rune of Portals"] = 46,
+			["Flask of Titanic Strength"] = 32,
+			["Stormvine"] = 313,
+			["Hyjal Seedling"] = 9,
+			["Hearthstone"] = 1,
+			["Core Hound Entrails"] = 2,
+			["Cinderbloom"] = 1059,
+			["Azshara's Veil"] = 4,
+			["Oshu'gun Crystal Powder Sample"] = 45,
+			["Twilight Jasmine"] = 1,
+			["Deathblood Venom"] = 6,
+		},
+	},
+}
+atsw_customsorting = {
+}
+atsw_customheaders = {
+}
+atsw_disabled = {
+	["Pubick"] = {
+		["Alchemy"] = 0,
+	},
+}
+atsw_savedqueue = {
+	["Pubick"] = {
+		["Alchemy"] = {
+		},
+	},
+}
+atsw_savednecessaryitems = {
+	["Pubick"] = {
+		["Alchemy"] = {
+		},
+	},
+}

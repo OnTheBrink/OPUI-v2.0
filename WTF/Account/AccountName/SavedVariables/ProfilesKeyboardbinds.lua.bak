@@ -1,0 +1,6 @@
+
+ProfilesKeyboardbindsG = {
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Restore [LOCKED]",
+	},
+}

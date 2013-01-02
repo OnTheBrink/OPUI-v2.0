@@ -1,0 +1,225 @@
+
+ElvUI_ChatTweaksDB = {
+	["namespaces"] = {
+		["EmoteFilter"] = {
+		},
+		["AutoProfessionLink"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["Guild"] = false,
+					["Raid"] = false,
+					["Party Leader"] = false,
+					["Yell"] = false,
+					["Say"] = false,
+					["Party"] = false,
+					["Raid Leader"] = false,
+					["Whisper"] = false,
+					["Officer"] = false,
+				},
+			},
+		},
+		["DamageMeters"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["Party Leader"] = 2,
+					["Raid Leader"] = 2,
+					["Yell"] = 2,
+					["Party"] = 2,
+					["Whisper"] = 2,
+					["Channel"] = 2,
+					["Say"] = 2,
+					["Raid"] = 2,
+					["Guild"] = 2,
+					["Officer"] = 2,
+				},
+			},
+		},
+		["PetBattles"] = {
+		},
+		["AutoCongratulate"] = {
+		},
+		["ChannelColors"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["colors"] = {
+						["RealID Conversation"] = {
+							["b"] = 0.9411765336990356,
+							["g"] = 0.6941176652908325,
+							["r"] = 0,
+						},
+						["Guild"] = {
+							["b"] = 0.250980406999588,
+							["g"] = 1,
+							["r"] = 0.250980406999588,
+						},
+						["Party Leader"] = {
+							["b"] = 1,
+							["g"] = 0.7843137979507446,
+							["r"] = 0.4627451300621033,
+						},
+						["General"] = {
+							["b"] = 0.7529412508010864,
+							["g"] = 0.7529412508010864,
+							["r"] = 1,
+						},
+						["RealID Whisper"] = {
+							["b"] = 0.9647059440612793,
+							["g"] = 1,
+							["r"] = 0,
+						},
+						["Raid Leader"] = {
+							["b"] = 0.03529411926865578,
+							["g"] = 0.2823529541492462,
+							["r"] = 1,
+						},
+						["Battleground"] = {
+							["b"] = 0,
+							["g"] = 0.4980392456054688,
+							["r"] = 1,
+						},
+						["Yell"] = {
+							["b"] = 0.250980406999588,
+							["g"] = 0.250980406999588,
+							["r"] = 1,
+						},
+						["LocalDefense"] = {
+							["b"] = 0.7529412508010864,
+							["g"] = 0.7529412508010864,
+							["r"] = 1,
+						},
+						["Party"] = {
+							["b"] = 1,
+							["g"] = 0.6666666865348816,
+							["r"] = 0.6666666865348816,
+						},
+						["Whisper"] = {
+							["b"] = 1,
+							["g"] = 0.501960813999176,
+							["r"] = 1,
+						},
+						["Say"] = {
+							["b"] = 1,
+							["g"] = 1,
+							["r"] = 1,
+						},
+						["Raid Warning"] = {
+							["b"] = 0,
+							["g"] = 0.2823529541492462,
+							["r"] = 1,
+						},
+						["Raid"] = {
+							["b"] = 0,
+							["g"] = 0.4980392456054688,
+							["r"] = 1,
+						},
+						["Battleground Leader"] = {
+							["b"] = 0.7176470756530762,
+							["g"] = 0.8588235974311829,
+							["r"] = 1,
+						},
+						["Officer"] = {
+							["b"] = 0.250980406999588,
+							["g"] = 0.7529412508010864,
+							["r"] = 0.250980406999588,
+						},
+					},
+				},
+			},
+		},
+		["ChannelMessageFilter"] = {
+		},
+		["GoldCalculator"] = {
+		},
+		["ChannelSounds"] = {
+		},
+		["AchievementFilter"] = {
+		},
+		["Reputation"] = {
+		},
+		["RepeatCommand"] = {
+		},
+		["MaterialsFarming"] = {
+		},
+		["AFKDND"] = {
+		},
+		["PopupMessages"] = {
+		},
+		["Search"] = {
+		},
+		["ColorRolls"] = {
+		},
+		["CrapCleaner"] = {
+		},
+		["CustomChatFilters"] = {
+		},
+		["PlayerNames"] = {
+		},
+		["GuildSpam"] = {
+		},
+		["TextJustification"] = {
+		},
+		["AltNames"] = {
+		},
+		["CustomEmotes"] = {
+		},
+		["Calculator"] = {
+		},
+		["XPLeftToLevel"] = {
+		},
+		["WhisperFilter"] = {
+		},
+		["Timestamps"] = {
+		},
+		["StripLinks"] = {
+		},
+		["InviteLinks"] = {
+			["profiles"] = {
+				["Opacus - Kel'Thuzad"] = {
+					["groupWords"] = {
+						["inv"] = "inv",
+						["invite"] = "invite",
+					},
+					["guildWords"] = {
+						["ginvite"] = "ginvite",
+						["ginv"] = "ginv",
+					},
+				},
+			},
+		},
+		["AddonMessages"] = {
+		},
+		["LootIcons"] = {
+		},
+		["RerouteAuctionMessages"] = {
+		},
+		["AuctionMessageFiltering"] = {
+		},
+		["RaidHelper"] = {
+		},
+		["ChannelSpam"] = {
+		},
+		["CustomNamedChatFilters"] = {
+		},
+		["AutoWelcome"] = {
+		},
+		["SpamFilter"] = {
+		},
+		["MultipleInviteCommand"] = {
+		},
+		["ImprovedAuctionMessages"] = {
+		},
+		["EditboxHistory"] = {
+		},
+		["AutoFarewell"] = {
+		},
+		["AutoDing"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Opacus - Kel'Thuzad"] = "Opacus - Kel'Thuzad",
+	},
+	["profiles"] = {
+		["Opacus - Kel'Thuzad"] = {
+		},
+	},
+}

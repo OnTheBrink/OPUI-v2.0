@@ -1,0 +1,4 @@
+
+SkeenFireMagedb = {
+	["SuggestCombustion"] = true,
+}

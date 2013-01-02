@@ -1,0 +1,114 @@
+
+POISONER_CONFIG = {
+	["Enabled"] = 1,
+	["Buttons"] = {
+		["FreeButton"] = {
+			["Active"] = 1,
+			["Scale"] = 1,
+			["Position"] = {
+				["RelativeTo"] = "UIParent",
+				["XPos"] = 0,
+				["RelativePoint"] = "CENTER",
+				["Anchor"] = "CENTER",
+				["YPos"] = 0,
+			},
+			["Alpha"] = 1,
+			["Lock"] = 0,
+		},
+		["QuickButton"] = {
+			["Scale"] = 1,
+			["Position"] = {
+				["RelativeTo"] = "UIParent",
+				["XPos"] = 0,
+				["RelativePoint"] = "CENTER",
+				["Anchor"] = "CENTER",
+				["YPos"] = 0,
+			},
+			["Alpha"] = 1,
+			["Lock"] = 1,
+		},
+		["LDBIcon"] = {
+			["hide"] = "true",
+		},
+	},
+	["Preset"] = {
+		["Normal"] = {
+			["Throwweapon"] = 1,
+			["Offhand"] = 1,
+			["Mainhand"] = 1,
+		},
+		["CTRL"] = {
+			["Throwweapon"] = 1,
+			["Offhand"] = 1,
+			["Mainhand"] = 1,
+		},
+		["Overwrite"] = 0,
+		["ALT"] = {
+			["Throwweapon"] = 1,
+			["Offhand"] = 1,
+			["Mainhand"] = 1,
+		},
+		["SHIFT"] = {
+			["Throwweapon"] = 1,
+			["Offhand"] = 1,
+			["Mainhand"] = 1,
+		},
+	},
+	["StartedOnce"] = 1,
+	["Version"] = "4.0.6",
+	["Menu"] = {
+		["Position"] = "bottomleft",
+		["Parent"] = "Poisoner_FreeButton",
+		["AutoHide"] = {
+			["inCombat"] = 0,
+			["Time"] = 10,
+			["Active"] = 0,
+		},
+		["Spacing"] = 0,
+		["Scale"] = 1,
+	},
+	["PrintClickedPoison"] = 1,
+	["Timer"] = {
+		["Weapon"] = {
+			["MainHand"] = 1,
+			["OffHand"] = 1,
+			["ThrowWeapon"] = 1,
+		},
+		["Lock"] = 1,
+		["Active"] = 1,
+		["Position"] = {
+			["RelativeTo"] = "UIParent",
+			["XPos"] = 0,
+			["RelativePoint"] = "CENTER",
+			["Anchor"] = "CENTER",
+			["YPos"] = 100,
+		},
+		["Scale"] = 1,
+		["WarningThreshold"] = 2,
+		["Alpha"] = 1,
+		["Output"] = {
+			["Aura"] = 1,
+			["ErrorFrame"] = 1,
+			["Audio"] = 1,
+			["Chat"] = 1,
+		},
+	},
+	["Poisons"] = {
+		["WPName"] = "Wound Poison",
+		["MPName"] = "Mind-Numbing Poison",
+		["DPName"] = "Deadly Poison",
+		["CPName"] = "Crippling Poison",
+		["IPName"] = "Instant Poison",
+	},
+	["TooltipType"] = "full",
+	["Buy"] = {
+		["MP"] = 0,
+		["WP"] = 0,
+		["DP"] = 0,
+		["Active"] = 1,
+		["Check"] = 1,
+		["Prompt"] = 0,
+		["CP"] = 0,
+		["IP"] = 0,
+	},
+}

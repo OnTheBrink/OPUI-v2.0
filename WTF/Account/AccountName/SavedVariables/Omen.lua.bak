@@ -1,0 +1,15 @@
+
+Omen3DB = {
+	["profileKeys"] = {
+		["Opacus - Laughing Skull"] = "Opacus - Laughing Skull",
+	},
+	["profiles"] = {
+		["Opacus - Laughing Skull"] = {
+			["PositionW"] = 199.9999353344555,
+			["PositionH"] = 81.9999860828502,
+			["PositionY"] = 237.9999374431145,
+			["Shown"] = true,
+			["PositionX"] = 1708.500627993813,
+		},
+	},
+}
