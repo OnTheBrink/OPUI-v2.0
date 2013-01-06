@@ -4,224 +4,22 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["RaidSymbols"] = false,
-				["Mounts"] = "CTRL-M",
-				["OPieTracking"] = false,
-				["OPieAutoQuest"] = false,
-				["ChalPaths"] = false,
-				["Raid"] = "CTRL-R",
 				["WorldMarkers"] = false,
+				["OPieTracking"] = false,
+				["Raid"] = "CTRL-R",
+				["ChalPaths"] = false,
+				["OPieAutoQuest"] = false,
+				["Mounts"] = "CTRL-M",
 			},
 			["UseBF"] = true,
-			["RingScale"] = 0.9000000357627869,
-			["ShowCooldowns"] = true,
 			["RotationTokens"] = {
 			},
+			["ShowCooldowns"] = true,
+			["RingScale"] = 0.9000000357627869,
 		},
 	},
 	["PersistentStorage"] = {
 		["RingKeeper"] = {
-			["Items"] = {
-				{
-					"item", -- [1]
-					80513, -- [2]
-					["sliceToken"] = "ABuwNj8surr",
-					["c"] = "e5ff00",
-				}, -- [1]
-				{
-					"item", -- [1]
-					49040, -- [2]
-					["sliceToken"] = "ABuwNj8suro",
-					["c"] = "e5ff00",
-				}, -- [2]
-				{
-					"item", -- [1]
-					87214, -- [2]
-					["sliceToken"] = "ABuwNj8surp",
-					["c"] = "e5ff00",
-				}, -- [3]
-				{
-					"item", -- [1]
-					89815, -- [2]
-					["sliceToken"] = "ABuwNj8surt",
-					["c"] = "e5ff00",
-				}, -- [4]
-				{
-					["sliceToken"] = "ABuwNjIgE33",
-					["c"] = "e5ff00",
-					["id"] = 125439,
-				}, -- [5]
-				{
-					"item", -- [1]
-					87216, -- [2]
-					["sliceToken"] = "ABuwNj8suru",
-					["c"] = "e5ff00",
-				}, -- [6]
-				{
-					["sliceToken"] = "ABuwNjIgE3d",
-					["c"] = "e5ff00",
-					["id"] = 83958,
-				}, -- [7]
-				{
-					["sliceToken"] = "ABuwNjIgE3f",
-					["c"] = "e5ff00",
-					["id"] = 92397,
-				}, -- [8]
-				{
-					"item", -- [1]
-					87215, -- [2]
-					["sliceToken"] = "ABuwNj8suri",
-					["c"] = "e5ff00",
-				}, -- [9]
-				{
-					"item", -- [1]
-					48933, -- [2]
-					["sliceToken"] = "ABuwNj8sur2",
-					["c"] = "e5ff00",
-				}, -- [10]
-				{
-					"item", -- [1]
-					6948, -- [2]
-					["sliceToken"] = "ABuwNjIgE3j",
-					["c"] = "e5ff00",
-				}, -- [11]
-				{
-					["sliceToken"] = "ABuwNjIgE3r",
-					["c"] = "e5ff00",
-					["id"] = 1804,
-				}, -- [12]
-				{
-					"item", -- [1]
-					89880, -- [2]
-					["sliceToken"] = "ABuwNj8sury",
-					["c"] = "e5ff00",
-				}, -- [13]
-				{
-					"item", -- [1]
-					79104, -- [2]
-					["sliceToken"] = "ABuwNj8sur1",
-					["c"] = "e5ff00",
-				}, -- [14]
-				{
-					"item", -- [1]
-					65360, -- [2]
-					["sliceToken"] = "ABuwNj8sura",
-					["c"] = "e5ff00",
-				}, -- [15]
-				{
-					"item", -- [1]
-					72986, -- [2]
-					["sliceToken"] = "ABuwNj8surs",
-					["c"] = "e5ff00",
-				}, -- [16]
-				["name"] = "Items",
-				["save"] = true,
-				["hotkey"] = "CTRL-F",
-				["limit"] = "Opacus",
-			},
-			["Trade"] = {
-				{
-					["sliceToken"] = "ABuwNjIgE3t",
-					["c"] = "e5ff00",
-					["id"] = 110423,
-				}, -- [1]
-				{
-					["sliceToken"] = "ABuwNjIgE3y",
-					["c"] = "e5ff00",
-					["id"] = 110406,
-				}, -- [2]
-				{
-					["sliceToken"] = "ABuwNjIgE3u",
-					["c"] = "e5ff00",
-					["id"] = 104381,
-				}, -- [3]
-				{
-					["sliceToken"] = "ABuwNjIgE3i",
-					["c"] = "e5ff00",
-					["id"] = 110403,
-				}, -- [4]
-				{
-					["sliceToken"] = "ABuwNjIgE32",
-					["c"] = "e5ff00",
-					["id"] = 131474,
-				}, -- [5]
-				{
-					["sliceToken"] = "ABuwNjIgE3o",
-					["c"] = "e5ff00",
-					["id"] = 818,
-				}, -- [6]
-				{
-					["sliceToken"] = "ABuwNjIgE3p",
-					["c"] = "e5ff00",
-					["id"] = 20219,
-				}, -- [7]
-				{
-					["sliceToken"] = "ABuwNjIgE3a",
-					["c"] = "e5ff00",
-					["id"] = 110393,
-				}, -- [8]
-				{
-					["sliceToken"] = "ABuwNjIgE3s",
-					["c"] = "e5ff00",
-					["id"] = 80451,
-				}, -- [9]
-				["limit"] = "Opacus",
-				["save"] = true,
-				["hotkey"] = "CTRL-T",
-				["name"] = "Trade",
-			},
-			["Raid"] = {
-				{
-					"item", -- [1]
-					87246, -- [2]
-					["sliceToken"] = "ABuwNj8sur3",
-					["c"] = "e5ff00",
-				}, -- [1]
-				{
-					"item", -- [1]
-					87226, -- [2]
-					["sliceToken"] = "ABuwNj8surd",
-					["c"] = "e5ff00",
-				}, -- [2]
-				{
-					"item", -- [1]
-					76084, -- [2]
-					["sliceToken"] = "ABuwNj8surf",
-					["c"] = "e5ff00",
-				}, -- [3]
-				{
-					"item", -- [1]
-					76089, -- [2]
-					["sliceToken"] = "ABuwNj8surg",
-					["c"] = "e5ff00",
-				}, -- [4]
-				{
-					["sliceToken"] = "ABuwNjIgE31",
-					["c"] = "e5ff00",
-					["id"] = 83968,
-				}, -- [5]
-				{
-					"item", -- [1]
-					87234, -- [2]
-					["sliceToken"] = "ABuwNjIgE3g",
-					["c"] = "e5ff00",
-				}, -- [6]
-				{
-					"item", -- [1]
-					87230, -- [2]
-					["sliceToken"] = "ABuwNjIgE3h",
-					["c"] = "e5ff00",
-				}, -- [7]
-				{
-					"item", -- [1]
-					87238, -- [2]
-					["sliceToken"] = "ABuwNjIgE34",
-					["c"] = "e5ff00",
-				}, -- [8]
-				["name"] = "Raid",
-				["save"] = true,
-				["hotkey"] = "CTRL-R",
-				["limit"] = "Opacus",
-			},
 			["Mounts"] = {
 				{
 					["sliceToken"] = "ABuwNjOJIGh",
@@ -402,6 +200,208 @@ OneRing_Config = {
 				["save"] = true,
 				["name"] = "Mounts",
 			},
+			["Trade"] = {
+				{
+					["sliceToken"] = "ABuwNjIgE3t",
+					["c"] = "e5ff00",
+					["id"] = 110423,
+				}, -- [1]
+				{
+					["sliceToken"] = "ABuwNjIgE3y",
+					["c"] = "e5ff00",
+					["id"] = 110406,
+				}, -- [2]
+				{
+					["sliceToken"] = "ABuwNjIgE3u",
+					["c"] = "e5ff00",
+					["id"] = 104381,
+				}, -- [3]
+				{
+					["sliceToken"] = "ABuwNjIgE3i",
+					["c"] = "e5ff00",
+					["id"] = 110403,
+				}, -- [4]
+				{
+					["sliceToken"] = "ABuwNjIgE32",
+					["c"] = "e5ff00",
+					["id"] = 131474,
+				}, -- [5]
+				{
+					["sliceToken"] = "ABuwNjIgE3o",
+					["c"] = "e5ff00",
+					["id"] = 818,
+				}, -- [6]
+				{
+					["sliceToken"] = "ABuwNjIgE3p",
+					["c"] = "e5ff00",
+					["id"] = 20219,
+				}, -- [7]
+				{
+					["sliceToken"] = "ABuwNjIgE3a",
+					["c"] = "e5ff00",
+					["id"] = 110393,
+				}, -- [8]
+				{
+					["sliceToken"] = "ABuwNjIgE3s",
+					["c"] = "e5ff00",
+					["id"] = 80451,
+				}, -- [9]
+				["name"] = "Trade",
+				["save"] = true,
+				["hotkey"] = "CTRL-T",
+				["limit"] = "Opacus",
+			},
+			["Raid"] = {
+				{
+					"item", -- [1]
+					87246, -- [2]
+					["sliceToken"] = "ABuwNj8sur3",
+					["c"] = "e5ff00",
+				}, -- [1]
+				{
+					"item", -- [1]
+					87226, -- [2]
+					["sliceToken"] = "ABuwNj8surd",
+					["c"] = "e5ff00",
+				}, -- [2]
+				{
+					"item", -- [1]
+					76084, -- [2]
+					["sliceToken"] = "ABuwNj8surf",
+					["c"] = "e5ff00",
+				}, -- [3]
+				{
+					"item", -- [1]
+					76089, -- [2]
+					["sliceToken"] = "ABuwNj8surg",
+					["c"] = "e5ff00",
+				}, -- [4]
+				{
+					["sliceToken"] = "ABuwNjIgE31",
+					["c"] = "e5ff00",
+					["id"] = 83968,
+				}, -- [5]
+				{
+					"item", -- [1]
+					87234, -- [2]
+					["sliceToken"] = "ABuwNjIgE3g",
+					["c"] = "e5ff00",
+				}, -- [6]
+				{
+					"item", -- [1]
+					87230, -- [2]
+					["sliceToken"] = "ABuwNjIgE3h",
+					["c"] = "e5ff00",
+				}, -- [7]
+				{
+					"item", -- [1]
+					87238, -- [2]
+					["sliceToken"] = "ABuwNjIgE34",
+					["c"] = "e5ff00",
+				}, -- [8]
+				["limit"] = "Opacus",
+				["save"] = true,
+				["hotkey"] = "CTRL-R",
+				["name"] = "Raid",
+			},
+			["Items"] = {
+				{
+					"item", -- [1]
+					80513, -- [2]
+					["sliceToken"] = "ABuwNj8surr",
+					["c"] = "e5ff00",
+				}, -- [1]
+				{
+					"item", -- [1]
+					49040, -- [2]
+					["sliceToken"] = "ABuwNj8suro",
+					["c"] = "e5ff00",
+				}, -- [2]
+				{
+					"item", -- [1]
+					87214, -- [2]
+					["sliceToken"] = "ABuwNj8surp",
+					["c"] = "e5ff00",
+				}, -- [3]
+				{
+					"item", -- [1]
+					89815, -- [2]
+					["sliceToken"] = "ABuwNj8surt",
+					["c"] = "e5ff00",
+				}, -- [4]
+				{
+					["sliceToken"] = "ABuwNjIgE33",
+					["c"] = "e5ff00",
+					["id"] = 125439,
+				}, -- [5]
+				{
+					"item", -- [1]
+					87216, -- [2]
+					["sliceToken"] = "ABuwNj8suru",
+					["c"] = "e5ff00",
+				}, -- [6]
+				{
+					["sliceToken"] = "ABuwNjIgE3d",
+					["c"] = "e5ff00",
+					["id"] = 83958,
+				}, -- [7]
+				{
+					["sliceToken"] = "ABuwNjIgE3f",
+					["c"] = "e5ff00",
+					["id"] = 92397,
+				}, -- [8]
+				{
+					"item", -- [1]
+					87215, -- [2]
+					["sliceToken"] = "ABuwNj8suri",
+					["c"] = "e5ff00",
+				}, -- [9]
+				{
+					"item", -- [1]
+					48933, -- [2]
+					["sliceToken"] = "ABuwNj8sur2",
+					["c"] = "e5ff00",
+				}, -- [10]
+				{
+					"item", -- [1]
+					6948, -- [2]
+					["sliceToken"] = "ABuwNjIgE3j",
+					["c"] = "e5ff00",
+				}, -- [11]
+				{
+					["sliceToken"] = "ABuwNjIgE3r",
+					["c"] = "e5ff00",
+					["id"] = 1804,
+				}, -- [12]
+				{
+					"item", -- [1]
+					89880, -- [2]
+					["sliceToken"] = "ABuwNj8sury",
+					["c"] = "e5ff00",
+				}, -- [13]
+				{
+					"item", -- [1]
+					79104, -- [2]
+					["sliceToken"] = "ABuwNj8sur1",
+					["c"] = "e5ff00",
+				}, -- [14]
+				{
+					"item", -- [1]
+					65360, -- [2]
+					["sliceToken"] = "ABuwNj8sura",
+					["c"] = "e5ff00",
+				}, -- [15]
+				{
+					"item", -- [1]
+					72986, -- [2]
+					["sliceToken"] = "ABuwNj8surs",
+					["c"] = "e5ff00",
+				}, -- [16]
+				["limit"] = "Opacus",
+				["save"] = true,
+				["hotkey"] = "CTRL-F",
+				["name"] = "Items",
+			},
 			["VanityItems"] = {
 				{
 					"item", -- [1]
@@ -493,10 +493,10 @@ OneRing_Config = {
 					["sliceToken"] = "ABuwNj8surQ",
 					["c"] = "e5ff00",
 				}, -- [15]
-				["name"] = "Vanity Items",
+				["limit"] = "Opacus",
 				["save"] = true,
 				["hotkey"] = "CTRL-V",
-				["limit"] = "Opacus",
+				["name"] = "Vanity Items",
 			},
 		},
 	},

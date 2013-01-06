@@ -188,11 +188,11 @@ vexpower_parameters = {
 			["fadeout"] = true,
 			["stealthshow"] = true,
 			["clipToPower"] = {
-				["y"] = -488,
-				["x"] = 177,
+				["y"] = 97.00044250488281,
+				["x"] = 177.00048828125,
 				["toggle"] = false,
-				["anchor"] = "CENTER",
-				["anchorFrame"] = "CENTER",
+				["anchor"] = "BOTTOM",
+				["anchorFrame"] = "BOTTOM",
 			},
 			["infightshow"] = false,
 			["bg"] = {
