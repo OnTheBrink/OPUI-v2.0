@@ -14,13 +14,13 @@ MasqueDB = {
 		["Snô - Kel'Thuzad"] = "OPUI 1200",
 		["Rhodara - Blackhand"] = "Default",
 		["Ellence - Blade's Edge"] = "Default",
-		["Opacus - Kel'Thuzad"] = "OPUI1050",
+		["Opacus - Kel'Thuzad"] = "OPUI 2.1",
 		["Letheliarah - Khadgar"] = "Default",
 		["Melicelicity - Drenden"] = "Default",
 		["Instaque - Kel'Thuzad"] = "Default",
-		["Ladoroy - Kel'Thuzad"] = "OPUI 2.0",
-		["Halvinravis - Terenas"] = "Default",
 		["Praedatør - Kel'Thuzad"] = "Default",
+		["Halvinravis - Terenas"] = "Default",
+		["Ladoroy - Kel'Thuzad"] = "OPUI 2.0",
 		["Elylarina - Kel'Thuzad"] = "Default",
 		["Shãmwøw - Kel'Thuzad"] = "Default",
 		["Twocents - Kel'Thuzad"] = "Default",
@@ -33,10 +33,11 @@ MasqueDB = {
 		["OPUI1050"] = {
 			["Groups"] = {
 				["Dominos_Class Bar"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["MagicRunes_Rune Bars"] = {
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -64,17 +65,17 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["DebuffFilter_player Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_targettarget Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Bartender4_7"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -120,13 +121,13 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["DebuffFilter"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Hermes-UI-GridButtons_Default"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -154,9 +155,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["MagicRunes_Icon Display"] = {
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -184,9 +185,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["MagicRunes"] = {
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -214,101 +215,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["SBF_SBF 6"] = {
-					["Disabled"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Bartender4_3"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
-				},
-				["Dominos_Action Bar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Poisoner"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["Raven_Notifications"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["Bartender4_1"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -354,25 +263,96 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+				},
+				["Bartender4_3"] = {
 					["SkinID"] = "Renaitre: Square Thin",
+					["Colors"] = {
+						["Normal"] = {
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
+							1, -- [4]
+						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Dominos_Pet Bar"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
-				["SBF"] = {
+				["Poisoner"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
 							1, -- [3]
-							0.300000011920929, -- [4]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
 						},
 					},
 					["Inherit"] = false,
+				},
+				["Raven_Notifications"] = {
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["SBF_Weapon Enchants"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Highlight"] = {
 							1, -- [1]
@@ -382,40 +362,14 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+				},
+				["SBF_SBF 6"] = {
 					["SkinID"] = "Caith",
-				},
-				["Raven_Horn"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
+					["Disabled"] = true,
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
-				["Bartender4_10"] = {
+				["Bartender4_4"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -461,9 +415,49 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
+				},
+				["Dominos_Action Bar"] = {
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["Dominos_Bag Bar"] = {
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Raven_Buffs"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -491,10 +485,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["Bartender4_5"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -540,23 +533,50 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["DebuffFilter_target Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["SBF_SBF 3"] = {
+					["SkinID"] = "Caith",
 					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 1"] = {
-					["Disabled"] = true,
+				["Raven_Horn"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["Bartender4_PetBar"] = {
+				["Bartender4_MicroMenu"] = {
+					["SkinID"] = "Caith",
+					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -572,9 +592,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["Bartender4_8"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -620,9 +640,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["Raven_Revealing Strike"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -650,14 +671,14 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["DebuffFilter_player Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Raven_Debuff Target"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -685,11 +706,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["SBF_Buffs"] = {
 					["Fonts"] = true,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Gloss"] = {
 							1, -- [1]
@@ -705,9 +725,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["Bartender4_6"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -753,49 +773,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["Raven_Debuffs"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
 					["Gloss"] = 0.25,
 					["SkinID"] = "Jiyll: Vista",
-				},
-				["Dominos"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["SBF_SBF 5"] = {
-					["Disabled"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Raven"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -823,8 +804,46 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+				},
+				["Dominos"] = {
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["SBF_SBF 5"] = {
+					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
+				},
+				["Raven"] = {
 					["Gloss"] = 0.25,
 					["SkinID"] = "Entropy: Cobalt",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Raven_Cooldowns"] = {
 					["Colors"] = {
@@ -865,6 +884,7 @@ MasqueDB = {
 					["SkinID"] = "Entropy: Cobalt",
 				},
 				["Bartender4_Vehicle"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -910,14 +930,14 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["SBF_SBF 2"] = {
+					["SkinID"] = "Caith",
 					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["Bartender4"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -963,9 +983,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["OPie"] = {
+					["SkinID"] = "Adorn: Light Hex",
 					["Colors"] = {
 						["Normal"] = {
 							0.3764705882352941, -- [1]
@@ -993,9 +1013,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Adorn: Light Hex",
 				},
 				["Hermes-UI-GridButtons"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1023,9 +1043,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["TellMeWhen"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1053,14 +1074,13 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Caith",
 				},
 				["DebuffFilter_focus Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Bartender4_2"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -1106,18 +1126,18 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["SBF_SBF 4"] = {
+					["SkinID"] = "Caith",
 					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["DebuffFilter_focus Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Bartender4_BagBar"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -1127,18 +1147,19 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["SBF_Debuffs"] = {
+					["SkinID"] = "Caith",
 					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["DebuffFilter_targettarget Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Poisoner_QuickButton"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1166,10 +1187,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["Raven_Sprint"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1197,10 +1218,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["Bartender4_9"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -1246,9 +1266,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
 				},
 				["Bartender4_StanceBar"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -1276,40 +1296,10 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["Raven_Adrenaline Rush"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
 					["Gloss"] = 0.25,
 					["SkinID"] = "Jiyll: Vista",
-				},
-				["Raven_Target BnDB"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1337,10 +1327,40 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+				},
+				["Raven_Target BnDB"] = {
 					["Gloss"] = 0.25,
 					["SkinID"] = "Entropy: Cobalt",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
-				["Bartender4_MicroMenu"] = {
+				["Bartender4_PetBar"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -1356,45 +1376,14 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["Backdrop"] = true,
+				},
+				["SBF_SBF 1"] = {
 					["SkinID"] = "Caith",
-				},
-				["Dominos_Bag Bar"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["Poisoner_Menu Buttons"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["Bartender4_4"] = {
+				["Bartender4_10"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -1440,44 +1429,22 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Renaitre: Square Thin",
+				},
+				["SBF"] = {
+					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Raven_PVP"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
 					["Gloss"] = 0.25,
 					["SkinID"] = "Jiyll: Vista",
-				},
-				["DebuffFilter_target Debuffs Frame"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Darion",
-				},
-				["TellMeWhen_Group: 1"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1505,8 +1472,41 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+				},
+				["DebuffFilter_target Debuffs Frame"] = {
+					["SkinID"] = "Darion",
+					["Inherit"] = false,
+				},
+				["TellMeWhen_Group: 1"] = {
 					["Gloss"] = 0.25,
 					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Masque"] = {
 					["Colors"] = {
@@ -1572,7 +1572,7 @@ MasqueDB = {
 				},
 				["TellMeWhen_Group: 1"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1599,18 +1599,18 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_player Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_targettarget Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["MagicRunes_Icon Display"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1637,15 +1637,15 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["DebuffFilter"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Raven_Revealing Strike"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1672,10 +1672,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Bartender4_7"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -1720,11 +1720,11 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["Raven_PVP"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1751,58 +1751,22 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["Bartender4_4"] = {
 					["Inherit"] = false,
+				},
+				["SBF"] = {
+					["SkinID"] = "Caith",
 					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
 						["Highlight"] = {
 							1, -- [1]
 							1, -- [2]
 							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
+							0.300000011920929, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["Bartender4_3"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -1847,42 +1811,59 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
-				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
 					["Inherit"] = false,
+				},
+				["Bartender4_10"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
 							1, -- [4]
 						},
 						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
 							1, -- [4]
 						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Poisoner"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -1909,84 +1890,23 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Raven_Notifications"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
-				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
 					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
 				},
-				["Dominos_Pet Bar"] = {
-					["Inherit"] = false,
+				["Dominos_Bag Bar"] = {
 					["SkinID"] = "Caith",
-				},
-				["SBF"] = {
 					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
+				},
+				["SBF_SBF 6"] = {
 					["SkinID"] = "Caith",
-				},
-				["Dominos_Action Bar"] = {
+					["Disabled"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["Bartender4_MicroMenu"] = {
-					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.196078431372549, -- [1]
-							0.196078431372549, -- [2]
-							0.196078431372549, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-					},
-					["Backdrop"] = true,
-					["SkinID"] = "Caith",
-				},
-				["Bartender4_10"] = {
-					["Inherit"] = false,
+				["Bartender4_4"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2031,11 +1951,72 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
+				},
+				["SBF_Weapon Enchants"] = {
+					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["Bartender4_PetBar"] = {
+					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Normal"] = {
+							0.196078431372549, -- [1]
+							0.196078431372549, -- [2]
+							0.196078431372549, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
 				},
 				["Raven_Buffs"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2062,10 +2043,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Bartender4_5"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2110,15 +2091,15 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_target Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Raven_Target BnDB"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Entropy: Cobalt",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2145,15 +2126,42 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Entropy: Cobalt",
-				},
-				["SBF_SBF 1"] = {
 					["Inherit"] = false,
-					["Disabled"] = true,
+				},
+				["Raven_Horn"] = {
+					["Gloss"] = 0.25,
+					["SkinID"] = "Jiyll: Vista",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["Bartender4_MicroMenu"] = {
 					["SkinID"] = "Caith",
-				},
-				["Bartender4_PetBar"] = {
-					["Inherit"] = false,
+					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -2168,11 +2176,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Raven_Adrenaline Rush"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2199,10 +2207,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Bartender4_StanceBar"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -2229,15 +2237,15 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_player Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["SBF_Buffs"] = {
 					["Fonts"] = true,
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Gloss"] = {
 							1, -- [1]
@@ -2252,11 +2260,11 @@ MasqueDB = {
 							0.300000011920929, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Raven_Debuff Target"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2283,10 +2291,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Bartender4_6"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2331,11 +2339,11 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["Raven_Debuffs"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2362,20 +2370,20 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Dominos"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["SBF_SBF 5"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
 				},
 				["DebuffFilter_targettarget Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["Raven_Cooldowns"] = {
 					["Colors"] = {
@@ -2416,7 +2424,7 @@ MasqueDB = {
 					["SkinID"] = "Entropy: Cobalt",
 				},
 				["Bartender4_Vehicle"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2461,15 +2469,15 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["SBF_SBF 2"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
 				},
 				["Bartender4"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2514,10 +2522,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["OPie"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Adorn: Light Hex",
 					["Colors"] = {
 						["Normal"] = {
 							0.3764705882352941, -- [1]
@@ -2544,10 +2552,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Adorn: Light Hex",
+					["Inherit"] = false,
 				},
 				["Bartender4_BagBar"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -2556,19 +2564,19 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_focus Buffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["SBF_SBF 4"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
 				},
 				["Bartender4_2"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2613,15 +2621,15 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_focus Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["TellMeWhen"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2648,10 +2656,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Hermes-UI-GridButtons"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2678,16 +2686,16 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["SBF_Debuffs"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
 				},
 				["Raven"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Entropy: Cobalt",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2714,11 +2722,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Entropy: Cobalt",
+					["Inherit"] = false,
 				},
 				["Poisoner_QuickButton"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2745,11 +2753,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Raven_Sprint"] = {
 					["Gloss"] = 0.25,
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2776,10 +2784,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Bartender4_9"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2824,10 +2832,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["Hermes-UI-GridButtons_Default"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -2854,10 +2862,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Bartender4_8"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2902,36 +2910,28 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["SBF_SBF 3"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Caith",
 					["Disabled"] = true,
-					["SkinID"] = "Caith",
-				},
-				["Dominos_Bag Bar"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["SBF_Weapon Enchants"] = {
-					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
+				["SBF_SBF 1"] = {
 					["SkinID"] = "Caith",
-				},
-				["SBF_SBF 6"] = {
-					["Inherit"] = false,
 					["Disabled"] = true,
+					["Inherit"] = false,
+				},
+				["Dominos_Action Bar"] = {
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["Dominos_Pet Bar"] = {
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 				["Bartender4_1"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -2976,10 +2976,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
 				},
 				["MagicRunes"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -3006,14 +3006,14 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["DebuffFilter_target Debuffs Frame"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Darion",
+					["Inherit"] = false,
 				},
 				["MagicRunes_Rune Bars"] = {
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -3040,11 +3040,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Dominos_Class Bar"] = {
-					["Inherit"] = false,
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
 				},
 			},
 		},
@@ -3340,9 +3340,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["SBF_SBF 6"] = {
+				["Dominos_Pet Bar"] = {
 					["SkinID"] = "Caith",
-					["Disabled"] = true,
 					["Inherit"] = false,
 				},
 				["Poisoner"] = {
@@ -3380,56 +3379,40 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Bartender4_10"] = {
-					["SkinID"] = "Renaitre: Square Thin",
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
 							1, -- [4]
 						},
 						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
 						},
 						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
 							1, -- [3]
-							1, -- [4]
+							0.5, -- [4]
 						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
 							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
 						},
 					},
-					["Inherit"] = false,
+					["SkinID"] = "Jiyll: Vista",
 				},
-				["Dominos_Pet Bar"] = {
+				["SBF_SBF 6"] = {
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
 					["Inherit"] = false,
 				},
 				["Bartender4_4"] = {
@@ -3480,20 +3463,13 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["SBF_Weapon Enchants"] = {
+				["Dominos_Action Bar"] = {
 					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
 					["Inherit"] = false,
 				},
-				["Bartender4_PetBar"] = {
+				["Bartender4_MicroMenu"] = {
 					["SkinID"] = "Caith",
+					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -3510,36 +3486,53 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["Inherit"] = false,
+				["Bartender4_10"] = {
+					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
 							1, -- [4]
 						},
 						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
 							1, -- [4]
 						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
 					},
-					["SkinID"] = "Jiyll: Vista",
+					["Inherit"] = false,
 				},
 				["Raven_Buffs"] = {
 					["Gloss"] = 0.25,
@@ -3655,14 +3648,12 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["SBF_SBF 1"] = {
+				["Dominos_Bag Bar"] = {
 					["SkinID"] = "Caith",
-					["Disabled"] = true,
 					["Inherit"] = false,
 				},
-				["Bartender4_MicroMenu"] = {
+				["Bartender4_PetBar"] = {
 					["SkinID"] = "Caith",
-					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -4400,10 +4391,6 @@ MasqueDB = {
 					["Disabled"] = true,
 					["Inherit"] = false,
 				},
-				["Dominos_Bag Bar"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
 				["Raven_Horn"] = {
 					["Gloss"] = 0.25,
 					["SkinID"] = "Jiyll: Vista",
@@ -4435,8 +4422,21 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar"] = {
+				["SBF_SBF 1"] = {
 					["SkinID"] = "Caith",
+					["Disabled"] = true,
+					["Inherit"] = false,
+				},
+				["SBF_Weapon Enchants"] = {
+					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
 					["Inherit"] = false,
 				},
 				["Bartender4_7"] = {
@@ -4840,16 +4840,8 @@ MasqueDB = {
 					},
 					["SkinID"] = "Renaitre: Square Thin",
 				},
-				["SBF_Weapon Enchants"] = {
+				["Dominos_Action Bar"] = {
 					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
 					["SkinID"] = "Caith",
 				},
 				["Poisoner"] = {
@@ -4887,37 +4879,42 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 1"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
-					["SkinID"] = "Caith",
-				},
-				["SBF_SBF 6"] = {
-					["Inherit"] = false,
-					["Disabled"] = true,
-					["SkinID"] = "Caith",
-				},
-				["SBF"] = {
+				["Raven_Horn"] = {
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
 							1, -- [3]
-							0.300000011920929, -- [4]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
 						},
 					},
-					["SkinID"] = "Caith",
+					["SkinID"] = "Jiyll: Vista",
 				},
-				["Dominos_Action Bar"] = {
+				["Dominos_Pet Bar"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["Dominos_Bag Bar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Bartender4_10"] = {
+				["Bartender4_4"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -4964,6 +4961,54 @@ MasqueDB = {
 						},
 					},
 					["SkinID"] = "Renaitre: Square Thin",
+				},
+				["SBF_Weapon Enchants"] = {
+					["Inherit"] = false,
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
+					["SkinID"] = "Caith",
+				},
+				["SBF_SBF 1"] = {
+					["Inherit"] = false,
+					["Disabled"] = true,
+					["SkinID"] = "Caith",
+				},
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
 				},
 				["Raven_Buffs"] = {
 					["Gloss"] = 0.25,
@@ -5053,39 +5098,13 @@ MasqueDB = {
 					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
+				["Dominos_Bag Bar"] = {
 					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
+					["SkinID"] = "Caith",
 				},
-				["Bartender4_PetBar"] = {
+				["Bartender4_MicroMenu"] = {
 					["Inherit"] = false,
+					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -5867,9 +5886,8 @@ MasqueDB = {
 					},
 					["SkinID"] = "Entropy: Cobalt",
 				},
-				["Bartender4_MicroMenu"] = {
+				["Bartender4_PetBar"] = {
 					["Inherit"] = false,
-					["Backdrop"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -5886,38 +5904,7 @@ MasqueDB = {
 					},
 					["SkinID"] = "Caith",
 				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["Bartender4_4"] = {
+				["Bartender4_10"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -5965,8 +5952,21 @@ MasqueDB = {
 					},
 					["SkinID"] = "Renaitre: Square Thin",
 				},
-				["Dominos_Pet Bar"] = {
+				["SBF"] = {
 					["Inherit"] = false,
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
+					["SkinID"] = "Caith",
+				},
+				["SBF_SBF 6"] = {
+					["Inherit"] = false,
+					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Raven_PVP"] = {
@@ -6098,8 +6098,6 @@ MasqueDB = {
 					["SkinID"] = "Caith",
 				},
 				["TellMeWhen_Group: 1"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6126,6 +6124,8 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["DebuffFilter_player Buffs Frame"] = {
@@ -6137,7 +6137,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["MagicRunes_Icon Display"] = {
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6164,6 +6163,7 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
 					["Inherit"] = false,
 				},
 				["DebuffFilter"] = {
@@ -6171,8 +6171,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Raven_Revealing Strike"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6199,10 +6197,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Bartender4_7"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -6247,11 +6246,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["Raven_PVP"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6278,22 +6276,59 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
-				["SBF"] = {
-					["SkinID"] = "Caith",
+				["Bartender4_4"] = {
 					["Colors"] = {
+						["Normal"] = {
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
+							1, -- [4]
+						},
 						["Highlight"] = {
 							1, -- [1]
 							1, -- [2]
 							1, -- [3]
-							0.300000011920929, -- [4]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["Bartender4_3"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -6338,59 +6373,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
-					["Inherit"] = false,
-				},
-				["Bartender4_10"] = {
 					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
 					["Inherit"] = false,
 				},
-				["Poisoner"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
+				["Poisoner_Menu Buttons"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6417,72 +6403,81 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
+				},
+				["Poisoner"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Raven_Notifications"] = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["SBF_SBF 1"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["SBF_SBF 6"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Bartender4_4"] = {
-					["SkinID"] = "Renaitre: Square Thin",
+				["Raven_Horn"] = {
 					["Colors"] = {
 						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
 							1, -- [4]
 						},
 						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
 						},
 						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
 							1, -- [3]
-							1, -- [4]
+							0.5, -- [4]
 						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
 							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
-				["SBF_Weapon Enchants"] = {
+				["Dominos_Pet Bar"] = {
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["SBF"] = {
 					["Colors"] = {
 						["Highlight"] = {
 							1, -- [1]
@@ -6491,10 +6486,14 @@ MasqueDB = {
 							0.300000011920929, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Bartender4_PetBar"] = {
+				["Dominos_Action Bar"] = {
 					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["Bartender4_MicroMenu"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -6509,72 +6508,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
+					["Backdrop"] = true,
 					["Inherit"] = false,
 				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Buffs"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_5"] = {
-					["SkinID"] = "Renaitre: Square Thin",
+				["Bartender4_10"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -6619,6 +6557,86 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
+				},
+				["Raven_Buffs"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
+				},
+				["Bartender4_5"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
+							1, -- [4]
+						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
+					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_target Buffs Frame"] = {
@@ -6626,8 +6644,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["Raven_Target BnDB"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Entropy: Cobalt",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6654,15 +6670,16 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Entropy: Cobalt",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
-				["Dominos_Bag Bar"] = {
+				["SBF_SBF 1"] = {
+					["Disabled"] = true,
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Bartender4_MicroMenu"] = {
-					["SkinID"] = "Caith",
-					["Backdrop"] = true,
+				["Bartender4_PetBar"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -6677,11 +6694,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Raven_Adrenaline Rush"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6708,10 +6724,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Bartender4_StanceBar"] = {
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -6738,6 +6755,7 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_player Debuffs Frame"] = {
@@ -6746,7 +6764,6 @@ MasqueDB = {
 				},
 				["SBF_Buffs"] = {
 					["Fonts"] = true,
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Gloss"] = {
 							1, -- [1]
@@ -6761,11 +6778,10 @@ MasqueDB = {
 							0.300000011920929, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Raven_Debuff Target"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6792,10 +6808,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Bartender4_6"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -6840,11 +6857,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["Raven_Debuffs"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -6871,6 +6887,8 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Dominos"] = {
@@ -6878,8 +6896,8 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["SBF_SBF 5"] = {
-					["SkinID"] = "Caith",
 					["Disabled"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_targettarget Debuffs Frame"] = {
@@ -6925,7 +6943,6 @@ MasqueDB = {
 					["SkinID"] = "Entropy: Cobalt",
 				},
 				["Bartender4_Vehicle"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -6970,15 +6987,15 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["SBF_SBF 2"] = {
-					["SkinID"] = "Caith",
 					["Disabled"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Bartender4"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -7023,10 +7040,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["OPie"] = {
-					["SkinID"] = "Adorn: Light Hex",
 					["Colors"] = {
 						["Normal"] = {
 							0.3764705882352941, -- [1]
@@ -7053,1519 +7070,10 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["Inherit"] = false,
-				},
-				["Bartender4_BagBar"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.196078431372549, -- [1]
-							0.196078431372549, -- [2]
-							0.196078431372549, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_focus Buffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["SBF_SBF 4"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Bartender4_2"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_focus Debuffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["TellMeWhen"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Hermes-UI-GridButtons"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_Debuffs"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Raven"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Entropy: Cobalt",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Poisoner_QuickButton"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Sprint"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_9"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Hermes-UI-GridButtons_Default"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_8"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_SBF 3"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Dominos_Action Bar"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["Dominos_Pet Bar"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["Bartender4_1"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["MagicRunes"] = {
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_target Debuffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["MagicRunes_Rune Bars"] = {
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Dominos_Class Bar"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-			},
-		},
-		["OPUI 1200"] = {
-			["Groups"] = {
-				["Masque"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-				},
-				["TellMeWhen_Group: 1"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_player Buffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["Bartender4_StanceBar"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.196078431372549, -- [1]
-							0.196078431372549, -- [2]
-							0.196078431372549, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_1"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["Raven_Revealing Strike"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_7"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_PVP"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Hermes-UI-GridButtons_Default"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_3"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_SBF 6"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Poisoner"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Notifications"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["SBF"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Dominos_Pet Bar"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["Bartender4_4"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_Weapon Enchants"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_MicroMenu"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.196078431372549, -- [1]
-							0.196078431372549, -- [2]
-							0.196078431372549, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-					},
-					["Backdrop"] = true,
-					["Inherit"] = false,
-				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Buffs"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_5"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_target Buffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["Raven_Target BnDB"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Entropy: Cobalt",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_SBF 1"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Bartender4_PetBar"] = {
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Normal"] = {
-							0.196078431372549, -- [1]
-							0.196078431372549, -- [2]
-							0.196078431372549, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Adrenaline Rush"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["DebuffFilter_targettarget Buffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["DebuffFilter_player Debuffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["SBF_Buffs"] = {
-					["Fonts"] = true,
-					["SkinID"] = "Caith",
-					["Colors"] = {
-						["Gloss"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Debuff Target"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_6"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Raven_Debuffs"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Dominos"] = {
-					["SkinID"] = "Caith",
-					["Inherit"] = false,
-				},
-				["SBF_SBF 5"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["DebuffFilter_targettarget Debuffs Frame"] = {
-					["SkinID"] = "Darion",
-					["Inherit"] = false,
-				},
-				["Raven_Cooldowns"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-					},
-					["Inherit"] = false,
-					["Gloss"] = 0.25,
-					["Backdrop"] = true,
-					["SkinID"] = "Entropy: Cobalt",
-				},
-				["Bartender4_Vehicle"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["SBF_SBF 2"] = {
-					["SkinID"] = "Caith",
-					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Bartender4"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["OPie"] = {
 					["SkinID"] = "Adorn: Light Hex",
-					["Colors"] = {
-						["Normal"] = {
-							0.3764705882352941, -- [1]
-							0.3764705882352941, -- [2]
-							0.3764705882352941, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-					},
 					["Inherit"] = false,
 				},
 				["Bartender4_BagBar"] = {
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.196078431372549, -- [1]
@@ -8574,6 +7082,7 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_focus Buffs Frame"] = {
@@ -8581,12 +7090,11 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["SBF_SBF 4"] = {
-					["SkinID"] = "Caith",
 					["Disabled"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Bartender4_2"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -8631,6 +7139,7 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_focus Debuffs Frame"] = {
@@ -8638,8 +7147,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["TellMeWhen"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8666,10 +7173,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Hermes-UI-GridButtons"] = {
-					["SkinID"] = "Caith",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8696,16 +7204,15 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["SBF_Debuffs"] = {
-					["SkinID"] = "Caith",
 					["Disabled"] = true,
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Raven"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Entropy: Cobalt",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8732,11 +7239,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Entropy: Cobalt",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Poisoner_QuickButton"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8763,11 +7270,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Raven_Sprint"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8794,10 +7301,11 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
 				},
 				["Bartender4_9"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -8842,10 +7350,10 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
-				["MagicRunes_Icon Display"] = {
-					["SkinID"] = "Jiyll: Vista",
+				["Hermes-UI-GridButtons_Default"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -8860,22 +7368,22 @@ MasqueDB = {
 							0.5, -- [4]
 						},
 						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
+							1, -- [1]
+							1, -- [2]
 							1, -- [3]
-							0.5, -- [4]
+							1, -- [4]
 						},
 						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Bartender4_8"] = {
-					["SkinID"] = "Renaitre: Square Thin",
 					["Colors"] = {
 						["Normal"] = {
 							0.05882352941176471, -- [1]
@@ -8920,102 +7428,84 @@ MasqueDB = {
 							0.6000000238418579, -- [4]
 						},
 					},
+					["SkinID"] = "Renaitre: Square Thin",
 					["Inherit"] = false,
 				},
 				["SBF_SBF 3"] = {
-					["SkinID"] = "Caith",
 					["Disabled"] = true,
-					["Inherit"] = false,
-				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
-					["SkinID"] = "Jiyll: Vista",
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["Bartender4_10"] = {
-					["SkinID"] = "Renaitre: Square Thin",
-					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
-						},
-					},
+					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
 				["Dominos_Bag Bar"] = {
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar"] = {
+				["SBF_Weapon Enchants"] = {
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
 					["SkinID"] = "Caith",
 					["Inherit"] = false,
 				},
+				["SBF_SBF 6"] = {
+					["Disabled"] = true,
+					["SkinID"] = "Caith",
+					["Inherit"] = false,
+				},
+				["Bartender4_1"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
+							1, -- [4]
+						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
+					},
+					["SkinID"] = "Renaitre: Square Thin",
+					["Inherit"] = false,
+				},
 				["MagicRunes"] = {
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -9042,6 +7532,7 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
 					["Inherit"] = false,
 				},
 				["DebuffFilter_target Debuffs Frame"] = {
@@ -9049,7 +7540,6 @@ MasqueDB = {
 					["Inherit"] = false,
 				},
 				["MagicRunes_Rune Bars"] = {
-					["SkinID"] = "Jiyll: Vista",
 					["Colors"] = {
 						["Normal"] = {
 							0.3058823529411765, -- [1]
@@ -9076,6 +7566,7 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["SkinID"] = "Jiyll: Vista",
 					["Inherit"] = false,
 				},
 				["Dominos_Class Bar"] = {
@@ -9366,8 +7857,9 @@ MasqueDB = {
 					},
 					["SkinID"] = "Renaitre: Square Thin",
 				},
-				["Dominos_Pet Bar"] = {
+				["SBF_SBF 6"] = {
 					["Inherit"] = false,
+					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Poisoner"] = {
@@ -9405,6 +7897,26 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["Dominos_Action Bar"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Dominos_Pet Bar"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["SBF"] = {
+					["Inherit"] = false,
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
+					["SkinID"] = "Caith",
+				},
 				["SBF_Weapon Enchants"] = {
 					["Inherit"] = false,
 					["Colors"] = {
@@ -9417,12 +7929,12 @@ MasqueDB = {
 					},
 					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 6"] = {
+				["SBF_SBF 1"] = {
 					["Inherit"] = false,
 					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
-				["Bartender4_4"] = {
+				["Bartender4_10"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -9469,45 +7981,6 @@ MasqueDB = {
 						},
 					},
 					["SkinID"] = "Renaitre: Square Thin",
-				},
-				["Dominos_Action Bar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Dominos_Bag Bar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["Raven_Buffs"] = {
 					["Gloss"] = 0.25,
@@ -9597,38 +8070,11 @@ MasqueDB = {
 					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
+				["Dominos_Bag Bar"] = {
 					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
+					["SkinID"] = "Caith",
 				},
-				["Bartender4_MicroMenu"] = {
+				["Bartender4_PetBar"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -9644,7 +8090,6 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["Backdrop"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Bartender4_8"] = {
@@ -10413,7 +8858,7 @@ MasqueDB = {
 					},
 					["SkinID"] = "Entropy: Cobalt",
 				},
-				["Bartender4_PetBar"] = {
+				["Bartender4_MicroMenu"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -10429,14 +8874,72 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["Backdrop"] = true,
 					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 1"] = {
+				["Raven_Horn"] = {
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
-					["Disabled"] = true,
-					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
 				},
-				["Bartender4_10"] = {
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
+				},
+				["Bartender4_4"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -10483,18 +8986,6 @@ MasqueDB = {
 						},
 					},
 					["SkinID"] = "Renaitre: Square Thin",
-				},
-				["SBF"] = {
-					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
 				},
 				["Raven_PVP"] = {
 					["Gloss"] = 0.25,
@@ -10798,8 +9289,16 @@ MasqueDB = {
 					},
 					["SkinID"] = "Jiyll: Vista",
 				},
-				["Dominos_Action Bar"] = {
+				["SBF_Weapon Enchants"] = {
 					["Inherit"] = false,
+					["Colors"] = {
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.300000011920929, -- [4]
+						},
+					},
 					["SkinID"] = "Caith",
 				},
 				["Bartender4_3"] = {
@@ -10850,8 +9349,9 @@ MasqueDB = {
 					},
 					["SkinID"] = "Renaitre: Square Thin",
 				},
-				["Dominos_Bag Bar"] = {
+				["SBF_SBF 1"] = {
 					["Inherit"] = false,
+					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Poisoner"] = {
@@ -10886,6 +9386,98 @@ MasqueDB = {
 					["SkinID"] = "Jiyll: Vista",
 				},
 				["Raven_Notifications"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Poisoner_Menu Buttons"] = {
+					["Gloss"] = 0.25,
+					["Inherit"] = false,
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
+				},
+				["SBF_SBF 6"] = {
+					["Inherit"] = false,
+					["Disabled"] = true,
+					["SkinID"] = "Caith",
+				},
+				["Bartender4_4"] = {
+					["Inherit"] = false,
+					["Colors"] = {
+						["Normal"] = {
+							0.05882352941176471, -- [1]
+							0.05882352941176471, -- [2]
+							0.05882352941176471, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0.9529411764705882, -- [1]
+							0.9529411764705882, -- [2]
+							0.9529411764705882, -- [3]
+							1, -- [4]
+						},
+						["Highlight"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Gloss"] = {
+							0.203921568627451, -- [1]
+							0.203921568627451, -- [2]
+							0.203921568627451, -- [3]
+							1, -- [4]
+						},
+						["Checked"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["Flash"] = {
+							0.5019607843137255, -- [1]
+							0, -- [2]
+							1, -- [3]
+							0.6000000238418579, -- [4]
+						},
+					},
+					["SkinID"] = "Renaitre: Square Thin",
+				},
+				["Dominos_Action Bar"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["Dominos_Bag Bar"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
@@ -10936,96 +9528,6 @@ MasqueDB = {
 						},
 					},
 					["SkinID"] = "Renaitre: Square Thin",
-				},
-				["Dominos_Pet Bar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["SBF"] = {
-					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-				},
-				["SBF_Weapon Enchants"] = {
-					["Inherit"] = false,
-					["Colors"] = {
-						["Highlight"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.300000011920929, -- [4]
-						},
-					},
-					["SkinID"] = "Caith",
-				},
-				["Raven_Horn"] = {
-					["Gloss"] = 0.25,
-					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
-				},
-				["Poisoner_Menu Buttons"] = {
-					["Gloss"] = 0.25,
-					["Inherit"] = false,
-					["Colors"] = {
-						["Normal"] = {
-							0.3058823529411765, -- [1]
-							0.3058823529411765, -- [2]
-							0.3058823529411765, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.5, -- [4]
-						},
-						["Checked"] = {
-							0.9450980392156863, -- [1]
-							0.984313725490196, -- [2]
-							1, -- [3]
-							0.5, -- [4]
-						},
-						["Highlight"] = {
-							0.4627450980392157, -- [1]
-							0.4627450980392157, -- [2]
-							0.4627450980392157, -- [3]
-							1, -- [4]
-						},
-					},
-					["SkinID"] = "Jiyll: Vista",
 				},
 				["Raven_Buffs"] = {
 					["Gloss"] = 0.25,
@@ -11115,12 +9617,38 @@ MasqueDB = {
 					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 1"] = {
+				["Raven_Horn"] = {
+					["Gloss"] = 0.25,
 					["Inherit"] = false,
-					["Disabled"] = true,
-					["SkinID"] = "Caith",
+					["Colors"] = {
+						["Normal"] = {
+							0.3058823529411765, -- [1]
+							0.3058823529411765, -- [2]
+							0.3058823529411765, -- [3]
+							1, -- [4]
+						},
+						["Pushed"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.5, -- [4]
+						},
+						["Checked"] = {
+							0.9450980392156863, -- [1]
+							0.984313725490196, -- [2]
+							1, -- [3]
+							0.5, -- [4]
+						},
+						["Highlight"] = {
+							0.4627450980392157, -- [1]
+							0.4627450980392157, -- [2]
+							0.4627450980392157, -- [3]
+							1, -- [4]
+						},
+					},
+					["SkinID"] = "Jiyll: Vista",
 				},
-				["Bartender4_MicroMenu"] = {
+				["Bartender4_PetBar"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -11136,7 +9664,6 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
-					["Backdrop"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Bartender4_8"] = {
@@ -11904,7 +10431,7 @@ MasqueDB = {
 					},
 					["SkinID"] = "Entropy: Cobalt",
 				},
-				["Bartender4_PetBar"] = {
+				["Bartender4_MicroMenu"] = {
 					["Inherit"] = false,
 					["Colors"] = {
 						["Normal"] = {
@@ -11920,59 +10447,23 @@ MasqueDB = {
 							1, -- [4]
 						},
 					},
+					["Backdrop"] = true,
 					["SkinID"] = "Caith",
 				},
-				["Bartender4_4"] = {
+				["SBF"] = {
 					["Inherit"] = false,
 					["Colors"] = {
-						["Normal"] = {
-							0.05882352941176471, -- [1]
-							0.05882352941176471, -- [2]
-							0.05882352941176471, -- [3]
-							1, -- [4]
-						},
-						["Pushed"] = {
-							0.9529411764705882, -- [1]
-							0.9529411764705882, -- [2]
-							0.9529411764705882, -- [3]
-							1, -- [4]
-						},
 						["Highlight"] = {
 							1, -- [1]
 							1, -- [2]
 							1, -- [3]
-							1, -- [4]
-						},
-						["Gloss"] = {
-							0.203921568627451, -- [1]
-							0.203921568627451, -- [2]
-							0.203921568627451, -- [3]
-							1, -- [4]
-						},
-						["Checked"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["Flash"] = {
-							0.5019607843137255, -- [1]
-							0, -- [2]
-							1, -- [3]
-							0.6000000238418579, -- [4]
+							0.300000011920929, -- [4]
 						},
 					},
-					["SkinID"] = "Renaitre: Square Thin",
+					["SkinID"] = "Caith",
 				},
-				["SBF_SBF 6"] = {
+				["Dominos_Pet Bar"] = {
 					["Inherit"] = false,
-					["Disabled"] = true,
 					["SkinID"] = "Caith",
 				},
 				["Hermes-UI-GridButtons_Default"] = {

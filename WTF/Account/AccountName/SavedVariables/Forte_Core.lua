@@ -5,7 +5,7 @@ FX_Saved = {
 	["Timers"] = {
 	},
 	["Healthstone"] = {
-		["Opacus"] = 1,
+		["Opacus"] = 0,
 	},
 	["Exceptions"] = {
 		["Hellfire Channeler"] = 0,
@@ -17,9 +17,9 @@ FX_Saved = {
 		["Fathom-Guard Tidalvess"] = 1,
 		["Fathom-Guard Sharkkis"] = 1,
 	},
-	["Update"] = 175012.502,
+	["Update"] = 88793.563,
 	["Profiles"] = {
-		["Active"] = 4,
+		["Active"] = 1,
 		["Characters"] = {
 			["Nanathaict-Kel'Thuzad"] = 1,
 			["Melicelicity-Drenden"] = 1,
@@ -28,7 +28,7 @@ FX_Saved = {
 			["Praedatør-Kel'Thuzad"] = 1,
 			["Instaque-Kel'Thuzad"] = 3,
 			["Elylarina-Kel'Thuzad"] = 1,
-			["Opacus-Kel'Thuzad"] = 4,
+			["Opacus-Kel'Thuzad"] = 1,
 			["Letheliarah-Khadgar"] = 3,
 			["Uthalip-Kel'Thuzad"] = 1,
 			["Alterboi-Kel'Thuzad"] = 1,
@@ -284,7 +284,7 @@ FX_Saved = {
 								0, -- [1]
 								1, -- [2]
 								0.5, -- [3]
-								[0] = false,
+								[0] = true,
 							},
 							["Tags"] = 6,
 							["BgColor"] = {
@@ -307,17 +307,12 @@ FX_Saved = {
 								0, -- [1]
 								1, -- [2]
 								0, -- [3]
-								[0] = false,
+								[0] = true,
 							},
 							["Filter"] = {
 								["Tomb Raider's Girdle"] = {
 									{
 										1, -- [1]
-									}, -- [1]
-								},
-								["Guild Herald"] = {
-									{
-										-1, -- [1]
 									}, -- [1]
 								},
 								["Recently Bandaged"] = {
@@ -328,7 +323,22 @@ FX_Saved = {
 										0, -- [4]
 									},
 								},
+								["Mobile Banking"] = {
+									[3] = {
+										-1, -- [1]
+									},
+								},
+								["Gnomish Army Knife"] = {
+									[3] = {
+										-1, -- [1]
+									},
+								},
 								["Revive Battle Pets"] = {
+									{
+										-1, -- [1]
+									}, -- [1]
+								},
+								["Guild Herald"] = {
 									{
 										-1, -- [1]
 									}, -- [1]
@@ -356,10 +366,8 @@ FX_Saved = {
 								1, -- [3]
 								[0] = true,
 							},
-							["Buff"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
+							["MaxRemaining"] = {
+								3600, -- [1]
 								[0] = false,
 							},
 							["scale"] = 1,
@@ -388,18 +396,18 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Splash"] = false,
-							["Pet"] = {
-								1, -- [1]
-								0, -- [2]
-								0.95, -- [3]
-								[0] = false,
-							},
-							["Ignore"] = true,
 							["BarColor"] = {
 								0.24, -- [1]
 								0.24, -- [2]
 								0.24, -- [3]
 								0, -- [4]
+							},
+							["Ignore"] = true,
+							["Pet"] = {
+								1, -- [1]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = false,
 							},
 							["Spark"] = {
 								1, -- [1]
@@ -429,11 +437,6 @@ FX_Saved = {
 							},
 							["Max"] = 300,
 							["Flip"] = false,
-							["alpha"] = 1,
-							["CustomTags"] = {
-								"0 1 10 30 60 120 300 600", -- [1]
-								[0] = true,
-							},
 							["Backdrop"] = {
 								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
 								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
@@ -442,6 +445,11 @@ FX_Saved = {
 								5, -- [5]
 								3, -- [6]
 							},
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
+								[0] = true,
+							},
+							["alpha"] = 1,
 							["Font"] = {
 								"Interface\\AddOns\\ElvUI\\media\\fonts\\PT_Sans_Narrow.ttf", -- [1]
 								12, -- [2]
@@ -450,8 +458,10 @@ FX_Saved = {
 							["Hide"] = false,
 							["SplashFactor"] = 4,
 							["Height"] = 14,
-							["MaxRemaining"] = {
-								3600, -- [1]
+							["Buff"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
 								[0] = false,
 							},
 							["Enable"] = true,
@@ -963,10 +973,11 @@ FX_Saved = {
 					[0] = true,
 				},
 				["HealthstoneStrata"] = "MEDIUM",
-				["SummonFarColor"] = {
+				["SoulstoneMsgColor"] = {
 					1, -- [1]
-					1, -- [2]
+					0, -- [2]
 					1, -- [3]
+					[0] = true,
 				},
 				["OptionsColums"] = 2,
 				["FWSUFrame"] = {
@@ -1004,12 +1015,12 @@ FX_Saved = {
 					"+++ Vamparic Blood (10 sec) +++", -- [1]
 					[0] = 1,
 				},
-				["SoulstoneAuto"] = false,
+				["HealthstoneUnknown"] = true,
 				["LBStart"] = {
 					"+++ Lichborne (10 sec) +++", -- [1]
 					[0] = 1,
 				},
-				["HealthstoneUnknown"] = true,
+				["SoulstoneAuto"] = false,
 				["SoulstoneExpand"] = false,
 				["ERStart"] = {
 					"+++ Enraged Regeneration (10 sec) +++", -- [1]
@@ -1042,10 +1053,10 @@ FX_Saved = {
 							["x"] = 614.6399789518109,
 							["SecondSplashMax"] = 3,
 							["lock"] = true,
-							["Enable"] = true,
+							["scale"] = 2,
 							["y"] = 168.4402110788178,
 							["alpha"] = 0.7,
-							["scale"] = 2,
+							["Enable"] = true,
 						}, -- [1]
 					},
 				},
@@ -1054,18 +1065,18 @@ FX_Saved = {
 					0, -- [2]
 					0.6, -- [3]
 				},
-				["TalentOffsetX"] = 0,
+				["Chill"] = 0.01,
 				["HealthstoneTexture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
 				["TimeLeftNoTarg"] = {
 					">> %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
+				["SummonHeight"] = 12,
+				["TalentOffsetX"] = 0,
 				["Output"] = {
 					"MyProChannel", -- [1]
 					[0] = true,
 				},
-				["SummonSpace"] = 1,
-				["SummonHeight"] = 12,
 				["SoulstoneTexture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
 				["TimerResistsColor"] = {
 					1, -- [1]
@@ -1083,27 +1094,12 @@ FX_Saved = {
 					1, -- [2]
 					[0] = true,
 				},
-				["InterveneStart"] = {
-					"+++ Intervene on %s (10 sec) +++", -- [1]
-					[0] = 1,
-				},
+				["SoulstoneWidth"] = 100,
 				["SoulstoneMax"] = 10,
 				["TimerSortOrder"] = "buff selfdebuff debuff cooldown notarget target",
 				["VigilanceStart"] = {
 					">>> Vigilance on %s (30 Minutes) <<<", -- [1]
 					[0] = 0,
-				},
-				["TimerFadeSound"] = {
-					"Sound\\Spells\\ShaysBell.wav", -- [1]
-					2, -- [2]
-					[0] = true,
-				},
-				["TimerFadeSpeed"] = 0.5,
-				["SoulstoneWidth"] = 100,
-				["DruidColor"] = {
-					1, -- [1]
-					0.49, -- [2]
-					0.04, -- [3]
 				},
 				["DiffNoneColor"] = {
 					0, -- [1]
@@ -1111,6 +1107,21 @@ FX_Saved = {
 					0, -- [3]
 					0.2, -- [4]
 					[0] = false,
+				},
+				["TimerFadeSpeed"] = 0.5,
+				["InterveneStart"] = {
+					"+++ Intervene on %s (10 sec) +++", -- [1]
+					[0] = 1,
+				},
+				["DruidColor"] = {
+					1, -- [1]
+					0.49, -- [2]
+					0.04, -- [3]
+				},
+				["TimerFadeSound"] = {
+					"Sound\\Spells\\ShaysBell.wav", -- [1]
+					2, -- [2]
+					[0] = true,
 				},
 				["CooldownLeft"] = {
 					">> %s is ready in %s <<", -- [1]
@@ -1125,7 +1136,7 @@ FX_Saved = {
 					0.21, -- [2]
 					0.9300000000000001, -- [3]
 				},
-				["Chill"] = 0.01,
+				["SummonSpace"] = 1,
 				["RightClickIconOptions"] = true,
 				["SplashStrata"] = "MEDIUM",
 				["OptionsHeight"] = 438,
@@ -1148,11 +1159,10 @@ FX_Saved = {
 					1, -- [3]
 				},
 				["SummonMeetingStone"] = false,
-				["SoulstoneMsgColor"] = {
+				["SummonFarColor"] = {
 					1, -- [1]
-					0, -- [2]
+					1, -- [2]
 					1, -- [3]
-					[0] = true,
 				},
 				["CancelDelay"] = 0.5,
 				["SummonKeyword"] = {
@@ -1800,8 +1810,10 @@ FX_Saved = {
 								},
 							},
 							["GroupOverride"] = true,
-							["MaxRemaining"] = {
-								3600, -- [1]
+							["Buff"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
 								[0] = false,
 							},
 							["Height"] = 14,
@@ -1814,10 +1826,8 @@ FX_Saved = {
 							},
 							["Swing"] = false,
 							["IconTime"] = false,
-							["Buff"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
+							["MaxRemaining"] = {
+								3600, -- [1]
 								[0] = false,
 							},
 							["scale"] = 1,
@@ -1851,6 +1861,11 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Splash"] = false,
+							["alpha"] = 1,
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
+								[0] = true,
+							},
 							["Backdrop"] = {
 								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
 								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
@@ -1859,11 +1874,6 @@ FX_Saved = {
 								5, -- [5]
 								3, -- [6]
 							},
-							["CustomTags"] = {
-								"0 1 10 30 60 120 300 600", -- [1]
-								[0] = true,
-							},
-							["alpha"] = 1,
 							["Flip"] = false,
 							["MinRemaining"] = {
 								0, -- [1]
@@ -1892,18 +1902,18 @@ FX_Saved = {
 								1, -- [1]
 								[0] = true,
 							},
-							["Pet"] = {
-								1, -- [1]
-								0, -- [2]
-								0.95, -- [3]
-								[0] = false,
-							},
-							["Ignore"] = true,
 							["BarColor"] = {
 								0.22, -- [1]
 								0.22, -- [2]
 								0.22, -- [3]
 								1, -- [4]
+							},
+							["Ignore"] = true,
+							["Pet"] = {
+								1, -- [1]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = false,
 							},
 							["Font"] = {
 								"Interface\\AddOns\\ElvUI\\media\\fonts\\PT_Sans_Narrow.ttf", -- [1]
@@ -2084,17 +2094,17 @@ FX_Saved = {
 					">>> Challenging Shout (6 sec) <<<", -- [1]
 					[0] = 1,
 				},
+				["SummonFarColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["HealthstoneStrata"] = "MEDIUM",
 				["SoulstoneMsgColor"] = {
 					1, -- [1]
 					0, -- [2]
 					1, -- [3]
 					[0] = true,
-				},
-				["HealthstoneStrata"] = "MEDIUM",
-				["SummonFarColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				},
 				["SummonMeetingStone"] = false,
 				["FWSUFrame"] = {
@@ -2136,7 +2146,7 @@ FX_Saved = {
 					"+++ Lichborne (10 sec) +++", -- [1]
 					[0] = 1,
 				},
-				["SoulstoneAuto"] = false,
+				["HealthstoneUnknown"] = true,
 				["SoulstoneExpand"] = false,
 				["ERStart"] = {
 					"+++ Enraged Regeneration (10 sec) +++", -- [1]
@@ -2160,12 +2170,9 @@ FX_Saved = {
 					">> %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
+				["SummonSpace"] = 1,
 				["Chill"] = 0.05,
-				["TalentOffsetX"] = 0,
-				["Output"] = {
-					"MyProChannel", -- [1]
-					[0] = true,
-				},
+				["SummonHeight"] = 12,
 				["SoulstoneMaxColor"] = {
 					0.64, -- [1]
 					0.21, -- [2]
@@ -2186,12 +2193,10 @@ FX_Saved = {
 					">> %s is ready in %s <<", -- [1]
 					[0] = 1,
 				},
-				["DiffNoneColor"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					0.2, -- [4]
-					[0] = false,
+				["TimerFadeSound"] = {
+					"Sound\\Spells\\ShaysBell.wav", -- [1]
+					2, -- [2]
+					[0] = true,
 				},
 				["SoulstoneMax"] = 10,
 				["TimerSortOrder"] = "buff selfdebuff debuff cooldown notarget target",
@@ -2199,22 +2204,24 @@ FX_Saved = {
 					">>> Vigilance on %s (30 Minutes) <<<", -- [1]
 					[0] = 0,
 				},
-				["TimerFadeSound"] = {
-					"Sound\\Spells\\ShaysBell.wav", -- [1]
-					2, -- [2]
-					[0] = true,
+				["DiffNoneColor"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = false,
 				},
 				["TimerFadeSpeed"] = 0.5,
-				["InterveneStart"] = {
-					"+++ Intervene on %s (10 sec) +++", -- [1]
-					[0] = 1,
-				},
+				["SoulstoneWidth"] = 100,
 				["DruidColor"] = {
 					1, -- [1]
 					0.49, -- [2]
 					0.04, -- [3]
 				},
-				["SoulstoneWidth"] = 100,
+				["InterveneStart"] = {
+					"+++ Intervene on %s (10 sec) +++", -- [1]
+					[0] = 1,
+				},
 				["SoulstoneFadeSound"] = {
 					"Interface\\AddOns\\Forte_Core\\Sounds\\SoulstoneExpire.mp3", -- [1]
 					1, -- [2]
@@ -2225,8 +2232,11 @@ FX_Saved = {
 					[0] = true,
 				},
 				["SoulstoneTexture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
-				["SummonHeight"] = 12,
-				["SummonSpace"] = 1,
+				["Output"] = {
+					"MyProChannel", -- [1]
+					[0] = true,
+				},
+				["TalentOffsetX"] = 0,
 				["SplashStrata"] = "MEDIUM",
 				["Splash"] = {
 					["Active"] = 1,
@@ -2235,9 +2245,9 @@ FX_Saved = {
 						{
 							["SplashGlow"] = false,
 							["x"] = 614.6399081367272,
-							["scale"] = 2,
-							["lock"] = true,
 							["Enable"] = true,
+							["lock"] = true,
+							["scale"] = 2,
 							["y"] = 158.1999495241053,
 							["alpha"] = 0.7,
 							["SecondSplashMax"] = 3,
@@ -2258,7 +2268,7 @@ FX_Saved = {
 					0.9, -- [4]
 				},
 				["SoulstoneStrata"] = "MEDIUM",
-				["HealthstoneUnknown"] = true,
+				["SoulstoneAuto"] = false,
 				["OptionsFontInputColor"] = {
 					1, -- [1]
 					1, -- [2]
@@ -2932,8 +2942,10 @@ FX_Saved = {
 								},
 							},
 							["GroupOverride"] = true,
-							["MaxRemaining"] = {
-								3600, -- [1]
+							["Buff"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
 								[0] = false,
 							},
 							["Height"] = 14,
@@ -2946,10 +2958,8 @@ FX_Saved = {
 							},
 							["Swing"] = false,
 							["IconTime"] = false,
-							["Buff"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
+							["MaxRemaining"] = {
+								3600, -- [1]
 								[0] = false,
 							},
 							["scale"] = 1,
@@ -2983,6 +2993,11 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Splash"] = false,
+							["alpha"] = 1,
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
+								[0] = true,
+							},
 							["Backdrop"] = {
 								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
 								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
@@ -2991,11 +3006,6 @@ FX_Saved = {
 								5, -- [5]
 								3, -- [6]
 							},
-							["CustomTags"] = {
-								"0 1 10 30 60 120 300 600", -- [1]
-								[0] = true,
-							},
-							["alpha"] = 1,
 							["Flip"] = false,
 							["MinRemaining"] = {
 								0, -- [1]
@@ -3024,18 +3034,18 @@ FX_Saved = {
 								1, -- [1]
 								[0] = true,
 							},
-							["Pet"] = {
-								1, -- [1]
-								0, -- [2]
-								0.95, -- [3]
-								[0] = false,
-							},
-							["Ignore"] = true,
 							["BarColor"] = {
 								0.24, -- [1]
 								0.24, -- [2]
 								0.24, -- [3]
 								0, -- [4]
+							},
+							["Ignore"] = true,
+							["Pet"] = {
+								1, -- [1]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = false,
 							},
 							["Font"] = {
 								"Interface\\AddOns\\ElvUI\\media\\fonts\\PT_Sans_Narrow.ttf", -- [1]
@@ -3216,17 +3226,17 @@ FX_Saved = {
 					">>> Challenging Shout (6 sec) <<<", -- [1]
 					[0] = 1,
 				},
+				["SummonFarColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["HealthstoneStrata"] = "MEDIUM",
 				["SoulstoneMsgColor"] = {
 					1, -- [1]
 					0, -- [2]
 					1, -- [3]
 					[0] = true,
-				},
-				["HealthstoneStrata"] = "MEDIUM",
-				["SummonFarColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				},
 				["SummonMeetingStone"] = false,
 				["FWSUFrame"] = {
@@ -3268,7 +3278,7 @@ FX_Saved = {
 					"+++ Lichborne (10 sec) +++", -- [1]
 					[0] = 1,
 				},
-				["SoulstoneAuto"] = false,
+				["HealthstoneUnknown"] = true,
 				["SoulstoneExpand"] = false,
 				["ERStart"] = {
 					"+++ Enraged Regeneration (10 sec) +++", -- [1]
@@ -3292,12 +3302,9 @@ FX_Saved = {
 					">> %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
+				["SummonSpace"] = 1,
 				["Chill"] = 0.01,
-				["TalentOffsetX"] = 0,
-				["Output"] = {
-					"MyProChannel", -- [1]
-					[0] = true,
-				},
+				["SummonHeight"] = 12,
 				["SoulstoneMaxColor"] = {
 					0.64, -- [1]
 					0.21, -- [2]
@@ -3318,12 +3325,10 @@ FX_Saved = {
 					">> %s is ready in %s <<", -- [1]
 					[0] = 1,
 				},
-				["DiffNoneColor"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					0.2, -- [4]
-					[0] = false,
+				["TimerFadeSound"] = {
+					"Sound\\Spells\\ShaysBell.wav", -- [1]
+					2, -- [2]
+					[0] = true,
 				},
 				["SoulstoneMax"] = 10,
 				["TimerSortOrder"] = "buff selfdebuff debuff cooldown notarget target",
@@ -3331,22 +3336,24 @@ FX_Saved = {
 					">>> Vigilance on %s (30 Minutes) <<<", -- [1]
 					[0] = 0,
 				},
-				["TimerFadeSound"] = {
-					"Sound\\Spells\\ShaysBell.wav", -- [1]
-					2, -- [2]
-					[0] = true,
+				["DiffNoneColor"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = false,
 				},
 				["TimerFadeSpeed"] = 0.5,
-				["InterveneStart"] = {
-					"+++ Intervene on %s (10 sec) +++", -- [1]
-					[0] = 1,
-				},
+				["SoulstoneWidth"] = 100,
 				["DruidColor"] = {
 					1, -- [1]
 					0.49, -- [2]
 					0.04, -- [3]
 				},
-				["SoulstoneWidth"] = 100,
+				["InterveneStart"] = {
+					"+++ Intervene on %s (10 sec) +++", -- [1]
+					[0] = 1,
+				},
 				["SoulstoneFadeSound"] = {
 					"Interface\\AddOns\\Forte_Core\\Sounds\\SoulstoneExpire.mp3", -- [1]
 					1, -- [2]
@@ -3357,8 +3364,11 @@ FX_Saved = {
 					[0] = true,
 				},
 				["SoulstoneTexture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
-				["SummonHeight"] = 12,
-				["SummonSpace"] = 1,
+				["Output"] = {
+					"MyProChannel", -- [1]
+					[0] = true,
+				},
+				["TalentOffsetX"] = 0,
 				["SplashStrata"] = "MEDIUM",
 				["Splash"] = {
 					["Active"] = 1,
@@ -3367,9 +3377,9 @@ FX_Saved = {
 						{
 							["SplashGlow"] = false,
 							["x"] = 614.0000253385297,
-							["scale"] = 2,
-							["lock"] = false,
 							["Enable"] = true,
+							["lock"] = false,
+							["scale"] = 2,
 							["y"] = 155.0001054593886,
 							["alpha"] = 0.7,
 							["SecondSplashMax"] = 3,
@@ -3390,7 +3400,7 @@ FX_Saved = {
 					0.9, -- [4]
 				},
 				["SoulstoneStrata"] = "MEDIUM",
-				["HealthstoneUnknown"] = true,
+				["SoulstoneAuto"] = false,
 				["OptionsFontInputColor"] = {
 					1, -- [1]
 					1, -- [2]
@@ -4002,10 +4012,7 @@ FX_Saved = {
 							},
 							["AlphaMax"] = 1,
 							["Texture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
-							["MaxRemaining"] = {
-								3600, -- [1]
-								[0] = false,
-							},
+							["Vertical"] = false,
 							["Spell"] = {
 								1, -- [1]
 								0.5600000000000001, -- [2]
@@ -4019,7 +4026,12 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Tags"] = 6,
-							["Vertical"] = false,
+							["ResTimer"] = {
+								1, -- [1]
+								0, -- [2]
+								0, -- [3]
+								[0] = false,
+							},
 							["BuffOther"] = {
 								0.5, -- [1]
 								0.5, -- [2]
@@ -4062,10 +4074,10 @@ FX_Saved = {
 								},
 							},
 							["GroupOverride"] = true,
-							["ResTimer"] = {
+							["Buff"] = {
 								1, -- [1]
-								0, -- [2]
-								0, -- [3]
+								1, -- [2]
+								1, -- [3]
 								[0] = false,
 							},
 							["Height"] = 14,
@@ -4078,10 +4090,8 @@ FX_Saved = {
 							},
 							["Swing"] = false,
 							["IconTime"] = false,
-							["Buff"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
+							["MaxRemaining"] = {
+								3600, -- [1]
 								[0] = false,
 							},
 							["scale"] = 1,
@@ -4115,6 +4125,11 @@ FX_Saved = {
 								[0] = false,
 							},
 							["Splash"] = false,
+							["alpha"] = 1,
+							["CustomTags"] = {
+								"0 1 10 30 60 120 300 600", -- [1]
+								[0] = true,
+							},
 							["Backdrop"] = {
 								"Interface\\AddOns\\Forte_Core\\Textures\\Background", -- [1]
 								"Interface\\AddOns\\Forte_Core\\Textures\\Border", -- [2]
@@ -4123,11 +4138,6 @@ FX_Saved = {
 								5, -- [5]
 								3, -- [6]
 							},
-							["CustomTags"] = {
-								"0 1 10 30 60 120 300 600", -- [1]
-								[0] = true,
-							},
-							["alpha"] = 1,
 							["Flip"] = false,
 							["MinRemaining"] = {
 								0, -- [1]
@@ -4156,18 +4166,18 @@ FX_Saved = {
 								1, -- [1]
 								[0] = true,
 							},
-							["Pet"] = {
-								1, -- [1]
-								0, -- [2]
-								0.95, -- [3]
-								[0] = false,
-							},
-							["Ignore"] = true,
 							["BarColor"] = {
 								0.24, -- [1]
 								0.24, -- [2]
 								0.24, -- [3]
 								0, -- [4]
+							},
+							["Ignore"] = true,
+							["Pet"] = {
+								1, -- [1]
+								0, -- [2]
+								0.95, -- [3]
+								[0] = false,
 							},
 							["Font"] = {
 								"Interface\\AddOns\\ElvUI\\media\\fonts\\PT_Sans_Narrow.ttf", -- [1]
@@ -4344,21 +4354,21 @@ FX_Saved = {
 					[0] = 1,
 				},
 				["DotTicksDelayNew"] = 1.5,
+				["ChallengingShoutStart"] = {
+					">>> Challenging Shout (6 sec) <<<", -- [1]
+					[0] = 1,
+				},
+				["SummonFarColor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["HealthstoneStrata"] = "MEDIUM",
 				["SoulstoneMsgColor"] = {
 					1, -- [1]
 					0, -- [2]
 					1, -- [3]
 					[0] = true,
-				},
-				["ChallengingShoutStart"] = {
-					">>> Challenging Shout (6 sec) <<<", -- [1]
-					[0] = 1,
-				},
-				["HealthstoneStrata"] = "MEDIUM",
-				["SummonFarColor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
 				},
 				["SummonMeetingStone"] = false,
 				["FWSUFrame"] = {
@@ -4387,21 +4397,21 @@ FX_Saved = {
 					4, -- [2]
 					[0] = true,
 				},
-				["SoulstoneExpand"] = false,
-				["VBStart"] = {
-					"+++ Vamparic Blood (10 sec) +++", -- [1]
-					[0] = 1,
-				},
 				["RecklessnessStart"] = {
 					">>> Taking 20% more damage with Recklessness (12 sec) <<<", -- [1]
 					[0] = 1,
 				},
+				["VBStart"] = {
+					"+++ Vamparic Blood (10 sec) +++", -- [1]
+					[0] = 1,
+				},
+				["ShowReady"] = true,
 				["LBStart"] = {
 					"+++ Lichborne (10 sec) +++", -- [1]
 					[0] = 1,
 				},
-				["SoulstoneAuto"] = false,
-				["ShowReady"] = true,
+				["HealthstoneUnknown"] = true,
+				["SoulstoneExpand"] = false,
 				["ERStart"] = {
 					"+++ Enraged Regeneration (10 sec) +++", -- [1]
 					[0] = 1,
@@ -4424,12 +4434,9 @@ FX_Saved = {
 					">> %s is fading in %s <<", -- [1]
 					[0] = 1,
 				},
+				["SummonSpace"] = 1,
 				["Chill"] = 0.01,
-				["TalentOffsetX"] = 0,
-				["Output"] = {
-					"MyProChannel", -- [1]
-					[0] = true,
-				},
+				["SummonHeight"] = 12,
 				["SoulstoneMaxColor"] = {
 					0.64, -- [1]
 					0.21, -- [2]
@@ -4450,12 +4457,10 @@ FX_Saved = {
 					">> %s is ready in %s <<", -- [1]
 					[0] = 1,
 				},
-				["DiffNoneColor"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					0.2, -- [4]
-					[0] = false,
+				["TimerFadeSound"] = {
+					"Sound\\Spells\\ShaysBell.wav", -- [1]
+					2, -- [2]
+					[0] = true,
 				},
 				["SoulstoneMax"] = 10,
 				["TimerSortOrder"] = "buff selfdebuff debuff cooldown notarget target",
@@ -4463,22 +4468,24 @@ FX_Saved = {
 					">>> Vigilance on %s (30 Minutes) <<<", -- [1]
 					[0] = 0,
 				},
-				["TimerFadeSound"] = {
-					"Sound\\Spells\\ShaysBell.wav", -- [1]
-					2, -- [2]
-					[0] = true,
+				["DiffNoneColor"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					0.2, -- [4]
+					[0] = false,
 				},
 				["TimerFadeSpeed"] = 0.5,
-				["InterveneStart"] = {
-					"+++ Intervene on %s (10 sec) +++", -- [1]
-					[0] = 1,
-				},
+				["SoulstoneWidth"] = 100,
 				["DruidColor"] = {
 					1, -- [1]
 					0.49, -- [2]
 					0.04, -- [3]
 				},
-				["SoulstoneWidth"] = 100,
+				["InterveneStart"] = {
+					"+++ Intervene on %s (10 sec) +++", -- [1]
+					[0] = 1,
+				},
 				["SoulstoneFadeSound"] = {
 					"Interface\\AddOns\\Forte_Core\\Sounds\\SoulstoneExpire.mp3", -- [1]
 					1, -- [2]
@@ -4489,8 +4496,11 @@ FX_Saved = {
 					[0] = true,
 				},
 				["SoulstoneTexture"] = "Interface\\AddOns\\ElvUI\\media\\textures\\normTex2.tga",
-				["SummonHeight"] = 12,
-				["SummonSpace"] = 1,
+				["Output"] = {
+					"MyProChannel", -- [1]
+					[0] = true,
+				},
+				["TalentOffsetX"] = 0,
 				["SplashStrata"] = "MEDIUM",
 				["Splash"] = {
 					["Active"] = 1,
@@ -4499,9 +4509,9 @@ FX_Saved = {
 						{
 							["SplashGlow"] = false,
 							["x"] = 614.6399789518109,
-							["scale"] = 2,
-							["lock"] = true,
 							["Enable"] = true,
+							["lock"] = true,
+							["scale"] = 2,
 							["y"] = 168.4402110788178,
 							["alpha"] = 0.7,
 							["SecondSplashMax"] = 3,
@@ -4522,7 +4532,7 @@ FX_Saved = {
 					0.9, -- [4]
 				},
 				["SoulstoneStrata"] = "MEDIUM",
-				["HealthstoneUnknown"] = true,
+				["SoulstoneAuto"] = false,
 				["OptionsFontInputColor"] = {
 					1, -- [1]
 					1, -- [2]
@@ -4597,7 +4607,7 @@ FX_Saved = {
 				["expand"] = false,
 			},
 			["Secondary Splash"] = {
-				["expand"] = false,
+				["expand"] = true,
 			},
 			["Core"] = {
 				["expand"] = true,
@@ -4622,7 +4632,7 @@ FX_Saved = {
 			["Spell Coloring/Filtering"] = {
 				["expand"] = false,
 			},
-			["Buffs/Debuffs (on me only)"] = {
+			["My Cooldowns"] = {
 				["expand"] = true,
 			},
 			["Raid Debuffs (my target only)"] = {
@@ -4652,7 +4662,7 @@ FX_Saved = {
 			["Frame Appearance"] = {
 				["expand"] = true,
 			},
-			["My Cooldowns"] = {
+			["Buffs/Debuffs (on me only)"] = {
 				["expand"] = true,
 			},
 		},
@@ -4736,7 +4746,7 @@ FX_Saved = {
 	["RaidStatus"] = {
 		["Opacus"] = {
 			0, -- [1]
-			175012.502, -- [2]
+			88793.563, -- [2]
 			"ROGUE", -- [3]
 			"v1.980.3", -- [4]
 		},

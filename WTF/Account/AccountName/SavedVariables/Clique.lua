@@ -5,10 +5,10 @@ CliqueDB3 = {
 		["Alterboi - Kel'Thuzad"] = {
 			["sec_profileKey"] = "Alterboi - Kel'Thuzad",
 			["fastooc"] = false,
-			["specswap"] = false,
+			["alerthidden"] = true,
 			["downclick"] = false,
 			["pri_profileKey"] = "Alterboi - Kel'Thuzad",
-			["alerthidden"] = true,
+			["specswap"] = false,
 		},
 	},
 	["profileKeys"] = {
@@ -19,29 +19,13 @@ CliqueDB3 = {
 		["Alterboi - Kel'Thuzad"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
-				{
-					["spell"] = "Dispel Magic",
-					["key"] = "PAGEDOWN",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Spell_Nature_NullifyDisease",
-					["type"] = "spell",
-				}, -- [2]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [3]
 				{
 					["spell"] = "Dispel Magic",
 					["key"] = "3",
@@ -50,7 +34,7 @@ CliqueDB3 = {
 					},
 					["icon"] = "Interface\\Icons\\Spell_Nature_NullifyDisease",
 					["type"] = "spell",
-				}, -- [4]
+				}, -- [2]
 				{
 					["spell"] = "Heal",
 					["key"] = "1",
@@ -59,6 +43,22 @@ CliqueDB3 = {
 					},
 					["icon"] = "Interface\\Icons\\Spell_Holy_LesserHeal",
 					["type"] = "spell",
+				}, -- [3]
+				{
+					["spell"] = "Dispel Magic",
+					["key"] = "PAGEDOWN",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Spell_Nature_NullifyDisease",
+					["type"] = "spell",
+				}, -- [4]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
 				}, -- [5]
 				{
 					["spell"] = "Renew",
@@ -70,24 +70,6 @@ CliqueDB3 = {
 					["type"] = "spell",
 				}, -- [6]
 				{
-					["spell"] = "Power Word: Shield",
-					["key"] = "SHIFT-E",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
-					["type"] = "spell",
-				}, -- [7]
-				{
-					["spell"] = "Flash Heal",
-					["key"] = "END",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
-					["type"] = "spell",
-				}, -- [8]
-				{
 					["spell"] = "Purify",
 					["key"] = "2",
 					["sets"] = {
@@ -95,7 +77,7 @@ CliqueDB3 = {
 					},
 					["icon"] = "Interface\\Icons\\Spell_Holy_DispelMagic",
 					["type"] = "spell",
-				}, -- [9]
+				}, -- [7]
 				{
 					["spell"] = "Penance",
 					["key"] = "NUMPAD2",
@@ -103,6 +85,24 @@ CliqueDB3 = {
 						["default"] = true,
 					},
 					["icon"] = "Interface\\Icons\\Spell_Holy_Penance",
+					["type"] = "spell",
+				}, -- [8]
+				{
+					["spell"] = "Power Word: Shield",
+					["key"] = "SHIFT-E",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Spell_Holy_PowerWordShield",
+					["type"] = "spell",
+				}, -- [9]
+				{
+					["spell"] = "Flash Heal",
+					["key"] = "END",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
 					["type"] = "spell",
 				}, -- [10]
 				{
@@ -119,10 +119,10 @@ CliqueDB3 = {
 		["Elylarina - Kel'Thuzad"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

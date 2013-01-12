@@ -4,10 +4,10 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["RaidSymbols"] = false,
-				["WorldMarkers"] = false,
 				["OPieTracking"] = false,
-				["Raid"] = "CTRL-R",
+				["WorldMarkers"] = false,
 				["ChalPaths"] = false,
+				["Raid"] = "CTRL-R",
 				["OPieAutoQuest"] = false,
 				["Mounts"] = "CTRL-M",
 			},
@@ -249,6 +249,42 @@ OneRing_Config = {
 				["name"] = "Trade",
 				["save"] = true,
 				["hotkey"] = "CTRL-T",
+				["limit"] = "Opacus",
+			},
+			["TMorph"] = {
+				{
+					"macro", -- [1]
+					"CataPVPLegend", -- [2]
+					["sliceToken"] = "ABuwNnwkUIr",
+					["c"] = "e5ff00",
+				}, -- [1]
+				{
+					"macro", -- [1]
+					"CataPVPGlaive", -- [2]
+					["sliceToken"] = "ABuwNnwkUI1",
+					["c"] = "e5ff00",
+				}, -- [2]
+				{
+					"macro", -- [1]
+					"T2GlaiveGreen", -- [2]
+					["sliceToken"] = "ABuwNnwkUIt",
+					["c"] = "e5ff00",
+				}, -- [3]
+				{
+					"macro", -- [1]
+					"T2Glaives", -- [2]
+					["sliceToken"] = "ABuwNnwkUIy",
+					["c"] = "e5ff00",
+				}, -- [4]
+				{
+					"macro", -- [1]
+					"Stream Links", -- [2]
+					["sliceToken"] = "ABuwNnwkUIu",
+					["c"] = "e5ff00",
+				}, -- [5]
+				["name"] = "TMorph",
+				["save"] = true,
+				["hotkey"] = "ALT-V",
 				["limit"] = "Opacus",
 			},
 			["Raid"] = {

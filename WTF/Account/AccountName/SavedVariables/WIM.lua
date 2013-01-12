@@ -32,19 +32,19 @@ WIM3_Data = {
 				["onReceive"] = true,
 			},
 			["alwaysOther"] = false,
-			["arena"] = {
-				["keepfocus"] = false,
-				["supress"] = false,
-				["onSend"] = false,
-				["autofocus"] = false,
-				["onReceive"] = false,
-			},
 			["raid"] = {
 				["keepfocus"] = false,
 				["supress"] = true,
 				["onSend"] = true,
 				["autofocus"] = false,
 				["onReceive"] = true,
+			},
+			["arena"] = {
+				["keepfocus"] = false,
+				["supress"] = false,
+				["onSend"] = false,
+				["autofocus"] = false,
+				["onReceive"] = false,
 			},
 			["resting"] = {
 				["keepfocus"] = true,
@@ -92,14 +92,14 @@ WIM3_Data = {
 				["onReceive"] = false,
 			},
 			["alwaysOther"] = true,
-			["arena"] = {
+			["raid"] = {
 				["keepfocus"] = false,
 				["supress"] = false,
 				["onSend"] = false,
 				["autofocus"] = false,
 				["onReceive"] = false,
 			},
-			["raid"] = {
+			["arena"] = {
 				["keepfocus"] = false,
 				["supress"] = false,
 				["onSend"] = false,
@@ -148,9 +148,9 @@ WIM3_Data = {
 			["custom_sml"] = "Chat Blip",
 			["say_sml"] = "Chat Blip",
 			["raid_sml"] = "Chat Blip",
+			["guild_sml"] = "Chat Blip",
 			["raidleader_sml"] = "Chat Blip",
 			["officer_sml"] = "Chat Blip",
-			["guild_sml"] = "Chat Blip",
 			["battlegroundleader_sml"] = "Chat Blip",
 			["battleground_sml"] = "Chat Blip",
 		},
@@ -214,17 +214,17 @@ WIM3_Data = {
 			["g"] = 1,
 			["r"] = 1,
 		},
-		["useSkin"] = true,
-		["historyOut"] = {
-			["b"] = 0.7058823529411764,
-			["g"] = 0.7058823529411764,
-			["r"] = 0.7058823529411764,
-		},
 		["BNwispIn"] = {
 			["b"] = 0.6549019607843137,
 			["g"] = 0.4862745098039216,
 			["r"] = 0,
 		},
+		["historyOut"] = {
+			["b"] = 0.7058823529411764,
+			["g"] = 0.7058823529411764,
+			["r"] = 0.7058823529411764,
+		},
+		["useSkin"] = true,
 	},
 	["fontSize"] = 16,
 	["showToolTips"] = true,
@@ -287,17 +287,17 @@ WIM3_Data = {
 		["WhisperEngine"] = {
 			["enabled"] = true,
 		},
-		["HistoryChat"] = {
-			["enabled"] = 1,
+		["Menu"] = {
+			["enabled"] = true,
 		},
 		["Negotiate"] = {
 			["enabled"] = true,
 		},
-		["Tutorials"] = {
+		["History"] = {
 			["enabled"] = true,
 		},
-		["LDB"] = {
-			["enabled"] = true,
+		["HistoryChat"] = {
+			["enabled"] = 1,
 		},
 		["URLHandler"] = {
 			["enabled"] = true,
@@ -308,14 +308,16 @@ WIM3_Data = {
 		["Tabs"] = {
 			["enabled"] = true,
 		},
-		["Menu"] = {
+		["LDB"] = {
 			["enabled"] = true,
 		},
-		["History"] = {
+		["Tutorials"] = {
 			["enabled"] = true,
 		},
 	},
-	["clampToScreen"] = true,
+	["ClickControl"] = {
+		["clickSensitivity"] = 0.2,
+	},
 	["tabs"] = {
 		["sortBy"] = 2,
 		["whispers"] = {
@@ -328,8 +330,33 @@ WIM3_Data = {
 			["aswhisper"] = true,
 		},
 	},
-	["ClickControl"] = {
-		["clickSensitivity"] = 0.2,
+	["history"] = {
+		["ageLimit"] = true,
+		["previewCount"] = 25,
+		["maxPer"] = true,
+		["whispers"] = {
+			["friends"] = true,
+			["all"] = true,
+			["guild"] = true,
+		},
+		["maxAge"] = 1209600,
+		["preview"] = true,
+		["maxCount"] = 500,
+		["chat"] = {
+			["guild"] = true,
+			["battleground"] = false,
+			["world"] = false,
+			["maxCount"] = 500,
+			["raid"] = true,
+			["ageLimit"] = true,
+			["party"] = true,
+			["custom"] = false,
+			["previewCount"] = 25,
+			["maxPer"] = true,
+			["preview"] = true,
+			["maxAge"] = 1209600,
+			["officer"] = true,
+		},
 	},
 	["chat"] = {
 		["bn"] = {
@@ -372,34 +399,7 @@ WIM3_Data = {
 	},
 	["winFade"] = true,
 	["coloredNames"] = true,
-	["history"] = {
-		["ageLimit"] = true,
-		["previewCount"] = 25,
-		["maxPer"] = true,
-		["whispers"] = {
-			["friends"] = true,
-			["all"] = true,
-			["guild"] = true,
-		},
-		["maxAge"] = 1209600,
-		["preview"] = true,
-		["maxCount"] = 500,
-		["chat"] = {
-			["guild"] = true,
-			["battleground"] = false,
-			["world"] = false,
-			["maxCount"] = 500,
-			["raid"] = true,
-			["ageLimit"] = true,
-			["party"] = true,
-			["maxAge"] = 1209600,
-			["previewCount"] = 25,
-			["maxPer"] = true,
-			["preview"] = true,
-			["custom"] = false,
-			["officer"] = true,
-		},
-	},
+	["clampToScreen"] = true,
 	["winLoc"] = {
 		["left"] = 58.28010529988332,
 		["top"] = 509.0896170635824,
@@ -654,10 +654,10 @@ WIM3_Cache = {
 				["Madiatorz"] = true,
 				["Bekia"] = true,
 				["Booster"] = true,
-				["Arathes"] = true,
-				["Feody"] = true,
 				["Aurellessa"] = true,
+				["Feody"] = true,
 				["Boatman"] = true,
+				["Arathes"] = true,
 				["Dynomight"] = true,
 				["Phisig"] = true,
 				["Pìmp"] = true,
@@ -725,32 +725,33 @@ WIM3_Cache = {
 		},
 		["Alterboi"] = {
 			["friendList"] = {
-				["|Kf16|k0000000000|k"] = 2,
-				["|Kf22|k0000000000000|k"] = 2,
-				["|Kf11|k00000000000000|k"] = 2,
-				["|Kf6|k00000000000|k"] = 2,
-				["|Kf7|k000000000000000|k"] = 2,
-				["|Kf26|k0000000|k"] = 2,
-				["|Kf19|k000000000000|k"] = 2,
-				["|Kf24|k00000000000000|k"] = 2,
+				["|Kf19|k00000|k"] = 2,
+				["|Kf30|k00000000000000|k"] = 2,
+				["|Kf24|k00000|k"] = 2,
+				["|Kf11|k000000000000|k"] = 2,
+				["|Kf15|k000000000|k"] = 2,
+				["|Kf9|k00000000000|k"] = 2,
+				["|Kf18|k000|k"] = 2,
+				["|Kf13|k00000000000|k"] = 2,
+				["|Kf21|k0000000000|k"] = 2,
 				["|Kf8|k000000000|k"] = 2,
-				["|Kf21|k000000000000|k"] = 2,
-				["|Kf28|k000000000|k"] = 2,
+				["|Kf31|k000000000000000|k"] = 2,
+				["|Kf29|k000000000|k"] = 2,
+				["|Kf14|k000000|k"] = 2,
+				["|Kf20|k000000000000|k"] = 2,
+				["|Kf12|k00000000000000|k"] = 2,
 				["|Kf5|k0000000000000|k"] = 2,
-				["|Kf30|k000000000000000|k"] = 2,
-				["|Kf15|k00000000000|k"] = 2,
-				["|Kf14|k000000000|k"] = 2,
-				["|Kf25|k000000000000|k"] = 2,
-				["|Kf13|k000000|k"] = 2,
-				["|Kf12|k00000000000|k"] = 2,
-				["|Kf18|k00000|k"] = 2,
-				["|Kf20|k0000000000|k"] = 2,
-				["|Kf9|k000000000000|k"] = 2,
-				["|Kf23|k00000|k"] = 2,
+				["|Kf26|k000000000000|k"] = 2,
+				["|Kf28|k00000000000|k"] = 2,
+				["|Kf6|k00000000000|k"] = 2,
+				["|Kf17|k0000000000|k"] = 2,
+				["|Kf27|k0000000|k"] = 2,
+				["|Kf25|k00000000000000|k"] = 2,
+				["|Kf22|k000000000000|k"] = 2,
 				["|Kf10|k000000000000000|k"] = 2,
-				["|Kf27|k00000000000|k"] = 2,
-				["|Kf29|k00000000000000|k"] = 2,
-				["|Kf17|k000|k"] = 2,
+				["|Kf23|k0000000000000|k"] = 2,
+				["|Kf7|k000000000000000|k"] = 2,
+				["|Kf16|k00000000000|k"] = 2,
 			},
 			["guildList"] = {
 				["Nariir"] = true,
@@ -765,7 +766,6 @@ WIM3_Cache = {
 				["Vacs"] = true,
 				["Rôdeur"] = true,
 				["Båkedheals"] = true,
-				["Frekedeke"] = true,
 				["Frözèn"] = true,
 				["Holylightnin"] = true,
 				["Juunolol"] = true,
@@ -782,7 +782,7 @@ WIM3_Cache = {
 				["Lovemittens"] = true,
 				["Chumshot"] = true,
 				["Holyshìft"] = true,
-				["Mutilateor"] = true,
+				["Tyránd"] = true,
 				["Flarrorian"] = true,
 				["Schmollakii"] = true,
 				["Silentmind"] = true,
@@ -806,6 +806,7 @@ WIM3_Cache = {
 				["Revelstoke"] = true,
 				["Lopida"] = true,
 				["Urija"] = true,
+				["Lupinä"] = true,
 				["Laelon"] = true,
 				["Greekprince"] = true,
 				["Glorydmatiic"] = true,
@@ -936,54 +937,54 @@ WIM3_Cache = {
 				["Sheeping"] = true,
 				["Scarlettah"] = true,
 				["Jirah"] = true,
-				["Sìth"] = true,
+				["Aliase"] = true,
 				["Shnookiè"] = true,
-				["Pallyranger"] = true,
-				["Budderblade"] = true,
+				["Schmolak"] = true,
+				["Miightly"] = true,
 				["Erliä"] = true,
-				["Tbyte"] = true,
-				["Kushx"] = true,
-				["Senchi"] = true,
+				["Shifuip"] = true,
+				["Odahaviing"] = true,
+				["Dispellthis"] = true,
 				["Silentwatch"] = true,
-				["Gáia"] = true,
+				["Jsen"] = true,
 				["Baultonhale"] = true,
-				["Needlegun"] = true,
-				["Kzmike"] = true,
+				["Holtina"] = true,
+				["Drinkie"] = true,
 				["Zimbio"] = true,
 				["Kzmage"] = true,
 				["Fenrinym"] = true,
 				["Toxicon"] = true,
-				["Dansko"] = true,
-				["Proabortion"] = true,
+				["Budderblade"] = true,
+				["Lilsmiter"] = true,
 				["Ellani"] = true,
-				["Arlie"] = true,
+				["Homedawg"] = true,
 				["Voltrinity"] = true,
 				["Shamanpopex"] = true,
 				["Necrødamus"] = true,
-				["Trykster"] = true,
+				["Virtualyevil"] = true,
+				["Budderbean"] = true,
 				["Substorm"] = true,
-				["Artish"] = true,
-				["Smiightly"] = true,
-				["Niightly"] = true,
+				["Cyruus"] = true,
+				["Treeva"] = true,
 				["Illuminati"] = true,
-				["Mercurîal"] = true,
-				["Kimary"] = true,
-				["Mortuous"] = true,
-				["Dizyzz"] = true,
+				["Pyronom"] = true,
+				["Mutilateor"] = true,
 				["Pípsy"] = true,
+				["Kushx"] = true,
+				["Earthmender"] = true,
 				["Gonebefore"] = true,
 				["Madgwara"] = true,
-				["Kzlopido"] = true,
-				["Straìghtedge"] = true,
+				["Retrabortion"] = true,
+				["Megnus"] = true,
 				["Inná"] = true,
 				["Omegæ"] = true,
+				["Straìghtedge"] = true,
 				["Ripbillymays"] = true,
-				["Kittiehealz"] = true,
 				["Marpus"] = true,
 				["Buddermonk"] = true,
 				["Nwoready"] = true,
 				["Shister"] = true,
-				["Underwhelmed"] = true,
+				["Kittiehealz"] = true,
 				["Minderbender"] = true,
 				["Yoloswagbra"] = true,
 				["Turtleslol"] = true,
@@ -992,15 +993,15 @@ WIM3_Cache = {
 				["Xenä"] = true,
 				["Mojomagik"] = true,
 				["Zeroneg"] = true,
-				["Spiitz"] = true,
+				["Garraeth"] = true,
 				["Fightly"] = true,
-				["Menriq"] = true,
+				["Spiitz"] = true,
 				["Arcanâ"] = true,
-				["Yamamato"] = true,
+				["Seawispers"] = true,
 				["Gqùit"] = true,
 				["Dedee"] = true,
-				["Feardealer"] = true,
-				["Atrexx"] = true,
+				["Proabortion"] = true,
+				["Tinytyrant"] = true,
 				["Fluphinator"] = true,
 				["Howlintime"] = true,
 				["Pedobeâr"] = true,
@@ -1009,89 +1010,89 @@ WIM3_Cache = {
 				["Jovemonarch"] = true,
 				["Starmazer"] = true,
 				["Ládydot"] = true,
-				["Vishnaa"] = true,
 				["Spòoky"] = true,
-				["Lilsmiter"] = true,
+				["Vishnaa"] = true,
+				["Shammpayne"] = true,
 				["Apocrawr"] = true,
-				["Bowflexing"] = true,
+				["Instaque"] = true,
 				["Jaazz"] = true,
 				["Mchealy"] = true,
 				["Marknutt"] = true,
 				["Raìin"] = true,
-				["Mageisboring"] = true,
-				["Instaque"] = true,
-				["Rabiëz"] = true,
+				["Roguuee"] = true,
+				["Bowflexing"] = true,
+				["Thanáton"] = true,
 				["Félindra"] = true,
 				["Jÿnx"] = true,
-				["Blackheárt"] = true,
+				["Schmolakii"] = true,
 				["Boonprot"] = true,
 				["Eililine"] = true,
 				["Aryee"] = true,
-				["Maguus"] = true,
+				["Sadiki"] = true,
 				["Desirea"] = true,
-				["Aldélia"] = true,
+				["Niightly"] = true,
 				["Mormont"] = true,
 				["Balooga"] = true,
-				["Mhairi"] = true,
 				["Cakefarts"] = true,
-				["Earthmender"] = true,
-				["Môoninator"] = true,
-				["Heró"] = true,
-				["Ioutdpsmav"] = true,
-				["Bacdorampage"] = true,
-				["Unimpressed"] = true,
-				["Totina"] = true,
-				["Zaolin"] = true,
-				["Holiluya"] = true,
+				["Kimary"] = true,
 				["Jaelha"] = true,
+				["Môoninator"] = true,
+				["Holiluya"] = true,
+				["Totina"] = true,
+				["Heró"] = true,
+				["Zaolin"] = true,
+				["Ioutdpsmav"] = true,
+				["Unimpressed"] = true,
+				["Bacdorampage"] = true,
+				["Dizyzz"] = true,
 				["Unreál"] = true,
 				["Haere"] = true,
-				["Miightly"] = true,
+				["Mhairi"] = true,
 				["Erliâ"] = true,
-				["Sadiki"] = true,
-				["Schmolakii"] = true,
-				["Shammpayne"] = true,
-				["Roguuee"] = true,
+				["Maguus"] = true,
+				["Blackheárt"] = true,
+				["Rabiëz"] = true,
+				["Mageisboring"] = true,
 				["Iamdrunkish"] = true,
-				["Thanáton"] = true,
+				["Feardealer"] = true,
 				["Xbrave"] = true,
 				["Bkidhellno"] = true,
 				["Glòry"] = true,
 				["Parnel"] = true,
 				["Aellios"] = true,
-				["Seawispers"] = true,
-				["Snéâkybítch"] = true,
-				["Tinytyrant"] = true,
+				["Atrexx"] = true,
+				["Mortuous"] = true,
+				["Yamamato"] = true,
 				["Voltrannus"] = true,
-				["Garraeth"] = true,
+				["Underwhelmed"] = true,
 				["Batyli"] = true,
 				["Lîlith"] = true,
 				["Trictagon"] = true,
 				["Bearfoam"] = true,
-				["Megnus"] = true,
-				["Retrabortion"] = true,
+				["Kzlopido"] = true,
+				["Aldélia"] = true,
 				["Schmollak"] = true,
-				["Shadowvar"] = true,
+				["Mercurîal"] = true,
 				["Playswitfire"] = true,
 				["Beastialmojo"] = true,
-				["Treeva"] = true,
-				["Cyruus"] = true,
+				["Artish"] = true,
+				["Smiightly"] = true,
 				["Trictagøn"] = true,
-				["Virtualyevil"] = true,
-				["Budderbean"] = true,
-				["Homedawg"] = true,
+				["Arlie"] = true,
+				["Trykster"] = true,
+				["Snéâkybítch"] = true,
 				["Sieryui"] = true,
-				["Drinkie"] = true,
-				["Jsen"] = true,
-				["Holtina"] = true,
-				["Dispellthis"] = true,
-				["Odahaviing"] = true,
-				["Shifuip"] = true,
-				["Drizztal"] = true,
+				["Kzmike"] = true,
+				["Needlegun"] = true,
+				["Dansko"] = true,
+				["Gáia"] = true,
+				["Senchi"] = true,
+				["Shadowvar"] = true,
+				["Tbyte"] = true,
 				["Samarent"] = true,
 				["Dànte"] = true,
-				["Schmolak"] = true,
-				["Aliase"] = true,
+				["Drizztal"] = true,
+				["Sìth"] = true,
 				["Yasea"] = true,
 			},
 		},
@@ -1120,10 +1121,10 @@ WIM3_Cache = {
 				["|Kf12|k000000000|k"] = 2,
 				["|Kf6|k00000000000|k"] = 2,
 				["|Kf21|k000000000000000|k"] = 2,
-				["|Kf26|k000|k"] = 2,
-				["|Kf24|k000000|k"] = 2,
 				["|Kf28|k000000000000|k"] = 2,
 				["|Kf9|k0000000000000|k"] = 2,
+				["|Kf26|k000|k"] = 2,
+				["|Kf24|k000000|k"] = 2,
 				["|Kf10|k00000|k"] = 2,
 				["|Kf18|k000000000|k"] = 2,
 				["|Kf20|k00000000000|k"] = 2,
@@ -1167,15 +1168,15 @@ WIM3_Cache = {
 				["|Kf7|k000000000000000|k"] = 2,
 				["|Kf16|k000000000000000|k"] = 2,
 				["|Kf10|k00000|k"] = 2,
-				["|Kf26|k000|k"] = 2,
-				["|Kf24|k000000|k"] = 2,
+				["|Kf28|k000000000000|k"] = 2,
+				["|Kf9|k0000000000000|k"] = 2,
 				["|Kf8|k000000000000|k"] = 2,
 				["|Kf18|k000000000|k"] = 2,
 				["|Kf25|k00000000000|k"] = 2,
 				["|Kf20|k00000000000|k"] = 2,
 				["|Kf22|k000000000|k"] = 2,
-				["|Kf9|k0000000000000|k"] = 2,
-				["|Kf28|k000000000000|k"] = 2,
+				["|Kf24|k000000|k"] = 2,
+				["|Kf26|k000|k"] = 2,
 				["|Kf21|k000000000000000|k"] = 2,
 				["|Kf6|k00000000000|k"] = 2,
 			},
@@ -1555,11 +1556,11 @@ WIM3_Cache = {
 				["Shüya"] = true,
 				["Elinei"] = true,
 				["Drugarian"] = true,
-				["Gøkû"] = true,
+				["Evildeadman"] = true,
 				["Whoneedsmana"] = true,
 				["Stopploss"] = true,
 				["Flamingqtlol"] = true,
-				["Evildeadman"] = true,
+				["Gøkû"] = true,
 				["Worgen"] = true,
 				["Crazytwist"] = true,
 				["Rawst"] = true,
@@ -1619,23 +1620,23 @@ WIM3_Cache = {
 				["Shertztard"] = true,
 				["Caysi"] = true,
 				["Caedes"] = true,
-				["Chésty"] = true,
+				["Papapandas"] = true,
 				["Pallytheism"] = true,
 				["Knarina"] = true,
-				["Jubala"] = true,
-				["Vamper"] = true,
 				["Orgas"] = true,
+				["Vamper"] = true,
+				["Jubala"] = true,
 				["Lichmynutz"] = true,
-				["Hahalolz"] = true,
+				["Esanarytial"] = true,
 				["Shallt"] = true,
 				["Luçífer"] = true,
 				["Caelinqt"] = true,
 				["Gladdeekay"] = true,
 				["Taweilin"] = true,
-				["Seneria"] = true,
+				["Nuggum"] = true,
 				["Airlift"] = true,
-				["Pepster"] = true,
 				["Aulio"] = true,
+				["Pepster"] = true,
 				["Fooldawg"] = true,
 				["Worgasmique"] = true,
 				["Plutocracy"] = true,
@@ -1650,10 +1651,10 @@ WIM3_Cache = {
 				["Vinkinzie"] = true,
 				["Xanthurr"] = true,
 				["Sathrean"] = true,
-				["Oblivizon"] = true,
-				["Securis"] = true,
 				["Prynelol"] = true,
-				["Solinlol"] = true,
+				["Securis"] = true,
+				["Oblivizon"] = true,
+				["Drfilth"] = true,
 				["Patmyballs"] = true,
 				["Bülley"] = true,
 				["Speakss"] = true,
@@ -1662,11 +1663,11 @@ WIM3_Cache = {
 				["Xason"] = true,
 				["Yhanna"] = true,
 				["Pormran"] = true,
-				["Babypånda"] = true,
-				["Symoredivh"] = true,
-				["Wildwinds"] = true,
 				["Phrinian"] = true,
-				["Carmer"] = true,
+				["Grammar"] = true,
+				["Dilydo"] = true,
+				["Babypånda"] = true,
+				["Wildwinds"] = true,
 				["Pileofshift"] = true,
 				["Klicheirl"] = true,
 				["Willðw"] = true,
@@ -1676,15 +1677,15 @@ WIM3_Cache = {
 				["Whurr"] = true,
 				["Kukiedruid"] = true,
 				["Hayus"] = true,
-				["Chrillicenna"] = true,
+				["Ihealalot"] = true,
 				["Sylentdeath"] = true,
 				["Voleta"] = true,
-				["Falthier"] = true,
+				["Menalei"] = true,
 				["Bløødseeker"] = true,
-				["Yamï"] = true,
+				["Falthier"] = true,
 				["Slayiin"] = true,
-				["Konall"] = true,
 				["Wavesofpain"] = true,
+				["Konall"] = true,
 				["Sposcrack"] = true,
 				["Machan"] = true,
 				["Getagrip"] = true,
@@ -1709,18 +1710,18 @@ WIM3_Cache = {
 				["Nygold"] = true,
 				["Dillßill"] = true,
 				["Shapeshertz"] = true,
-				["Menalei"] = true,
+				["Yamï"] = true,
 				["Oias"] = true,
-				["Ihealalot"] = true,
+				["Chrillicenna"] = true,
 				["Zørtøn"] = true,
 				["Kierraml"] = true,
 				["Luminouscrag"] = true,
-				["Dilydo"] = true,
-				["Grammar"] = true,
+				["Carmer"] = true,
+				["Symoredivh"] = true,
 				["Murland"] = true,
 				["Theringer"] = true,
 				["Moshield"] = true,
-				["Drfilth"] = true,
+				["Solinlol"] = true,
 				["Jâcõb"] = true,
 				["Kristla"] = true,
 				["Clairvoyant"] = true,
@@ -1731,13 +1732,13 @@ WIM3_Cache = {
 				["Barong"] = true,
 				["Aceknight"] = true,
 				["Xasfnzpally"] = true,
-				["Nuggum"] = true,
+				["Seneria"] = true,
 				["Lightbrlnger"] = true,
 				["Kethlas"] = true,
 				["Stances"] = true,
-				["Esanarytial"] = true,
+				["Hahalolz"] = true,
 				["Afrit"] = true,
-				["Papapandas"] = true,
+				["Chésty"] = true,
 				["Darxlayer"] = true,
 				["Wrighteous"] = true,
 				["Trueshøt"] = true,
@@ -1816,11 +1817,11 @@ WIM3_Cache = {
 				["|Kg120|k000000|k |Ks120|k0000000|k"] = 2,
 				["|Kg115|k000|k |Ks115|k00000000|k"] = 2,
 				["|Kg118|k00000|k |Ks118|k00000|k"] = 2,
-				["|Kg123|k00000000|k |Ks123|k000000|k"] = 2,
+				["|Kg113|k00000|k |Ks113|k0000000|k"] = 2,
 				["|Kg114|k00000|k |Ks114|k00000000|k"] = 2,
 				["|Kg111|k00000|k |Ks111|k000000000|k"] = 2,
 				["|Kg125|k0000|k |Ks125|k000000|k"] = 2,
-				["|Kg113|k00000|k |Ks113|k0000000|k"] = 2,
+				["|Kg123|k00000000|k |Ks123|k000000|k"] = 2,
 			},
 			["guildList"] = {
 				["Theappstore"] = true,
@@ -2177,12 +2178,12 @@ WIM3_Cache = {
 				["Clubberlanng"] = true,
 				["Frostzblood"] = true,
 				["Epicmealtime"] = true,
-				["Zalhunt"] = true,
 				["Magnakarta"] = true,
+				["Evilsally"] = true,
 				["Corrtanna"] = true,
 				["Whitêwitch"] = true,
 				["Dankmeister"] = true,
-				["Evilsally"] = true,
+				["Zalhunt"] = true,
 				["Pøptårts"] = true,
 				["Thorrak"] = true,
 				["Ihealnoobz"] = true,
@@ -2266,7 +2267,7 @@ WIM3_Cache = {
 				["Lostodyssey"] = true,
 				["Mommijji"] = true,
 				["Deligate"] = true,
-				["Braydenn"] = true,
+				["Gianno"] = true,
 				["Desaad"] = true,
 				["Rahm"] = true,
 				["Keepbreathin"] = true,
@@ -2279,11 +2280,11 @@ WIM3_Cache = {
 				["Deathddogg"] = true,
 				["Singrossa"] = true,
 				["Hellvine"] = true,
-				["Moomak"] = true,
+				["Linitha"] = true,
 				["Vàder"] = true,
 				["Stormgear"] = true,
 				["Burtla"] = true,
-				["Linitha"] = true,
+				["Moomak"] = true,
 				["Lisbëth"] = true,
 				["Crusty"] = true,
 				["Liliannê"] = true,
@@ -2316,9 +2317,9 @@ WIM3_Cache = {
 				["Jasse"] = true,
 				["Hooza"] = true,
 				["Tydis"] = true,
-				["Priestmode"] = true,
-				["Tawakoni"] = true,
 				["Bezerkër"] = true,
+				["Tawakoni"] = true,
+				["Priestmode"] = true,
 				["Eritius"] = true,
 				["Vladìmír"] = true,
 				["Dsnutz"] = true,
@@ -2329,14 +2330,14 @@ WIM3_Cache = {
 				["Frkqian"] = true,
 				["Jenybs"] = true,
 				["Mahznel"] = true,
-				["Pubiclicee"] = true,
+				["Kushlulz"] = true,
 				["Gartranyt"] = true,
 				["Chocothundaa"] = true,
 				["Ditzheals"] = true,
 				["Drhealgööd"] = true,
 				["Groxxer"] = true,
 				["Focandic"] = true,
-				["Bloodyel"] = true,
+				["Hippywarlord"] = true,
 				["Søuleater"] = true,
 				["Wickedlok"] = true,
 				["Jaencawb"] = true,
@@ -2352,19 +2353,19 @@ WIM3_Cache = {
 				["Martroz"] = true,
 				["Rocudotu"] = true,
 				["Krazex"] = true,
-				["Kraboom"] = true,
 				["Lòkí"] = true,
-				["Facynate"] = true,
 				["Goroxx"] = true,
+				["Facynate"] = true,
+				["Kraboom"] = true,
 				["Acronos"] = true,
 				["Izipp"] = true,
 				["Yuntroz"] = true,
-				["Giantcawk"] = true,
-				["Heheyourdead"] = true,
+				["Vichaelmick"] = true,
+				["Idkwhatiam"] = true,
 				["Evilgoomba"] = true,
 				["Cumfrmbehind"] = true,
-				["Vichaelmick"] = true,
-				["Devourr"] = true,
+				["Giantcawk"] = true,
+				["Ææl"] = true,
 				["Kuulish"] = true,
 				["Ðezz"] = true,
 				["Nevaaeh"] = true,
@@ -2374,8 +2375,8 @@ WIM3_Cache = {
 				["Soymacchiato"] = true,
 				["Authentical"] = true,
 				["Çraig"] = true,
-				["Gobimama"] = true,
 				["Malkinson"] = true,
+				["Gobimama"] = true,
 				["Arlystia"] = true,
 				["Stormcrack"] = true,
 				["Deyndae"] = true,
@@ -2403,9 +2404,9 @@ WIM3_Cache = {
 				["Gaywhite"] = true,
 				["Littleshaman"] = true,
 				["Frostyßob"] = true,
-				["Likekisses"] = true,
 				["Brokenclass"] = true,
-				["Légít"] = true,
+				["Likekisses"] = true,
+				["Hellbøi"] = true,
 				["Gebzl"] = true,
 				["Iliveinabox"] = true,
 				["Magoogoö"] = true,
@@ -2437,9 +2438,9 @@ WIM3_Cache = {
 				["Lalini"] = true,
 				["Laineew"] = true,
 				["Bonnquiqui"] = true,
-				["Kreane"] = true,
-				["Ihate"] = true,
 				["Mybuttiche"] = true,
+				["Ihate"] = true,
+				["Kreane"] = true,
 				["Koòbz"] = true,
 				["Crysan"] = true,
 				["Infestor"] = true,
@@ -2451,7 +2452,7 @@ WIM3_Cache = {
 				["Herpderpmilk"] = true,
 				["Neggi"] = true,
 				["Intervas"] = true,
-				["Hellbøi"] = true,
+				["Légít"] = true,
 				["Precrious"] = true,
 				["Nighthorns"] = true,
 				["Munchîes"] = true,
@@ -2469,8 +2470,8 @@ WIM3_Cache = {
 				["Mageblasts"] = true,
 				["Abrol"] = true,
 				["Burserkerr"] = true,
-				["Ææl"] = true,
-				["Idkwhatiam"] = true,
+				["Devourr"] = true,
+				["Heheyourdead"] = true,
 				["Oxnora"] = true,
 				["Luskede"] = true,
 				["Kiboshh"] = true,
@@ -2482,13 +2483,13 @@ WIM3_Cache = {
 				["Boñes"] = true,
 				["Drhealarious"] = true,
 				["Wesleymirage"] = true,
-				["Hippywarlord"] = true,
-				["Kushlulz"] = true,
+				["Bloodyel"] = true,
+				["Pubiclicee"] = true,
 				["Shankwithme"] = true,
 				["Twignewton"] = true,
 				["Etranav"] = true,
-				["Niglit"] = true,
 				["Findersbane"] = true,
+				["Niglit"] = true,
 				["Arthria"] = true,
 				["Greengnome"] = true,
 				["Drimbez"] = true,
@@ -2512,7 +2513,7 @@ WIM3_Cache = {
 				["Darkblayde"] = true,
 				["Zalfurious"] = true,
 				["Sylkë"] = true,
-				["Gianno"] = true,
+				["Braydenn"] = true,
 				["Tizzi"] = true,
 				["Finalstand"] = true,
 				["Jstbreathe"] = true,
@@ -3001,90 +3002,90 @@ WIM3_Cache = {
 				["Djayzz"] = 1,
 				["Dumbfounded"] = 1,
 				["Mortuous"] = 1,
-				["|Kf22|k0000000000000|k"] = 2,
+				["Lalka"] = 1,
 				["Peripheral"] = 1,
 				["Bozosaur"] = 1,
 				["Coreless"] = 1,
-				["Rickjamez"] = 1,
-				["Fyruss"] = 1,
-				["|Kf5|k0000000000000|k"] = 2,
+				["|Kf557|k00000|k"] = 2,
+				["|Kf560|k000000000000|k"] = 2,
 				["Vonhassle"] = 1,
 				["Cutez"] = 1,
-				["Shadowstun"] = 1,
 				["Nirraan"] = 1,
-				["|Kf25|k000000000000|k"] = 2,
-				["|Kf9|k000000000000|k"] = 2,
-				["|Kf12|k00000000000|k"] = 2,
+				["Eldore"] = 1,
+				["|Kf545|k000000000000000|k"] = 2,
+				["|Kf568|k00000000000000|k"] = 2,
 				["Chewbecca"] = 1,
-				["|Kf7|k000000000000000|k"] = 2,
+				["|Kf564|k000000000000|k"] = 2,
+				["Geridivh"] = 1,
 				["Dopamîne"] = 1,
 				["Grandenn"] = 1,
 				["Àura"] = 1,
-				["|Kf11|k00000000000000|k"] = 2,
-				["Hypothèrmia"] = 1,
+				["|Kf558|k000000000000|k"] = 2,
+				["Intiminator"] = 1,
+				["|Kf567|k000000000|k"] = 2,
 				["Ambeytur"] = 1,
-				["|Kf19|k000000000000|k"] = 2,
-				["|Kf24|k00000000000000|k"] = 2,
+				["|Kf561|k0000000000000|k"] = 2,
+				["|Kf549|k000000000000|k"] = 2,
+				["|Kf565|k0000000|k"] = 2,
+				["Peeby"] = 1,
+				["Deq"] = 1,
+				["Keentotem"] = 1,
+				["|Kf543|k0000000000000|k"] = 2,
 				["Canible"] = 1,
+				["|Kf544|k00000000000|k"] = 2,
+				["|Kf552|k000000|k"] = 2,
+				["Véngeful"] = 1,
+				["|Kf554|k00000000000|k"] = 2,
 				["Daemongate"] = 1,
-				["|Kf13|k000000|k"] = 2,
-				["Jinsin"] = 1,
-				["|Kf14|k000000000|k"] = 2,
-				["|Kf27|k00000000000|k"] = 2,
+				["|Kf563|k00000000000000|k"] = 2,
+				["|Kf556|k000|k"] = 2,
+				["|Kf547|k00000000000|k"] = 2,
+				["|Kf548|k000000000000000|k"] = 2,
+				["|Kf546|k000000000|k"] = 2,
+				["Shamanilla"] = 1,
 				["Hypelol"] = 1,
-				["|Kf6|k00000000000|k"] = 2,
-				["|Kf16|k0000000000|k"] = 2,
+				["Badzor"] = 1,
+				["Haerra"] = 1,
+				["Shadowstun"] = 1,
+				["Scarcy"] = 1,
 				["Xarî"] = 1,
 				["Óxygen"] = 1,
-				["Zagora"] = 1,
-				["|Kf26|k0000000|k"] = 2,
+				["Rickjamez"] = 1,
 				["Phrixos"] = 1,
+				["Nigorochi"] = 1,
+				["Zagora"] = 1,
+				["Libretto"] = 1,
+				["Pallyhealar"] = 1,
 				["Dasbear"] = 1,
-				["|Kf8|k000000000|k"] = 2,
+				["|Kf551|k00000000000|k"] = 2,
+				["Jinsin"] = 1,
 				["Hurleey"] = 1,
 				["Alphönce"] = 1,
 				["Fakecastoncd"] = 1,
 				["Ologen"] = 1,
+				["Gandragan"] = 1,
+				["|Kf559|k0000000000|k"] = 2,
+				["Fyruss"] = 1,
+				["Dumbfoundead"] = 1,
 				["Amberwynn"] = 1,
 				["Ketzie"] = 1,
-				["Véngeful"] = 1,
-				["|Kf23|k00000|k"] = 2,
-				["Shamanilla"] = 1,
+				["|Kf550|k00000000000000|k"] = 2,
 				["Icoss"] = 1,
-				["Peeby"] = 1,
-				["Bvlbro"] = 1,
-				["Mimbsy"] = 1,
-				["|Kf28|k000000000|k"] = 2,
-				["|Kf30|k000000000000000|k"] = 2,
+				["|Kf569|k000000000000000|k"] = 2,
 				["Psilo"] = 1,
-				["Badzor"] = 1,
-				["Adamblade"] = 1,
-				["|Kf21|k000000000000|k"] = 2,
+				["|Kf553|k000000000|k"] = 2,
 				["Lorinus"] = 1,
-				["Atnight"] = 1,
 				["Lopida"] = 1,
 				["Eva"] = 1,
-				["|Kf15|k00000000000|k"] = 2,
-				["Libretto"] = 1,
+				["Atnight"] = 1,
 				["Ashuas"] = 1,
-				["|Kf20|k0000000000|k"] = 2,
-				["|Kf18|k00000|k"] = 2,
-				["Dumbfoundead"] = 1,
+				["Adamblade"] = 1,
 				["Tritønik"] = 1,
-				["Deq"] = 1,
-				["Pallyhealar"] = 1,
-				["Eldore"] = 1,
-				["Gandragan"] = 1,
-				["Geridivh"] = 1,
-				["Haerra"] = 1,
-				["Nigorochi"] = 1,
-				["Intiminator"] = 1,
-				["Lalka"] = 1,
-				["Keentotem"] = 1,
-				["|Kf10|k000000000000000|k"] = 2,
-				["Scarcy"] = 1,
-				["|Kf29|k00000000000000|k"] = 2,
-				["|Kf17|k000|k"] = 2,
+				["|Kf566|k00000000000|k"] = 2,
+				["Mimbsy"] = 1,
+				["|Kf555|k0000000000|k"] = 2,
+				["Bvlbro"] = 1,
+				["|Kf562|k00000|k"] = 2,
 			},
 			["guildList"] = {
 				["Nariir"] = true,
@@ -3105,13 +3106,13 @@ WIM3_Cache = {
 				["Sÿlvana"] = true,
 				["Psychoholicx"] = true,
 				["Macshaft"] = true,
-				["Degreez"] = true,
+				["Erliä"] = true,
 				["Turtol"] = true,
 				["Lichbeing"] = true,
 				["Rymael"] = true,
 				["Kollar"] = true,
 				["Xenovinity"] = true,
-				["Pallyranger"] = true,
+				["Omegã"] = true,
 				["Lovemittens"] = true,
 				["Chumshot"] = true,
 				["Holyshìft"] = true,
@@ -3135,7 +3136,7 @@ WIM3_Cache = {
 				["Ânubbis"] = true,
 				["Eames"] = true,
 				["Celebrations"] = true,
-				["Rúnbtch"] = true,
+				["Rabiëz"] = true,
 				["Revelstoke"] = true,
 				["Lopida"] = true,
 				["Urija"] = true,
@@ -3163,6 +3164,7 @@ WIM3_Cache = {
 				["Sithe"] = true,
 				["Lichmeaus"] = true,
 				["Maltywhey"] = true,
+				["Grannylarson"] = true,
 				["Naded"] = true,
 				["Burrswag"] = true,
 				["Silvermiss"] = true,
@@ -3171,30 +3173,51 @@ WIM3_Cache = {
 				["Sùnderpants"] = true,
 				["Shenlongx"] = true,
 				["Shámonk"] = true,
+				["Xarxthes"] = true,
+				["Imthebestkid"] = true,
+				["Aliase"] = true,
+				["Aldelia"] = true,
 				["Aerilyna"] = true,
 				["Sliightly"] = true,
 				["Acacian"] = true,
-				["Felmagi"] = true,
+				["Daxolyn"] = true,
 				["Álz"] = true,
 				["Bakdoorampag"] = true,
 				["Shadownova"] = true,
+				["Mavlon"] = true,
+				["Schmolak"] = true,
+				["Jirah"] = true,
+				["Gqùit"] = true,
 				["Bubblulz"] = true,
+				["Sìth"] = true,
 				["Silentsight"] = true,
 				["Musai"] = true,
 				["Sithly"] = true,
+				["Spòoky"] = true,
+				["Shämanda"] = true,
 				["Idrinkalot"] = true,
-				["Soraf"] = true,
 				["Drizztal"] = true,
+				["Soraf"] = true,
+				["Keiiy"] = true,
+				["Dedee"] = true,
+				["Shifuip"] = true,
+				["Zeroneg"] = true,
 				["Alissaa"] = true,
-				["Zaldirath"] = true,
+				["Odahaviing"] = true,
+				["Ellani"] = true,
+				["Seilwyn"] = true,
+				["Dispellthis"] = true,
+				["Silentwatch"] = true,
 				["Liightly"] = true,
 				["Flairski"] = true,
 				["Pulsé"] = true,
 				["Inappropriat"] = true,
+				["Jsen"] = true,
 				["Hellsshadow"] = true,
 				["Gognoob"] = true,
 				["Kokobutter"] = true,
 				["Alexandro"] = true,
+				["Drinkie"] = true,
 				["Holtastic"] = true,
 				["Antimanimal"] = true,
 				["Imatôyota"] = true,
@@ -3202,122 +3225,154 @@ WIM3_Cache = {
 				["Opacus"] = true,
 				["Djonesboi"] = true,
 				["Faydes"] = true,
+				["Budderblade"] = true,
 				["Superdan"] = true,
+				["Bowflexing"] = true,
+				["Bendermage"] = true,
 				["Acepoop"] = true,
+				["Astrala"] = true,
 				["Jiimbeezy"] = true,
 				["Eggrolltogo"] = true,
 				["Sleepytìme"] = true,
 				["Yimyamsham"] = true,
-				["Shämanda"] = true,
+				["Miightly"] = true,
+				["Schoolbully"] = true,
+				["Homedawg"] = true,
 				["Cybrosaelais"] = true,
-				["Daxolyn"] = true,
-				["Imthebestkid"] = true,
+				["Virtualyevil"] = true,
+				["Distinctness"] = true,
+				["Budderbean"] = true,
+				["Roguuee"] = true,
+				["Kaskarot"] = true,
+				["Treeva"] = true,
+				["Cyruus"] = true,
 				["Sniperwolv"] = true,
 				["Unnerfable"] = true,
+				["Zaldirath"] = true,
 				["Voltkin"] = true,
+				["Tbyte"] = true,
 				["Notbalmazer"] = true,
 				["Saurun"] = true,
 				["Terranym"] = true,
 				["Fidelcästro"] = true,
+				["Tankdps"] = true,
+				["Straìghtedge"] = true,
 				["Notpanda"] = true,
 				["Kelleh"] = true,
+				["Stormstriké"] = true,
 				["Healmefaster"] = true,
 				["Morokian"] = true,
+				["Shadowvar"] = true,
+				["Senchi"] = true,
 				["Tackfine"] = true,
+				["Retrabortion"] = true,
+				["Megnus"] = true,
+				["Gáia"] = true,
 				["Lethalist"] = true,
+				["Dansko"] = true,
 				["Lilguyy"] = true,
-				["Bendermage"] = true,
+				["Garraeth"] = true,
+				["Needlegun"] = true,
 				["Aliexa"] = true,
+				["Lilsmiter"] = true,
 				["Erliae"] = true,
+				["Seawispers"] = true,
+				["Proabortion"] = true,
 				["Imadorf"] = true,
-				["Straìghtedge"] = true,
-				["Aldelia"] = true,
+				["Kollur"] = true,
+				["Trykster"] = true,
+				["Tinytyrant"] = true,
 				["Carliis"] = true,
-				["Distinctness"] = true,
+				["Totina"] = true,
+				["Substorm"] = true,
+				["Arlie"] = true,
+				["Smiightly"] = true,
+				["Shammpayne"] = true,
+				["Schmolakii"] = true,
 				["Phaw"] = true,
-				["Stormstriké"] = true,
-				["Kaskarot"] = true,
+				["Artish"] = true,
+				["Thanáton"] = true,
 				["Níkki"] = true,
 				["Tanach"] = true,
+				["Sadiki"] = true,
+				["Pyronom"] = true,
+				["Nwoready"] = true,
 				["Priestitúte"] = true,
 				["Xinag"] = true,
+				["Niightly"] = true,
+				["Mutilateor"] = true,
 				["Kaimbent"] = true,
 				["Markswoman"] = true,
 				["Mythadend"] = true,
 				["Wierdbeard"] = true,
 				["Unjustkiller"] = true,
+				["Mercurîal"] = true,
 				["Chuklez"] = true,
+				["Kushx"] = true,
 				["Shamanthafox"] = true,
 				["Wolverinë"] = true,
+				["Kimary"] = true,
+				["Jaelha"] = true,
 				["Implady"] = true,
+				["Illuminati"] = true,
+				["Holtina"] = true,
 				["Locktank"] = true,
+				["Holiluya"] = true,
 				["Iamdrunk"] = true,
 				["Alterboi"] = true,
-				["Astrala"] = true,
-				["Schoolbully"] = true,
-				["Tankdps"] = true,
+				["Zaolin"] = true,
+				["Unimpressed"] = true,
+				["Bacdorampage"] = true,
+				["Heró"] = true,
+				["Earthmender"] = true,
+				["Dizyzz"] = true,
+				["Cakefarts"] = true,
 				["Gnimo"] = true,
-				["Mavlon"] = true,
+				["Bowme"] = true,
+				["Mhairi"] = true,
+				["Balooga"] = true,
 				["Seteh"] = true,
+				["Aldélia"] = true,
+				["Pípsy"] = true,
 				["Baedou"] = true,
 				["Swïtch"] = true,
+				["Desirea"] = true,
+				["Maguus"] = true,
+				["Blackheárt"] = true,
+				["Kzlopido"] = true,
+				["Rúnbtch"] = true,
 				["Miyagido"] = true,
 				["Illaina"] = true,
+				["Ripbillymays"] = true,
 				["Holtabulous"] = true,
-				["Bowme"] = true,
-				["Xarxthes"] = true,
+				["Snéâkybítch"] = true,
+				["Kittiehealz"] = true,
+				["Buddermonk"] = true,
+				["Feardealer"] = true,
 				["Morbidmojo"] = true,
 				["Sheeping"] = true,
 				["Scarlettah"] = true,
-				["Jirah"] = true,
-				["Sìth"] = true,
+				["Starmazer"] = true,
 				["Shnookiè"] = true,
-				["Keiiy"] = true,
-				["Homedawg"] = true,
-				["Treeva"] = true,
-				["Shadowvar"] = true,
-				["Senchi"] = true,
-				["Megnus"] = true,
-				["Silentwatch"] = true,
-				["Lilsmiter"] = true,
+				["Underwhelmed"] = true,
 				["Baultonhale"] = true,
-				["Dansko"] = true,
-				["Seawispers"] = true,
 				["Zimbio"] = true,
 				["Kzmage"] = true,
 				["Fenrinym"] = true,
 				["Toxicon"] = true,
-				["Needlegun"] = true,
-				["Proabortion"] = true,
-				["Ellani"] = true,
-				["Snéâkybítch"] = true,
+				["Spiitz"] = true,
 				["Voltrinity"] = true,
 				["Shamanpopex"] = true,
 				["Necrødamus"] = true,
-				["Smiightly"] = true,
-				["Shammpayne"] = true,
-				["Arlie"] = true,
-				["Schmolakii"] = true,
-				["Omegã"] = true,
-				["Illuminati"] = true,
-				["Mageisboring"] = true,
-				["Mutilateor"] = true,
-				["Pípsy"] = true,
-				["Kushx"] = true,
-				["Kimary"] = true,
+				["Yamamato"] = true,
+				["Mortuous"] = true,
 				["Gonebefore"] = true,
 				["Madgwara"] = true,
-				["Ioutdpsmav"] = true,
-				["Dizyzz"] = true,
 				["Inná"] = true,
 				["Omegæ"] = true,
-				["Desirea"] = true,
-				["Ripbillymays"] = true,
 				["Marpus"] = true,
-				["Rabiëz"] = true,
-				["Nwoready"] = true,
+				["Jovemonarch"] = true,
 				["Shister"] = true,
-				["Buddermonk"] = true,
 				["Minderbender"] = true,
 				["Yoloswagbra"] = true,
 				["Turtleslol"] = true,
@@ -3325,107 +3380,52 @@ WIM3_Cache = {
 				["Moonbreese"] = true,
 				["Xenä"] = true,
 				["Mojomagik"] = true,
-				["Zeroneg"] = true,
-				["Unimpressed"] = true,
+				["Atrexx"] = true,
 				["Fightly"] = true,
-				["Kittiehealz"] = true,
 				["Arcanâ"] = true,
-				["Instaque"] = true,
-				["Gqùit"] = true,
-				["Dedee"] = true,
-				["Underwhelmed"] = true,
-				["Spiitz"] = true,
+				["Slapnticklé"] = true,
+				["Pedobeâr"] = true,
 				["Fluphinator"] = true,
 				["Howlintime"] = true,
-				["Yamamato"] = true,
-				["Mortuous"] = true,
 				["Doyouliftbro"] = true,
-				["Atrexx"] = true,
-				["Vishnaa"] = true,
 				["Ládydot"] = true,
-				["Pedobeâr"] = true,
-				["Spòoky"] = true,
-				["Slapnticklé"] = true,
+				["Vishnaa"] = true,
 				["Apocrawr"] = true,
-				["Jovemonarch"] = true,
 				["Jaazz"] = true,
 				["Mchealy"] = true,
 				["Marknutt"] = true,
 				["Raìin"] = true,
-				["Starmazer"] = true,
-				["Bowflexing"] = true,
-				["Feardealer"] = true,
+				["Instaque"] = true,
 				["Félindra"] = true,
 				["Jÿnx"] = true,
-				["Kollur"] = true,
 				["Boonprot"] = true,
 				["Eililine"] = true,
 				["Aryee"] = true,
-				["Kzlopido"] = true,
-				["Blackheárt"] = true,
-				["Maguus"] = true,
 				["Mormont"] = true,
-				["Mhairi"] = true,
-				["Aldélia"] = true,
-				["Balooga"] = true,
-				["Cakefarts"] = true,
 				["Môoninator"] = true,
-				["Bacdorampage"] = true,
-				["Zaolin"] = true,
-				["Earthmender"] = true,
-				["Heró"] = true,
-				["Totina"] = true,
-				["Holiluya"] = true,
-				["Holtina"] = true,
-				["Jaelha"] = true,
+				["Ioutdpsmav"] = true,
 				["Unreál"] = true,
 				["Haere"] = true,
-				["Mercurîal"] = true,
 				["Erliâ"] = true,
-				["Niightly"] = true,
-				["Thanáton"] = true,
-				["Artish"] = true,
-				["Roguuee"] = true,
+				["Mageisboring"] = true,
 				["Iamdrunkish"] = true,
-				["Sadiki"] = true,
 				["Xbrave"] = true,
 				["Bkidhellno"] = true,
 				["Glòry"] = true,
 				["Parnel"] = true,
 				["Aellios"] = true,
-				["Tinytyrant"] = true,
-				["Substorm"] = true,
-				["Trykster"] = true,
 				["Voltrannus"] = true,
-				["Kzmike"] = true,
 				["Batyli"] = true,
 				["Lîlith"] = true,
 				["Trictagon"] = true,
 				["Bearfoam"] = true,
-				["Garraeth"] = true,
-				["Gáia"] = true,
 				["Schmollak"] = true,
-				["Retrabortion"] = true,
 				["Playswitfire"] = true,
 				["Beastialmojo"] = true,
-				["Tbyte"] = true,
-				["Cyruus"] = true,
 				["Trictagøn"] = true,
-				["Budderbean"] = true,
-				["Erliä"] = true,
-				["Virtualyevil"] = true,
 				["Sieryui"] = true,
-				["Miightly"] = true,
-				["Budderblade"] = true,
-				["Drinkie"] = true,
-				["Jsen"] = true,
-				["Dispellthis"] = true,
-				["Odahaviing"] = true,
-				["Shifuip"] = true,
 				["Samarent"] = true,
 				["Dànte"] = true,
-				["Schmolak"] = true,
-				["Aliase"] = true,
 				["Yasea"] = true,
 			},
 		},
@@ -3625,20 +3625,20 @@ WIM3_Cache = {
 				["Disceiver"] = true,
 				["Roodon"] = true,
 				["Quantaron"] = true,
-				["Smîtten"] = true,
 				["Cataron"] = true,
+				["Smîtten"] = true,
 				["Cerberus"] = true,
 				["Bosomy"] = true,
 				["Drône"] = true,
 				["Nexica"] = true,
-				["Dexterbaby"] = true,
+				["Epidorf"] = true,
 				["Nemeroth"] = true,
-				["Mankurk"] = true,
+				["Phantom"] = true,
 				["Guiltie"] = true,
 				["Húriner"] = true,
-				["Phantom"] = true,
+				["Mankurk"] = true,
 				["Macåbre"] = true,
-				["Kathelice"] = true,
+				["Barkkz"] = true,
 				["Raikoü"] = true,
 				["Millayou"] = true,
 				["Thirddruid"] = true,
@@ -3646,17 +3646,17 @@ WIM3_Cache = {
 				["Micromidget"] = true,
 				["Arcfault"] = true,
 				["Degrant"] = true,
+				["Adöre"] = true,
 				["Eclipseqt"] = true,
-				["Isortglass"] = true,
 				["Taklian"] = true,
 				["Tyrant"] = true,
 				["Solistar"] = true,
-				["Jareds"] = true,
+				["Quíetus"] = true,
 				["Angelxoxo"] = true,
 				["Darksavior"] = true,
-				["Muffinirl"] = true,
+				["Desmona"] = true,
 				["Kouei"] = true,
-				["Quíetus"] = true,
+				["Jareds"] = true,
 				["Feetsz"] = true,
 				["Epidk"] = true,
 				["Omgirl"] = true,
@@ -3673,20 +3673,20 @@ WIM3_Cache = {
 				["Valdeur"] = true,
 				["Snowhead"] = true,
 				["Phantron"] = true,
-				["Fuzzyrogue"] = true,
-				["Scratch"] = true,
-				["Effect"] = true,
 				["Sosocute"] = true,
-				["Jaredx"] = true,
-				["Fewdz"] = true,
+				["Scratch"] = true,
+				["Copafeel"] = true,
+				["Fuzzyrogue"] = true,
+				["Bamfx"] = true,
+				["Elephantasmo"] = true,
 				["Jref"] = true,
-				["Bnz"] = true,
+				["Booster"] = true,
 				["Vertrag"] = true,
 				["Instaque"] = true,
-				["Elephantasmo"] = true,
-				["Booster"] = true,
+				["Fewdz"] = true,
+				["Bnz"] = true,
 				["Ashurigan"] = true,
-				["Fondleme"] = true,
+				["Pwnytailz"] = true,
 				["Dròól"] = true,
 				["Xaatres"] = true,
 				["Micai"] = true,
@@ -3715,12 +3715,12 @@ WIM3_Cache = {
 				["Morbidd"] = true,
 				["Compactdisc"] = true,
 				["Ochochoh"] = true,
-				["Copafeel"] = true,
+				["Effect"] = true,
 				["Nyannova"] = true,
-				["Pwnytailz"] = true,
+				["Fondleme"] = true,
 				["Stuffy"] = true,
 				["Travex"] = true,
-				["Bamfx"] = true,
+				["Jaredx"] = true,
 				["Stpatmos"] = true,
 				["Idgie"] = true,
 				["Zalesh"] = true,
@@ -3728,21 +3728,21 @@ WIM3_Cache = {
 				["Gerble"] = true,
 				["Jâck"] = true,
 				["Záck"] = true,
-				["Desmona"] = true,
+				["Muffinirl"] = true,
 				["Fleshhlight"] = true,
 				["Ylwa"] = true,
 				["Kyoufu"] = true,
-				["Adöre"] = true,
+				["Isortglass"] = true,
 				["Aéthér"] = true,
 				["Stabaron"] = true,
 				["Toastmasta"] = true,
 				["Asmongold"] = true,
-				["Barkkz"] = true,
+				["Kathelice"] = true,
 				["Ragewyn"] = true,
-				["Pezsir"] = true,
-				["Epidorf"] = true,
 				["Amazania"] = true,
+				["Dexterbaby"] = true,
 				["Cutest"] = true,
+				["Pezsir"] = true,
 				["Jaredz"] = true,
 				["Garshawn"] = true,
 				["Engz"] = true,
@@ -3780,8 +3780,8 @@ WIM3_Cache = {
 				["|Kf357|k00000000000000|k"] = 2,
 				["|Kf347|k0000000000000|k"] = 2,
 				["|Kf361|k00000000000000|k"] = 2,
-				["|Kf356|k000000000|k"] = 2,
 				["|Kf358|k00000000000|k"] = 2,
+				["|Kf356|k000000000|k"] = 2,
 				["|Kf351|k000000000000|k"] = 2,
 				["|Kf348|k00000|k"] = 2,
 				["|Kf365|k0000000000|k"] = 2,
@@ -3956,8 +3956,8 @@ WIM3_Cache = {
 				["Atallia"] = true,
 				["Gragazz"] = true,
 				["Shryu"] = true,
-				["Torimir"] = true,
 				["Nymfomaniac"] = true,
+				["Torimir"] = true,
 				["Krastikk"] = true,
 				["Pixiki"] = true,
 				["Badtothebown"] = true,
@@ -3985,9 +3985,9 @@ WIM3_Cache = {
 				["Bustå"] = true,
 				["Twogou"] = true,
 				["Criticalsdtf"] = true,
-				["Cyruses"] = true,
-				["Belmarix"] = true,
 				["Fróstmóurne"] = true,
+				["Belmarix"] = true,
+				["Cyruses"] = true,
 				["Lifélèss"] = true,
 				["Hankatanka"] = true,
 				["Aerce"] = true,
@@ -3997,9 +3997,9 @@ WIM3_Cache = {
 				["Moónlèss"] = true,
 				["Krisdayanti"] = true,
 				["Arcila"] = true,
-				["Windëx"] = true,
 				["Roonai"] = true,
-				["Mayaara"] = true,
+				["Windëx"] = true,
+				["Sivlar"] = true,
 				["Cluélèss"] = true,
 				["Wohi"] = true,
 				["Hooplisix"] = true,
@@ -4023,15 +4023,15 @@ WIM3_Cache = {
 				["Ichineda"] = true,
 				["Impsy"] = true,
 				["Fzaa"] = true,
-				["Mcñasty"] = true,
-				["Karala"] = true,
 				["Tubeshock"] = true,
+				["Karala"] = true,
+				["Mcñasty"] = true,
 				["Asilkhan"] = true,
-				["Valouda"] = true,
+				["Darthpriest"] = true,
 				["Enzytebob"] = true,
 				["Malkizidekk"] = true,
 				["Graynnit"] = true,
-				["Nelo"] = true,
+				["Droppinduece"] = true,
 				["Deadlol"] = true,
 				["Rió"] = true,
 				["Gheldorr"] = true,
@@ -4043,43 +4043,43 @@ WIM3_Cache = {
 				["Airugaman"] = true,
 				["Sithislurker"] = true,
 				["Chicaswag"] = true,
-				["Røberta"] = true,
-				["Arrowynn"] = true,
 				["Loletta"] = true,
-				["Attaboy"] = true,
+				["Arrowynn"] = true,
+				["Alauri"] = true,
+				["Martinmonk"] = true,
 				["Isobar"] = true,
-				["Spoosemoose"] = true,
+				["Røberta"] = true,
 				["Brewskì"] = true,
 				["Cryosleep"] = true,
 				["Drakenmonkey"] = true,
 				["Rikimu"] = true,
-				["Sydeqt"] = true,
 				["Deathamongus"] = true,
+				["Sydeqt"] = true,
 				["Chintai"] = true,
 				["Gnofearhere"] = true,
 				["Malhell"] = true,
 				["Icéhole"] = true,
 				["Amurgodxx"] = true,
 				["Candrane"] = true,
-				["Darthmiidget"] = true,
-				["Troppy"] = true,
 				["Taká"] = true,
+				["Troppy"] = true,
+				["Darthmiidget"] = true,
 				["Evista"] = true,
 				["Psychõtic"] = true,
 				["Neoref"] = true,
 				["Torbear"] = true,
 				["Lowmoon"] = true,
 				["Shûhei"] = true,
-				["Xazan"] = true,
+				["Nocturnex"] = true,
 				["Paindozer"] = true,
 				["Bulrunn"] = true,
 				["Aerosythe"] = true,
 				["Whyteylocks"] = true,
 				["Vvolfman"] = true,
-				["Shirochi"] = true,
+				["Trevykans"] = true,
 				["Jetcheodnes"] = true,
 				["Xelisa"] = true,
-				["Trevykans"] = true,
+				["Shirochi"] = true,
 				["Utankispank"] = true,
 				["Caffein"] = true,
 				["Clason"] = true,
@@ -4102,7 +4102,7 @@ WIM3_Cache = {
 				["Chaosrose"] = true,
 				["Worgeofwar"] = true,
 				["Bryiel"] = true,
-				["Kamìna"] = true,
+				["Kfcbandit"] = true,
 				["Diviniity"] = true,
 				["Damngooddps"] = true,
 				["Yakult"] = true,
@@ -4114,23 +4114,23 @@ WIM3_Cache = {
 				["Lâserchicken"] = true,
 				["Oriøn"] = true,
 				["Divihoopli"] = true,
-				["Kfcbandit"] = true,
+				["Kamìna"] = true,
 				["Wadestab"] = true,
 				["Damean"] = true,
 				["Hasgard"] = true,
 				["Bernerr"] = true,
-				["Monane"] = true,
 				["Ladoroy"] = true,
+				["Monane"] = true,
 				["Probus"] = true,
 				["Cerwinn"] = true,
-				["Roiran"] = true,
 				["Talardiirn"] = true,
+				["Roiran"] = true,
 				["Rolz"] = true,
 				["Percivall"] = true,
 				["Roanary"] = true,
 				["Neyami"] = true,
 				["Ausloc"] = true,
-				["Nocturnex"] = true,
+				["Xazan"] = true,
 				["Maurstate"] = true,
 				["Luciceyn"] = true,
 				["Winstonier"] = true,
@@ -4140,17 +4140,17 @@ WIM3_Cache = {
 				["Scragteddy"] = true,
 				["Slimeyz"] = true,
 				["Gnoxas"] = true,
-				["Alauri"] = true,
+				["Spoosemoose"] = true,
 				["Ragegrim"] = true,
-				["Martinmonk"] = true,
+				["Attaboy"] = true,
 				["Ammenakhti"] = true,
 				["Goldenbubble"] = true,
 				["Naptown"] = true,
-				["Droppinduece"] = true,
+				["Nelo"] = true,
 				["Dandivh"] = true,
 				["Scifidragon"] = true,
 				["Littlepo"] = true,
-				["Darthpriest"] = true,
+				["Valouda"] = true,
 				["Mialian"] = true,
 				["Jallea"] = true,
 				["Snugglës"] = true,
@@ -4161,7 +4161,7 @@ WIM3_Cache = {
 				["Dafak"] = true,
 				["Shadowmayne"] = true,
 				["Memknock"] = true,
-				["Sivlar"] = true,
+				["Mayaara"] = true,
 				["Bearjewjerry"] = true,
 				["Xinthius"] = true,
 				["Grenned"] = true,
@@ -4217,13 +4217,13 @@ WIM3_Cache = {
 				["|Kf515|k000000000000|k"] = 2,
 				["|Kf526|k00000000000000|k"] = 2,
 				["|Kf514|k000000000000000|k"] = 2,
-				["|Kf523|k000000000000000|k"] = 2,
+				["|Kf532|k00000000000|k"] = 2,
 				["|Kf519|k000000000|k"] = 2,
-				["|Kf516|k0000000000000|k"] = 2,
+				["|Kf523|k000000000000000|k"] = 2,
 				["|Kf517|k00000|k"] = 2,
 				["|Kf527|k00000000000|k"] = 2,
 				["|Kf520|k000000000000|k"] = 2,
-				["|Kf532|k00000000000|k"] = 2,
+				["|Kf516|k0000000000000|k"] = 2,
 				["|Kf513|k00000000000|k"] = 2,
 				["|Kf522|k0000000|k"] = 2,
 				["|Kf528|k000000000000000|k"] = 2,
@@ -4261,8 +4261,8 @@ WIM3_Cache = {
 				["Booyaass"] = true,
 				["Licme"] = true,
 				["Radellea"] = true,
-				["Gravës"] = true,
 				["Catgrapple"] = true,
+				["Gravës"] = true,
 				["Khodlaeg"] = true,
 				["Bramodin"] = true,
 				["Bloodiblade"] = true,
@@ -4346,10 +4346,10 @@ WIM3_Cache = {
 				["|Kf12|k000000000|k"] = 2,
 				["|Kf6|k00000000000|k"] = 2,
 				["|Kf21|k000000000000000|k"] = 2,
-				["|Kf28|k000000000000|k"] = 2,
-				["|Kf9|k0000000000000|k"] = 2,
 				["|Kf26|k000|k"] = 2,
 				["|Kf24|k000000|k"] = 2,
+				["|Kf28|k000000000000|k"] = 2,
+				["|Kf9|k0000000000000|k"] = 2,
 				["|Kf10|k00000|k"] = 2,
 				["|Kf18|k000000000|k"] = 2,
 				["|Kf20|k00000000000|k"] = 2,
@@ -4509,10 +4509,10 @@ WIM3_Cache = {
 				["Grober"] = true,
 				["Hopeimfotm"] = true,
 				["Welsey"] = true,
-				["Bearty"] = true,
-				["Castymcnasty"] = true,
-				["Molahs"] = true,
 				["Idðntcare"] = true,
+				["Castymcnasty"] = true,
+				["Orenger"] = true,
+				["Bearty"] = true,
 				["Altreus"] = true,
 				["Djphreshh"] = true,
 				["Angelmeli"] = true,
@@ -4535,75 +4535,75 @@ WIM3_Cache = {
 				["Prèy"] = true,
 				["Worgenius"] = true,
 				["Surgibree"] = true,
-				["Leeone"] = true,
 				["Pastryvendor"] = true,
-				["Tigur"] = true,
-				["Rangeq"] = true,
+				["Leeone"] = true,
+				["Madmanpally"] = true,
+				["Jfgoiwq"] = true,
 				["Coggluster"] = true,
-				["Rafkahn"] = true,
-				["Thoriones"] = true,
-				["Hijvinstytle"] = true,
+				["Moldin"] = true,
+				["Aetosx"] = true,
+				["Rangeq"] = true,
 				["Thetrooth"] = true,
 				["Smirnoffshot"] = true,
-				["Nnaahk"] = true,
+				["Howlenhard"] = true,
 				["Plasmas"] = true,
 				["Stormflurry"] = true,
 				["Blazindank"] = true,
 				["Disclosed"] = true,
 				["Trazodone"] = true,
-				["Moldin"] = true,
+				["Ieroy"] = true,
 				["Shambuulance"] = true,
-				["Dyandra"] = true,
-				["Jfgoiwq"] = true,
-				["Howlenhard"] = true,
+				["Morekan"] = true,
+				["Hijvinstytle"] = true,
+				["Nnaahk"] = true,
 				["Light"] = true,
 				["Louisv"] = true,
 				["Castïel"] = true,
-				["Pihnhead"] = true,
+				["Noheart"] = true,
 				["Phakie"] = true,
 				["Kangadruid"] = true,
 				["Vklon"] = true,
-				["Ieroy"] = true,
-				["Bàtpenìs"] = true,
+				["Rafkahn"] = true,
+				["Dragul"] = true,
 				["Hinamory"] = true,
-				["Morekan"] = true,
-				["Leetatheist"] = true,
+				["Dyandra"] = true,
+				["Bóòmkín"] = true,
 				["Coloncleaner"] = true,
 				["Heýqt"] = true,
 				["Dotbangeles"] = true,
-				["Robq"] = true,
-				["Lumynous"] = true,
 				["Riptd"] = true,
+				["Sinleer"] = true,
+				["Robq"] = true,
 				["Duea"] = true,
-				["Romanesca"] = true,
+				["Wizzrobe"] = true,
 				["Magmas"] = true,
 				["Kalugy"] = true,
-				["Wizzrobe"] = true,
-				["Ospreys"] = true,
+				["Romanesca"] = true,
+				["Ngoc"] = true,
 				["Iots"] = true,
 				["Gáyonhands"] = true,
 				["Deâthtrap"] = true,
-				["Bublebangele"] = true,
-				["Xunzinha"] = true,
+				["Ospreys"] = true,
 				["Verrarc"] = true,
+				["Xunzinha"] = true,
 				["Skullfrrbgs"] = true,
 				["Cold"] = true,
 				["Böngfather"] = true,
-				["Wìngit"] = true,
+				["Boubou"] = true,
 				["Balderai"] = true,
 				["Fredrin"] = true,
 				["Neatpretty"] = true,
 				["Aimshotswag"] = true,
 				["Nigsluvchikn"] = true,
-				["Shoelessgirl"] = true,
+				["Notpaladin"] = true,
 				["Xtcisforme"] = true,
 				["Howsmyflyin"] = true,
 				["Baconblast"] = true,
 				["Hardatwork"] = true,
 				["Rbgdkcs"] = true,
-				["Calyonethon"] = true,
-				["Daedrick"] = true,
 				["Jinjaweed"] = true,
+				["Daedrick"] = true,
+				["Calyonethon"] = true,
 				["Gnomegustã"] = true,
 				["Kënpachi"] = true,
 				["Sidiusdeaths"] = true,
@@ -4620,47 +4620,47 @@ WIM3_Cache = {
 				["Gargadon"] = true,
 				["Healznwheels"] = true,
 				["Angelfang"] = true,
-				["Corpsefondle"] = true,
 				["Hoochiedaddy"] = true,
+				["Corpsefondle"] = true,
 				["Áries"] = true,
 				["Ýup"] = true,
 				["Poodidlee"] = true,
-				["Hoochieone"] = true,
+				["Tacticalhunt"] = true,
 				["Stilhomeless"] = true,
 				["Vandiandra"] = true,
 				["Zakaev"] = true,
 				["Jarrayden"] = true,
-				["Tacticalhunt"] = true,
+				["Hoochieone"] = true,
 				["Bubleup"] = true,
 				["Shoryuuken"] = true,
-				["Lfrbgalt"] = true,
 				["Tryrandea"] = true,
+				["Lfrbgalt"] = true,
 				["Imsobeasty"] = true,
 				["Hellototem"] = true,
-				["Puppyqt"] = true,
+				["Acarlancent"] = true,
 				["Imraginbro"] = true,
 				["Jirkengirken"] = true,
 				["Avelisa"] = true,
 				["Imashamedsbo"] = true,
-				["Iissttaa"] = true,
+				["Lynance"] = true,
 				["Bravir"] = true,
 				["Doctobogann"] = true,
 				["Thunderbade"] = true,
-				["Augments"] = true,
+				["Astryal"] = true,
 				["Jbrant"] = true,
 				["Skryx"] = true,
 				["Cleophas"] = true,
 				["Vomitbag"] = true,
-				["Rogueswag"] = true,
-				["Lynance"] = true,
+				["Yiruma"] = true,
+				["Iissttaa"] = true,
 				["Swagalicous"] = true,
 				["Hadoukenn"] = true,
 				["Eclipsê"] = true,
 				["Indrapura"] = true,
-				["Astryal"] = true,
+				["Augments"] = true,
 				["Epicpvpness"] = true,
-				["Captncroson"] = true,
-				["Girlqt"] = true,
+				["Rogueswag"] = true,
+				["Kryonic"] = true,
 				["Allaylle"] = true,
 				["Svensken"] = true,
 				["Häyhä"] = true,
@@ -4674,10 +4674,10 @@ WIM3_Cache = {
 				["Ñiggèr"] = true,
 				["Boryse"] = true,
 				["Jumbodice"] = true,
-				["Dioblox"] = true,
-				["Húgs"] = true,
+				["Vynastas"] = true,
+				["Dumbaldore"] = true,
 				["Dorrough"] = true,
-				["Carriedbad"] = true,
+				["Dioblox"] = true,
 				["Paskolanu"] = true,
 				["Hoochiethree"] = true,
 				["Ravensteel"] = true,
@@ -4708,26 +4708,26 @@ WIM3_Cache = {
 				["Diabow"] = true,
 				["Thelittleguy"] = true,
 				["Roleselyn"] = true,
-				["Vynastas"] = true,
-				["Dumbaldore"] = true,
+				["Carriedbad"] = true,
+				["Húgs"] = true,
 				["Nantukohusk"] = true,
 				["Darkmel"] = true,
 				["Megamus"] = true,
 				["Rbgmagepls"] = true,
 				["Rendolph"] = true,
-				["Bloodytouch"] = true,
+				["Coyoteh"] = true,
 				["Srybro"] = true,
-				["Kryonic"] = true,
+				["Girlqt"] = true,
 				["Blazednovas"] = true,
-				["Yiruma"] = true,
+				["Captncroson"] = true,
 				["Deepdish"] = true,
 				["Mistahchow"] = true,
-				["Coyoteh"] = true,
 				["Riverside"] = true,
+				["Bloodytouch"] = true,
 				["Lightsky"] = true,
 				["Lickmyopness"] = true,
 				["Hodiddle"] = true,
-				["Acarlancent"] = true,
+				["Puppyqt"] = true,
 				["Freyia"] = true,
 				["Thedoodah"] = true,
 				["Jinjasbðner"] = true,
@@ -4744,33 +4744,33 @@ WIM3_Cache = {
 				["Pomegranates"] = true,
 				["Goonsonme"] = true,
 				["Dosomn"] = true,
-				["Notpaladin"] = true,
+				["Shoelessgirl"] = true,
 				["Hoochietoo"] = true,
 				["Pizzashere"] = true,
 				["Rezundant"] = true,
 				["Arkæus"] = true,
 				["Lodoi"] = true,
 				["Viata"] = true,
-				["Boubou"] = true,
-				["Ngoc"] = true,
+				["Wìngit"] = true,
+				["Bublebangele"] = true,
 				["Annul"] = true,
 				["Iube"] = true,
-				["Sinleer"] = true,
+				["Lumynous"] = true,
 				["Jinj"] = true,
 				["Skiptomylock"] = true,
 				["Deathgrape"] = true,
 				["Lurindea"] = true,
 				["Paulyshore"] = true,
-				["Dragul"] = true,
+				["Bàtpenìs"] = true,
 				["Lichepriest"] = true,
 				["Twasa"] = true,
 				["Fmf"] = true,
-				["Noheart"] = true,
-				["Bóòmkín"] = true,
+				["Pihnhead"] = true,
+				["Leetatheist"] = true,
 				["Terranovaz"] = true,
 				["Bubbleburst"] = true,
-				["Aetosx"] = true,
-				["Madmanpally"] = true,
+				["Thoriones"] = true,
+				["Tigur"] = true,
 				["Graywarden"] = true,
 				["Teyron"] = true,
 				["Treast"] = true,
@@ -4780,7 +4780,7 @@ WIM3_Cache = {
 				["Datrogueswag"] = true,
 				["Omégä"] = true,
 				["Fkuqt"] = true,
-				["Orenger"] = true,
+				["Molahs"] = true,
 				["Fayev"] = true,
 				["Legitmeat"] = true,
 				["Ieatpandas"] = true,
@@ -5299,7 +5299,7 @@ WIM3_Cache = {
 				["Destruxion"] = true,
 				["Optum"] = true,
 				["Daemonium"] = true,
-				["Icedragon"] = true,
+				["Veramora"] = true,
 				["Fahii"] = true,
 				["Planky"] = true,
 				["Nàture"] = true,
@@ -5330,14 +5330,14 @@ WIM3_Cache = {
 				["Ælémèñtålïty"] = true,
 				["Ifraghard"] = true,
 				["Dramanay"] = true,
-				["Miriann"] = true,
+				["Murian"] = true,
 				["Cyrisu"] = true,
 				["Scaryclown"] = true,
-				["Ryzzow"] = true,
-				["Sikka"] = true,
-				["Arsomandrinn"] = true,
-				["Murian"] = true,
+				["Røgüë"] = true,
 				["Jefinance"] = true,
+				["Timedin"] = true,
+				["Miriann"] = true,
+				["Sikka"] = true,
 				["Oreoi"] = true,
 				["Imascrewup"] = true,
 				["Smokeddout"] = true,
@@ -5360,13 +5360,13 @@ WIM3_Cache = {
 				["Gbshi"] = true,
 				["Gber"] = true,
 				["Dsculli"] = true,
-				["Cbfo"] = true,
-				["Judgementál"] = true,
 				["Kaufan"] = true,
+				["Judgementál"] = true,
+				["Cbfo"] = true,
 				["Blyssful"] = true,
 				["Babaganuosh"] = true,
-				["Priestr"] = true,
-				["Foughlann"] = true,
+				["Analyzer"] = true,
+				["Moonkat"] = true,
 				["Hateslight"] = true,
 				["Wishiwasadk"] = true,
 				["Domhan"] = true,
@@ -5386,11 +5386,11 @@ WIM3_Cache = {
 				["Ladow"] = true,
 				["Nèrdgòd"] = true,
 				["Keloree"] = true,
-				["Naturè"] = true,
 				["Immapwnu"] = true,
+				["Naturè"] = true,
 				["Assarcy"] = true,
-				["Moonkat"] = true,
-				["Analyzer"] = true,
+				["Foughlann"] = true,
+				["Priestr"] = true,
 				["Datbeard"] = true,
 				["Maxiine"] = true,
 				["Kylerm"] = true,
@@ -5406,8 +5406,8 @@ WIM3_Cache = {
 				["Fronte"] = true,
 				["ßeats"] = true,
 				["Evanwilliams"] = true,
-				["Timedin"] = true,
-				["Røgüë"] = true,
+				["Arsomandrinn"] = true,
+				["Ryzzow"] = true,
 				["Atlahna"] = true,
 				["Natûre"] = true,
 				["Voltqt"] = true,
@@ -5424,7 +5424,7 @@ WIM3_Cache = {
 				["Furiouz"] = true,
 				["Trollallday"] = true,
 				["Hekillaon"] = true,
-				["Veramora"] = true,
+				["Icedragon"] = true,
 				["Brazlorky"] = true,
 				["Stàbby"] = true,
 				["Ijukedthekik"] = true,
@@ -5512,9 +5512,9 @@ WIM3_Cache = {
 				["|Kg83|k0000000|k |Ks83|k0000000|k"] = 2,
 				["|Kg78|k000|k |Ks78|k0000000|k"] = 2,
 				["|Kg82|k000000|k |Ks82|k0000|k"] = 2,
+				["|Kg85|k00000|k |Ks85|k00000|k"] = 2,
 				["|Kg79|k00000|k |Ks79|k00000000|k"] = 2,
 				["|Kg80|k00000|k |Ks80|k0000000|k"] = 2,
-				["|Kg85|k00000|k |Ks85|k00000|k"] = 2,
 				["|Kg84|k000|k |Ks84|k00000000|k"] = 2,
 			},
 		},
@@ -5539,34 +5539,34 @@ WIM3_Cache = {
 		["Vsuper"] = {
 			["friendList"] = {
 				["|Kg41|k000|k |Ks41|k0000000|k"] = 2,
-				["|Kg46|k000|k |Ks46|k00000000|k"] = 2,
 				["|Kg42|k00000|k |Ks42|k00000000|k"] = 2,
+				["|Kg46|k000|k |Ks46|k00000000|k"] = 2,
 				["|Kg43|k00000|k |Ks43|k0000000|k"] = 2,
-				["Omniak"] = 1,
+				["|Kg47|k00000|k |Ks47|k00000|k"] = 2,
 				["|Kg45|k0000000|k |Ks45|k0000000|k"] = 2,
 				["|Kg44|k000000|k |Ks44|k0000|k"] = 2,
-				["|Kg47|k00000|k |Ks47|k00000|k"] = 2,
+				["Omniak"] = 1,
 			},
 		},
 	},
 	["Blackhand"] = {
 		["Rhodara"] = {
 			["friendList"] = {
-				["|Kg31|k00000000|k |Ks31|k000|k"] = 2,
 				["|Kg26|k00000|k |Ks26|k000000000|k"] = 2,
+				["|Kg31|k00000000|k |Ks31|k000|k"] = 2,
 				["|Kg35|k000000|k |Ks35|k0000000|k"] = 2,
 				["|Kg39|k0000|k |Ks39|k0000000|k"] = 2,
 				["|Kg30|k000|k |Ks30|k00000000|k"] = 2,
 				["|Kg38|k00000000|k |Ks38|k000000|k"] = 2,
-				["|Kg37|k000000|k |Ks37|k0000|k"] = 2,
+				["|Kg33|k00000|k |Ks33|k00000|k"] = 2,
 				["|Kg34|k0000000|k |Ks34|k00000|k"] = 2,
 				["|Kg36|k00000|k |Ks36|k00000000|k"] = 2,
 				["|Kg32|k00000|k |Ks32|k000000000|k"] = 2,
-				["|Kg29|k00000|k |Ks29|k00000000|k"] = 2,
-				["|Kg25|k000000|k |Ks25|k000000|k"] = 2,
 				["|Kg27|k000|k |Ks27|k0000000|k"] = 2,
-				["|Kg33|k00000|k |Ks33|k00000|k"] = 2,
+				["|Kg25|k000000|k |Ks25|k000000|k"] = 2,
+				["|Kg29|k00000|k |Ks29|k00000000|k"] = 2,
 				["|Kg28|k00000|k |Ks28|k0000000|k"] = 2,
+				["|Kg37|k000000|k |Ks37|k0000|k"] = 2,
 			},
 		},
 	},
@@ -5606,8 +5606,8 @@ WIM3_Cache = {
 				["|Kg77|k00000000|k |Ks77|k000|k"] = 2,
 				["|Kg88|k00000|k |Ks88|k0|k"] = 2,
 				["|Kg82|k000000000|k |Ks82|k0|k"] = 2,
-				["|Kg79|k000000|k |Ks79|k0|k"] = 2,
 				["|Kg91|k000|k |Ks91|k00000000|k"] = 2,
+				["|Kg79|k000000|k |Ks79|k0|k"] = 2,
 				["|Kg83|k0000|k |Ks83|k000000|k"] = 2,
 				["|Kg76|k000000000|k |Ks76|k0|k"] = 2,
 				["|Kg92|k000000|k |Ks92|k000000|k"] = 2,
@@ -5652,18 +5652,18 @@ WIM3_Cache = {
 				["|Kf529|k000000000000|k"] = 2,
 				["|Kf522|k0000000000|k"] = 2,
 				["|Kf535|k000000000000000|k"] = 2,
-				["|Kf530|k0000000000000|k"] = 2,
+				["|Kf533|k000000000|k"] = 2,
 				["|Kf536|k000000000000|k"] = 2,
-				["|Kf532|k00000000000|k"] = 2,
+				["|Kf521|k00000000000|k"] = 2,
 				["|Kf519|k00000000000|k"] = 2,
 				["|Kf515|k000000000000|k"] = 2,
-				["|Kf525|k0000000000000|k"] = 2,
+				["|Kf532|k00000000000|k"] = 2,
 				["|Kf526|k00000|k"] = 2,
-				["|Kf511|k0000000000000|k"] = 2,
 				["|Kf514|k000000000|k"] = 2,
-				["|Kf521|k00000000000|k"] = 2,
+				["|Kf511|k0000000000000|k"] = 2,
+				["|Kf525|k0000000000000|k"] = 2,
 				["|Kf513|k00000000000|k"] = 2,
-				["|Kf533|k000000000|k"] = 2,
+				["|Kf530|k0000000000000|k"] = 2,
 				["|Kf534|k00000000000000|k"] = 2,
 				["|Kf517|k000000|k"] = 2,
 			},
@@ -5753,12 +5753,12 @@ WIM3_Cache = {
 				["Veassanna"] = 1,
 				["Sapsu"] = 1,
 				["Deathday"] = 1,
-				["Methyline"] = 1,
 				["Rolaz"] = 1,
+				["Methyline"] = 1,
 				["Abarkas"] = 1,
 				["Veux"] = 1,
-				["Sphinxy"] = 1,
-				["Trintonator"] = 1,
+				["|Kg8|k00000|k |Ks8|k00000000|k"] = 2,
+				["Majde"] = 1,
 				["Sneakysnipe"] = 1,
 				["Shmally"] = 1,
 				["Mealstrom"] = 1,
@@ -5769,13 +5769,13 @@ WIM3_Cache = {
 				["Craddler"] = 1,
 				["Gonehome"] = 1,
 				["Regere"] = 1,
-				["|Kg8|k00000|k |Ks8|k00000000|k"] = 2,
+				["Sphinxy"] = 1,
 				["|Kg6|k00000|k |Ks6|k00000000|k"] = 2,
-				["Omniak"] = 1,
 				["Sammyb"] = 1,
+				["Kalfas"] = 1,
 				["Exscarne"] = 1,
 				["|Kg10|k0000000|k |Ks10|k0000000|k"] = 2,
-				["Kalfas"] = 1,
+				["Omniak"] = 1,
 				["Mahoushoujo"] = 1,
 				["Hottie"] = 1,
 				["Twilightmoon"] = 1,
@@ -5790,8 +5790,8 @@ WIM3_Cache = {
 				["Linbro"] = 1,
 				["|Kg9|k000000|k |Ks9|k0000|k"] = 2,
 				["Booyaka"] = 1,
-				["Majde"] = 1,
 				["Zoderpuffz"] = 1,
+				["Trintonator"] = 1,
 				["Kelseiph"] = 1,
 				["Dwarfshamanz"] = 1,
 				["Zyania"] = 1,
@@ -5997,11 +5997,11 @@ WIM3_Cache = {
 				["Eithis"] = true,
 				["Kadimus"] = true,
 				["Webshaman"] = true,
-				["Mondoa"] = true,
+				["Adaih"] = true,
 				["Worgnfleamen"] = true,
 				["Lethial"] = true,
 				["Funbucket"] = true,
-				["Adaih"] = true,
+				["Bhael"] = true,
 				["Lyre"] = true,
 				["Dawgz"] = true,
 				["Periced"] = true,
@@ -6024,21 +6024,21 @@ WIM3_Cache = {
 				["Alliancepro"] = true,
 				["Beanerweiner"] = true,
 				["Gereth"] = true,
-				["Lockknight"] = true,
+				["Desarion"] = true,
 				["Smackajawea"] = true,
 				["Lucrormagis"] = true,
 				["Adrenus"] = true,
 				["Gaveutheclap"] = true,
 				["Zerzies"] = true,
 				["Jolaine"] = true,
-				["Funkixmonk"] = true,
+				["Vamoose"] = true,
 				["Nadalia"] = true,
 				["Funkixwarloc"] = true,
-				["Vamoose"] = true,
+				["Funkixmonk"] = true,
 				["Centarion"] = true,
 				["Montoa"] = true,
 				["Withdraws"] = true,
-				["Desarion"] = true,
+				["Lockknight"] = true,
 				["Airplanez"] = true,
 				["Sylryes"] = true,
 				["Tryand"] = true,
@@ -6050,7 +6050,7 @@ WIM3_Cache = {
 				["Forrsaken"] = true,
 				["Darnasis"] = true,
 				["Tokkar"] = true,
-				["Bhael"] = true,
+				["Mondoa"] = true,
 				["Jhinn"] = true,
 				["Hairyweezal"] = true,
 				["Mewse"] = true,
@@ -6093,15 +6093,15 @@ WIM3_Cache = {
 				["|Kg281|k000000|k |Ks281|k0000|k"] = 2,
 				["|Kg278|k00000|k |Ks278|k00000|k"] = 2,
 				["|Kg269|k0000|k |Ks269|k000000000|k"] = 2,
-				["|Kg279|k000000|k |Ks279|k0000000|k"] = 2,
-				["|Kg276|k000|k |Ks276|k00000000|k"] = 2,
 				["|Kg273|k00000|k |Ks273|k00000000|k"] = 2,
-				["Hoedogg"] = 1,
+				["|Kg276|k000|k |Ks276|k00000000|k"] = 2,
+				["|Kg279|k000000|k |Ks279|k0000000|k"] = 2,
+				["|Kg282|k0000|k |Ks282|k00000|k"] = 2,
 				["|Kg275|k0000000|k |Ks275|k0000000|k"] = 2,
 				["|Kg277|k00000|k |Ks277|k000000000|k"] = 2,
 				["|Kg270|k000|k |Ks270|k0000000|k"] = 2,
 				["|Kg272|k00000|k |Ks272|k0000000|k"] = 2,
-				["|Kg282|k0000|k |Ks282|k00000|k"] = 2,
+				["Hoedogg"] = 1,
 				["|Kg274|k000000|k |Ks274|k0000|k"] = 2,
 			},
 			["guildList"] = {
@@ -6198,10 +6198,10 @@ WIM3_Cache = {
 				["Tummtum"] = true,
 				["Airplanez"] = true,
 				["Spinalla"] = true,
-				["Montoa"] = true,
+				["Withdraws"] = true,
 				["Beanerweiner"] = true,
 				["Gereth"] = true,
-				["Withdraws"] = true,
+				["Montoa"] = true,
 				["Magictank"] = true,
 				["Punkirish"] = true,
 				["Adrenus"] = true,
@@ -6227,9 +6227,9 @@ WIM3_Cache = {
 				["Gruelty"] = true,
 				["Equilïbrium"] = true,
 				["Hordeeater"] = true,
-				["Magía"] = true,
-				["Jhinn"] = true,
 				["Mondoa"] = true,
+				["Jhinn"] = true,
+				["Magía"] = true,
 				["Friçk"] = true,
 				["Tanktronic"] = true,
 				["Frostshards"] = true,
@@ -6242,8 +6242,8 @@ WIM3_Cache = {
 				["Peanutlicker"] = true,
 				["Elemios"] = true,
 				["Chälüpä"] = true,
-				["Moonsuns"] = true,
 				["Zaarth"] = true,
+				["Moonsuns"] = true,
 				["Dotzualot"] = true,
 				["Shutupfool"] = true,
 				["Orphid"] = true,
@@ -6254,8 +6254,8 @@ WIM3_Cache = {
 			["friendList"] = {
 				["|Kg80|k000|k |Ks80|k00000000|k"] = 2,
 				["|Kg81|k00000|k |Ks81|k00000|k"] = 2,
-				["|Kg77|k00000|k |Ks77|k0000000|k"] = 2,
 				["|Kg76|k00000|k |Ks76|k00000000|k"] = 2,
+				["|Kg77|k00000|k |Ks77|k0000000|k"] = 2,
 				["|Kg75|k000|k |Ks75|k0000000|k"] = 2,
 				["|Kg78|k000000|k |Ks78|k0000|k"] = 2,
 				["|Kg79|k0000000|k |Ks79|k0000000|k"] = 2,
@@ -6366,17 +6366,17 @@ WIM3_Cache = {
 				["Grïmm"] = true,
 				["Philomenna"] = true,
 				["Aoren"] = true,
-				["Taurmark"] = true,
-				["Cathacom"] = true,
 				["Minneme"] = true,
+				["Cathacom"] = true,
+				["Taurmark"] = true,
 				["Âlzheimers"] = true,
 				["Tänks"] = true,
 				["Viðarr"] = true,
-				["Bleater"] = true,
-				["Sâlèna"] = true,
 				["Zombiejoe"] = true,
+				["Sâlèna"] = true,
+				["Bleater"] = true,
 				["Ëatme"] = true,
-				["Yelly"] = true,
+				["Jersey"] = true,
 				["Skulsplitter"] = true,
 				["Fissile"] = true,
 				["Doomblood"] = true,
@@ -6385,24 +6385,24 @@ WIM3_Cache = {
 				["Lokx"] = true,
 				["Ludicrous"] = true,
 				["Winform"] = true,
-				["Guildz"] = true,
+				["Otrum"] = true,
 				["Boardrpatrol"] = true,
 				["Holymilk"] = true,
-				["Otrum"] = true,
 				["Twanky"] = true,
+				["Guildz"] = true,
 				["Breekachu"] = true,
 				["Linzii"] = true,
 				["Scyllaul"] = true,
 				["Dreadbeat"] = true,
-				["Padwan"] = true,
-				["Aldamir"] = true,
+				["Acidcome"] = true,
+				["Hooflungpoo"] = true,
 				["Juhala"] = true,
 				["Wootbeer"] = true,
-				["Chronny"] = true,
-				["Acidcome"] = true,
-				["Krabappel"] = true,
-				["Ariose"] = true,
 				["Blitzfreeze"] = true,
+				["Padwan"] = true,
+				["Krabappel"] = true,
+				["Mowjowrizen"] = true,
+				["Chronny"] = true,
 				["Brittanian"] = true,
 				["Behindyyou"] = true,
 				["Ermonnix"] = true,
@@ -6417,11 +6417,11 @@ WIM3_Cache = {
 				["Lolyumadyet"] = true,
 				["Ieatcandles"] = true,
 				["Mutilåtrix"] = true,
-				["Ringofire"] = true,
+				["Jackelz"] = true,
 				["Titanmoo"] = true,
 				["Evanus"] = true,
 				["Jâckyl"] = true,
-				["Bánhammer"] = true,
+				["Leapingdead"] = true,
 				["Dahealermon"] = true,
 				["Pallybuns"] = true,
 				["Tomkeith"] = true,
@@ -6431,8 +6431,8 @@ WIM3_Cache = {
 				["Bahn"] = true,
 				["Lavaflows"] = true,
 				["Lolgetlocked"] = true,
-				["Dahleeya"] = true,
-				["Leapingdead"] = true,
+				["Darkvapor"] = true,
+				["Bánhammer"] = true,
 				["Chocokiller"] = true,
 				["Artouro"] = true,
 				["Dipspit"] = true,
@@ -6452,13 +6452,13 @@ WIM3_Cache = {
 				["Huggables"] = true,
 				["Côbra"] = true,
 				["Tymus"] = true,
-				["Triphorce"] = true,
-				["Pèrrin"] = true,
-				["Catbearcow"] = true,
-				["Kanza"] = true,
-				["Luvadea"] = true,
 				["Lohafal"] = true,
-				["Qoregoth"] = true,
+				["Pèrrin"] = true,
+				["Bloodlite"] = true,
+				["Kanza"] = true,
+				["Krackck"] = true,
+				["ßeastmøde"] = true,
+				["Luvadea"] = true,
 				["Nilrem"] = true,
 				["Azulá"] = true,
 				["Kiragagash"] = true,
@@ -6468,59 +6468,59 @@ WIM3_Cache = {
 				["Shadowhawkz"] = true,
 				["Noryssa"] = true,
 				["Lyem"] = true,
-				["Deathdiva"] = true,
-				["Nateddagreat"] = true,
+				["Icys"] = true,
+				["Vanshield"] = true,
 				["Dotdropnròll"] = true,
 				["Yachak"] = true,
 				["Cobgoblin"] = true,
 				["Ghavik"] = true,
-				["Headlok"] = true,
+				["Giantnator"] = true,
 				["Masmindice"] = true,
-				["Anadhel"] = true,
+				["Gulrok"] = true,
 				["Snil"] = true,
-				["Rawx"] = true,
+				["Minoreldo"] = true,
 				["Wolfrayet"] = true,
 				["Thezookeeper"] = true,
 				["ßææst"] = true,
 				["Täntrìk"] = true,
 				["Fllabers"] = true,
-				["Dweezy"] = true,
-				["Stankx"] = true,
+				["Bobcatmarley"] = true,
+				["Nateddagreat"] = true,
 				["Foolery"] = true,
-				["Bronsön"] = true,
-				["Giantnator"] = true,
-				["Boldog"] = true,
-				["Minoreldo"] = true,
-				["Antimidget"] = true,
-				["Zuljina"] = true,
-				["Mignamosh"] = true,
-				["Fallenanger"] = true,
 				["Gaiajin"] = true,
+				["Headlok"] = true,
+				["Boldog"] = true,
+				["Rawx"] = true,
+				["Dweezy"] = true,
+				["Zuljina"] = true,
+				["Kosoko"] = true,
+				["Fallenanger"] = true,
+				["Ampplified"] = true,
 				["Pustiul"] = true,
-				["Fearfuldots"] = true,
+				["Naturlich"] = true,
 				["Bangadoosh"] = true,
 				["Gorgonoth"] = true,
-				["Ampplified"] = true,
+				["Bronsön"] = true,
 				["Bludgeoned"] = true,
 				["Betrãyãl"] = true,
-				["Naturlich"] = true,
+				["Fearfuldots"] = true,
 				["Steveysbstaj"] = true,
-				["Iloveweewee"] = true,
-				["Cygnuss"] = true,
+				["Freefivefive"] = true,
+				["Garymfoak"] = true,
 				["Sämän"] = true,
 				["Metalstrike"] = true,
 				["Rahdok"] = true,
-				["Freefivefive"] = true,
-				["Schmoodle"] = true,
+				["Iloveweewee"] = true,
+				["Saräh"] = true,
 				["Mmojojojo"] = true,
 				["Oilblade"] = true,
 				["Gatrak"] = true,
-				["Garymfoak"] = true,
+				["Cygnuss"] = true,
 				["Metalcrit"] = true,
-				["Saräh"] = true,
+				["Schmoodle"] = true,
 				["Torshed"] = true,
-				["Omarelover"] = true,
-				["Toughmeàt"] = true,
+				["Deadflesh"] = true,
+				["Hugawar"] = true,
 				["Dragonmaster"] = true,
 				["Gallvatron"] = true,
 				["Garagos"] = true,
@@ -6535,116 +6535,116 @@ WIM3_Cache = {
 				["Legendaìry"] = true,
 				["Lestelle"] = true,
 				["Smàll"] = true,
-				["Huggyßær"] = true,
-				["Gahndii"] = true,
+				["Dragunn"] = true,
 				["Darkçide"] = true,
-				["Frostßyte"] = true,
 				["Axlfoley"] = true,
+				["Frostßyte"] = true,
+				["Gahndii"] = true,
 				["Antroz"] = true,
 				["Shampop"] = true,
 				["Flizzocka"] = true,
 				["Iphito"] = true,
 				["Kaelli"] = true,
-				["Fluffyikins"] = true,
+				["Iamthebeast"] = true,
 				["Ersias"] = true,
 				["Shftonmyhand"] = true,
 				["Brutavious"] = true,
 				["Torvv"] = true,
-				["Iamthebeast"] = true,
+				["Fluffyikins"] = true,
 				["Lygolas"] = true,
 				["Shamtastico"] = true,
 				["Ghartekth"] = true,
-				["Stormcåster"] = true,
+				["Kabboom"] = true,
 				["Balaith"] = true,
-				["Fabolous"] = true,
+				["Mastrpastor"] = true,
 				["Skrïllex"] = true,
 				["Amorash"] = true,
 				["Jezzi"] = true,
 				["Igne"] = true,
 				["Kaidii"] = true,
 				["Sagany"] = true,
-				["Infamouzsham"] = true,
+				["Deathbycocoa"] = true,
 				["Grangacious"] = true,
 				["Munford"] = true,
 				["Clars"] = true,
-				["Grassgrazer"] = true,
+				["Markuus"] = true,
 				["Nymithius"] = true,
 				["Celilley"] = true,
 				["Coffeebreath"] = true,
-				["Markuus"] = true,
+				["Grassgrazer"] = true,
 				["Holycowzs"] = true,
 				["Yeehe"] = true,
 				["Ghostchant"] = true,
 				["Manduchuva"] = true,
-				["Allirgay"] = true,
-				["Ceto"] = true,
-				["Hakosuka"] = true,
-				["Bloggie"] = true,
-				["Gotchahehe"] = true,
+				["Osteo"] = true,
+				["Hackedcorpes"] = true,
+				["Dotsálots"] = true,
+				["Voidflame"] = true,
+				["Hething"] = true,
 				["Eegeegurgur"] = true,
 				["Engãge"] = true,
-				["Kittychaos"] = true,
-				["Osteo"] = true,
+				["Illdoctore"] = true,
+				["Allirgay"] = true,
 				["Jasonnia"] = true,
 				["Alliihunter"] = true,
 				["Gillias"] = true,
 				["Hodgepodge"] = true,
-				["Infamouzshot"] = true,
-				["Gobblegobbel"] = true,
+				["Scalet"] = true,
+				["Brittnè"] = true,
 				["Zigzagroller"] = true,
-				["Chewnok"] = true,
-				["Fatherbull"] = true,
+				["Danak"] = true,
+				["Ceto"] = true,
 				["Durkzert"] = true,
-				["Dotsálots"] = true,
-				["Leko"] = true,
+				["Hakosuka"] = true,
+				["Gotchahehe"] = true,
 				["Lunatîc"] = true,
 				["Beasthealz"] = true,
-				["Squælßoii"] = true,
+				["Fetidfaith"] = true,
 				["Armsandlegs"] = true,
 				["Satheiesh"] = true,
-				["Shapeyshifty"] = true,
+				["Gobblegobbel"] = true,
 				["Grokz"] = true,
-				["Wickens"] = true,
-				["Danak"] = true,
-				["Jenkiins"] = true,
+				["Jägerr"] = true,
+				["Chewnok"] = true,
+				["Hugawolf"] = true,
 				["Teheurdead"] = true,
-				["Tehkumshu"] = true,
+				["Dogbane"] = true,
 				["Déstíny"] = true,
 				["Anchormän"] = true,
 				["Shftthegreat"] = true,
-				["Hackedcorpes"] = true,
+				["Fatherbull"] = true,
 				["Garomocko"] = true,
 				["Infamouzmage"] = true,
-				["Bullkrap"] = true,
-				["Vagalisios"] = true,
-				["Fetidfaith"] = true,
-				["Slornn"] = true,
+				["Floyð"] = true,
+				["Dreadbear"] = true,
+				["Sabèlla"] = true,
+				["Pvtpyre"] = true,
 				["Isotopes"] = true,
-				["Yussuf"] = true,
-				["Hugawolf"] = true,
+				["Marijuano"] = true,
+				["Jenkiins"] = true,
 				["Sagas"] = true,
 				["Vuisugar"] = true,
-				["Laughinstock"] = true,
+				["Mannapause"] = true,
 				["Stierfaust"] = true,
 				["Skiiba"] = true,
 				["Bossis"] = true,
 				["Ruester"] = true,
 				["Huntbuns"] = true,
-				["Floyð"] = true,
-				["Húñtárd"] = true,
+				["Bullkrap"] = true,
+				["Vagalisios"] = true,
 				["Blackshadowz"] = true,
-				["Healammus"] = true,
+				["Angelofnight"] = true,
 				["Mundõ"] = true,
 				["Ragecase"] = true,
 				["Bigbad"] = true,
-				["Pvtpyre"] = true,
-				["Lirette"] = true,
+				["Slornn"] = true,
+				["Yussuf"] = true,
 				["Legendaíry"] = true,
-				["Hubertwalter"] = true,
-				["Allesdeana"] = true,
+				["Healammus"] = true,
+				["Morfiusx"] = true,
 				["Dyron"] = true,
 				["Garotits"] = true,
-				["Zinluz"] = true,
+				["Undeadjake"] = true,
 				["Gangrelated"] = true,
 				["Chinmusic"] = true,
 				["Sáito"] = true,
@@ -6658,85 +6658,85 @@ WIM3_Cache = {
 				["Iqbal"] = true,
 				["Tezzi"] = true,
 				["Kuttok"] = true,
-				["Siiafu"] = true,
-				["Istabhard"] = true,
 				["Pepit"] = true,
+				["Istabhard"] = true,
+				["Siiafu"] = true,
 				["Addamm"] = true,
 				["Ohnoreroll"] = true,
 				["Drodthefirst"] = true,
 				["Bedanta"] = true,
 				["Archimagius"] = true,
 				["Nìno"] = true,
-				["Morfiusx"] = true,
+				["Allesdeana"] = true,
 				["Rut"] = true,
-				["Angelofnight"] = true,
-				["Marijuano"] = true,
-				["Sabèlla"] = true,
-				["Undeadjake"] = true,
-				["Dreadbear"] = true,
+				["Hubertwalter"] = true,
+				["Lirette"] = true,
+				["Squælßoii"] = true,
+				["Zinluz"] = true,
+				["Húñtárd"] = true,
 				["Totembuns"] = true,
 				["Drwarwick"] = true,
 				["Tazroz"] = true,
-				["Mannapause"] = true,
+				["Reginigel"] = true,
 				["Nokanda"] = true,
 				["Shortnstubby"] = true,
 				["Xmurder"] = true,
-				["Dogbane"] = true,
-				["Reginigel"] = true,
+				["Tehkumshu"] = true,
+				["Laughinstock"] = true,
 				["Wisemidget"] = true,
-				["Brittnè"] = true,
+				["Shapeyshifty"] = true,
 				["Mó"] = true,
-				["Hething"] = true,
-				["Jägerr"] = true,
-				["Scalet"] = true,
-				["Illdoctore"] = true,
+				["Leko"] = true,
+				["Wickens"] = true,
+				["Infamouzshot"] = true,
+				["Kittychaos"] = true,
 				["Tåñkñÿöshïñz"] = true,
 				["Presto"] = true,
 				["Demonizerr"] = true,
 				["Shao"] = true,
-				["Voidflame"] = true,
+				["Bloggie"] = true,
 				["Orangezftw"] = true,
-				["Deathbycocoa"] = true,
+				["Infamouzsham"] = true,
 				["Herpthederp"] = true,
 				["Árthus"] = true,
-				["Mastrpastor"] = true,
-				["Kabboom"] = true,
+				["Fabolous"] = true,
+				["Stormcåster"] = true,
 				["Sapping"] = true,
 				["Valekorn"] = true,
 				["Aeronine"] = true,
 				["Magicslaya"] = true,
-				["Dragunn"] = true,
+				["Huggyßær"] = true,
 				["Sarennis"] = true,
 				["Xsjadow"] = true,
 				["Hotmeat"] = true,
 				["Kathol"] = true,
 				["Gragenicus"] = true,
-				["Scaredycat"] = true,
-				["Deadflesh"] = true,
-				["Gimmehalf"] = true,
-				["Hugawar"] = true,
 				["Murkkum"] = true,
-				["Layyoutorest"] = true,
-				["Nyesky"] = true,
+				["Omarelover"] = true,
+				["Gimmehalf"] = true,
+				["Toughmeàt"] = true,
+				["Scaredycat"] = true,
 				["Darknstormy"] = true,
+				["Nyesky"] = true,
+				["Layyoutorest"] = true,
 				["Heferweizen"] = true,
 				["Nattalie"] = true,
 				["Kastratikron"] = true,
-				["Kosoko"] = true,
-				["Bobcatmarley"] = true,
-				["Vanshield"] = true,
+				["Mignamosh"] = true,
+				["Antimidget"] = true,
+				["Stankx"] = true,
 				["Dirtyplay"] = true,
-				["Gulrok"] = true,
+				["Anadhel"] = true,
 				["Kje"] = true,
 				["Milkytreat"] = true,
-				["Icys"] = true,
+				["Deathdiva"] = true,
 				["Jackychang"] = true,
 				["Blinked"] = true,
-				["ßeastmøde"] = true,
-				["Krackck"] = true,
+				["Triphorce"] = true,
+				["Qoregoth"] = true,
 				["Doomu"] = true,
 				["Tzerra"] = true,
-				["Bloodlite"] = true,
+				["Catbearcow"] = true,
 				["Majachii"] = true,
 				["Poedust"] = true,
 				["Shiftedways"] = true,
@@ -6746,14 +6746,14 @@ WIM3_Cache = {
 				["Vigilaance"] = true,
 				["Rhanx"] = true,
 				["Acornn"] = true,
-				["Darkvapor"] = true,
+				["Dahleeya"] = true,
 				["Hiadu"] = true,
-				["Jackelz"] = true,
+				["Ringofire"] = true,
 				["Shroomnoms"] = true,
 				["Kevert"] = true,
 				["Myartismurdr"] = true,
-				["Mowjowrizen"] = true,
-				["Hooflungpoo"] = true,
+				["Ariose"] = true,
+				["Aldamir"] = true,
 				["Blackaegis"] = true,
 				["Likeoj"] = true,
 				["Mysticalminx"] = true,
@@ -6764,7 +6764,7 @@ WIM3_Cache = {
 				["Sliptrip"] = true,
 				["Spartaçus"] = true,
 				["Rhymez"] = true,
-				["Jersey"] = true,
+				["Yelly"] = true,
 				["Kudru"] = true,
 				["Oomorc"] = true,
 				["Nightmareboy"] = true,
@@ -6785,11 +6785,11 @@ WIM3_Cache = {
 				["|Kg34|k00000|k |Ks34|k00000000|k"] = 2,
 				["|Kg33|k000|k |Ks33|k0000000|k"] = 2,
 				["|Kg38|k000|k |Ks38|k00000000|k"] = 2,
-				["Rordy"] = 1,
 				["|Kg36|k000000|k |Ks36|k0000|k"] = 2,
+				["|Kg39|k00000|k |Ks39|k00000|k"] = 2,
 				["Lyesmith"] = 1,
 				["|Kg35|k00000|k |Ks35|k0000000|k"] = 2,
-				["|Kg39|k00000|k |Ks39|k00000|k"] = 2,
+				["Rordy"] = 1,
 				["Acropolis"] = 1,
 				["Takaweed"] = 1,
 			},
@@ -6807,14 +6807,14 @@ WIM3_Cache = {
 		},
 		["Praedator"] = {
 			["friendList"] = {
-				["|Kg163|k00000|k |Ks163|k00000|k"] = 2,
+				["|Kg158|k00000|k |Ks158|k0000000|k"] = 2,
 				["|Kg161|k0000000|k |Ks161|k0000000|k"] = 2,
 				["|Kg157|k00000|k |Ks157|k00000000|k"] = 2,
 				["|Kg162|k000|k |Ks162|k00000000|k"] = 2,
-				["|Kg158|k00000|k |Ks158|k0000000|k"] = 2,
+				["|Kg163|k00000|k |Ks163|k00000|k"] = 2,
 				["|Kg159|k00000|k |Ks159|k00000000|k"] = 2,
-				["|Kg160|k000000|k |Ks160|k0000|k"] = 2,
 				["|Kg156|k000|k |Ks156|k0000000|k"] = 2,
+				["|Kg160|k000000|k |Ks160|k0000|k"] = 2,
 			},
 			["guildList"] = {
 				["Drunkle"] = true,
@@ -6868,11 +6868,11 @@ WIM3_Cache = {
 				["Tuskdruid"] = true,
 				["Shampop"] = true,
 				["Smoothblood"] = true,
-				["Ghõst"] = true,
+				["Yogsotthoth"] = true,
 				["Xevoz"] = true,
 				["Belicose"] = true,
 				["Swaggerz"] = true,
-				["Yogsotthoth"] = true,
+				["Ghõst"] = true,
 				["Searof"] = true,
 				["Ihealukill"] = true,
 				["Truu"] = true,
@@ -6885,12 +6885,12 @@ WIM3_Cache = {
 				["Grïmm"] = true,
 				["Rhymez"] = true,
 				["Minneme"] = true,
-				["Âlzheimers"] = true,
 				["Joonga"] = true,
+				["Âlzheimers"] = true,
 				["Lykeduhz"] = true,
-				["Zombiejoe"] = true,
-				["Sâlèna"] = true,
 				["Bleater"] = true,
+				["Sâlèna"] = true,
+				["Zombiejoe"] = true,
 				["Taurmark"] = true,
 				["Nilrem"] = true,
 				["Skulsplitter"] = true,
@@ -6903,9 +6903,9 @@ WIM3_Cache = {
 				["Silean"] = true,
 				["Dreadbeat"] = true,
 				["Boardrpatrol"] = true,
-				["Otrum"] = true,
-				["Rumpleteåzer"] = true,
 				["Guildz"] = true,
+				["Rumpleteåzer"] = true,
+				["Otrum"] = true,
 				["Breekachu"] = true,
 				["Linzii"] = true,
 				["Fissile"] = true,
@@ -6943,20 +6943,20 @@ WIM3_Cache = {
 				["Tomkeith"] = true,
 				["Stoge"] = true,
 				["Flapjackz"] = true,
-				["Chocokiller"] = true,
+				["Dexe"] = true,
 				["Bahn"] = true,
-				["Lavaflows"] = true,
+				["Shiftedways"] = true,
 				["Lolgetlocked"] = true,
 				["Dahleeya"] = true,
 				["Bánhammer"] = true,
-				["Dexe"] = true,
+				["Chocokiller"] = true,
 				["Artouro"] = true,
 				["Darkvapor"] = true,
 				["Zandrika"] = true,
 				["Leapingdead"] = true,
-				["Raitaro"] = true,
-				["Adrial"] = true,
 				["Sorbetto"] = true,
+				["Adrial"] = true,
+				["Raitaro"] = true,
 				["Macadoo"] = true,
 				["Rønk"] = true,
 				["Bowsnhos"] = true,
@@ -6968,30 +6968,30 @@ WIM3_Cache = {
 				["Huggables"] = true,
 				["Poedust"] = true,
 				["Lohafal"] = true,
-				["Catbearcow"] = true,
-				["Pèrrin"] = true,
 				["Bloodlite"] = true,
+				["Pèrrin"] = true,
+				["Catbearcow"] = true,
 				["Kanza"] = true,
 				["Nightmareboy"] = true,
-				["Luvadea"] = true,
 				["Qoregoth"] = true,
+				["Luvadea"] = true,
 				["Krackck"] = true,
 				["Azulá"] = true,
 				["Devzz"] = true,
-				["Darknstormy"] = true,
+				["Fearfuldots"] = true,
 				["Lackhar"] = true,
 				["Mardek"] = true,
 				["Dotdropnròll"] = true,
 				["Noryssa"] = true,
-				["Vanshield"] = true,
-				["Icys"] = true,
-				["Headlok"] = true,
-				["Bobcatmarley"] = true,
-				["Shadowhawkz"] = true,
+				["Nateddagreat"] = true,
+				["Deathdiva"] = true,
+				["Lestelle"] = true,
+				["Dweezy"] = true,
+				["Yachak"] = true,
 				["Cobgoblin"] = true,
 				["Ghavik"] = true,
 				["Mignamosh"] = true,
-				["Lyem"] = true,
+				["Masmindice"] = true,
 				["Gulrok"] = true,
 				["Snil"] = true,
 				["Pustiul"] = true,
@@ -7000,44 +7000,44 @@ WIM3_Cache = {
 				["ßææst"] = true,
 				["Täntrìk"] = true,
 				["Fllabers"] = true,
-				["Fearfuldots"] = true,
-				["Nateddagreat"] = true,
+				["Naturlich"] = true,
+				["Vanshield"] = true,
 				["Foolery"] = true,
-				["Ampplified"] = true,
-				["Giantnator"] = true,
+				["Gaiajin"] = true,
+				["Headlok"] = true,
 				["Boldog"] = true,
 				["Minoreldo"] = true,
-				["Dweezy"] = true,
+				["Bobcatmarley"] = true,
 				["Zuljina"] = true,
 				["Kosoko"] = true,
 				["Dusek"] = true,
 				["Gorgonoth"] = true,
 				["Fallenanger"] = true,
-				["Layyoutorest"] = true,
+				["Darknstormy"] = true,
 				["Bangadoosh"] = true,
-				["Murkkum"] = true,
-				["Bronsön"] = true,
+				["Cygnuss"] = true,
+				["Ampplified"] = true,
 				["Bludgeoned"] = true,
 				["Betrãyãl"] = true,
-				["Iloveweewee"] = true,
+				["Flizzocka"] = true,
 				["Steveysbstaj"] = true,
 				["Gimmehalf"] = true,
-				["Omarelover"] = true,
+				["Deadflesh"] = true,
 				["Sämän"] = true,
 				["Metalstrike"] = true,
-				["Cygnuss"] = true,
-				["Freefivefive"] = true,
-				["Saräh"] = true,
+				["Murkkum"] = true,
+				["Iloveweewee"] = true,
+				["Schmoodle"] = true,
 				["Mmojojojo"] = true,
 				["Oilblade"] = true,
 				["Gatrak"] = true,
 				["Kathol"] = true,
 				["Metalcrit"] = true,
-				["Dragonmaster"] = true,
-				["Torshed"] = true,
-				["Deadflesh"] = true,
-				["Hugawar"] = true,
 				["Kaelli"] = true,
+				["Torshed"] = true,
+				["Omarelover"] = true,
+				["Toughmeàt"] = true,
+				["Dragonmaster"] = true,
 				["Gallvatron"] = true,
 				["Xsjadow"] = true,
 				["Majachii"] = true,
@@ -7058,7 +7058,7 @@ WIM3_Cache = {
 				["Gahndii"] = true,
 				["Antroz"] = true,
 				["Chronny"] = true,
-				["Iamthebeast"] = true,
+				["Fluffyikins"] = true,
 				["Iphito"] = true,
 				["Fabolous"] = true,
 				["Skrïllex"] = true,
@@ -7066,16 +7066,16 @@ WIM3_Cache = {
 				["Shftonmyhand"] = true,
 				["Brutavious"] = true,
 				["Torvv"] = true,
-				["Fluffyikins"] = true,
+				["Iamthebeast"] = true,
 				["Lygolas"] = true,
-				["Jezzi"] = true,
+				["Shamtastico"] = true,
 				["Igne"] = true,
-				["Stormcåster"] = true,
+				["Kabboom"] = true,
 				["Balaith"] = true,
 				["Mastrpastor"] = true,
 				["Addamm"] = true,
-				["Amorash"] = true,
-				["Shamtastico"] = true,
+				["Istabhard"] = true,
+				["Jezzi"] = true,
 				["Ghartekth"] = true,
 				["Tezzi"] = true,
 				["Aegie"] = true,
@@ -7089,76 +7089,76 @@ WIM3_Cache = {
 				["Coffeebreath"] = true,
 				["Markuus"] = true,
 				["Yeehe"] = true,
-				["Voidflame"] = true,
+				["Bloggie"] = true,
 				["Ghostchant"] = true,
 				["Manduchuva"] = true,
-				["Gotchahehe"] = true,
-				["Infamouzshot"] = true,
-				["Jägerr"] = true,
-				["Holycowzs"] = true,
 				["Hething"] = true,
-				["Eegeegurgur"] = true,
-				["Engãge"] = true,
-				["Illdoctore"] = true,
-				["Allirgay"] = true,
-				["Jasonnia"] = true,
-				["Alliihunter"] = true,
-				["Gillias"] = true,
-				["Hodgepodge"] = true,
 				["Scalet"] = true,
 				["Zigzagroller"] = true,
-				["Floyð"] = true,
-				["Ceto"] = true,
+				["Voidflame"] = true,
+				["Gotchahehe"] = true,
+				["Eegeegurgur"] = true,
+				["Engãge"] = true,
+				["Kittychaos"] = true,
+				["Osteo"] = true,
+				["Jasonnia"] = true,
+				["Alliihunter"] = true,
+				["Armsandlegs"] = true,
+				["Hodgepodge"] = true,
+				["Infamouzshot"] = true,
+				["Jägerr"] = true,
+				["Infamouzmage"] = true,
+				["Hackedcorpes"] = true,
 				["Garomocko"] = true,
 				["Durkzert"] = true,
-				["Hakosuka"] = true,
+				["Dotsálots"] = true,
 				["Leko"] = true,
 				["Lunatîc"] = true,
-				["Squælßoii"] = true,
+				["Sabèlla"] = true,
 				["Vuisugar"] = true,
-				["Armsandlegs"] = true,
-				["Laughinstock"] = true,
-				["Shapeyshifty"] = true,
+				["Gillias"] = true,
+				["Mannapause"] = true,
+				["Brittnè"] = true,
 				["Grokz"] = true,
 				["Wickens"] = true,
 				["Chewnok"] = true,
 				["Skiiba"] = true,
 				["Drwarwick"] = true,
-				["Dogbane"] = true,
+				["Tehkumshu"] = true,
 				["Déstíny"] = true,
 				["Anchormän"] = true,
-				["Infamouzmage"] = true,
-				["Hackedcorpes"] = true,
+				["Floyð"] = true,
+				["Ceto"] = true,
 				["Beasthealz"] = true,
-				["Húñtárd"] = true,
-				["Bigbad"] = true,
-				["Sabèlla"] = true,
-				["Slornn"] = true,
-				["Marijuano"] = true,
+				["Vagalisios"] = true,
+				["Zinluz"] = true,
+				["Fetidfaith"] = true,
+				["Pvtpyre"] = true,
+				["Lirette"] = true,
 				["Isotopes"] = true,
 				["Rut"] = true,
 				["Hugawolf"] = true,
 				["Sagas"] = true,
 				["Satheiesh"] = true,
-				["Reginigel"] = true,
+				["Laughinstock"] = true,
 				["Stierfaust"] = true,
-				["Porthosubx"] = true,
+				["Teheurdead"] = true,
 				["Bossis"] = true,
 				["Ruester"] = true,
 				["Huntbuns"] = true,
 				["Bullkrap"] = true,
-				["Dreadbear"] = true,
-				["Angelofnight"] = true,
+				["Húñtárd"] = true,
+				["Hubertwalter"] = true,
 				["Mundõ"] = true,
-				["Zinluz"] = true,
+				["Bigbad"] = true,
 				["Ragecase"] = true,
 				["Aiomios"] = true,
-				["Pvtpyre"] = true,
-				["Yussuf"] = true,
+				["Slornn"] = true,
+				["Marijuano"] = true,
 				["Legendaíry"] = true,
-				["Healammus"] = true,
-				["Morfiusx"] = true,
-				["Dyron"] = true,
+				["Angelofnight"] = true,
+				["Allesdeana"] = true,
+				["Sliiz"] = true,
 				["Garotits"] = true,
 				["Undeadjake"] = true,
 				["Gangrelated"] = true,
@@ -7172,9 +7172,9 @@ WIM3_Cache = {
 				["Clars"] = true,
 				["Danak"] = true,
 				["Iqbal"] = true,
-				["Siiafu"] = true,
-				["Kuttok"] = true,
 				["Pepit"] = true,
+				["Kuttok"] = true,
+				["Siiafu"] = true,
 				["Fatherbull"] = true,
 				["Sibette"] = true,
 				["Gobblegobbel"] = true,
@@ -7183,39 +7183,39 @@ WIM3_Cache = {
 				["Bedanta"] = true,
 				["Archimagius"] = true,
 				["Nìno"] = true,
-				["Sliiz"] = true,
+				["Dyron"] = true,
 				["Blackshadowz"] = true,
-				["Allesdeana"] = true,
-				["Hubertwalter"] = true,
-				["Fetidfaith"] = true,
-				["Lirette"] = true,
-				["Vagalisios"] = true,
+				["Morfiusx"] = true,
+				["Healammus"] = true,
+				["Squælßoii"] = true,
+				["Yussuf"] = true,
+				["Dreadbear"] = true,
 				["Totembuns"] = true,
 				["Shftthegreat"] = true,
 				["Tazroz"] = true,
-				["Mannapause"] = true,
+				["Reginigel"] = true,
 				["Nokanda"] = true,
 				["Shortnstubby"] = true,
 				["Xmurder"] = true,
-				["Tehkumshu"] = true,
-				["Teheurdead"] = true,
+				["Dogbane"] = true,
+				["Porthosubx"] = true,
 				["Wisemidget"] = true,
-				["Brittnè"] = true,
+				["Shapeyshifty"] = true,
 				["Mó"] = true,
-				["Dotsálots"] = true,
-				["Osteo"] = true,
-				["Kittychaos"] = true,
-				["Bloggie"] = true,
+				["Hakosuka"] = true,
+				["Allirgay"] = true,
+				["Illdoctore"] = true,
+				["Holycowzs"] = true,
 				["Tåñkñÿöshïñz"] = true,
 				["Presto"] = true,
 				["Demonizerr"] = true,
 				["Nymithius"] = true,
 				["Kaidii"] = true,
 				["Orangezftw"] = true,
-				["Istabhard"] = true,
+				["Amorash"] = true,
 				["Herpthederp"] = true,
 				["Árthus"] = true,
-				["Kabboom"] = true,
+				["Stormcåster"] = true,
 				["Darkçide"] = true,
 				["Sapping"] = true,
 				["Valekorn"] = true,
@@ -7224,25 +7224,25 @@ WIM3_Cache = {
 				["Rawx"] = true,
 				["Antimidget"] = true,
 				["Selààn"] = true,
-				["Schmoodle"] = true,
+				["Saräh"] = true,
 				["Garagos"] = true,
 				["Gragenicus"] = true,
-				["Garymfoak"] = true,
-				["Toughmeàt"] = true,
-				["Rahdok"] = true,
-				["Flizzocka"] = true,
 				["Scaredycat"] = true,
-				["Naturlich"] = true,
+				["Hugawar"] = true,
+				["Rahdok"] = true,
+				["Freefivefive"] = true,
+				["Garymfoak"] = true,
+				["Layyoutorest"] = true,
 				["Nyesky"] = true,
-				["Gaiajin"] = true,
+				["Bronsön"] = true,
 				["Heferweizen"] = true,
 				["Nattalie"] = true,
 				["Kastratikron"] = true,
-				["Lestelle"] = true,
-				["Masmindice"] = true,
-				["Yachak"] = true,
+				["Giantnator"] = true,
+				["Lyem"] = true,
+				["Shadowhawkz"] = true,
 				["Dirtyplay"] = true,
-				["Deathdiva"] = true,
+				["Icys"] = true,
 				["Kje"] = true,
 				["Milkytreat"] = true,
 				["Mankrik"] = true,
@@ -7258,7 +7258,7 @@ WIM3_Cache = {
 				["Jersey"] = true,
 				["Swaghole"] = true,
 				["Tumms"] = true,
-				["Shiftedways"] = true,
+				["Lavaflows"] = true,
 				["Vigilaance"] = true,
 				["Rhanx"] = true,
 				["Acornn"] = true,
@@ -7298,21 +7298,21 @@ WIM3_Cache = {
 	["Khadgar"] = {
 		["Letheliarah"] = {
 			["friendList"] = {
-				["|Kg288|k00000|k |Ks288|k00000000|k"] = 2,
-				["|Kg298|k0000|k |Ks298|k0000000|k"] = 2,
 				["|Kg296|k000000|k |Ks296|k0000|k"] = 2,
-				["|Kg289|k000|k |Ks289|k00000000|k"] = 2,
-				["|Kg293|k0000000|k |Ks293|k00000|k"] = 2,
-				["|Kg287|k00000|k |Ks287|k0000000|k"] = 2,
+				["|Kg298|k0000|k |Ks298|k0000000|k"] = 2,
+				["|Kg288|k00000|k |Ks288|k00000000|k"] = 2,
+				["|Kg295|k00000|k |Ks295|k00000000|k"] = 2,
+				["|Kg297|k00000000|k |Ks297|k000000|k"] = 2,
+				["|Kg294|k000000|k |Ks294|k0000000|k"] = 2,
 				["|Kg284|k000000|k |Ks284|k000000|k"] = 2,
 				["|Kg290|k00000000|k |Ks290|k000|k"] = 2,
-				["|Kg297|k00000000|k |Ks297|k000000|k"] = 2,
+				["|Kg293|k0000000|k |Ks293|k00000|k"] = 2,
 				["|Kg285|k00000|k |Ks285|k000000000|k"] = 2,
 				["|Kg286|k000|k |Ks286|k0000000|k"] = 2,
 				["|Kg292|k00000|k |Ks292|k00000|k"] = 2,
 				["|Kg291|k00000|k |Ks291|k000000000|k"] = 2,
-				["|Kg294|k000000|k |Ks294|k0000000|k"] = 2,
-				["|Kg295|k00000|k |Ks295|k00000000|k"] = 2,
+				["|Kg287|k00000|k |Ks287|k0000000|k"] = 2,
+				["|Kg289|k000|k |Ks289|k00000000|k"] = 2,
 			},
 		},
 	},
@@ -7331,14 +7331,14 @@ WIM3_Cache = {
 		},
 		["Bostagus"] = {
 			["friendList"] = {
-				["|Kg113|k000000|k |Ks113|k0000|k"] = 2,
+				["|Kg115|k000000000|k |Ks115|k000000000|k"] = 2,
 				["|Kg112|k00000|k |Ks112|k00000000|k"] = 2,
 				["|Kg118|k00000|k |Ks118|k00000|k"] = 2,
 				["|Kg117|k00000|k |Ks117|k0000000|k"] = 2,
 				["|Kg111|k000|k |Ks111|k0000000|k"] = 2,
 				["|Kg116|k000|k |Ks116|k00000000|k"] = 2,
+				["|Kg113|k000000|k |Ks113|k0000|k"] = 2,
 				["|Kg114|k0000000|k |Ks114|k0000000|k"] = 2,
-				["|Kg115|k000000000|k |Ks115|k000000000|k"] = 2,
 			},
 		},
 		["Eanwor"] = {
@@ -7347,8 +7347,8 @@ WIM3_Cache = {
 				["|Kg78|k00000|k |Ks78|k0000000|k"] = 2,
 				["|Kg75|k0000000|k |Ks75|k0000000|k"] = 2,
 				["|Kg73|k00000|k |Ks73|k00000000|k"] = 2,
-				["|Kg77|k000|k |Ks77|k00000000|k"] = 2,
 				["|Kg79|k00000|k |Ks79|k00000|k"] = 2,
+				["|Kg77|k000|k |Ks77|k00000000|k"] = 2,
 				["|Kg74|k000000|k |Ks74|k0000|k"] = 2,
 				["|Kg76|k000000000|k |Ks76|k000000000|k"] = 2,
 			},
@@ -7358,11 +7358,24 @@ WIM3_Cache = {
 				["|Kg99|k00000|k |Ks99|k00000000|k"] = 2,
 				["|Kg104|k00000|k |Ks104|k0000000|k"] = 2,
 				["|Kg101|k0000000|k |Ks101|k0000000|k"] = 2,
-				["|Kg102|k000000000|k |Ks102|k000000000|k"] = 2,
 				["|Kg103|k000|k |Ks103|k00000000|k"] = 2,
-				["|Kg100|k000000|k |Ks100|k0000|k"] = 2,
-				["|Kg105|k00000|k |Ks105|k00000|k"] = 2,
+				["|Kg102|k000000000|k |Ks102|k000000000|k"] = 2,
 				["|Kg98|k000|k |Ks98|k0000000|k"] = 2,
+				["|Kg105|k00000|k |Ks105|k00000|k"] = 2,
+				["|Kg100|k000000|k |Ks100|k0000|k"] = 2,
+			},
+		},
+	},
+	["Alleria"] = {
+		["Corded"] = {
+			["friendList"] = {
+				["|Kg34|k000|k |Ks34|k00000000|k"] = 2,
+				["|Kg31|k000000|k |Ks31|k0000|k"] = 2,
+				["|Kg32|k0000000|k |Ks32|k0000000|k"] = 2,
+				["|Kg30|k00000|k |Ks30|k00000000|k"] = 2,
+				["|Kg29|k000|k |Ks29|k0000000|k"] = 2,
+				["|Kg35|k00000|k |Ks35|k00000|k"] = 2,
+				["|Kg33|k000000000|k |Ks33|k000000000|k"] = 2,
 			},
 		},
 	},
@@ -7382,10 +7395,10 @@ WIM3_Cache = {
 				["|Kf690|k000000000|k"] = 2,
 				["|Kf700|k0000000|k"] = 2,
 				["|Kf691|k00000000000|k"] = 2,
-				["|Kf684|k000000000|k"] = 2,
 				["|Kf703|k00000000000000|k"] = 2,
-				["|Kf701|k00000000000|k"] = 2,
+				["|Kf684|k000000000|k"] = 2,
 				["|Kf694|k000000000000|k"] = 2,
+				["|Kf701|k00000000000|k"] = 2,
 				["|Kf696|k00000|k"] = 2,
 				["|Kf687|k000000|k"] = 2,
 				["|Kf704|k000000000000000|k"] = 2,
@@ -7394,19 +7407,6 @@ WIM3_Cache = {
 				["|Kf705|k000000000000|k"] = 2,
 				["|Kf689|k00000000000|k"] = 2,
 				["|Kf686|k000000000000000|k"] = 2,
-			},
-		},
-	},
-	["Alleria"] = {
-		["Corded"] = {
-			["friendList"] = {
-				["|Kg34|k000|k |Ks34|k00000000|k"] = 2,
-				["|Kg31|k000000|k |Ks31|k0000|k"] = 2,
-				["|Kg32|k0000000|k |Ks32|k0000000|k"] = 2,
-				["|Kg30|k00000|k |Ks30|k00000000|k"] = 2,
-				["|Kg29|k000|k |Ks29|k0000000|k"] = 2,
-				["|Kg35|k00000|k |Ks35|k00000|k"] = 2,
-				["|Kg33|k000000000|k |Ks33|k000000000|k"] = 2,
 			},
 		},
 	},
@@ -7516,210 +7516,7790 @@ WIM3_Filters = {
 }
 WIM3_History = {
 	["Kel'Thuzad"] = {
-		["Ponk"] = {
-			["Kzmike"] = {
+		["Opacus"] = {
+			["Silentsight"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356200744,
-					["from"] = "Ponk",
-					["msg"] = "yoyo",
-					["inbound"] = false,
-					["convo"] = "Kzmike",
+					["time"] = 1357335827,
+					["from"] = "Silentsight",
+					["msg"] = "do you happen to have any  |cff0070dd|Hitem:76061:0:0:0:0:0:0:1879931904:90:0:0|h[Spirit of Harmony]|h|r?",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
 				}, -- [1]
 				{
 					["type"] = 1,
-					["time"] = 1356202096,
-					["from"] = "Ponk",
-					["msg"] = "yo",
+					["time"] = 1357335875,
+					["from"] = "Opacus",
+					["msg"] = "ya",
 					["inbound"] = false,
-					["convo"] = "Kzmike",
+					["convo"] = "Silentsight",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1356202107,
-					["from"] = "Kzmike",
-					["msg"] = "whats up",
-					["inbound"] = true,
-					["convo"] = "Kzmike",
+					["time"] = 1357335887,
+					["from"] = "Opacus",
+					["msg"] = "what do u need?",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
 				}, -- [3]
 				{
 					["type"] = 1,
-					["time"] = 1356202115,
-					["from"] = "Kzmike",
-					["msg"] = "who is this",
+					["time"] = 1357335897,
+					["from"] = "Silentsight",
+					["msg"] = "if i send you 50 exotic leather do you think you could make me angerhide leg armor?",
 					["inbound"] = true,
-					["convo"] = "Kzmike",
+					["convo"] = "Silentsight",
 				}, -- [4]
 				{
 					["type"] = 1,
-					["time"] = 1356202117,
-					["from"] = "Ponk",
-					["msg"] = "Its Opacus.. is there any1 online who can invite this alt?",
-					["inbound"] = false,
-					["convo"] = "Kzmike",
+					["time"] = 1357335907,
+					["from"] = "Silentsight",
+					["msg"] = "ill pay you for the spirit",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
 				}, -- [5]
 				{
 					["type"] = 1,
-					["time"] = 1356202133,
-					["from"] = "Ponk",
-					["msg"] = "ty",
+					["time"] = 1357335909,
+					["from"] = "Opacus",
+					["msg"] = "who is this",
 					["inbound"] = false,
-					["convo"] = "Kzmike",
+					["convo"] = "Silentsight",
 				}, -- [6]
-				["info"] = {
-				},
-			},
-			["Wackahoe"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356208350,
-					["from"] = "Ponk",
-					["msg"] = "reported",
-					["inbound"] = false,
-					["convo"] = "Wackahoe",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Seteh"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356200736,
-					["from"] = "Ponk",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Seteh",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Duhai"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356199714,
-					["from"] = "Ponk",
-					["msg"] = "beat it",
-					["inbound"] = false,
-					["convo"] = "Duhai",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356199752,
-					["from"] = "Duhai",
-					["msg"] = "lol, oh please",
+					["time"] = 1357335914,
+					["from"] = "Silentsight",
+					["msg"] = "silent lol",
 					["inbound"] = true,
-					["convo"] = "Duhai",
+					["convo"] = "Silentsight",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357335917,
+					["from"] = "Silentsight",
+					["msg"] = "this is my main",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357335919,
+					["from"] = "Silentsight",
+					["msg"] = "im in group 2",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357335942,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357335944,
+					["from"] = "Opacus",
+					["msg"] = "send",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357335967,
+					["from"] = "Silentsight",
+					["msg"] = "how much do you want for the spirit?",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357336069,
+					["from"] = "Opacus",
+					["msg"] = "nothing just owe me one or some shit I dont care",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357336108,
+					["from"] = "Silentsight",
+					["msg"] = "lol well ok then... i can make you a belt buckle or something whenever you need one",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357336118,
+					["from"] = "Silentsight",
+					["msg"] = "but if you ever want something for that spirit just let me know",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357336137,
+					["from"] = "Opacus",
+					["msg"] = "I sent it",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357336156,
+					["from"] = "Silentsight",
+					["msg"] = "awesome bro, thanks so much",
+					["inbound"] = true,
+					["convo"] = "Silentsight",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357336218,
+					["from"] = "Opacus",
+					["msg"] = "np",
+					["inbound"] = false,
+					["convo"] = "Silentsight",
+				}, -- [18]
+				["info"] = {
+				},
+			},
+			["Avan"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357177176,
+					["from"] = "Avan",
+					["msg"] = ":D",
+					["inbound"] = true,
+					["convo"] = "Avan",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357177181,
+					["from"] = "Opacus",
+					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\heart.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Avan",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1356199756,
-					["from"] = "Duhai",
-					["msg"] = "QQ",
-					["inbound"] = true,
-					["convo"] = "Duhai",
+					["time"] = 1357270877,
+					["from"] = "Opacus",
+					["msg"] = "thx bro.. im not greedy at all so u know u arent giving it to a jerk off.. i gave up the shoulders last week",
+					["inbound"] = false,
+					["convo"] = "Avan",
 				}, -- [3]
 				{
 					["type"] = 1,
-					["time"] = 1356199771,
-					["from"] = "Ponk",
-					["msg"] = "im kidding relax",
+					["time"] = 1357270880,
+					["from"] = "Opacus",
+					["msg"] = "to some1",
 					["inbound"] = false,
-					["convo"] = "Duhai",
+					["convo"] = "Avan",
 				}, -- [4]
 				["info"] = {
 				},
 			},
-			["Shadowbaws"] = {
+			["Wuzy"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356200714,
-					["from"] = "Shadowbaws",
-					["msg"] = "<Decapitators Clan> is a brandnew guild accepting all members. Were a mature and fun enviorment. We will be raiding and PvPing once we get enough members. I Think You would be GREAT!",
+					["time"] = 1357336440,
+					["from"] = "Wuzy",
+					["msg"] = "Fuck you, you dumb cunt, My auctionator even said so. So know yours before selling",
 					["inbound"] = true,
-					["convo"] = "Shadowbaws",
+					["convo"] = "Wuzy",
 				}, -- [1]
 				["info"] = {
 				},
 			},
-		},
-		["Alterboi"] = {
-			["Gqùit"] = {
+			["Mortuous"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356668035,
-					["from"] = "Alterboi",
-					["msg"] = "come pick me up and take me to SW",
+					["time"] = 1356886436,
+					["from"] = "Opacus",
+					["msg"] = "yoyo u wanna tank some heroics?",
 					["inbound"] = false,
-					["convo"] = "Gqùit",
+					["convo"] = "Mortuous",
 				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1356886602,
+					["from"] = "Mortuous",
+					["msg"] = "dont have time really :(",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1356886609,
+					["from"] = "Opacus",
+					["msg"] = "k",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1356886982,
+					["from"] = "Mortuous",
+					["msg"] = "i really need my last 2 lfr's",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1356887003,
+					["from"] = "Opacus",
+					["msg"] = "so do them?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1356887013,
+					["from"] = "Mortuous",
+					["msg"] = "hour long queue",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1356887016,
+					["from"] = "Mortuous",
+					["msg"] = "sucks",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1356887024,
+					["from"] = "Mortuous",
+					["msg"] = "need to start doing them all on tuesdays",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1356887035,
+					["from"] = "Opacus",
+					["msg"] = "cant wait until Snday to do them,.. shorter queues closer to Tuesday",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1356887038,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1356887059,
+					["from"] = "Opacus",
+					["msg"] = "I learned that just a few weeks ago... pain in the ass",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1356888320,
+					["from"] = "Mortuous",
+					["msg"] = "wow queue popped already ",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1356888325,
+					["from"] = "Mortuous",
+					["msg"] = "must be a lot on this morning",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1356888421,
+					["from"] = "Opacus",
+					["msg"] = "lol forever I tohught u were some1 else",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1356888478,
+					["from"] = "Mortuous",
+					["msg"] = "who?",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357182050,
+					["from"] = "Mortuous",
+					["msg"] = "you doing LFR?",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357182058,
+					["from"] = "Mortuous",
+					["msg"] = "gawt damn",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357182063,
+					["from"] = "Opacus",
+					["msg"] = "no HM",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357433655,
+					["from"] = "Mortuous",
+					["msg"] = "you saved?",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357433661,
+					["from"] = "Opacus",
+					["msg"] = "hmm?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357433662,
+					["from"] = "Mortuous",
+					["msg"] = "to mv",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357433665,
+					["from"] = "Opacus",
+					["msg"] = "yar",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357433668,
+					["from"] = "Opacus",
+					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\sad.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357433675,
+					["from"] = "Mortuous",
+					["msg"] = "you in core 1 now?",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357433677,
+					["from"] = "Opacus",
+					["msg"] = " |cffffff00|Hachievement:6724:05800000075C0E33:1:1:3:13:4294967295:4294967295:4294967295:4294967295|h[Heroic: Will of the Emperor]|h|r",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357433683,
+					["from"] = "Opacus",
+					["msg"] = "I guess ;/",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357433686,
+					["from"] = "Mortuous",
+					["msg"] = "saw you guys do hmv and terrace the other night",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [27]
+				{
+					["type"] = 1,
+					["time"] = 1357433689,
+					["from"] = "Mortuous",
+					["msg"] = "so jelly :)",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [28]
+				{
+					["type"] = 1,
+					["time"] = 1357433706,
+					["from"] = "Opacus",
+					["msg"] = "dont be.. im still trying to get gear... I need to catch up and its a lot of pressure",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [29]
+				{
+					["type"] = 1,
+					["time"] = 1357433713,
+					["from"] = "Opacus",
+					["msg"] = " |cffa335ee|Hitem:85301:0:4656:4593:0:0:0:0:90:160:445|h[Helmet of the Thousandfold Blades]|h|r |cffa335ee|Hitem:86332:0:0:0:0:0:0:1005026496:90:0:445|h[Terror in the Mists]|h|r got these tho",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [30]
+				{
+					["type"] = 1,
+					["time"] = 1357433740,
+					["from"] = "Mortuous",
+					["msg"] = "yeah i haven't found a terrace raid this week. ",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [31]
+				{
+					["type"] = 1,
+					["time"] = 1357433773,
+					["from"] = "Opacus",
+					["msg"] = "we supposed to be doing heroic wind lord tonight",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [32]
+				{
+					["type"] = 1,
+					["time"] = 1357433791,
+					["from"] = "Mortuous",
+					["msg"] = "did you get heroic garalon",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [33]
+				{
+					["type"] = 1,
+					["time"] = 1357433797,
+					["from"] = "Opacus",
+					["msg"] = "maybe if no1 needs gear.. which I know the warlock rarely does.. I can tell volt to squeeze u in",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [34]
+				{
+					["type"] = 1,
+					["time"] = 1357433814,
+					["from"] = "Opacus",
+					["msg"] = "no.. I got swapped for that because me and the warrior DPS was still low.. that was before i got some more gear",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [35]
+				{
+					["type"] = 1,
+					["time"] = 1357433850,
+					["from"] = "Mortuous",
+					["msg"] = "if group 2 can't get a consistent group though i'm gonna wind up leaving.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [36]
+				{
+					["type"] = 1,
+					["time"] = 1357433852,
+					["from"] = "Opacus",
+					["msg"] = "we actually both got gear.. but he got more because his weapon dropped.. altho volt said I impressed him during Will of the Emp.. since that fight needs a rogue and I did the mechanic perfect",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [37]
+				{
+					["type"] = 1,
+					["time"] = 1357433862,
+					["from"] = "Mortuous",
+					["msg"] = "well thats good",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [38]
+				{
+					["type"] = 1,
+					["time"] = 1357433864,
+					["from"] = "Opacus",
+					["msg"] = "which caused us to down it.. so I guess I am in grp 1",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [39]
+				{
+					["type"] = 1,
+					["time"] = 1357433869,
+					["from"] = "Mortuous",
+					["msg"] = ":) gg",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [40]
+				{
+					["type"] = 1,
+					["time"] = 1357433890,
+					["from"] = "Opacus",
+					["msg"] = "I think it will after this week.. because of the holidays even grp 1 was fucked up",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [41]
+				{
+					["type"] = 1,
+					["time"] = 1357433892,
+					["from"] = "Mortuous",
+					["msg"] = "just tired of having to pug folks in and explain MV fights over and over",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [42]
+				{
+					["type"] = 1,
+					["time"] = 1357433912,
+					["from"] = "Opacus",
+					["msg"] = "but u should app with other guilds that need a DK... like if u need to get raid action.. try to find a guild that isnt top 3.... like this one",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [43]
+				{
+					["type"] = 1,
+					["time"] = 1357433944,
+					["from"] = "Opacus",
+					["msg"] = "meaning this guild is top 3.. so getting in grp 1 is hard with no past HM experience",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [44]
+				{
+					["type"] = 1,
+					["time"] = 1357433957,
+					["from"] = "Mortuous",
+					["msg"] = "right i know",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [45]
+				{
+					["type"] = 1,
+					["time"] = 1357433969,
+					["from"] = "Opacus",
+					["msg"] = "I was in a top 3 25m guild before this and the only reason I squeezed in was because I am a dying class",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [46]
+				{
+					["type"] = 1,
+					["time"] = 1357433971,
+					["from"] = "Opacus",
+					["msg"] = "lol",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [47]
+				{
+					["type"] = 1,
+					["time"] = 1357433975,
+					["from"] = "Mortuous",
+					["msg"] = "i dont need to get into heroics i just want to get into terrace",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [48]
+				{
+					["type"] = 1,
+					["time"] = 1357433984,
+					["from"] = "Opacus",
+					["msg"] = "right",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [49]
+				{
+					["type"] = 1,
+					["time"] = 1357433996,
+					["from"] = "Mortuous",
+					["msg"] = "terrace on farm = happy mort for a while",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [50]
+				{
+					["type"] = 1,
+					["time"] = 1357433999,
+					["from"] = "Opacus",
+					["msg"] = "every week u arent raiding is another week u could have had gear.. I know the feeling trust me",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [51]
+				{
+					["type"] = 1,
+					["time"] = 1357434033,
+					["from"] = "Mortuous",
+					["msg"] = "AWOL is recreuiting DK tank but dont want me since no hmodes",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [52]
+				{
+					["type"] = 1,
+					["time"] = 1357434044,
+					["from"] = "Mortuous",
+					["msg"] = "this is after i raided terrace with them NO PROBLEM",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [53]
+				{
+					["type"] = 1,
+					["time"] = 1357434081,
+					["from"] = "Opacus",
+					["msg"] = "ya always gunna run into that",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [54]
+				{
+					["type"] = 1,
+					["time"] = 1357434085,
+					["from"] = "Opacus",
+					["msg"] = "AWOL is another top guild",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [55]
+				{
+					["type"] = 1,
+					["time"] = 1357434111,
+					["from"] = "Mortuous",
+					["msg"] = "yeah it was so nice running with them :)",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [56]
+				{
+					["type"] = 1,
+					["time"] = 1357434126,
+					["from"] = "Opacus",
+					["msg"] = "did u say they were dicks tho",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [57]
+				{
+					["type"] = 1,
+					["time"] = 1357434146,
+					["from"] = "Mortuous",
+					["msg"] = "they weren't too bad, all business though",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [58]
+				{
+					["type"] = 1,
+					["time"] = 1357434154,
+					["from"] = "Opacus",
+					["msg"] = "thats what u want ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [59]
+				{
+					["type"] = 1,
+					["time"] = 1357434158,
+					["from"] = "Opacus",
+					["msg"] = "trust me",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [60]
+				{
+					["type"] = 1,
+					["time"] = 1357434167,
+					["from"] = "Opacus",
+					["msg"] = "thats how grp1 is",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [61]
+				{
+					["type"] = 1,
+					["time"] = 1357434174,
+					["from"] = "Mortuous",
+					["msg"] = "yeah save the drunken retardedness for xmog raids",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [62]
+				{
+					["type"] = 1,
+					["time"] = 1357440047,
+					["from"] = "Mortuous",
+					["msg"] = "fail fail fail fail",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [63]
+				{
+					["type"] = 1,
+					["time"] = 1357440614,
+					["from"] = "Opacus",
+					["msg"] = "lawl",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [64]
+				{
+					["type"] = 1,
+					["time"] = 1357440956,
+					["from"] = "Mortuous",
+					["msg"] = "grats to you",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [65]
+				{
+					["type"] = 1,
+					["time"] = 1357440971,
+					["from"] = "Opacus",
+					["msg"] = "hmm? I told them they should invite uy since Jirah wasnt here",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [66]
+				{
+					["type"] = 1,
+					["time"] = 1357440983,
+					["from"] = "Opacus",
+					["msg"] = "but he didnt wanna pull u fro",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [67]
+				{
+					["type"] = 1,
+					["time"] = 1357441009,
+					["from"] = "Mortuous",
+					["msg"] = "from failgroup",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [68]
+				{
+					["type"] = 1,
+					["time"] = 1357493104,
+					["from"] = "Mortuous",
+					["msg"] = "sup mango",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [69]
+				{
+					["type"] = 1,
+					["time"] = 1357493110,
+					["from"] = "Opacus",
+					["msg"] = "sup",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [70]
+				{
+					["type"] = 1,
+					["time"] = 1357493174,
+					["from"] = "Mortuous",
+					["msg"] = "yyou said you mentioned bringing me in to that raid last night since jirah was out.  if i hadn't been occupied in group 2 did it sound like volt wanted to bring me",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [71]
+				{
+					["type"] = 1,
+					["time"] = 1357493186,
+					["from"] = "Mortuous",
+					["msg"] = "or was that just a convenient excuse",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [72]
+				{
+					["type"] = 1,
+					["time"] = 1357493201,
+					["from"] = "Opacus",
+					["msg"] = "huhn? Sounded like what? U spoke to him?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [73]
+				{
+					["type"] = 1,
+					["time"] = 1357493224,
+					["from"] = "Mortuous",
+					["msg"] = "no i haven't but i need to",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [74]
+				{
+					["type"] = 1,
+					["time"] = 1357493226,
+					["from"] = "Opacus",
+					["msg"] = "I just brought it up a few times in mumble and he said he didnt want to pull any more ppl from group 1 because he felt bad for leaving u all hanging",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [75]
+				{
+					["type"] = 1,
+					["time"] = 1357493233,
+					["from"] = "Mortuous",
+					["msg"] = "this group 2 shit has to get fixed",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [76]
+				{
+					["type"] = 1,
+					["time"] = 1357493250,
+					["from"] = "Opacus",
+					["msg"] = "grp1 is fucked too.. it was the holiday.. next week everything will be back to normal",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [77]
+				{
+					["type"] = 1,
+					["time"] = 1357493266,
+					["from"] = "Opacus",
+					["msg"] = "I didnt even get to finish fam last night and missed the boss with my weapon and chest",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [78]
+				{
+					["type"] = 1,
+					["time"] = 1357493306,
+					["from"] = "Mortuous",
+					["msg"] = "i have 1 raid boss down this week",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [79]
+				{
+					["type"] = 1,
+					["time"] = 1357493319,
+					["from"] = "Opacus",
+					["msg"] = "A couple of things rubeed me the wrong way last night tho",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [80]
+				{
+					["type"] = 1,
+					["time"] = 1357493371,
+					["from"] = "Mortuous",
+					["msg"] = "severity gaming is recruiting ",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [81]
+				{
+					["type"] = 1,
+					["time"] = 1357493428,
+					["from"] = "Opacus",
+					["msg"] = "Like, im supposed to be getting geared and he and the others are supposed to be helping since thye need a rogue.. I come on Satuday to do heroic progression and dont make a mistake all night... then we are on a farm boss that I did ONCE and due to a ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [82]
+				{
+					["type"] = 1,
+					["time"] = 1357493428,
+					["from"] = "Opacus",
+					["msg"] = "glitchy mechanic I miss an interrupt... it damages 3 ppl for 300K each but kills me. no big deal since it didnt whipe us... the same ability was never interrupted by the mage and he admitted he didnt know what he was doing and whiped us twice.. but since ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [83]
+				{
+					["type"] = 1,
+					["time"] = 1357493428,
+					["from"] = "Opacus",
+					["msg"] = "I was on the friendly fire report... Volt says me and the mage dont know what we're doing ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [84]
+				{
+					["type"] = 1,
+					["time"] = 1357493455,
+					["from"] = "Mortuous",
+					["msg"] = "ffss",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [85]
+				{
+					["type"] = 1,
+					["time"] = 1357493465,
+					["from"] = "Opacus",
+					["msg"] = "ANd said if \"ppl wanted to get carried for gear they need to watch a video\"... and im like,.,. my miustkae.. the 1st all night was after 3 hours of whiping on a saturday",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [86]
+				{
+					["type"] = 1,
+					["time"] = 1357493503,
+					["from"] = "Opacus",
+					["msg"] = "was due to a glitchy mechanic and didnt whipe us... I mailed him that.. I had to.. because there was no reason for me to be called o ut.. or indirectly... or he might not have been talking about me.. who knows",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [87]
+				{
+					["type"] = 1,
+					["time"] = 1357493510,
+					["from"] = "Mortuous",
+					["msg"] = "some of those ppl have their alts in grp2",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [88]
+				{
+					["type"] = 1,
+					["time"] = 1357493525,
+					["from"] = "Mortuous",
+					["msg"] = "i can say one thing that pretre motherfucker can go eat a dick",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [89]
+				{
+					["type"] = 1,
+					["time"] = 1357493534,
+					["from"] = "Opacus",
+					["msg"] = "I think he was more pissed that the druid said he had to leave all the sudden and we didnt do farm.. but thats not really what annoyed me because Volt has a habbit of htinking he never makes mistakes",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [90]
+				{
+					["type"] = 1,
+					["time"] = 1357493557,
+					["from"] = "Opacus",
+					["msg"] = "But Jirah was like \"U guys cant see the interrupt... I dont even need shit on farm and didnt even want to come in for this\"",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [91]
+				{
+					["type"] = 1,
+					["time"] = 1357493570,
+					["from"] = "Opacus",
+					["msg"] = "I felt like saying... dude u gotta be a fucking team player and do farm content for other people.",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [92]
+				{
+					["type"] = 1,
+					["time"] = 1357493587,
+					["from"] = "Mortuous",
+					["msg"] = "you see the AWOL spam for 25m heroic",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [93]
+				{
+					["type"] = 1,
+					["time"] = 1357493591,
+					["from"] = "Mortuous",
+					["msg"] = "they are looking for a rogue :)",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [94]
+				{
+					["type"] = 1,
+					["time"] = 1357493596,
+					["from"] = "Opacus",
+					["msg"] = "And the Warrior has such a shit PC it took him literally 20 minutes to log on and in the raid.. but nothing is really said to him.... I messaged him",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [95]
+				{
+					["type"] = 1,
+					["time"] = 1357493605,
+					["from"] = "Mortuous",
+					["msg"] = "wow that sucks",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [96]
+				{
+					["type"] = 1,
+					["time"] = 1357493617,
+					["from"] = "Mortuous",
+					["msg"] = "yeah i show up on time flasked, provide food, etc etc etc",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [97]
+				{
+					["type"] = 1,
+					["time"] = 1357493623,
+					["from"] = "Opacus",
+					["msg"] = "Yeah every1 wants a Rogue atm because 5.2 we are getting buffed and the class is scarce",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [98]
+				{
+					["type"] = 1,
+					["time"] = 1357493626,
+					["from"] = "Mortuous",
+					["msg"] = "i was kind of happy my computer broke last night.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [99]
+				{
+					["type"] = 1,
+					["time"] = 1357493641,
+					["from"] = "Mortuous",
+					["msg"] = "i went ahead and declined tonight's raid invite too.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [100]
+				{
+					["type"] = 1,
+					["time"] = 1357493648,
+					["from"] = "Mortuous",
+					["msg"] = "they want me they can fuckin beg",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [101]
+				{
+					["type"] = 1,
+					["time"] = 1357493684,
+					["from"] = "Mortuous",
+					["msg"] = "i'm not going to gquit or anything but i'm done being 'loyal' to group 2 and to have shit like this keep happening.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [102]
+				{
+					["type"] = 1,
+					["time"] = 1357493697,
+					["from"] = "Mortuous",
+					["msg"] = "you should have seen the dps charts last night.  pathetic",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [103]
+				{
+					["type"] = 1,
+					["time"] = 1357493707,
+					["from"] = "Opacus",
+					["msg"] = "AWOL's 25m isnt that great",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [104]
+				{
+					["type"] = 1,
+					["time"] = 1357493716,
+					["from"] = "Mortuous",
+					["msg"] = "their 10m is pretty great",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [105]
+				{
+					["type"] = 1,
+					["time"] = 1357493732,
+					["from"] = "Opacus",
+					["msg"] = "yeah but u said they were recruiting for the 25m.. nevertheless, I dont really want to leave at all",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [106]
+				{
+					["type"] = 1,
+					["time"] = 1357493751,
+					["from"] = "Mortuous",
+					["msg"] = "nor do i.  i want this shit to work.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [107]
+				{
+					["type"] = 1,
+					["time"] = 1357493765,
+					["from"] = "Mortuous",
+					["msg"] = "i'm seriously considering switching to frost main spec for t15 though.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [108]
+				{
+					["type"] = 1,
+					["time"] = 1357493766,
+					["from"] = "Opacus",
+					["msg"] = "I like raiding w them... and me and Volt were tight as shit.. but because im the new guy it seems like I get called out for every slight slip up.. and its like.. dude 1 mistake all night is not something to blow up about.",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [109]
+				{
+					["type"] = 1,
+					["time"] = 1357493803,
+					["from"] = "Opacus",
+					["msg"] = "Like during the heroic boss.... he was like \"CLOAK DUDE CLOAK... DUDE YOURE IN A WIND SHEER\" which is a thing on the floor and blows up the raid",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [110]
+				{
+					["type"] = 1,
+					["time"] = 1357493809,
+					["from"] = "Opacus",
+					["msg"] = "then another dude was like.. ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [111]
+				{
+					["type"] = 1,
+					["time"] = 1357493811,
+					["from"] = "Mortuous",
+					["msg"] = "i never got into progression raiding until this tier.  it's frickin awesome but at the same time it sucks your life",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [112]
+				{
+					["type"] = 1,
+					["time"] = 1357493836,
+					["from"] = "Opacus",
+					["msg"] = "\"it wasnt him it was me... \" and I was like yeah dude u keep blaming me for shit and im not even the one doing it.... not that its a big deal.. but that creates subconscience shit ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [113]
+				{
+					["type"] = 1,
+					["time"] = 1357493845,
+					["from"] = "Opacus",
+					["msg"] = "that I am always doing wrong... when Im not",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [114]
+				{
+					["type"] = 1,
+					["time"] = 1357493859,
+					["from"] = "Mortuous",
+					["msg"] = "haha....got to admire his ability to see everything though.  i get tunnel vision on my tanking sometimes.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [115]
+				{
+					["type"] = 1,
+					["time"] = 1357493865,
+					["from"] = "Mortuous",
+					["msg"] = "yeah i get that.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [116]
+				{
+					["type"] = 1,
+					["time"] = 1357493867,
+					["from"] = "Opacus",
+					["msg"] = "Nah, as long as progression is during the week like its supposed to be... its fine",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [117]
+				{
+					["type"] = 1,
+					["time"] = 1357493881,
+					["from"] = "Mortuous",
+					["msg"] = "dont know if you were listening last night when i was trying to help degreez tank stone guard",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [118]
+				{
+					["type"] = 1,
+					["time"] = 1357493881,
+					["from"] = "Opacus",
+					["msg"] = "No, dude.. it wasnt me doing it",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [119]
+				{
+					["type"] = 1,
+					["time"] = 1357493893,
+					["from"] = "Opacus",
+					["msg"] = "its almost like he always thinks its me because im new is what im saying",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [120]
+				{
+					["type"] = 1,
+					["time"] = 1357493907,
+					["from"] = "Mortuous",
+					["msg"] = "yeah i get that.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [121]
+				{
+					["type"] = 1,
+					["time"] = 1357493909,
+					["from"] = "Mortuous",
+					["msg"] = "sucks",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [122]
+				{
+					["type"] = 1,
+					["time"] = 1357493917,
+					["from"] = "Opacus",
+					["msg"] = "Then he did some other shit I dont even want to talk about its so weird",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [123]
+				{
+					["type"] = 1,
+					["time"] = 1357493917,
+					["from"] = "Mortuous",
+					["msg"] = "its like who the fuck are you man",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [124]
+				{
+					["type"] = 1,
+					["time"] = 1357493927,
+					["from"] = "Mortuous",
+					["msg"] = "haha",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [125]
+				{
+					["type"] = 1,
+					["time"] = 1357493931,
+					["from"] = "Mortuous",
+					["msg"] = "oh lawwd",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [126]
+				{
+					["type"] = 1,
+					["time"] = 1357493972,
+					["from"] = "Mortuous",
+					["msg"] = "well we miss your dps in group 2",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [127]
+				{
+					["type"] = 1,
+					["time"] = 1357493977,
+					["from"] = "Mortuous",
+					["msg"] = "fa sho",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [128]
+				{
+					["type"] = 1,
+					["time"] = 1357493982,
+					["from"] = "Opacus",
+					["msg"] = "We were dicussing if we should change to normal mode and some1 said get a pug to lock it out... so I said I had an extra account we could lock it to.. and I interrupted him while he was talking.. he bangs the desk and was like \"OMG LET FINISH A GOD DAMN ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [129]
+				{
+					["type"] = 1,
+					["time"] = 1357493982,
+					["from"] = "Opacus",
+					["msg"] = "SENTANCE\" ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [130]
+				{
+					["type"] = 1,
+					["time"] = 1357493989,
+					["from"] = "Opacus",
+					["msg"] = "ppl were whispering me like \"lol",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [131]
+				{
+					["type"] = 1,
+					["time"] = 1357494010,
+					["from"] = "Mortuous",
+					["msg"] = "hahahaha",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [132]
+				{
+					["type"] = 1,
+					["time"] = 1357494011,
+					["from"] = "Opacus",
+					["msg"] = "And dude.. when I tell u I hardly EVER speak in mumble... and this is why...",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [133]
+				{
+					["type"] = 1,
+					["time"] = 1357494029,
+					["from"] = "Mortuous",
+					["msg"] = "i chatter like a mofugga",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [134]
+				{
+					["type"] = 1,
+					["time"] = 1357494035,
+					["from"] = "Mortuous",
+					["msg"] = "but i tank so i get a pass i guess :)",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [135]
+				{
+					["type"] = 1,
+					["time"] = 1357494068,
+					["from"] = "Opacus",
+					["msg"] = "I was like.. dont wonder why my mic is muted 99% of the time now.. and that really bothered me because not only was it embaressing.. but me and that nigga were tight.. then all the sudden u stomp ur feet like a child? ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [136]
+				{
+					["type"] = 1,
+					["time"] = 1357494086,
+					["from"] = "Opacus",
+					["msg"] = "I felt like I found a crew that werent nerds and were actually cool and had fun raiding.. but it was like... dude who does that",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [137]
+				{
+					["type"] = 1,
+					["time"] = 1357494119,
+					["from"] = "Mortuous",
+					["msg"] = "maybe he is letting some rl shit get in the way",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [138]
+				{
+					["type"] = 1,
+					["time"] = 1357494136,
+					["from"] = "Opacus",
+					["msg"] = "Nah dude... he just wanted to finish a sentence",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [139]
+				{
+					["type"] = 1,
+					["time"] = 1357494154,
+					["from"] = "Mortuous",
+					["msg"] = "IMMA LET YOU FINISH BUT FIRST",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [140]
+				{
+					["type"] = 1,
+					["time"] = 1357494159,
+					["from"] = "Opacus",
+					["msg"] = "The hunter is cool.. but dude if u are talking and he wants to say something.. he just speaks right over u.. its super annoying... so I know how annoying it is.",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [141]
+				{
+					["type"] = 1,
+					["time"] = 1357494173,
+					["from"] = "Mortuous",
+					["msg"] = "which hunter",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [142]
+				{
+					["type"] = 1,
+					["time"] = 1357494176,
+					["from"] = "Opacus",
+					["msg"] = "But hes low in Mumble and I was actually talking first.. and I hardly do.. so for him to react like that was weird",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [143]
+				{
+					["type"] = 1,
+					["time"] = 1357494183,
+					["from"] = "Opacus",
+					["msg"] = "and it makes me look like a fucktard.... just not cool",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [144]
+				{
+					["type"] = 1,
+					["time"] = 1357494208,
+					["from"] = "Mortuous",
+					["msg"] = "yeah not cool",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [145]
+				{
+					["type"] = 1,
+					["time"] = 1357494213,
+					["from"] = "Opacus",
+					["msg"] = "Trict",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [146]
+				{
+					["type"] = 1,
+					["time"] = 1357494233,
+					["from"] = "Mortuous",
+					["msg"] = "on stone guard last night i was trying to explain the strats to degreez",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [147]
+				{
+					["type"] = 1,
+					["time"] = 1357494238,
+					["from"] = "Mortuous",
+					["msg"] = "and i think volt got annoyed",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [148]
+				{
+					["type"] = 1,
+					["time"] = 1357494249,
+					["from"] = "Mortuous",
+					["msg"] = "told me basically to figure it out on my own.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [149]
+				{
+					["type"] = 1,
+					["time"] = 1357494255,
+					["from"] = "Opacus",
+					["msg"] = "there are like 2 dudes including the hunter that talk A LOT.. and say a whole lot of nothing during the raid.. like shouting out abilities and making their sentances sound more complex.. when really they are just rambling",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [150]
+				{
+					["type"] = 1,
+					["time"] = 1357494291,
+					["from"] = "Opacus",
+					["msg"] = "Listen, dont get me wrong... Volt is a good leader... but they need to stop the blame it on the new guy game",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [151]
+				{
+					["type"] = 1,
+					["time"] = 1357494317,
+					["from"] = "Opacus",
+					["msg"] = "because eventually I am going to speak up.. and I am going to pick apart what I am seeing in the raid and I dont wan tto get into arguments",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [152]
+				{
+					["type"] = 1,
+					["time"] = 1357494323,
+					["from"] = "Opacus",
+					["msg"] = "I just wanted to get along and raid",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [153]
+				{
+					["type"] = 1,
+					["time"] = 1357494335,
+					["from"] = "Mortuous",
+					["msg"] = "ME TOO",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [154]
+				{
+					["type"] = 1,
+					["time"] = 1357494341,
+					["from"] = "Opacus",
+					["msg"] = "wait",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [155]
+				{
+					["type"] = 1,
+					["time"] = 1357494353,
+					["from"] = "Opacus",
+					["msg"] = "what? u were explaining something and he told u to just figure it out?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [156]
+				{
+					["type"] = 1,
+					["time"] = 1357494371,
+					["from"] = "Mortuous",
+					["msg"] = "yeah.  i specifically asked him for some help.  i normally tank two guards and he calls shit out.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [157]
+				{
+					["type"] = 1,
+					["time"] = 1357494376,
+					["from"] = "Mortuous",
+					["msg"] = "so now its on me to train degreez.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [158]
+				{
+					["type"] = 1,
+					["time"] = 1357494381,
+					["from"] = "Mortuous",
+					["msg"] = "who didn't even want to tank lol",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [159]
+				{
+					["type"] = 1,
+					["time"] = 1357494395,
+					["from"] = "Opacus",
+					["msg"] = "Yeah, but I like the hunter because he will tell it how it is.. more than volt... like volt will make a mistake like run into a spark and say \"why is the spark there! who ddi that\" and the hunter will be like.. its your faualt volt",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [160]
+				{
+					["type"] = 1,
+					["time"] = 1357494397,
+					["from"] = "Mortuous",
+					["msg"] = "it was a lot of fucking pressure then we start wiping",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [161]
+				{
+					["type"] = 1,
+					["time"] = 1357494410,
+					["from"] = "Mortuous",
+					["msg"] = "haha yeah thats good.",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [162]
+				{
+					["type"] = 1,
+					["time"] = 1357494419,
+					["from"] = "Mortuous",
+					["msg"] = "sounds like pretre on elegon",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [163]
+				{
+					["type"] = 1,
+					["time"] = 1357494425,
+					["from"] = "Mortuous",
+					["msg"] = "dying over and over and blaming everyone else",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [164]
+				{
+					["type"] = 1,
+					["time"] = 1357494429,
+					["from"] = "Opacus",
+					["msg"] = "that dude is retarded",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [165]
+				{
+					["type"] = 1,
+					["time"] = 1357494434,
+					["from"] = "Opacus",
+					["msg"] = "and nah volt isnt that bad lol",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [166]
+				{
+					["type"] = 1,
+					["time"] = 1357494437,
+					["from"] = "Opacus",
+					["msg"] = "he just does it sometimes.",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [167]
+				{
+					["type"] = 1,
+					["time"] = 1357494441,
+					["from"] = "Mortuous",
+					["msg"] = "i know :)",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [168]
+				{
+					["type"] = 1,
+					["time"] = 1357494446,
+					["from"] = "Mortuous",
+					["msg"] = "gquit needs to come back",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [169]
+				{
+					["type"] = 1,
+					["time"] = 1357494448,
+					["from"] = "Opacus",
+					["msg"] = "becuase he just wants to win.. when the boss is down he loves every1",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [170]
+				{
+					["type"] = 1,
+					["time"] = 1357494453,
+					["from"] = "Opacus",
+					["msg"] = "where is he?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [171]
+				{
+					["type"] = 1,
+					["time"] = 1357494469,
+					["from"] = "Mortuous",
+					["msg"] = "siad he hasn't been on in 8 or 9 days",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [172]
+				{
+					["type"] = 1,
+					["time"] = 1357494487,
+					["from"] = "Mortuous",
+					["msg"] = "last time i talked to him he said he was coming back to group 2 to help us get it on farm",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [173]
+				{
+					["type"] = 1,
+					["time"] = 1357494513,
+					["from"] = "Opacus",
+					["msg"] = "damn",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [174]
+				{
+					["type"] = 1,
+					["time"] = 1357494524,
+					["from"] = "Opacus",
+					["msg"] = "he was a little weird tho.. hope nothing happened to him",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [175]
+				{
+					["type"] = 1,
+					["time"] = 1357494532,
+					["from"] = "Opacus",
+					["msg"] = "hes on now",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [176]
+				{
+					["type"] = 1,
+					["time"] = 1357494534,
+					["from"] = "Opacus",
+					["msg"] = "lol....",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [177]
+				{
+					["type"] = 1,
+					["time"] = 1357494539,
+					["from"] = "Mortuous",
+					["msg"] = "oh really ",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [178]
+				{
+					["type"] = 1,
+					["time"] = 1357494543,
+					["from"] = "Mortuous",
+					["msg"] = "okay i'm gonna talk to him",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [179]
+				{
+					["type"] = 1,
+					["time"] = 1357494544,
+					["from"] = "Mortuous",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [180]
+				{
+					["type"] = 1,
+					["time"] = 1357494552,
+					["from"] = "Opacus",
+					["msg"] = "ight imma get some gfood.. peace",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [181]
+				{
+					["type"] = 1,
+					["time"] = 1357616440,
+					["from"] = "Mortuous",
+					["msg"] = "werrrrd",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [182]
+				{
+					["type"] = 1,
+					["time"] = 1357616539,
+					["from"] = "Opacus",
+					["msg"] = "yo can u copy and paste form chat?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [183]
+				{
+					["type"] = 1,
+					["time"] = 1357616544,
+					["from"] = "Opacus",
+					["msg"] = "from*",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [184]
+				{
+					["type"] = 1,
+					["time"] = 1357616581,
+					["from"] = "Mortuous",
+					["msg"] = "i dont htink so",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [185]
+				{
+					["type"] = 1,
+					["time"] = 1357616601,
+					["from"] = "Opacus",
+					["msg"] = ".. rofl newb",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [186]
+				{
+					["type"] = 1,
+					["time"] = 1357616613,
+					["from"] = "Mortuous",
+					["msg"] = "dammit",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [187]
+				{
+					["type"] = 1,
+					["time"] = 1357616622,
+					["from"] = "Mortuous",
+					["msg"] = "whatcha got",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [188]
+				{
+					["type"] = 1,
+					["time"] = 1357616633,
+					["from"] = "Opacus",
+					["msg"] = "making a BG image for my Twitch",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [189]
+				{
+					["type"] = 1,
+					["time"] = 1357616677,
+					["from"] = "Opacus",
+					["msg"] = "|cFFFFFFFF[|Hurl:http://img94.imageshack.us/img94/9906/itbegins.jpg|hhttp://img94.imageshack.us/img94/9906/itbegins.jpg|h]|r ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [190]
+				{
+					["type"] = 1,
+					["time"] = 1357616721,
+					["from"] = "Mortuous",
+					["msg"] = "that looks awesome",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [191]
+				{
+					["type"] = 1,
+					["time"] = 1357616727,
+					["from"] = "Mortuous",
+					["msg"] = "how'd you do the comic book outline",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [192]
+				{
+					["type"] = 1,
+					["time"] = 1357616736,
+					["from"] = "Opacus",
+					["msg"] = "I put a stroke on it",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [193]
+				{
+					["type"] = 1,
+					["time"] = 1357616747,
+					["from"] = "Opacus",
+					["msg"] = "glad u noticed that",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [194]
+				{
+					["type"] = 1,
+					["time"] = 1357616806,
+					["from"] = "Opacus",
+					["msg"] = "bout to put the wings on now",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [195]
+				{
+					["type"] = 1,
+					["time"] = 1357616825,
+					["from"] = "Opacus",
+					["msg"] = "brb",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [196]
+				{
+					["type"] = 1,
+					["time"] = 1357618604,
+					["from"] = "Opacus",
+					["msg"] = "|cFFFFFFFF[|Hurl:http://img20.imageshack.us/img20/4221/itbeginsi.jpg|hhttp://img20.imageshack.us/img20/4221/itbeginsi.jpg|h]|r ",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [197]
+				{
+					["type"] = 1,
+					["time"] = 1357618774,
+					["from"] = "Opacus",
+					["msg"] = "u get that?",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [198]
+				{
+					["type"] = 1,
+					["time"] = 1357620413,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [199]
+				["info"] = {
+				},
+			},
+			["Xarî"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357437297,
+					["from"] = "Opacus",
+					["msg"] = "inv? or am I sitting?",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357691785,
+					["from"] = "Xarî",
+					["msg"] = "Volt says we're gonna bring you for farm stuff, but we need warrior CDs for the progression fight we're working on tonight",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357691795,
+					["from"] = "Xarî",
+					["msg"] = "so bringing in Convel tonight",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357691843,
+					["from"] = "Xarî",
+					["msg"] = "is there anything you really need from HOF?  that's where we're headed right now",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357691872,
+					["from"] = "Opacus",
+					["msg"] = "Thats a bit discouraging since I was the one there during all the attempts on Saturday.. but hes the boss",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357691899,
+					["from"] = "Opacus",
+					["msg"] = "What I need from HOF is after that boss",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357691919,
+					["from"] = "Xarî",
+					["msg"] = "okay",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357692042,
+					["from"] = "Opacus",
+					["msg"] = "im bering summoned?",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357692050,
+					["from"] = "Opacus",
+					["msg"] = "or is that not for me?",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357782597,
+					["from"] = "Xarî",
+					["msg"] = "Hey, we need to bring mojo in for you on this boss.",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357782605,
+					["from"] = "Opacus",
+					["msg"] = "ok",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357782621,
+					["from"] = "Xarî",
+					["msg"] = "I know it's tough being the new guy, but thanks for sticking with it.  You're doing really well!",
+					["inbound"] = true,
+					["convo"] = "Xarî",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357863949,
+					["from"] = "Opacus",
+					["msg"] = "Hey, im not gunna be raiding for the progression attempts tonight, correct?",
+					["inbound"] = false,
+					["convo"] = "Xarî",
+				}, -- [13]
+				["info"] = {
+				},
+			},
+			["Tackfine"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357091633,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357437243,
+					["from"] = "Opacus",
+					["msg"] = "invites go out?",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357437255,
+					["from"] = "Tackfine",
+					["msg"] = "yah",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357437259,
+					["from"] = "Tackfine",
+					["msg"] = "talk to xarxthes",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357437866,
+					["from"] = "Tackfine",
+					["msg"] = "u in lfr?",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357437911,
+					["from"] = "Opacus",
+					["msg"] = "? no",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357437917,
+					["from"] = "Tackfine",
+					["msg"] = "nvm",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357437934,
+					["from"] = "Opacus",
+					["msg"] = "why whats up?",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357437950,
+					["from"] = "Tackfine",
+					["msg"] = "nah was just wondering",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357437981,
+					["from"] = "Opacus",
+					["msg"] = "nah we doing heroic wind lord in 1 other I think",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357437986,
+					["from"] = "Opacus",
+					["msg"] = "and*",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [11]
+				["info"] = {
+				},
+			},
+			["Luciela-Velen"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356973359,
+					["from"] = "Luciela-Velen",
+					["msg"] = "I'm up for more if you want to to continue with me",
+					["inbound"] = true,
+					["convo"] = "Luciela-Velen",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Balmazer"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357447307,
+					["from"] = "Balmazer",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357447318,
+					["from"] = "Opacus",
+					["msg"] = "cant tell if hes serious?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357447337,
+					["from"] = "Balmazer",
+					["msg"] = "I think the banging means he was.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357447369,
+					["from"] = "Balmazer",
+					["msg"] = "Im laughing so hard right now; I assume the same isn't for you. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357447388,
+					["from"] = "Balmazer",
+					["msg"] = "Although you say you had a second account? ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357447411,
+					["from"] = "Opacus",
+					["msg"] = "nahh im staring at myself in the mirror ashamed..... of course im laughing.. ppl flipping out is funny",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357447417,
+					["from"] = "Opacus",
+					["msg"] = "and I think he stomped his foot",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357447442,
+					["from"] = "Opacus",
+					["msg"] = "anddd thats why I mute my mic 99% of the time",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357447470,
+					["from"] = "Opacus",
+					["msg"] = "yeah I have a secon account with a 90 shaman I could lock this instance to",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357697567,
+					["from"] = "Opacus",
+					["msg"] = "u want something cool?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357697603,
+					["from"] = "Balmazer",
+					["msg"] = "Sure?",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357697606,
+					["from"] = "Opacus",
+					["msg"] = "if u like aesthetics... and stream.. grab tmorph",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357697622,
+					["from"] = "Balmazer",
+					["msg"] = "Oh yeah I had a friend talking about how it replaced evermorph",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357697635,
+					["from"] = "Balmazer",
+					["msg"] = "Morphing into deathing was always fun",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357697644,
+					["from"] = "Balmazer",
+					["msg"] = "deathwing*",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357697645,
+					["from"] = "Opacus",
+					["msg"] = "yeah but... check this",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357697717,
+					["from"] = "Opacus",
+					["msg"] = "|cFFFFFFFF[|Hurl:http://img837.imageshack.us/img837/5976/wowscrnshot010813211351.jpg|hhttp://img837.imageshack.us/img837/5976/wowscrnshot010813211351.jpg|h]|r ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357697720,
+					["from"] = "Opacus",
+					["msg"] = "that is me right now rofl",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357697771,
+					["from"] = "Balmazer",
+					["msg"] = "Ha, the friend has a very similar setup wtih the glaives.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357697815,
+					["from"] = "Opacus",
+					["msg"] = "I always change it up... so many differnet combos.. altho I kinda feel guilty.. u know when u want something in a game.. then u cheat to get it and youre mad u cheated because it takes away the effect",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357697829,
+					["from"] = "Opacus",
+					["msg"] = "same concept.. but I guesss other ppl not seeing me like this will make me want to actually mog lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357697853,
+					["from"] = "Balmazer",
+					["msg"] = "Yeah but getting gear in wow isn't really something that takes effort, just time. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357697875,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357700443,
+					["from"] = "Opacus",
+					["msg"] = "dancing steel looks so sick on glaives",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357701269,
+					["from"] = "Opacus",
+					["msg"] = "dont even know why I bother talking",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357702059,
+					["from"] = "Opacus",
+					["msg"] = "Kir'Thik strike is supposed to be dispelled right?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357702066,
+					["from"] = "Balmazer",
+					["msg"] = "no",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [27]
+				{
+					["type"] = 1,
+					["time"] = 1357702090,
+					["from"] = "Balmazer",
+					["msg"] = " |cff66bbff|Hjournal:2:6335:5|h[Kor'thik Strike]|h|r",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [28]
+				{
+					["type"] = 1,
+					["time"] = 1357702095,
+					["from"] = "Balmazer",
+					["msg"] = "Just damage to heal",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [29]
+				{
+					["type"] = 1,
+					["time"] = 1357702110,
+					["from"] = "Opacus",
+					["msg"] = "oh right. so wasnt my fault.. kk",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [30]
+				{
+					["type"] = 1,
+					["time"] = 1357867251,
+					["from"] = "Opacus",
+					["msg"] = "yo when this is done I want u to take a look at that image I was fucking with.. I need an opinion.. not sure if I should just finish it",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [31]
+				{
+					["type"] = 1,
+					["time"] = 1357867256,
+					["from"] = "Opacus",
+					["msg"] = "or keep going... eyes get jaded",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [32]
+				{
+					["type"] = 1,
+					["time"] = 1357867290,
+					["from"] = "Balmazer",
+					["msg"] = "Sure thing",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [33]
+				{
+					["type"] = 1,
+					["time"] = 1357867434,
+					["from"] = "Opacus",
+					["msg"] = "|cFFFFFFFF[|Hurl:http://img341.imageshack.us/img341/8015/itbeginsd.jpg|hhttp://img341.imageshack.us/img341/8015/itbeginsd.jpg|h]|r ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [34]
+				{
+					["type"] = 1,
+					["time"] = 1357867465,
+					["from"] = "Opacus",
+					["msg"] = "was gunna then put the rectangle where twitch goes and some text on th eother side",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [35]
+				{
+					["type"] = 1,
+					["time"] = 1357867468,
+					["from"] = "Balmazer",
+					["msg"] = "Damn that actually looks pretty awesome.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [36]
+				{
+					["type"] = 1,
+					["time"] = 1357867482,
+					["from"] = "Opacus",
+					["msg"] = "thx",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [37]
+				{
+					["type"] = 1,
+					["time"] = 1357867490,
+					["from"] = "Opacus",
+					["msg"] = "learning PS as I go ya know",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [38]
+				{
+					["type"] = 1,
+					["time"] = 1357867510,
+					["from"] = "Opacus",
+					["msg"] = "but I have this feeling like it is missing someeething I cant put my finger on",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [39]
+				{
+					["type"] = 1,
+					["time"] = 1357867529,
+					["from"] = "Balmazer",
+					["msg"] = "Perhaps the 75% of it that is black!?",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [40]
+				{
+					["type"] = 1,
+					["time"] = 1357867545,
+					["from"] = "Opacus",
+					["msg"] = "lol no.. because that is where twitch will go",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [41]
+				{
+					["type"] = 1,
+					["time"] = 1357867547,
+					["from"] = "Opacus",
+					["msg"] = "ahhah",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [42]
+				{
+					["type"] = 1,
+					["time"] = 1357867563,
+					["from"] = "Balmazer",
+					["msg"] = "But yeah considering you're learning PS on the go I'd say that's really good. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [43]
+				{
+					["type"] = 1,
+					["time"] = 1357867577,
+					["from"] = "Balmazer",
+					["msg"] = "have you tried putting it on your page to see how it looks? ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [44]
+				{
+					["type"] = 1,
+					["time"] = 1357867588,
+					["from"] = "Opacus",
+					["msg"] = "nah",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [45]
+				{
+					["type"] = 1,
+					["time"] = 1357867592,
+					["from"] = "Balmazer",
+					["msg"] = "Perhaps use png and use some sort of transparent fade maybe? ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [46]
+				{
+					["type"] = 1,
+					["time"] = 1357867596,
+					["from"] = "Opacus",
+					["msg"] = "thats a good idea lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [47]
+				{
+					["type"] = 1,
+					["time"] = 1357867619,
+					["from"] = "Opacus",
+					["msg"] = "well.. I was thinking of putting so abstract designs very light in the BG.. like 30% transparecy",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [48]
+				{
+					["type"] = 1,
+					["time"] = 1357867637,
+					["from"] = "Opacus",
+					["msg"] = "and maybe brightening the model a bit more",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [49]
+				{
+					["type"] = 1,
+					["time"] = 1357867641,
+					["from"] = "Balmazer",
+					["msg"] = "That's what I was thinking of when I mentioned the 75% that's black ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [50]
+				{
+					["type"] = 1,
+					["time"] = 1357867675,
+					["from"] = "Opacus",
+					["msg"] = "no.. begind the clouds im saying",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [51]
+				{
+					["type"] = 1,
+					["time"] = 1357868894,
+					["from"] = "Opacus",
+					["msg"] = "his voice",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [52]
+				{
+					["type"] = 1,
+					["time"] = 1357868898,
+					["from"] = "Opacus",
+					["msg"] = "mt",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [53]
+				{
+					["type"] = 1,
+					["time"] = 1357868913,
+					["from"] = "Balmazer",
+					["msg"] = "I know you were talking about me!",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [54]
+				{
+					["type"] = 1,
+					["time"] = 1357868920,
+					["from"] = "Opacus",
+					["msg"] = "no lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [55]
+				{
+					["type"] = 1,
+					["time"] = 1357956889,
+					["from"] = "Opacus",
+					["msg"] = "Yo",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [56]
+				{
+					["type"] = 1,
+					["time"] = 1357956897,
+					["from"] = "Balmazer",
+					["msg"] = "uya",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [57]
+				{
+					["type"] = 1,
+					["time"] = 1357956908,
+					["from"] = "Opacus",
+					["msg"] = "so, u wanna see the finished product?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [58]
+				{
+					["type"] = 1,
+					["time"] = 1357956914,
+					["from"] = "Balmazer",
+					["msg"] = "def",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [59]
+				{
+					["type"] = 1,
+					["time"] = 1357956922,
+					["from"] = "Opacus",
+					["msg"] = "twitch.tv/DontB1ink",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [60]
+				{
+					["type"] = 1,
+					["time"] = 1357956946,
+					["from"] = "Opacus",
+					["msg"] = "I made the banner and off line picture look like the pic continues",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [61]
+				{
+					["type"] = 1,
+					["time"] = 1357956982,
+					["from"] = "Opacus",
+					["msg"] = "u like?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [62]
+				{
+					["type"] = 1,
+					["time"] = 1357957112,
+					["from"] = "Balmazer",
+					["msg"] = "Yeah",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [63]
+				{
+					["type"] = 1,
+					["time"] = 1357957127,
+					["from"] = "Opacus",
+					["msg"] = "Hows the stream quality?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [64]
+				{
+					["type"] = 1,
+					["time"] = 1357957176,
+					["from"] = "Balmazer",
+					["msg"] = "Well It's not good compared to the streamers that get paid to stream and have a full business conection, but it's good enough to make everything out",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [65]
+				{
+					["type"] = 1,
+					["time"] = 1357957193,
+					["from"] = "Opacus",
+					["msg"] = "What do you mean?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [66]
+				{
+					["type"] = 1,
+					["time"] = 1357957199,
+					["from"] = "Opacus",
+					["msg"] = "it should be 720p",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [67]
+				{
+					["type"] = 1,
+					["time"] = 1357957203,
+					["from"] = "Balmazer",
+					["msg"] = "It is",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [68]
+				{
+					["type"] = 1,
+					["time"] = 1357957225,
+					["from"] = "Opacus",
+					["msg"] = "Yeah.. apparently my processor is one step down from the one that can stream 1080 @ 60FPS ;/",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [69]
+				{
+					["type"] = 1,
+					["time"] = 1357957226,
+					["from"] = "Balmazer",
+					["msg"] = "paid streamers tend to stream at 1080p.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [70]
+				{
+					["type"] = 1,
+					["time"] = 1357957233,
+					["from"] = "Opacus",
+					["msg"] = "I can stream 1080 @ 30FPS tho",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [71]
+				{
+					["type"] = 1,
+					["time"] = 1357957240,
+					["from"] = "Opacus",
+					["msg"] = "Yeah",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [72]
+				{
+					["type"] = 1,
+					["time"] = 1357957248,
+					["from"] = "Opacus",
+					["msg"] = "Hopefully one day ill get paid to play WoW rofl....",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [73]
+				{
+					["type"] = 1,
+					["time"] = 1357957266,
+					["from"] = "Balmazer",
+					["msg"] = "It's pretty crazy how much some of tose people can make too.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [74]
+				{
+					["type"] = 1,
+					["time"] = 1357957273,
+					["from"] = "Opacus",
+					["msg"] = "yeah dude",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [75]
+				{
+					["type"] = 1,
+					["time"] = 1357957290,
+					["from"] = "Opacus",
+					["msg"] = "Reckful makes mad money.. and u know Towilee makes like 160K+ a year he said",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [76]
+				{
+					["type"] = 1,
+					["time"] = 1357957296,
+					["from"] = "Balmazer",
+					["msg"] = "yep",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [77]
+				{
+					["type"] = 1,
+					["time"] = 1357957297,
+					["from"] = "Opacus",
+					["msg"] = "And he isnt further in progression than us",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [78]
+				{
+					["type"] = 1,
+					["time"] = 1357957301,
+					["from"] = "Balmazer",
+					["msg"] = "more than a legit job",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [79]
+				{
+					["type"] = 1,
+					["time"] = 1357957325,
+					["from"] = "Opacus",
+					["msg"] = "Yeah but u gotta realize sometimes they are streaming at 16 - 20 hours a clip",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [80]
+				{
+					["type"] = 1,
+					["time"] = 1357957336,
+					["from"] = "Opacus",
+					["msg"] = "Reckful just streamed 20 hours",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [81]
+				{
+					["type"] = 1,
+					["time"] = 1357957348,
+					["from"] = "Opacus",
+					["msg"] = "Id want to gouge my eyes out.. I cant play that long without big bvreaks",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [82]
+				{
+					["type"] = 1,
+					["time"] = 1357957360,
+					["from"] = "Balmazer",
+					["msg"] = "Oh yeah I'm not saying they don't put the same time in as a full job it's just they didn't have to go to uni to do it. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [83]
+				{
+					["type"] = 1,
+					["time"] = 1357957387,
+					["from"] = "Opacus",
+					["msg"] = "ok im streaming at 1080 @ 30FPS now",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [84]
+				{
+					["type"] = 1,
+					["time"] = 1357957401,
+					["from"] = "Opacus",
+					["msg"] = "Mouse movements wont be as smooth but is it better?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [85]
+				{
+					["type"] = 1,
+					["time"] = 1357957454,
+					["from"] = "Balmazer",
+					["msg"] = "looks better the text doesn't really pixelize now",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [86]
+				{
+					["type"] = 1,
+					["time"] = 1357957466,
+					["from"] = "Opacus",
+					["msg"] = "Fucking reckful is usinbg a 3800K Hexa-core.. rofl",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [87]
+				{
+					["type"] = 1,
+					["time"] = 1357957492,
+					["from"] = "Balmazer",
+					["msg"] = "It's weird seing you send a whisper before I get it",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [88]
+				{
+					["type"] = 1,
+					["time"] = 1357957510,
+					["from"] = "Opacus",
+					["msg"] = "processor... so retarded... he was shouting out ridiculous donations too... I bet most streamers dont even pay for PC shit",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [89]
+				{
+					["type"] = 1,
+					["time"] = 1357957522,
+					["from"] = "Opacus",
+					["msg"] = "yeah hah.. sorry if im getting too chatty",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [90]
+				{
+					["type"] = 1,
+					["time"] = 1357957526,
+					["from"] = "Balmazer",
+					["msg"] = "nah",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [91]
+				{
+					["type"] = 1,
+					["time"] = 1357957550,
+					["from"] = "Balmazer",
+					["msg"] = "I do get pretty jelly at some of their setups ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [92]
+				{
+					["type"] = 1,
+					["time"] = 1357957581,
+					["from"] = "Opacus",
+					["msg"] = "Yo, I get along with every1 in the guild great... but I have one question about some1... if I ask u something can u like keep it between us?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [93]
+				{
+					["type"] = 1,
+					["time"] = 1357957593,
+					["from"] = "Balmazer",
+					["msg"] = "sure thing",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [94]
+				{
+					["type"] = 1,
+					["time"] = 1357957601,
+					["from"] = "Opacus",
+					["msg"] = "Whats that warlock's issue?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [95]
+				{
+					["type"] = 1,
+					["time"] = 1357957606,
+					["from"] = "Opacus",
+					["msg"] = "Aldelia or w/e",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [96]
+				{
+					["type"] = 1,
+					["time"] = 1357957613,
+					["from"] = "Balmazer",
+					["msg"] = "Aldelia? What do you mean?",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [97]
+				{
+					["type"] = 1,
+					["time"] = 1357957640,
+					["from"] = "Opacus",
+					["msg"] = "iono.. hes ultra condescending and sometimes when I whisper him he just doesnt answer... and I know he gets them too",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [98]
+				{
+					["type"] = 1,
+					["time"] = 1357957650,
+					["from"] = "Opacus",
+					["msg"] = "fucking weird",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [99]
+				{
+					["type"] = 1,
+					["time"] = 1357957679,
+					["from"] = "Opacus",
+					["msg"] = "He kinda has an \"every1 else sucks\" mentality too",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [100]
+				{
+					["type"] = 1,
+					["time"] = 1357957702,
+					["from"] = "Opacus",
+					["msg"] = "At least the way it seems... but I was curious if he justr doesnt like my ability to raid or some weird shit",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [101]
+				{
+					["type"] = 1,
+					["time"] = 1357957728,
+					["from"] = "Balmazer",
+					["msg"] = "He might be just be missing the whispers (afk or w/e then doesn't see them after). I think he really just wants the guild to be sucessful. Back in DS we were world rank 700 or so and now we're like 1900 and kind of have to 'catch up' now. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [102]
+				{
+					["type"] = 1,
+					["time"] = 1357957759,
+					["from"] = "Balmazer",
+					["msg"] = "He also just got a job (I think right before you joined) that's working him to the bone.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [103]
+				{
+					["type"] = 1,
+					["time"] = 1357957759,
+					["from"] = "Opacus",
+					["msg"] = "Alright... just didnt know what the case was... I guess its not me personally or w/e",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [104]
+				{
+					["type"] = 1,
+					["time"] = 1357957819,
+					["from"] = "Opacus",
+					["msg"] = "Yeah.. like I didnt know if he didnt think I can play at the level of the guild since my gear is behing.. but I was world 127 at one point... and Indy's main rogue when they were 84th US",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [105]
+				{
+					["type"] = 1,
+					["time"] = 1357957833,
+					["from"] = "Balmazer",
+					["msg"] = "Nah I don't think he's ever trying to be consending (i.e. if you were all as good as me we'd be a world class guild') and just gets a little upset/discouraged when we wipe to stuff.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [106]
+				{
+					["type"] = 1,
+					["time"] = 1357957840,
+					["from"] = "Balmazer",
+					["msg"] = "Nothing directed at anyone.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [107]
+				{
+					["type"] = 1,
+					["time"] = 1357957852,
+					["from"] = "Balmazer",
+					["msg"] = "well directed at everyone I suppose and no one.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [108]
+				{
+					["type"] = 1,
+					["time"] = 1357957933,
+					["from"] = "Opacus",
+					["msg"] = "ya.... between me and u.. I have dealt with a lot of players who act like every1 else makes mistakes but when they do, everything is okay.. if u get what I mean.. so I am kinda on my guard and want to get ppl's background, especially some1 acting a bit ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [109]
+				{
+					["type"] = 1,
+					["time"] = 1357957933,
+					["from"] = "Opacus",
+					["msg"] = "stand offish ya know ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [110]
+				{
+					["type"] = 1,
+					["time"] = 1357957987,
+					["from"] = "Opacus",
+					["msg"] = "but thanbks for keepin it real",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [111]
+				{
+					["type"] = 1,
+					["time"] = 1357957994,
+					["from"] = "Opacus",
+					["msg"] = "on another note.. how pimp do I look rofl",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [112]
+				{
+					["type"] = 1,
+					["time"] = 1357958347,
+					["from"] = "Balmazer",
+					["msg"] = "here I think this looks a bit better 39355",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [113]
+				{
+					["type"] = 1,
+					["time"] = 1357958359,
+					["from"] = "Opacus",
+					["msg"] = "weapon?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [114]
+				{
+					["type"] = 1,
+					["time"] = 1357958367,
+					["from"] = "Opacus",
+					["msg"] = "or is that a morph?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [115]
+				{
+					["type"] = 1,
+					["time"] = 1357958370,
+					["from"] = "Balmazer",
+					["msg"] = "morph",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [116]
+				{
+					["type"] = 1,
+					["time"] = 1357958382,
+					["from"] = "Opacus",
+					["msg"] = "ahahahaha",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [117]
+				{
+					["type"] = 1,
+					["time"] = 1357958398,
+					["from"] = "Opacus",
+					["msg"] = "im laughing wso hard lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [118]
+				{
+					["type"] = 1,
+					["time"] = 1357958402,
+					["from"] = "Opacus",
+					["msg"] = "check this tho",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [119]
+				{
+					["type"] = 1,
+					["time"] = 1357958428,
+					["from"] = "Opacus",
+					["msg"] = "astral form glaives ie beast",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [120]
+				{
+					["type"] = 1,
+					["time"] = 1357958497,
+					["from"] = "Balmazer",
+					["msg"] = "That looks pretty awesome. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [121]
+				{
+					["type"] = 1,
+					["time"] = 1357958500,
+					["from"] = "Opacus",
+					["msg"] = "im like so happy I found this program lmao",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [122]
+				{
+					["type"] = 1,
+					["time"] = 1357958505,
+					["from"] = "Balmazer",
+					["msg"] = "I love that tmorph has scale",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [123]
+				{
+					["type"] = 1,
+					["time"] = 1357958519,
+					["from"] = "Balmazer",
+					["msg"] = "that last one I used evermorph didn't",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [124]
+				{
+					["type"] = 1,
+					["time"] = 1357958560,
+					["from"] = "Balmazer",
+					["msg"] = "morph .35595",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [125]
+				{
+					["type"] = 1,
+					["time"] = 1357958675,
+					["from"] = "Opacus",
+					["msg"] = "wow the DPS in this group is annoyi ng",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [126]
+				{
+					["type"] = 1,
+					["time"] = 1357958713,
+					["from"] = "Balmazer",
+					["msg"] = "aww damn I thought I knew that druid in there for a second.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [127]
+				{
+					["type"] = 1,
+					["time"] = 1357958718,
+					["from"] = "Balmazer",
+					["msg"] = "How are they annoying? ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [128]
+				{
+					["type"] = 1,
+					["time"] = 1357958723,
+					["from"] = "Opacus",
+					["msg"] = "low",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [129]
+				{
+					["type"] = 1,
+					["time"] = 1357958728,
+					["from"] = "Opacus",
+					["msg"] = "like super loow",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [130]
+				{
+					["type"] = 1,
+					["time"] = 1357958734,
+					["from"] = "Balmazer",
+					["msg"] = "Pff",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [131]
+				{
+					["type"] = 1,
+					["time"] = 1357958745,
+					["from"] = "Balmazer",
+					["msg"] = "When I queue solo as heals I get like 3 dps that can't do 20k dps",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [132]
+				{
+					["type"] = 1,
+					["time"] = 1357958747,
+					["from"] = "Opacus",
+					["msg"] = "hunter was doing 29K lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [133]
+				{
+					["type"] = 1,
+					["time"] = 1357958757,
+					["from"] = "Opacus",
+					["msg"] = "warlock @ 20",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [134]
+				{
+					["type"] = 1,
+					["time"] = 1357958770,
+					["from"] = "Opacus",
+					["msg"] = "rofl ya... but I cant wait to get my healer to 90... id love to heal a heroic",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [135]
+				{
+					["type"] = 1,
+					["time"] = 1357958789,
+					["from"] = "Opacus",
+					["msg"] = "Once im capped ill start leveling him... priest is a fuck class",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [136]
+				{
+					["type"] = 1,
+					["time"] = 1357958801,
+					["from"] = "Opacus",
+					["msg"] = "u wanna run a quick heroic?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [137]
+				{
+					["type"] = 1,
+					["time"] = 1357958808,
+					["from"] = "Balmazer",
+					["msg"] = "Hopefully a heroic raid, because the leveling normals are actually hard to heal than the heroics somehow.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [138]
+				{
+					["type"] = 1,
+					["time"] = 1357958835,
+					["from"] = "Balmazer",
+					["msg"] = "And I found it was like that in near BiS rdruid.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [139]
+				{
+					["type"] = 1,
+					["time"] = 1357958839,
+					["from"] = "Opacus",
+					["msg"] = "Ya? Because I am like level 60 with my priest atm and my mana is like always capped and shit lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [140]
+				{
+					["type"] = 1,
+					["time"] = 1357958864,
+					["from"] = "Balmazer",
+					["msg"] = "Disc I'm guess? Disc has always been crazy OP for leveling.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [141]
+				{
+					["type"] = 1,
+					["time"] = 1357958870,
+					["from"] = "Opacus",
+					["msg"] = "yeah Disc",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [142]
+				{
+					["type"] = 1,
+					["time"] = 1357958873,
+					["from"] = "Opacus",
+					["msg"] = "fun as shit",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [143]
+				{
+					["type"] = 1,
+					["time"] = 1357958933,
+					["from"] = "Opacus",
+					["msg"] = "I might cheevo hunt this weekend again",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [144]
+				{
+					["type"] = 1,
+					["time"] = 1357958947,
+					["from"] = "Opacus",
+					["msg"] = "been slacking... so much easy shit I gotta go grab",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [145]
+				{
+					["type"] = 1,
+					["time"] = 1357958976,
+					["from"] = "Opacus",
+					["msg"] = "oO rare",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [146]
+				{
+					["type"] = 1,
+					["time"] = 1357959047,
+					["from"] = "Opacus",
+					["msg"] = "They should change the name of these rares from rare to \"most likely there if u fly near the spawn point\"",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [147]
+				{
+					["type"] = 1,
+					["time"] = 1357959084,
+					["from"] = "Balmazer",
+					["msg"] = "Yeah they're pretty easy to find. ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [148]
+				{
+					["type"] = 1,
+					["time"] = 1357959234,
+					["from"] = "Opacus",
+					["msg"] = "Does my stream still say BRB BIO? rofl wtf I changed it like 7 times",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [149]
+				{
+					["type"] = 1,
+					["time"] = 1357959839,
+					["from"] = "Balmazer",
+					["msg"] = "lol at me asking trickt in /p",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [150]
+				{
+					["type"] = 1,
+					["time"] = 1357959900,
+					["from"] = "Opacus",
+					["msg"] = "yeah lawl",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [151]
+				{
+					["type"] = 1,
+					["time"] = 1357959949,
+					["from"] = "Opacus",
+					["msg"] = "im actually getting no performance problems at 1080p ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [152]
+				{
+					["type"] = 1,
+					["time"] = 1357959959,
+					["from"] = "Balmazer",
+					["msg"] = "That's good",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [153]
+				{
+					["type"] = 1,
+					["time"] = 1357960048,
+					["from"] = "Opacus",
+					["msg"] = "I hate doing boss fights w/o CDs",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [154]
+				{
+					["type"] = 1,
+					["time"] = 1357960079,
+					["from"] = "Balmazer",
+					["msg"] = "I hate doing them with full cds and proper set up for max burst (my stronger point) and only doing like 15k more than you.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [155]
+				{
+					["type"] = 1,
+					["time"] = 1357960101,
+					["from"] = "Opacus",
+					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\sad.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [156]
+				{
+					["type"] = 1,
+					["time"] = 1357960122,
+					["from"] = "Opacus",
+					["msg"] = "I should be doing more... I upgraded the wrong weapon",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [157]
+				{
+					["type"] = 1,
+					["time"] = 1357960131,
+					["from"] = "Balmazer",
+					["msg"] = "damn",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [158]
+				{
+					["type"] = 1,
+					["time"] = 1357960132,
+					["from"] = "Opacus",
+					["msg"] = "openbed a ticket",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [159]
+				{
+					["type"] = 1,
+					["time"] = 1357960140,
+					["from"] = "Balmazer",
+					["msg"] = "well",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [160]
+				{
+					["type"] = 1,
+					["time"] = 1357960152,
+					["from"] = "Balmazer",
+					["msg"] = "i thoguht ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [161]
+				{
+					["type"] = 1,
+					["time"] = 1357960153,
+					["from"] = "Balmazer",
+					["msg"] = "this ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [162]
+				{
+					["type"] = 1,
+					["time"] = 1357960155,
+					["from"] = "Opacus",
+					["msg"] = "yeah because trict is retarded.. he swears he told me to do the other one but I know what he said lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [163]
+				{
+					["type"] = 1,
+					["time"] = 1357960155,
+					["from"] = "Balmazer",
+					["msg"] = "was leather",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [164]
+				{
+					["type"] = 1,
+					["time"] = 1357960158,
+					["from"] = "Balmazer",
+					["msg"] = " |cffa335ee|Hitem:87038:4806:4611:0:0:0:0:1050399488:90:154:445|h[Shadowsummoner Spaulders]|h|r'd",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [165]
+				{
+					["type"] = 1,
+					["time"] = 1357960175,
+					["from"] = "Opacus",
+					["msg"] = "hah",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [166]
+				{
+					["type"] = 1,
+					["time"] = 1357960184,
+					["from"] = "Opacus",
+					["msg"] = "ahahahah",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [167]
+				{
+					["type"] = 1,
+					["time"] = 1357960200,
+					["from"] = "Opacus",
+					["msg"] = "wqait",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [168]
+				{
+					["type"] = 1,
+					["time"] = 1357960209,
+					["from"] = "Opacus",
+					["msg"] = "u bound it by equipting ?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [169]
+				{
+					["type"] = 1,
+					["time"] = 1357960219,
+					["from"] = "Balmazer",
+					["msg"] = "it's bop",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [170]
+				{
+					["type"] = 1,
+					["time"] = 1357960233,
+					["from"] = "Opacus",
+					["msg"] = "u bought it w valor?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [171]
+				{
+					["type"] = 1,
+					["time"] = 1357960234,
+					["from"] = "Balmazer",
+					["msg"] = "always was",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [172]
+				{
+					["type"] = 1,
+					["time"] = 1357960239,
+					["from"] = "Balmazer",
+					["msg"] = "nah ",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [173]
+				{
+					["type"] = 1,
+					["time"] = 1357960244,
+					["from"] = "Balmazer",
+					["msg"] = "just wasted a gem and enchant",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [174]
+				{
+					["type"] = 1,
+					["time"] = 1357960244,
+					["from"] = "Opacus",
+					["msg"] = "What is it?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [175]
+				{
+					["type"] = 1,
+					["time"] = 1357960249,
+					["from"] = "Opacus",
+					["msg"] = "oh lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [176]
+				{
+					["type"] = 1,
+					["time"] = 1357960249,
+					["from"] = "Balmazer",
+					["msg"] = "and looked silly",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [177]
+				{
+					["type"] = 1,
+					["time"] = 1357960273,
+					["from"] = "Opacus",
+					["msg"] = "u wore it? lol",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [178]
+				{
+					["type"] = 1,
+					["time"] = 1357960278,
+					["from"] = "Balmazer",
+					["msg"] = "kind of",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [179]
+				{
+					["type"] = 1,
+					["time"] = 1357960283,
+					["from"] = "Opacus",
+					["msg"] = "heh",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [180]
+				{
+					["type"] = 1,
+					["time"] = 1357960296,
+					["from"] = "Balmazer",
+					["msg"] = "I went and reforged and went to import my char into a spread sheet and it threw some errors",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [181]
+				{
+					["type"] = 1,
+					["time"] = 1357960304,
+					["from"] = "Balmazer",
+					["msg"] = "then I went to the armory and checked my cahr",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [182]
+				{
+					["type"] = 1,
+					["time"] = 1357960370,
+					["from"] = "Opacus",
+					["msg"] = "wow I raped him",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [183]
+				{
+					["type"] = 1,
+					["time"] = 1357960442,
+					["from"] = "Opacus",
+					["msg"] = "u do LFR yet?",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [184]
+				{
+					["type"] = 1,
+					["time"] = 1357960485,
+					["from"] = "Balmazer",
+					["msg"] = "everything that I need to",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [185]
+				{
+					["type"] = 1,
+					["time"] = 1357960862,
+					["from"] = "Opacus",
+					["msg"] = "lol u raped",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [186]
+				{
+					["type"] = 1,
+					["time"] = 1357960869,
+					["from"] = "Balmazer",
+					["msg"] = "no clue what happened there",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [187]
+				{
+					["type"] = 1,
+					["time"] = 1357960874,
+					["from"] = "Balmazer",
+					["msg"] = "did everything the same",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [188]
+				{
+					["type"] = 1,
+					["time"] = 1357960888,
+					["from"] = "Opacus",
+					["msg"] = "u might have cleaved the orbs",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [189]
+				{
+					["type"] = 1,
+					["time"] = 1357960893,
+					["from"] = "Opacus",
+					["msg"] = "im gunna do LFR quick",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [190]
+				{
+					["type"] = 1,
+					["time"] = 1357960912,
+					["from"] = "Balmazer",
+					["msg"] = "not going to run one with trict!",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [191]
+				{
+					["type"] = 1,
+					["time"] = 1357960924,
+					["from"] = "Opacus",
+					["msg"] = "I hope I get a fucking tier piece.. even if it is an LFR piece I need this 4 set",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [192]
+				{
+					["type"] = 1,
+					["time"] = 1357960937,
+					["from"] = "Opacus",
+					["msg"] = "nah... Im sure he dont care.. besides, I will cap with LFR",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [193]
+				{
+					["type"] = 1,
+					["time"] = 1357960989,
+					["from"] = "Opacus",
+					["msg"] = "54 minute queue....................................",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [194]
+				{
+					["type"] = 1,
+					["time"] = 1357960996,
+					["from"] = "Opacus",
+					["msg"] = "w",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [195]
+				{
+					["type"] = 1,
+					["time"] = 1357960999,
+					["from"] = "Opacus",
+					["msg"] = "t",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [196]
+				{
+					["type"] = 1,
+					["time"] = 1357961001,
+					["from"] = "Opacus",
+					["msg"] = "f",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [197]
+				{
+					["type"] = 1,
+					["time"] = 1357961015,
+					["from"] = "Balmazer",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [198]
+				{
+					["type"] = 1,
+					["time"] = 1357961023,
+					["from"] = "Opacus",
+					["msg"] = "im gunna edit the Heroic video I recorded",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [199]
+				{
+					["type"] = 1,
+					["time"] = 1357961027,
+					["from"] = "Opacus",
+					["msg"] = "in the meantime",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [200]
+				{
+					["type"] = 1,
+					["time"] = 1357961033,
+					["from"] = "Opacus",
+					["msg"] = "youre in it!",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [201]
+				{
+					["type"] = 1,
+					["time"] = 1357961048,
+					["from"] = "Balmazer",
+					["msg"] = "It would be cool if we had double PoV but I almost never",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [202]
+				{
+					["type"] = 1,
+					["time"] = 1357961090,
+					["from"] = "Balmazer",
+					["msg"] = "alctually fraps the kills because I'm to lazy to delete a couple hundred of gigs of fraps and I'm very forgetful.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [203]
+				{
+					["type"] = 1,
+					["time"] = 1357961109,
+					["from"] = "Opacus",
+					["msg"] = "lol ",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [204]
+				{
+					["type"] = 1,
+					["time"] = 1357961140,
+					["from"] = "Opacus",
+					["msg"] = "I actually recorded every attempted of wind lord and forgot to hit record on the last attempt because I thought we wertent gunna kiull it because of that stupid mistake the sdame person kept making",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [205]
+				{
+					["type"] = 1,
+					["time"] = 1357961143,
+					["from"] = "Opacus",
+					["msg"] = "and sure as shit....",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [206]
+				{
+					["type"] = 1,
+					["time"] = 1357961159,
+					["from"] = "Balmazer",
+					["msg"] = "damn",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [207]
+				{
+					["type"] = 1,
+					["time"] = 1357961169,
+					["from"] = "Opacus",
+					["msg"] = "oh, but hey.. why does my stream only record my game and not my desktop",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [208]
+				{
+					["type"] = 1,
+					["time"] = 1357961175,
+					["from"] = "Opacus",
+					["msg"] = "I want it to rewcord everything I do in this monitor",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [209]
+				{
+					["type"] = 1,
+					["time"] = 1357961179,
+					["from"] = "Balmazer",
+					["msg"] = "using gamesouce",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [210]
+				{
+					["type"] = 1,
+					["time"] = 1357961357,
+					["from"] = "Opacus",
+					["msg"] = "is that a good program/",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [211]
+				{
+					["type"] = 1,
+					["time"] = 1357961357,
+					["from"] = "Balmazer",
+					["msg"] = "<Deadly Boss Mods> Balmazer is busy fighting against Heroic (5) - Jandice Barov (53%, 5/5 people alive)",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [212]
+				{
+					["type"] = 1,
+					["time"] = 1357961357,
+					["from"] = "Balmazer",
+					["msg"] = "<SBW> I'm busy fighting Jandice Barov (53%).",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [213]
+				{
+					["type"] = 1,
+					["time"] = 1357961414,
+					["from"] = "Balmazer",
+					["msg"] = "<DBM> Balmazer has defeated Heroic (5) - Jandice Barov! They have 4 total victories.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [214]
+				{
+					["type"] = 1,
+					["time"] = 1357961415,
+					["from"] = "Balmazer",
+					["msg"] = "<SBW> Combat ended.",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [215]
+				{
+					["type"] = 1,
+					["time"] = 1357961430,
+					["from"] = "Balmazer",
+					["msg"] = "Hmm",
+					["inbound"] = true,
+					["convo"] = "Balmazer",
+				}, -- [216]
+				{
+					["type"] = 1,
+					["time"] = 1357962822,
+					["from"] = "Opacus",
+					["msg"] = "lol this edit is gunna be so cool",
+					["inbound"] = false,
+					["convo"] = "Balmazer",
+				}, -- [217]
+				["info"] = {
+				},
+			},
+			["Cyndrill"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357704375,
+					["from"] = "Cyndrill",
+					["msg"] = "how much",
+					["inbound"] = true,
+					["convo"] = "Cyndrill",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357704658,
+					["from"] = "Opacus",
+					["msg"] = "make an offer",
+					["inbound"] = false,
+					["convo"] = "Cyndrill",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357704662,
+					["from"] = "Cyndrill",
+					["msg"] = "10k",
+					["inbound"] = true,
+					["convo"] = "Cyndrill",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357704672,
+					["from"] = "Opacus",
+					["msg"] = "k",
+					["inbound"] = false,
+					["convo"] = "Cyndrill",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357704686,
+					["from"] = "Cyndrill",
+					["msg"] = "wait nvm",
+					["inbound"] = true,
+					["convo"] = "Cyndrill",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357704693,
+					["from"] = "Cyndrill",
+					["msg"] = "i relized i can make them tommarrow with spirits sry",
+					["inbound"] = true,
+					["convo"] = "Cyndrill",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357704698,
+					["from"] = "Opacus",
+					["msg"] = "rofl k",
+					["inbound"] = false,
+					["convo"] = "Cyndrill",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357704707,
+					["from"] = "Opacus",
+					["msg"] = "that was like cost.. since matts cost 10K",
+					["inbound"] = false,
+					["convo"] = "Cyndrill",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357704716,
+					["from"] = "Opacus",
+					["msg"] = "but w/e u want",
+					["inbound"] = false,
+					["convo"] = "Cyndrill",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357704719,
+					["from"] = "Cyndrill",
+					["msg"] = "not if u get spireits cheap",
+					["inbound"] = true,
+					["convo"] = "Cyndrill",
+				}, -- [10]
+				["info"] = {
+				},
+			},
+			["Slatsz"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357487906,
+					["from"] = "Slatsz",
+					["msg"] = "invite",
+					["inbound"] = true,
+					["convo"] = "Slatsz",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357488116,
+					["from"] = "Opacus",
+					["msg"] = "youre the only one.. so I dont think its gunna go down",
+					["inbound"] = false,
+					["convo"] = "Slatsz",
+				}, -- [2]
+				["info"] = {
+				},
+			},
+			["Hellsshadow"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356972506,
+					["from"] = "Hellsshadow",
+					["msg"] = "yeah he finds out hi sister loves  love him",
+					["inbound"] = true,
+					["convo"] = "Hellsshadow",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1356972532,
+					["from"] = "Opacus",
+					["msg"] = "ya but they didnt make that weird.. they made it twisted.. which was good.. and then the ending.. omg what acting",
+					["inbound"] = false,
+					["convo"] = "Hellsshadow",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1356972550,
+					["from"] = "Hellsshadow",
+					["msg"] = "yeah i couldnt believe she shot the captain ",
+					["inbound"] = true,
+					["convo"] = "Hellsshadow",
+				}, -- [3]
+				["info"] = {
+				},
+			},
+			["Alandrasmira"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357620176,
+					["from"] = "Opacus",
+					["msg"] = "work on your tanking",
+					["inbound"] = false,
+					["convo"] = "Alandrasmira",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357620211,
+					["from"] = "Alandrasmira",
+					["msg"] = "tank king?",
+					["inbound"] = true,
+					["convo"] = "Alandrasmira",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357620233,
+					["from"] = "Opacus",
+					["msg"] = "in general",
+					["inbound"] = false,
+					["convo"] = "Alandrasmira",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357620248,
+					["from"] = "Opacus",
+					["msg"] = "u never even taunted",
+					["inbound"] = false,
+					["convo"] = "Alandrasmira",
+				}, -- [4]
+				["info"] = {
+				},
+			},
+			["Aldelia"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357696996,
+					["from"] = "Opacus",
+					["msg"] = "if youre there.. can you summon me please?",
+					["inbound"] = false,
+					["convo"] = "Aldelia",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357779188,
+					["from"] = "Opacus",
+					["msg"] = "what was my DPS on your log?",
+					["inbound"] = false,
+					["convo"] = "Aldelia",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357779196,
+					["from"] = "Opacus",
+					["msg"] = "k same for me",
+					["inbound"] = false,
+					["convo"] = "Aldelia",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357779200,
+					["from"] = "Opacus",
+					["msg"] = "ty",
+					["inbound"] = false,
+					["convo"] = "Aldelia",
+				}, -- [4]
+				["info"] = {
+				},
+			},
+			["Elvz"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357684940,
+					["from"] = "Opacus",
+					["msg"] = "thx u reminded me to get them before raid",
+					["inbound"] = false,
+					["convo"] = "Elvz",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Convel"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357260837,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357261460,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357261473,
+					["from"] = "Convel",
+					["msg"] = "?",
+					["inbound"] = true,
+					["convo"] = "Convel",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357261487,
+					["from"] = "Opacus",
+					["msg"] = "why arent u in home brew?",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357261520,
+					["from"] = "Convel",
+					["msg"] = "idk, but im in this guild to help it. i did some talking and it's fine that im not in-guild.",
+					["inbound"] = true,
+					["convo"] = "Convel",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357261887,
+					["from"] = "Opacus",
+					["msg"] = "that warlock is super condescending",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357261915,
+					["from"] = "Convel",
+					["msg"] = "trying to remember what that word means exactly, i don't use it often.",
+					["inbound"] = true,
+					["convo"] = "Convel",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357261933,
+					["from"] = "Opacus",
+					["msg"] = "like when people are talking down to others",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357261958,
+					["from"] = "Opacus",
+					["msg"] = "like his tone... its negative... i like positivity",
+					["inbound"] = false,
+					["convo"] = "Convel",
+				}, -- [9]
+				["info"] = {
+				},
+			},
+			["Ammenakhti"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356971773,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1356971785,
+					["from"] = "Opacus",
+					["msg"] = "I need u to heal the shit out of me.. testing an addon.. I will tip",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1356971933,
+					["from"] = "Opacus",
+					["msg"] = "how u like ur priest? Im rolling one atm",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1356971962,
+					["from"] = "Ammenakhti",
+					["msg"] = "for spellcaster dps id much rather run mage im kinda like the ret pally of spellcasters more utility than dps",
+					["inbound"] = true,
+					["convo"] = "Ammenakhti",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1356971975,
+					["from"] = "Opacus",
+					["msg"] = "ya im rolling him for heals tho",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1356971985,
+					["from"] = "Opacus",
+					["msg"] = "Disc and Holy are just too OP atm",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1356972001,
+					["from"] = "Ammenakhti",
+					["msg"] = "o im not too accustomed on the healing spec but trying to kill disc priests is pretty hard",
+					["inbound"] = true,
+					["convo"] = "Ammenakhti",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1356972005,
+					["from"] = "Opacus",
+					["msg"] = "I like the priest spell effects tho.. look sick",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1356972016,
+					["from"] = "Opacus",
+					["msg"] = "oh youre pvp",
+					["inbound"] = false,
+					["convo"] = "Ammenakhti",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1356972020,
+					["from"] = "Ammenakhti",
+					["msg"] = "arms warriors will always be ur worst enemies though ",
+					["inbound"] = true,
+					["convo"] = "Ammenakhti",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1356972045,
+					["from"] = "Ammenakhti",
+					["msg"] = "yea i havent been in abit though random bgs creep me out sometimes lol",
+					["inbound"] = true,
+					["convo"] = "Ammenakhti",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1356972081,
+					["from"] = "Ammenakhti",
+					["msg"] = "i love rbgs and arenas but this server uptight with ratings too much im newer to rbgs ",
+					["inbound"] = true,
+					["convo"] = "Ammenakhti",
+				}, -- [12]
 				["info"] = {
 				},
 			},
 			["Voltrannus"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356566058,
-					["from"] = "Alterboi",
-					["msg"] = "Hey, im on my priest if u need me for anything and are looking for me",
+					["time"] = 1357172388,
+					["from"] = "Opacus",
+					["msg"] = "IM HERE",
 					["inbound"] = false,
 					["convo"] = "Voltrannus",
 				}, -- [1]
 				{
 					["type"] = 1,
-					["time"] = 1356566064,
-					["from"] = "Voltrannus",
-					["msg"] = "k",
-					["inbound"] = true,
+					["time"] = 1357172391,
+					["from"] = "Opacus",
+					["msg"] = "PUT ME IN COACH",
+					["inbound"] = false,
 					["convo"] = "Voltrannus",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1356566082,
-					["from"] = "Alterboi",
-					["msg"] = "studied the fight as best as I could.. but I am going to need you to explain 2-3 questions I have",
-					["inbound"] = false,
+					["time"] = 1357172400,
+					["from"] = "Voltrannus",
+					["msg"] = "HEYYY",
+					["inbound"] = true,
 					["convo"] = "Voltrannus",
 				}, -- [3]
 				{
 					["type"] = 1,
-					["time"] = 1356566093,
-					["from"] = "Alterboi",
-					["msg"] = "but I guess we can go over that later ",
-					["inbound"] = false,
+					["time"] = 1357172403,
+					["from"] = "Voltrannus",
+					["msg"] = "lol",
+					["inbound"] = true,
 					["convo"] = "Voltrannus",
 				}, -- [4]
 				{
 					["type"] = 1,
-					["time"] = 1356566101,
-					["from"] = "Voltrannus",
-					["msg"] = "ya",
-					["inbound"] = true,
+					["time"] = 1357172410,
+					["from"] = "Opacus",
+					["msg"] = "lawl",
+					["inbound"] = false,
 					["convo"] = "Voltrannus",
 				}, -- [5]
 				{
 					["type"] = 1,
-					["time"] = 1356566108,
-					["from"] = "Alterboi",
-					["msg"] = "kk tty in a bit",
+					["time"] = 1357172467,
+					["from"] = "Opacus",
+					["msg"] = " yo, just wanted to add the other night... really like the guild as a whole man.. every1 seems real cool and besides some funny drama, which was hysterical anyway, I cant remember a guild with a better vibe... ",
 					["inbound"] = false,
 					["convo"] = "Voltrannus",
 				}, -- [6]
 				{
 					["type"] = 1,
-					["time"] = 1356568137,
+					["time"] = 1357172479,
 					["from"] = "Voltrannus",
-					["msg"] = "hop on your rogue",
+					["msg"] = "ah nice",
 					["inbound"] = true,
 					["convo"] = "Voltrannus",
 				}, -- [7]
 				{
 					["type"] = 1,
-					["time"] = 1356568141,
-					["from"] = "Alterboi",
-					["msg"] = "kkz",
+					["time"] = 1357172494,
+					["from"] = "Opacus",
+					["msg"] = "most other guilds have a lot of ego pompous assholes",
 					["inbound"] = false,
 					["convo"] = "Voltrannus",
 				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357172518,
+					["from"] = "Voltrannus",
+					["msg"] = "thx dewd",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357172523,
+					["from"] = "Voltrannus",
+					["msg"] = "i just told dedee in mumble",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357172615,
+					["from"] = "Opacus",
+					["msg"] = "and I can tell you are like me.. street smart in a sense... its not easy to pull the wool over your eyes... like what you said about not listening to the warlock... like.. ive been in guilds where dudes who do nothing but point fingers and quick to ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357172615,
+					["from"] = "Opacus",
+					["msg"] = "correct someone else get favored by raid leaders and GMs... I like how you keep it real ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357172661,
+					["from"] = "Opacus",
+					["msg"] = "That type of shit is important to me... just saying.. I was gunna say this the other day.. but forgot.. im happy here man and hope I can make the main squad",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357174216,
+					["from"] = "Opacus",
+					["msg"] = "so if blue is petrifying I can take dmg from traps right?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357174245,
+					["from"] = "Voltrannus",
+					["msg"] = "ya- u take 90% reduced dmg",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357174248,
+					["from"] = "Voltrannus",
+					["msg"] = "from whatever color",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357174252,
+					["from"] = "Voltrannus",
+					["msg"] = "blue= traps",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357174255,
+					["from"] = "Voltrannus",
+					["msg"] = "red- fire chain",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357174267,
+					["from"] = "Voltrannus",
+					["msg"] = "purple= puddles on ground (didnt have those this week)",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357174268,
+					["from"] = "Opacus",
+					["msg"] = "ya I move out of the trap .. shouldnt jhave",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357174275,
+					["from"] = "Voltrannus",
+					["msg"] = "green= random raid nature dmg",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357174277,
+					["from"] = "Opacus",
+					["msg"] = "Now I got everything in that fight",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357174285,
+					["from"] = "Voltrannus",
+					["msg"] = "only took 2 weeks! ",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357174289,
+					["from"] = "Voltrannus",
+					["msg"] = "lol jk dude",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357174293,
+					["from"] = "Opacus",
+					["msg"] = "I was doing like 130-140K too.. fucking annoyed",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357174306,
+					["from"] = "Opacus",
+					["msg"] = "nah I need u hard on me.. I gotta catch up",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357174309,
+					["from"] = "Opacus",
+					["msg"] = "no homo",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [27]
+				{
+					["type"] = 1,
+					["time"] = 1357174311,
+					["from"] = "Opacus",
+					["msg"] = "whoa",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [28]
+				{
+					["type"] = 1,
+					["time"] = 1357174326,
+					["from"] = "Voltrannus",
+					["msg"] = "haha",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [29]
+				{
+					["type"] = 1,
+					["time"] = 1357178596,
+					["from"] = "Opacus",
+					["msg"] = "I dont think that was that bad for me seeing that fight only the second time.. ever no?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [30]
+				{
+					["type"] = 1,
+					["time"] = 1357178605,
+					["from"] = "Voltrannus",
+					["msg"] = "great job",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [31]
+				{
+					["type"] = 1,
+					["time"] = 1357179683,
+					["from"] = "Voltrannus",
+					["msg"] = "ridin that azzz now",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [32]
+				{
+					["type"] = 1,
+					["time"] = 1357179684,
+					["from"] = "Voltrannus",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [33]
+				{
+					["type"] = 1,
+					["time"] = 1357179688,
+					["from"] = "Voltrannus",
+					["msg"] = "u told me to go hard on you ahaha",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [34]
+				{
+					["type"] = 1,
+					["time"] = 1357179700,
+					["from"] = "Voltrannus",
+					["msg"] = "dont get pissed",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [35]
+				{
+					["type"] = 1,
+					["time"] = 1357179711,
+					["from"] = "Opacus",
+					["msg"] = "lol im not dude",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [36]
+				{
+					["type"] = 1,
+					["time"] = 1357179714,
+					["from"] = "Voltrannus",
+					["msg"] = "kk",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [37]
+				{
+					["type"] = 1,
+					["time"] = 1357179767,
+					["from"] = "Opacus",
+					["msg"] = "I just hate being behind in knowlege",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [38]
+				{
+					["type"] = 1,
+					["time"] = 1357179772,
+					["from"] = "Voltrannus",
+					["msg"] = "watch vids",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [39]
+				{
+					["type"] = 1,
+					["time"] = 1357179775,
+					["from"] = "Voltrannus",
+					["msg"] = "like we talked about",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [40]
+				{
+					["type"] = 1,
+					["time"] = 1357179777,
+					["from"] = "Opacus",
+					["msg"] = "mechanics... well thats it I do",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [41]
+				{
+					["type"] = 1,
+					["time"] = 1357179781,
+					["from"] = "Voltrannus",
+					["msg"] = "and you're not behind- ur prepared and ready",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [42]
+				{
+					["type"] = 1,
+					["time"] = 1357179781,
+					["from"] = "Opacus",
+					["msg"] = "all day at work",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [43]
+				{
+					["type"] = 1,
+					["time"] = 1357179800,
+					["from"] = "Opacus",
+					["msg"] = "but its like... easy to forget certain things and I feel certain things I have to see and touch the stove",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [44]
+				{
+					["type"] = 1,
+					["time"] = 1357179869,
+					["from"] = "Opacus",
+					["msg"] = "rofl thought that was my fault ahahaha",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [45]
+				{
+					["type"] = 1,
+					["time"] = 1357179874,
+					["from"] = "Opacus",
+					["msg"] = "IM LIKE NOOO WHAT I DO",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [46]
+				{
+					["type"] = 1,
+					["time"] = 1357180103,
+					["from"] = "Voltrannus",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [47]
+				{
+					["type"] = 1,
+					["time"] = 1357182127,
+					["from"] = "Opacus",
+					["msg"] = "I downed it with you all last week np",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [48]
+				{
+					["type"] = 1,
+					["time"] = 1357182134,
+					["from"] = "Voltrannus",
+					["msg"] = "ok",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [49]
+				{
+					["type"] = 1,
+					["time"] = 1357182141,
+					["from"] = "Voltrannus",
+					["msg"] = "b ut he needs the 2h weapon off this",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [50]
+				{
+					["type"] = 1,
+					["time"] = 1357182143,
+					["from"] = "Voltrannus",
+					["msg"] = "biggest upgrade",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [51]
+				{
+					["type"] = 1,
+					["time"] = 1357182151,
+					["from"] = "Voltrannus",
+					["msg"] = "we set him for spirit kings- u sit this one",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [52]
+				{
+					["type"] = 1,
+					["time"] = 1357182155,
+					["from"] = "Opacus",
+					["msg"] = "trinket is BIS for me also.. but its all good he sat last time",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [53]
+				{
+					["type"] = 1,
+					["time"] = 1357182158,
+					["from"] = "Opacus",
+					["msg"] = "allg ood",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [54]
+				{
+					["type"] = 1,
+					["time"] = 1357182162,
+					["from"] = "Voltrannus",
+					["msg"] = "i know",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [55]
+				{
+					["type"] = 1,
+					["time"] = 1357182174,
+					["from"] = "Opacus",
+					["msg"] = "im not greedy im a team player all good",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [56]
+				{
+					["type"] = 1,
+					["time"] = 1357182180,
+					["from"] = "Voltrannus",
+					["msg"] = "kk",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [57]
+				{
+					["type"] = 1,
+					["time"] = 1357182186,
+					["from"] = "Voltrannus",
+					["msg"] = "want u back for will",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [58]
+				{
+					["type"] = 1,
+					["time"] = 1357182203,
+					["from"] = "Opacus",
+					["msg"] = "ya imma watch the video again",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [59]
+				{
+					["type"] = 1,
+					["time"] = 1357182434,
+					["from"] = "Opacus",
+					["msg"] = "actually im wrong.. I havent done HM elegon with u all.. it was normal mode I was thinking about.. so my fault",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [60]
+				{
+					["type"] = 1,
+					["time"] = 1357259945,
+					["from"] = "Opacus",
+					["msg"] = "DUDE... WOE AINT GOT SHIT ON ME... come at me",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [61]
+				{
+					["type"] = 1,
+					["time"] = 1357261280,
+					["from"] = "Opacus",
+					["msg"] = "we got this shit.. lets get some positive energy going! woooo",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [62]
+				{
+					["type"] = 1,
+					["time"] = 1357261308,
+					["from"] = "Voltrannus",
+					["msg"] = "lol im tryin",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [63]
+				{
+					["type"] = 1,
+					["time"] = 1357262483,
+					["from"] = "Opacus",
+					["msg"] = "I got a good trick for my CDs.. gunna do like double DPS this attempt",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [64]
+				{
+					["type"] = 1,
+					["time"] = 1357262544,
+					["from"] = "Voltrannus",
+					["msg"] = "cool",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [65]
+				{
+					["type"] = 1,
+					["time"] = 1357264517,
+					["from"] = "Opacus",
+					["msg"] = "WE GOT THIS",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [66]
+				{
+					["type"] = 1,
+					["time"] = 1357264536,
+					["from"] = "Voltrannus",
+					["msg"] = "ur doing well",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [67]
+				{
+					["type"] = 1,
+					["time"] = 1357266168,
+					["from"] = "Opacus",
+					["msg"] = "That last one I got nervous.. that was all",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [68]
+				{
+					["type"] = 1,
+					["time"] = 1357266173,
+					["from"] = "Voltrannus",
+					["msg"] = "haha",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [69]
+				{
+					["type"] = 1,
+					["time"] = 1357266174,
+					["from"] = "Voltrannus",
+					["msg"] = "gj tho",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [70]
+				{
+					["type"] = 1,
+					["time"] = 1357266177,
+					["from"] = "Opacus",
+					["msg"] = "because it wasnt slowed.. but I think I handled them well",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [71]
+				{
+					["type"] = 1,
+					["time"] = 1357266197,
+					["from"] = "Opacus",
+					["msg"] = "overall u think I did okay? Next time my DPS will be way better.. guna learn how to dance",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [72]
+				{
+					["type"] = 1,
+					["time"] = 1357267563,
+					["from"] = "Opacus",
+					["msg"] = "I can raid saturday as well",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [73]
+				{
+					["type"] = 1,
+					["time"] = 1357268924,
+					["from"] = "Opacus",
+					["msg"] = "Skull wasnt taunted",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [74]
+				{
+					["type"] = 1,
+					["time"] = 1357269580,
+					["from"] = "Opacus",
+					["msg"] = "u saw chat?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [75]
+				{
+					["type"] = 1,
+					["time"] = 1357269585,
+					["from"] = "Voltrannus",
+					["msg"] = "nah sup?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [76]
+				{
+					["type"] = 1,
+					["time"] = 1357269586,
+					["from"] = "Opacus",
+					["msg"] = "got BIS trinket",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [77]
+				{
+					["type"] = 1,
+					["time"] = 1357269589,
+					["from"] = "Opacus",
+					["msg"] = "from coin",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [78]
+				{
+					["type"] = 1,
+					["time"] = 1357269596,
+					["from"] = "Opacus",
+					["msg"] = "well 2nd BIS",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [79]
+				{
+					["type"] = 1,
+					["time"] = 1357269601,
+					["from"] = "Voltrannus",
+					["msg"] = "yesss",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [80]
+				{
+					["type"] = 1,
+					["time"] = 1357269629,
+					["from"] = "Opacus",
+					["msg"] = "ya need it but 4 set is the priority... its a 20K increase for me minimum",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [81]
+				{
+					["type"] = 1,
+					["time"] = 1357270972,
+					["from"] = "Opacus",
+					["msg"] = "4th in deeps that fight... trust me when I get gear ill b your best melee.. just saying im on my game brotha... catch u tomorrow",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [82]
+				{
+					["type"] = 1,
+					["time"] = 1357271404,
+					["from"] = "Voltrannus",
+					["msg"] = "gj tonight and grats on the loot",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [83]
+				{
+					["type"] = 1,
+					["time"] = 1357438326,
+					["from"] = "Opacus",
+					["msg"] = "What about Mort",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [84]
+				{
+					["type"] = 1,
+					["time"] = 1357440610,
+					["from"] = "Opacus",
+					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\heart.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [85]
+				{
+					["type"] = 1,
+					["time"] = 1357440614,
+					["from"] = "Voltrannus",
+					["msg"] = "sup?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [86]
+				{
+					["type"] = 1,
+					["time"] = 1357440647,
+					["from"] = "Opacus",
+					["msg"] = "I cant show some bromance for no reason? u cheap whore",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [87]
+				{
+					["type"] = 1,
+					["time"] = 1357440656,
+					["from"] = "Voltrannus",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [88]
+				{
+					["type"] = 1,
+					["time"] = 1357440665,
+					["from"] = "Voltrannus",
+					["msg"] = "screwed group 2 tonight doing this ",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [89]
+				{
+					["type"] = 1,
+					["time"] = 1357440666,
+					["from"] = "Voltrannus",
+					["msg"] = "ugh",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [90]
+				{
+					["type"] = 1,
+					["time"] = 1357440672,
+					["from"] = "Opacus",
+					["msg"] = "well",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [91]
+				{
+					["type"] = 1,
+					["time"] = 1357440674,
+					["from"] = "Voltrannus",
+					["msg"] = "i hated that we couldnt go any other night",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [92]
+				{
+					["type"] = 1,
+					["time"] = 1357440730,
+					["from"] = "Opacus",
+					["msg"] = "running 2 groups is hard... if ppl are interested in the overall progress of the guild, they will understand... if not, they are not team players... imo at least",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [93]
+				{
+					["type"] = 1,
+					["time"] = 1357445787,
+					["from"] = "Opacus",
+					["msg"] = "7th in dmg taken son",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [94]
+				{
+					["type"] = 1,
+					["time"] = 1357445791,
+					["from"] = "Voltrannus",
+					["msg"] = "YAYAUHH",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [95]
+				{
+					["type"] = 1,
+					["time"] = 1357445796,
+					["from"] = "Opacus",
+					["msg"] = "i dont make the same mistakes twice nigg",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [96]
+				{
+					["type"] = 1,
+					["time"] = 1357446238,
+					["from"] = "Opacus",
+					["msg"] = "lol u always think its me",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [97]
+				{
+					["type"] = 1,
+					["time"] = 1357446404,
+					["from"] = "Opacus",
+					["msg"] = "r",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [98]
+				{
+					["type"] = 1,
+					["time"] = 1357446409,
+					["from"] = "Voltrannus",
+					["msg"] = "do thiiiis",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [99]
+				{
+					["type"] = 1,
+					["time"] = 1357696679,
+					["from"] = "Voltrannus",
+					["msg"] = "hey",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [100]
+				{
+					["type"] = 1,
+					["time"] = 1357696686,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [101]
+				{
+					["type"] = 1,
+					["time"] = 1357696693,
+					["from"] = "Voltrannus",
+					["msg"] = "thx for your patience",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [102]
+				{
+					["type"] = 1,
+					["time"] = 1357696701,
+					["from"] = "Opacus",
+					["msg"] = "np ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [103]
+				{
+					["type"] = 1,
+					["time"] = 1357698558,
+					["from"] = "Voltrannus",
+					["msg"] = "why u so quiet tonight?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [104]
+				{
+					["type"] = 1,
+					["time"] = 1357698585,
+					["from"] = "Opacus",
+					["msg"] = "I died to attack ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [105]
+				{
+					["type"] = 1,
+					["time"] = 1357698677,
+					["from"] = "Voltrannus",
+					["msg"] = "LOL",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [106]
+				{
+					["type"] = 1,
+					["time"] = 1357698682,
+					["from"] = "Opacus",
+					["msg"] = "hah",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [107]
+				{
+					["type"] = 1,
+					["time"] = 1357698687,
+					["from"] = "Voltrannus",
+					["msg"] = "you hear who's talking?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [108]
+				{
+					["type"] = 1,
+					["time"] = 1357698692,
+					["from"] = "Voltrannus",
+					["msg"] = "whiney lil bithcess",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [109]
+				{
+					["type"] = 1,
+					["time"] = 1357698711,
+					["from"] = "Voltrannus",
+					["msg"] = "yo",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [110]
+				{
+					["type"] = 1,
+					["time"] = 1357698718,
+					["from"] = "Opacus",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [111]
+				{
+					["type"] = 1,
+					["time"] = 1357698721,
+					["from"] = "Voltrannus",
+					["msg"] = "do you need make a macro for tricks to aryee?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [112]
+				{
+					["type"] = 1,
+					["time"] = 1357698726,
+					["from"] = "Opacus",
+					["msg"] = "ya 1 sec",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [113]
+				{
+					["type"] = 1,
+					["time"] = 1357699361,
+					["from"] = "Opacus",
+					["msg"] = "ya but my DPS sucks ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [114]
+				{
+					["type"] = 1,
+					["time"] = 1357700787,
+					["from"] = "Opacus",
+					["msg"] = "Just an fyi I didnt die to blade",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [115]
+				{
+					["type"] = 1,
+					["time"] = 1357700792,
+					["from"] = "Voltrannus",
+					["msg"] = "gj",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [116]
+				{
+					["type"] = 1,
+					["time"] = 1357700797,
+					["from"] = "Voltrannus",
+					["msg"] = "when?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [117]
+				{
+					["type"] = 1,
+					["time"] = 1357700806,
+					["from"] = "Voltrannus",
+					["msg"] = "on that attempt like 40 min ago?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [118]
+				{
+					["type"] = 1,
+					["time"] = 1357700816,
+					["from"] = "Opacus",
+					["msg"] = "no rofl.. ims aying because I died and had to be BR..  I died because of no despell",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [119]
+				{
+					["type"] = 1,
+					["time"] = 1357700830,
+					["from"] = "Voltrannus",
+					["msg"] = "ah ok",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [120]
+				{
+					["type"] = 1,
+					["time"] = 1357779127,
+					["from"] = "Opacus",
+					["msg"] = "I told u I dont fuck up that mechanic |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\sad.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [121]
+				{
+					["type"] = 1,
+					["time"] = 1357779132,
+					["from"] = "Opacus",
+					["msg"] = "actually topped DPS lol",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [122]
+				{
+					["type"] = 1,
+					["time"] = 1357779133,
+					["from"] = "Voltrannus",
+					["msg"] = "GJ",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [123]
+				{
+					["type"] = 1,
+					["time"] = 1357779135,
+					["from"] = "Voltrannus",
+					["msg"] = "=d",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [124]
+				{
+					["type"] = 1,
+					["time"] = 1357779139,
+					["from"] = "Voltrannus",
+					["msg"] = "=D",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [125]
+				{
+					["type"] = 1,
+					["time"] = 1357785497,
+					["from"] = "Voltrannus",
+					["msg"] = "LOL",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [126]
+				{
+					["type"] = 1,
+					["time"] = 1357785507,
+					["from"] = "Opacus",
+					["msg"] = "?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [127]
+				{
+					["type"] = 1,
+					["time"] = 1357785520,
+					["from"] = "Voltrannus",
+					["msg"] = "if uve been listening to this it's been funny",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [128]
+				{
+					["type"] = 1,
+					["time"] = 1357785536,
+					["from"] = "Opacus",
+					["msg"] = "I had it muted for like 5 minutes",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [129]
+				{
+					["type"] = 1,
+					["time"] = 1357785571,
+					["from"] = "Opacus",
+					["msg"] = "whos fucking up? lol",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [130]
+				{
+					["type"] = 1,
+					["time"] = 1357785578,
+					["from"] = "Voltrannus",
+					["msg"] = "only 2 pulls",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [131]
+				{
+					["type"] = 1,
+					["time"] = 1357785585,
+					["from"] = "Voltrannus",
+					["msg"] = "waiting on jirah to get his focus macro working right",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [132]
+				{
+					["type"] = 1,
+					["time"] = 1357785623,
+					["from"] = "Opacus",
+					["msg"] = " /cast [@focus] abilityname ",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [133]
+				{
+					["type"] = 1,
+					["time"] = 1357785643,
+					["from"] = "Opacus",
+					["msg"] = "is the easiest one but every1 uses to complicated one for some reason",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [134]
+				{
+					["type"] = 1,
+					["time"] = 1357785745,
+					["from"] = "Voltrannus",
+					["msg"] = "hey we need u in ",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [135]
+				{
+					["type"] = 1,
+					["time"] = 1357785752,
+					["from"] = "Voltrannus",
+					["msg"] = "aryee is lagging too much",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [136]
+				{
+					["type"] = 1,
+					["time"] = 1357785777,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [137]
+				{
+					["type"] = 1,
+					["time"] = 1357785778,
+					["from"] = "Voltrannus",
+					["msg"] = "you there?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [138]
+				{
+					["type"] = 1,
+					["time"] = 1357785780,
+					["from"] = "Opacus",
+					["msg"] = "just invite me",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [139]
+				{
+					["type"] = 1,
+					["time"] = 1357789097,
+					["from"] = "Voltrannus",
+					["msg"] = "can u come back in?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [140]
+				{
+					["type"] = 1,
+					["time"] = 1357789115,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [141]
+				{
+					["type"] = 1,
+					["time"] = 1357789117,
+					["from"] = "Opacus",
+					["msg"] = "inv",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [142]
+				{
+					["type"] = 1,
+					["time"] = 1357865070,
+					["from"] = "Opacus",
+					["msg"] = "Hey, im not gunna be raiding in the beginning for progression, right?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [143]
+				{
+					["type"] = 1,
+					["time"] = 1357865085,
+					["from"] = "Voltrannus",
+					["msg"] = "we're not doing progression",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [144]
+				{
+					["type"] = 1,
+					["time"] = 1357865091,
+					["from"] = "Voltrannus",
+					["msg"] = "doing mogushan farm tonight",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [145]
+				{
+					["type"] = 1,
+					["time"] = 1357865095,
+					["from"] = "Opacus",
+					["msg"] = "oh kk",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [146]
+				{
+					["type"] = 1,
+					["time"] = 1357865109,
+					["from"] = "Voltrannus",
+					["msg"] = "GOT TO GEAR YOU DAWGGG",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [147]
+				{
+					["type"] = 1,
+					["time"] = 1357865112,
+					["from"] = "Voltrannus",
+					["msg"] = "nah mean?!?!?!!   ",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [148]
+				{
+					["type"] = 1,
+					["time"] = 1357865120,
+					["from"] = "Voltrannus",
+					["msg"] = "i hope your weapon will friggin DROP",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [149]
+				{
+					["type"] = 1,
+					["time"] = 1357865137,
+					["from"] = "Opacus",
+					["msg"] = "yeah I need it bad... because im doing really good mechanics wise and I really want to be competitive",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [150]
+				{
+					["type"] = 1,
+					["time"] = 1357865143,
+					["from"] = "Voltrannus",
+					["msg"] = "yaaaap",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [151]
+				{
+					["type"] = 1,
+					["time"] = 1357865158,
+					["from"] = "Opacus",
+					["msg"] = "I was 10th on damage taken via total last night",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [152]
+				{
+					["type"] = 1,
+					["time"] = 1357865169,
+					["from"] = "Voltrannus",
+					["msg"] = "BALLER",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [153]
+				{
+					["type"] = 1,
+					["time"] = 1357865174,
+					["from"] = "Opacus",
+					["msg"] = "now I need 1st in DPS lol",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [154]
+				{
+					["type"] = 1,
+					["time"] = 1357865245,
+					["from"] = "Opacus",
+					["msg"] = "Mogushan Terrace right?",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [155]
+				{
+					["type"] = 1,
+					["time"] = 1357865256,
+					["from"] = "Voltrannus",
+					["msg"] = "mogushan vaults",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [156]
+				{
+					["type"] = 1,
+					["time"] = 1357866088,
+					["from"] = "Voltrannus",
+					["msg"] = "we called that one!",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [157]
+				{
+					["type"] = 1,
+					["time"] = 1357866092,
+					["from"] = "Voltrannus",
+					["msg"] = "weapon babyyy",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [158]
+				{
+					["type"] = 1,
+					["time"] = 1357866118,
+					["from"] = "Opacus",
+					["msg"] = "that was my biggest Upgrade to",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [159]
+				{
+					["type"] = 1,
+					["time"] = 1357866125,
+					["from"] = "Opacus",
+					["msg"] = "like needed the most",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [160]
+				{
+					["type"] = 1,
+					["time"] = 1357866126,
+					["from"] = "Voltrannus",
+					["msg"] = "YES",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [161]
+				{
+					["type"] = 1,
+					["time"] = 1357866137,
+					["from"] = "Voltrannus",
+					["msg"] = "u got valor to upgrade it?",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [162]
+				{
+					["type"] = 1,
+					["time"] = 1357866142,
+					["from"] = "Opacus",
+					["msg"] = "if I get my 4 set tonight ill be pimp",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [163]
+				{
+					["type"] = 1,
+					["time"] = 1357866144,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [164]
+				{
+					["type"] = 1,
+					["time"] = 1357873558,
+					["from"] = "Opacus",
+					["msg"] = "dude... if I get my 4 set.. im gunna be retarded beast",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [165]
+				{
+					["type"] = 1,
+					["time"] = 1357873562,
+					["from"] = "Voltrannus",
+					["msg"] = "YEAHHHH",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [166]
+				{
+					["type"] = 1,
+					["time"] = 1357873565,
+					["from"] = "Opacus",
+					["msg"] = "I didnt do LFR yet... |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\grin.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [167]
+				{
+					["type"] = 1,
+					["time"] = 1357873577,
+					["from"] = "Opacus",
+					["msg"] = "but im ready for muteilate",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [168]
+				{
+					["type"] = 1,
+					["time"] = 1357873578,
+					["from"] = "Voltrannus",
+					["msg"] = " i noticed ur dmg went up quite a bit",
+					["inbound"] = true,
+					["convo"] = "Voltrannus",
+				}, -- [169]
+				{
+					["type"] = 1,
+					["time"] = 1357873592,
+					["from"] = "Opacus",
+					["msg"] = "well because of learning the encounters.. but now with gear.. ill be good",
+					["inbound"] = false,
+					["convo"] = "Voltrannus",
+				}, -- [170]
+				["info"] = {
+				},
+			},
+			["Jirah"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357269037,
+					["from"] = "Opacus",
+					["msg"] = "it dont mix like two dicks and no bitch.. find urself in some serious shit",
+					["inbound"] = false,
+					["convo"] = "Jirah",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357269059,
+					["from"] = "Jirah",
+					["msg"] = "what?",
+					["inbound"] = true,
+					["convo"] = "Jirah",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357269062,
+					["from"] = "Opacus",
+					["msg"] = "biggie",
+					["inbound"] = false,
+					["convo"] = "Jirah",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357269076,
+					["from"] = "Jirah",
+					["msg"] = "oh",
+					["inbound"] = true,
+					["convo"] = "Jirah",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357269531,
+					["from"] = "Opacus",
+					["msg"] = "was listening to him.. thought ud laugh... no biggie",
+					["inbound"] = false,
+					["convo"] = "Jirah",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357269544,
+					["from"] = "Opacus",
+					["msg"] = "youre dude was talking bout hip hop w no?",
+					["inbound"] = false,
+					["convo"] = "Jirah",
+				}, -- [6]
+				["info"] = {
+				},
+			},
+			["Trictagon"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357173058,
+					["from"] = "Opacus",
+					["msg"] = "yo do u have a few agil flasks I can buy?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357173065,
+					["from"] = "Opacus",
+					["msg"] = "I only gots 2 on me",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357173067,
+					["from"] = "Trictagon",
+					["msg"] = "i have 74",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357173069,
+					["from"] = "Trictagon",
+					["msg"] = "ill give u some",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357173071,
+					["from"] = "Opacus",
+					["msg"] = "and forgot to grab",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357173079,
+					["from"] = "Opacus",
+					["msg"] = "ok cool lemme get 73",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357173089,
+					["from"] = "Trictagon",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357173428,
+					["from"] = "Opacus",
+					["msg"] = "yo real quick",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357173433,
+					["from"] = "Opacus",
+					["msg"] = "can u explain something to me?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357173439,
+					["from"] = "Trictagon",
+					["msg"] = "sure",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357173446,
+					["from"] = "Opacus",
+					["msg"] = "in here... what is with the glowing tiles",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357173459,
+					["from"] = "Trictagon",
+					["msg"] = "each lit tile gives raid +1% dmg",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357173461,
+					["from"] = "Trictagon",
+					["msg"] = "we want 100 stacks",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357173464,
+					["from"] = "Trictagon",
+					["msg"] = "you run TWICE on pull",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357173467,
+					["from"] = "Trictagon",
+					["msg"] = "of the color we call",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357174008,
+					["from"] = "Opacus",
+					["msg"] = "What does he mean blue wont hurt?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357174138,
+					["from"] = "Trictagon",
+					["msg"] = "when a mob is petrifying",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357174142,
+					["from"] = "Trictagon",
+					["msg"] = "you take 90% reduced damage from its color",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357174155,
+					["from"] = "Opacus",
+					["msg"] = "so I could have stood int he blue traps?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357174155,
+					["from"] = "Trictagon",
+					["msg"] = "if red is petrifying u take 90% reduced damage from chains + red crystal",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357174163,
+					["from"] = "Trictagon",
+					["msg"] = "if blue is petrifying u take 90% reduced from traps",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357174170,
+					["from"] = "Trictagon",
+					["msg"] = "green u take 90% reduced damage from random aoe",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357174181,
+					["from"] = "Trictagon",
+					["msg"] = "u could have been breaking traps with feint either way",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357174188,
+					["from"] = "Trictagon",
+					["msg"] = "but yes anyone can break traps with blue",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357174192,
+					["from"] = "Trictagon",
+					["msg"] = "u only get hit like 30k",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357174346,
+					["from"] = "Opacus",
+					["msg"] = "got it",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357174356,
+					["from"] = "Opacus",
+					["msg"] = "now this fight.. stay in when called and move out when called",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [27]
+				{
+					["type"] = 1,
+					["time"] = 1357174361,
+					["from"] = "Trictagon",
+					["msg"] = "yep",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [28]
+				{
+					["type"] = 1,
+					["time"] = 1357176829,
+					["from"] = "Opacus",
+					["msg"] = "fucking broken weapon... so focused on not fucking up I fuck up...",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [29]
+				{
+					["type"] = 1,
+					["time"] = 1357177562,
+					["from"] = "Opacus",
+					["msg"] = "it says u are busy .. can u trade those pots?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [30]
+				{
+					["type"] = 1,
+					["time"] = 1357177575,
+					["from"] = "Trictagon",
+					["msg"] = "inside",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [31]
+				{
+					["type"] = 1,
+					["time"] = 1357180495,
+					["from"] = "Opacus",
+					["msg"] = "so just to confirm.. when exactly do I reset stacks the second time? At the next add or after following my assigned add and killing?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [32]
+				{
+					["type"] = 1,
+					["time"] = 1357180510,
+					["from"] = "Trictagon",
+					["msg"] = "just before first orb spawns",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [33]
+				{
+					["type"] = 1,
+					["time"] = 1357180514,
+					["from"] = "Trictagon",
+					["msg"] = "unless that conflicts with add explosion",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [34]
+				{
+					["type"] = 1,
+					["time"] = 1357180523,
+					["from"] = "Trictagon",
+					["msg"] = "btw if  |cffa335ee|Hitem:87057:0:0:0:0:0:0:844520640:90:166:447|h[Bottle of Infinite Stars]|h|r drops noone needs it",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [35]
+				{
+					["type"] = 1,
+					["time"] = 1357180552,
+					["from"] = "Opacus",
+					["msg"] = "ok so lets say I reset stacks and we are killing each small add that we are assigned... after I kill I reset right.. like run out and in",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [36]
+				{
+					["type"] = 1,
+					["time"] = 1357180558,
+					["from"] = "Opacus",
+					["msg"] = "and ya I am really hoping that drops",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [37]
+				{
+					["type"] = 1,
+					["time"] = 1357180572,
+					["from"] = "Trictagon",
+					["msg"] = "yes",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [38]
+				{
+					["type"] = 1,
+					["time"] = 1357180576,
+					["from"] = "Opacus",
+					["msg"] = "ill have BIS trinkets if it does... the BOE trink I have is BIS for rogues",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [39]
+				{
+					["type"] = 1,
+					["time"] = 1357180649,
+					["from"] = "Trictagon",
+					["msg"] = "i think heroic lei shi trinket is better than dmc",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [40]
+				{
+					["type"] = 1,
+					["time"] = 1357180653,
+					["from"] = "Trictagon",
+					["msg"] = "even though crit sucks for rogues",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [41]
+				{
+					["type"] = 1,
+					["time"] = 1357180660,
+					["from"] = "Trictagon",
+					["msg"] = "crit is +1.06% damage per 600 rating for ALL classes",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [42]
+				{
+					["type"] = 1,
+					["time"] = 1357180672,
+					["from"] = "Trictagon",
+					["msg"] = "and dmc uptime for a class like rogues isnt amazing",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [43]
+				{
+					["type"] = 1,
+					["time"] = 1357180744,
+					["from"] = "Opacus",
+					["msg"] = "terror of the mists is",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [44]
+				{
+					["type"] = 1,
+					["time"] = 1357181076,
+					["from"] = "Trictagon",
+					["msg"] = "for YOU specifically, using our logs, darkmoon card only has 317.892222222223496 more agility than lfr bottle",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [45]
+				{
+					["type"] = 1,
+					["time"] = 1357181118,
+					["from"] = "Opacus",
+					["msg"] = "interesting",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [46]
+				{
+					["type"] = 1,
+					["time"] = 1357181125,
+					["from"] = "Trictagon",
+					["msg"] = "574 mastery & 382 haste vs 318 agi",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [47]
+				{
+					["type"] = 1,
+					["time"] = 1357181129,
+					["from"] = "Opacus",
+					["msg"] = "moral of the story... heroic bottle is from narnia",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [48]
+				{
+					["type"] = 1,
+					["time"] = 1357181130,
+					["from"] = "Trictagon",
+					["msg"] = "considering reforge",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [49]
+				{
+					["type"] = 1,
+					["time"] = 1357181159,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [50]
+				{
+					["type"] = 1,
+					["time"] = 1357181170,
+					["from"] = "Trictagon",
+					["msg"] = "i would expect 509 terror to be 1-1.2k increase for u over dmc",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [51]
+				{
+					["type"] = 1,
+					["time"] = 1357181175,
+					["from"] = "Trictagon",
+					["msg"] = "sites are wrong",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [52]
+				{
+					["type"] = 1,
+					["time"] = 1357181185,
+					["from"] = "Trictagon",
+					["msg"] = "on spirit kings your dmc only had 21% uptime",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [53]
+				{
+					["type"] = 1,
+					["time"] = 1357181189,
+					["from"] = "Trictagon",
+					["msg"] = "bottle has 44.444%",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [54]
+				{
+					["type"] = 1,
+					["time"] = 1357181202,
+					["from"] = "Opacus",
+					["msg"] = "over dmc... but I wouldnt replace DMC until I got mists.. because I will replace talon",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [55]
+				{
+					["type"] = 1,
+					["time"] = 1357181204,
+					["from"] = "Trictagon",
+					["msg"] = "dmc is 1591.67 agi for you",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [56]
+				{
+					["type"] = 1,
+					["time"] = 1357181215,
+					["from"] = "Opacus",
+					["msg"] = "its a 3-4K increase when replacing talon",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [57]
+				{
+					["type"] = 1,
+					["time"] = 1357181222,
+					["from"] = "Opacus",
+					["msg"] = " |cffa335ee|Hitem:89082:0:0:0:0:0:0:0:90:0:445|h[Hawkmaster's Talon]|h|r",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [58]
+				{
+					["type"] = 1,
+					["time"] = 1357181239,
+					["from"] = "Trictagon",
+					["msg"] = "but talon is 898.75 avg haste",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [59]
+				{
+					["type"] = 1,
+					["time"] = 1357181242,
+					["from"] = "Trictagon",
+					["msg"] = "which isnt TERRIBLE",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [60]
+				{
+					["type"] = 1,
+					["time"] = 1357181273,
+					["from"] = "Opacus",
+					["msg"] = "understood.. but its not agility",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [61]
+				{
+					["type"] = 1,
+					["time"] = 1357181281,
+					["from"] = "Trictagon",
+					["msg"] = "but",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [62]
+				{
+					["type"] = 1,
+					["time"] = 1357181283,
+					["from"] = "Trictagon",
+					["msg"] = "if you do the math",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [63]
+				{
+					["type"] = 1,
+					["time"] = 1357181284,
+					["from"] = "Opacus",
+					["msg"] = "Agility > Haste > ",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [64]
+				{
+					["type"] = 1,
+					["time"] = 1357181289,
+					["from"] = "Trictagon",
+					["msg"] = "rogues gem straight haste right",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [65]
+				{
+					["type"] = 1,
+					["time"] = 1357181291,
+					["from"] = "Trictagon",
+					["msg"] = "so 2 haste>1 agi",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [66]
+				{
+					["type"] = 1,
+					["time"] = 1357181305,
+					["from"] = "Trictagon",
+					["msg"] = "900 haste vs 500 agi",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [67]
+				{
+					["type"] = 1,
+					["time"] = 1357181308,
+					["from"] = "Trictagon",
+					["msg"] = "its pretty close",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [68]
+				{
+					["type"] = 1,
+					["time"] = 1357181310,
+					["from"] = "Opacus",
+					["msg"] = "not exactly.. but something like that",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [69]
+				{
+					["type"] = 1,
+					["time"] = 1357181319,
+					["from"] = "Opacus",
+					["msg"] = "there is a soft cap",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [70]
+				{
+					["type"] = 1,
+					["time"] = 1357181326,
+					["from"] = "Trictagon",
+					["msg"] = "for what",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [71]
+				{
+					["type"] = 1,
+					["time"] = 1357181330,
+					["from"] = "Trictagon",
+					["msg"] = "energy cap?",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [72]
+				{
+					["type"] = 1,
+					["time"] = 1357181342,
+					["from"] = "Opacus",
+					["msg"] = "sec",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [73]
+				{
+					["type"] = 1,
+					["time"] = 1357181959,
+					["from"] = "Opacus",
+					["msg"] = "what killed us here?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [74]
+				{
+					["type"] = 1,
+					["time"] = 1357181966,
+					["from"] = "Trictagon",
+					["msg"] = "tank mistake after healer mistake",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [75]
+				{
+					["type"] = 1,
+					["time"] = 1357181973,
+					["from"] = "Opacus",
+					["msg"] = "ah",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [76]
+				{
+					["type"] = 1,
+					["time"] = 1357261105,
+					["from"] = "Opacus",
+					["msg"] = "can i buy a few more flasks",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [77]
+				{
+					["type"] = 1,
+					["time"] = 1357269465,
+					["from"] = "Opacus",
+					["msg"] = "u saw chat?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [78]
+				{
+					["type"] = 1,
+					["time"] = 1357269470,
+					["from"] = "Trictagon",
+					["msg"] = "yep",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [79]
+				{
+					["type"] = 1,
+					["time"] = 1357269472,
+					["from"] = "Opacus",
+					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\happy.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [80]
+				{
+					["type"] = 1,
+					["time"] = 1357269474,
+					["from"] = "Opacus",
+					["msg"] = "BIS",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [81]
+				{
+					["type"] = 1,
+					["time"] = 1357269476,
+					["from"] = "Trictagon",
+					["msg"] = "grats",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [82]
+				{
+					["type"] = 1,
+					["time"] = 1357269492,
+					["from"] = "Opacus",
+					["msg"] = "ya... Id rather hroic bottle but at least if it drops next week ill have BIS trinks",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [83]
+				{
+					["type"] = 1,
+					["time"] = 1357269501,
+					["from"] = "Trictagon",
+					["msg"] = "EVERYONE has bottle in this group",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [84]
+				{
+					["type"] = 1,
+					["time"] = 1357269504,
+					["from"] = "Trictagon",
+					["msg"] = "me mojo bear",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [85]
+				{
+					["type"] = 1,
+					["time"] = 1357269509,
+					["from"] = "Opacus",
+					["msg"] = "except me |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\sad.blp:16|t",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [86]
+				{
+					["type"] = 1,
+					["time"] = 1357271041,
+					["from"] = "Opacus",
+					["msg"] = "where do we turn in tier pieces",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [87]
+				{
+					["type"] = 1,
+					["time"] = 1357447663,
+					["from"] = "Opacus",
+					["msg"] = "should I int something?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [88]
+				{
+					["type"] = 1,
+					["time"] = 1357447689,
+					["from"] = "Opacus",
+					["msg"] = "interrupt",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [89]
+				{
+					["type"] = 1,
+					["time"] = 1357779917,
+					["from"] = "Opacus",
+					["msg"] = "Fixate just kite around the raid?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [90]
+				{
+					["type"] = 1,
+					["time"] = 1357779922,
+					["from"] = "Opacus",
+					["msg"] = "like in a circle?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [91]
+				{
+					["type"] = 1,
+					["time"] = 1357779925,
+					["from"] = "Trictagon",
+					["msg"] = "just dont let it hit u",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [92]
+				{
+					["type"] = 1,
+					["time"] = 1357779928,
+					["from"] = "Trictagon",
+					["msg"] = "and dont let it hit a trap",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [93]
+				{
+					["type"] = 1,
+					["time"] = 1357779928,
+					["from"] = "Opacus",
+					["msg"] = "k",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [94]
+				{
+					["type"] = 1,
+					["time"] = 1357779931,
+					["from"] = "Opacus",
+					["msg"] = "got it",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [95]
+				{
+					["type"] = 1,
+					["time"] = 1357779944,
+					["from"] = "Opacus",
+					["msg"] = "so basically... attack boss.. get to red at phase... attack adds.. dont let fixate kill me",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [96]
+				{
+					["type"] = 1,
+					["time"] = 1357779952,
+					["from"] = "Opacus",
+					["msg"] = "run out when i get debuffs",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [97]
+				{
+					["type"] = 1,
+					["time"] = 1357779956,
+					["from"] = "Opacus",
+					["msg"] = "profit",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [98]
+				{
+					["type"] = 1,
+					["time"] = 1357779959,
+					["from"] = "Opacus",
+					["msg"] = "correct?",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [99]
+				{
+					["type"] = 1,
+					["time"] = 1357779963,
+					["from"] = "Trictagon",
+					["msg"] = "it goes phase 1->phase 2->phase 1->phase 3",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [100]
+				{
+					["type"] = 1,
+					["time"] = 1357779966,
+					["from"] = "Trictagon",
+					["msg"] = "phase 3 is debuff phase",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [101]
+				{
+					["type"] = 1,
+					["time"] = 1357779971,
+					["from"] = "Opacus",
+					["msg"] = "ahh kkz",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [102]
+				{
+					["type"] = 1,
+					["time"] = 1357873787,
+					["from"] = "Trictagon",
+					["msg"] = "put strength in fist weapon",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [103]
+				{
+					["type"] = 1,
+					["time"] = 1357873790,
+					["from"] = "Trictagon",
+					["msg"] = "agi in dagger",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [104]
+				{
+					["type"] = 1,
+					["time"] = 1357873792,
+					["from"] = "Opacus",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [105]
+				{
+					["type"] = 1,
+					["time"] = 1357873793,
+					["from"] = "Trictagon",
+					["msg"] = "offhand dagger for combat",
+					["inbound"] = true,
+					["convo"] = "Trictagon",
+				}, -- [106]
+				{
+					["type"] = 1,
+					["time"] = 1357874706,
+					["from"] = "Opacus",
+					["msg"] = "yo u gotta see what I look like.. when I uplaoad the raid video",
+					["inbound"] = false,
+					["convo"] = "Trictagon",
+				}, -- [107]
+				["info"] = {
+				},
+			},
+			["Hypothèrmia"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357437906,
+					["from"] = "Hypothèrmia",
+					["msg"] = "you got hat 10k you owe me ",
+					["inbound"] = true,
+					["convo"] = "Hypothèrmia",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357437942,
+					["from"] = "Opacus",
+					["msg"] = "ironic",
+					["inbound"] = false,
+					["convo"] = "Hypothèrmia",
+				}, -- [2]
+				["info"] = {
+				},
+			},
+			["Shãmwøw"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356913075,
+					["from"] = "Shãmwøw",
+					["msg"] = "yoyjkasdjka",
+					["inbound"] = true,
+					["convo"] = "Shãmwøw",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Yonkersx-Dalvengyr"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357335826,
+					["from"] = "Opacus",
+					["msg"] = " |cffffff00|Hachievement:6724:05800000075C0E33:1:1:3:13:4294967295:4294967295:4294967295:4294967295|h[Heroic: Will of the Emperor]|h|r hush",
+					["inbound"] = false,
+					["convo"] = "Yonkersx-Dalvengyr",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Dietcokes"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357434473,
+					["from"] = "Opacus",
+					["msg"] = "respect",
+					["inbound"] = false,
+					["convo"] = "Dietcokes",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Trictagøn"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357947198,
+					["from"] = "Trictagøn",
+					["msg"] = "Did they refund upgrade",
+					["inbound"] = true,
+					["convo"] = "Trictagøn",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357947206,
+					["from"] = "Trictagøn",
+					["msg"] = "Or do u have like a 5 day ticket timer",
+					["inbound"] = true,
+					["convo"] = "Trictagøn",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357947580,
+					["from"] = "Opacus",
+					["msg"] = "still on a timer",
+					["inbound"] = false,
+					["convo"] = "Trictagøn",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357947591,
+					["from"] = "Opacus",
+					["msg"] = "well see tho... I hope they do it... I dont see why they wouldnt",
+					["inbound"] = false,
+					["convo"] = "Trictagøn",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357971432,
+					["from"] = "Opacus",
+					["msg"] = "I edited Heroic Feng... uploading now.. I did it as a test to see how I liked it.. I think I might do it for all of our heroic/progression fights",
+					["inbound"] = false,
+					["convo"] = "Trictagøn",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357971457,
+					["from"] = "Opacus",
+					["msg"] = "When its up I will send you the link.. give me ur opinions",
+					["inbound"] = false,
+					["convo"] = "Trictagøn",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357971463,
+					["from"] = "Trictagøn",
+					["msg"] = "k",
+					["inbound"] = true,
+					["convo"] = "Trictagøn",
+				}, -- [7]
+				["info"] = {
+				},
+			},
+			["Epicbeard-Ghostlands"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357975235,
+					["from"] = "Opacus",
+					["msg"] = "GJ LETTING THE TANK DIE",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357975262,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "ALL CAPS RAGE LIKE A FUCKING HOMO.",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357975270,
+					["from"] = "Opacus",
+					["msg"] = "YOURE BAD",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357975285,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "You're*",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357975292,
+					["from"] = "Opacus",
+					["msg"] = "THATS WAHTS I SAID",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357975293,
+					["from"] = "Opacus",
+					["msg"] = "READ AGAIN",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357975301,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "YOURE",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357975305,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "You're*",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357975307,
+					["from"] = "Opacus",
+					["msg"] = "STOP HANGING ON THAT COMEBACK ",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357975310,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "Know the difference.",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357975344,
+					["from"] = "Opacus",
+					["msg"] = "NICE REALM",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357975345,
+					["from"] = "Opacus",
+					["msg"] = "ROFL",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357975364,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "Yes, because a realm tells you a whole lot.",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357975415,
+					["from"] = "Opacus",
+					["msg"] = "considering realm status is ranked based on player performance... yes it does",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357975416,
+					["from"] = "Opacus",
+					["msg"] = "retard",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357975432,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "Awh muffin, are you upset?",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357975455,
+					["from"] = "Opacus",
+					["msg"] = "now youre gunna hang on the urmad shit? rofl",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357975463,
+					["from"] = "Epicbeard-Ghostlands",
+					["msg"] = "I never said umad.",
+					["inbound"] = true,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357975474,
+					["from"] = "Opacus",
+					["msg"] = "youre",
+					["inbound"] = false,
+					["convo"] = "Epicbeard-Ghostlands",
+				}, -- [19]
+				["info"] = {
+				},
+			},
+			["Kreepngdeth"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357878374,
+					["from"] = "Opacus",
+					["msg"] = "hey u there?",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357878387,
+					["from"] = "Kreepngdeth",
+					["msg"] = "whos this?",
+					["inbound"] = true,
+					["convo"] = "Kreepngdeth",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357878399,
+					["from"] = "Opacus",
+					["msg"] = "Just Home Brew's rogue.. are u Intent's rogue for group A?",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357878409,
+					["from"] = "Kreepngdeth",
+					["msg"] = "im one of them?",
+					["inbound"] = true,
+					["convo"] = "Kreepngdeth",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357878416,
+					["from"] = "Opacus",
+					["msg"] = "Ok,  got a quick question",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357878435,
+					["from"] = "Opacus",
+					["msg"] = "for combat.. my calculations are putting  |cffa335ee|Hitem:86391:0:0:0:0:0:0:360522768:90:0:447|h[Spiritsever]|h|r |cffa335ee|Hitem:87012:0:0:0:0:0:0:1831115264:90:0:445|h[Dagger of the Seven Stars]|h|r better than  ",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357878435,
+					["from"] = "Opacus",
+					["msg"] = "|cffa335ee|Hitem:86864:4444:4996:0:0:0:0:1090575744:90:145:447|h[Claws of Shek'zeer]|h|r |cffa335ee|Hitem:87012:0:0:0:0:0:0:1831115264:90:0:445|h[Dagger of the Seven Stars]|h|r ",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357878458,
+					["from"] = "Kreepngdeth",
+					["msg"] = "lol always use fist for MH as combat",
+					["inbound"] = true,
+					["convo"] = "Kreepngdeth",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357878459,
+					["from"] = "Opacus",
+					["msg"] = "but some1 is arguing that using LFR MH with  |cffa335ee|Hitem:87012:0:0:0:0:0:0:1831115264:90:0:445|h[Dagger of the Seven Stars]|h|r would be better.. but I disagree",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357878489,
+					["from"] = "Kreepngdeth",
+					["msg"] = "i just told you whats better, raiding though sorry",
+					["inbound"] = true,
+					["convo"] = "Kreepngdeth",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357878502,
+					["from"] = "Opacus",
+					["msg"] = "what? alright peace",
+					["inbound"] = false,
+					["convo"] = "Kreepngdeth",
+				}, -- [11]
+				["info"] = {
+				},
+			},
+			["Nìckolas"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357971603,
+					["from"] = "Nìckolas",
+					["msg"] = "it looks ugly",
+					["inbound"] = true,
+					["convo"] = "Nìckolas",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357971615,
+					["from"] = "Opacus",
+					["msg"] = "What looks ugly?",
+					["inbound"] = false,
+					["convo"] = "Nìckolas",
+				}, -- [2]
+				["info"] = {
+				},
+			},
+			["Voltrinity"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357091179,
+					["from"] = "Opacus",
+					["msg"] = "Just out of curiousity... did u talk to any1 about me as a raider?",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357091186,
+					["from"] = "Opacus",
+					["msg"] = "Just curious what the others felt about me",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357091192,
+					["from"] = "Voltrinity",
+					["msg"] = "yes",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357091196,
+					["from"] = "Voltrinity",
+					["msg"] = "4 others",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357091238,
+					["from"] = "Opacus",
+					["msg"] = "mostly positive? or nay?",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357091240,
+					["from"] = "Voltrinity",
+					["msg"] = "3 of them seemed to agree that, you might/prolly be pulling competiive dps if your gear was better, bc rogues are very gear dependant",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357091249,
+					["from"] = "Voltrinity",
+					["msg"] = "1 was negative",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357091251,
+					["from"] = "Voltrinity",
+					["msg"] = "3 positive",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357091271,
+					["from"] = "Voltrinity",
+					["msg"] = "like i said i was ready to bring you for heroic mogushan tonight but you no show lol",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357091273,
+					["from"] = "Opacus",
+					["msg"] = "u dont have to tell me who the negative was.. but what was the negative statement that was made?",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357091281,
+					["from"] = "Voltrinity",
+					["msg"] = "'i think he sux'",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357091283,
+					["from"] = "Voltrinity",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357091288,
+					["from"] = "Voltrinity",
+					["msg"] = "you know how people can be though-",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357091292,
+					["from"] = "Voltrinity",
+					["msg"] = "you have to prove yourself",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357091305,
+					["from"] = "Opacus",
+					["msg"] = "Well thats pretty empty and actually baseless if u review any log from our raids",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357091307,
+					["from"] = "Voltrinity",
+					["msg"] = "and, he's just looking at meters prob seeing that OH we have to gear another player or w/e",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357091311,
+					["from"] = "Voltrinity",
+					["msg"] = "ya i know",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357091317,
+					["from"] = "Opacus",
+					["msg"] = "7th in damage taken... 6th in deaths... 3rd in melee DPS",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357091349,
+					["from"] = "Opacus",
+					["msg"] = "thats total boss recordings and most of those encounters were the first time",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357091359,
+					["from"] = "Opacus",
+					["msg"] = "But I bet I know who said that",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357091364,
+					["from"] = "Voltrinity",
+					["msg"] = "who?",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357091371,
+					["from"] = "Voltrinity",
+					["msg"] = "(probably wont answer)",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357091376,
+					["from"] = "Opacus",
+					["msg"] = "its fine",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357091384,
+					["from"] = "Opacus",
+					["msg"] = "I know your brother and the hunter like me",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357091397,
+					["from"] = "Opacus",
+					["msg"] = "If I had to make a bet, I'd say the warlock",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357091414,
+					["from"] = "Opacus",
+					["msg"] = "Aldelia",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357091431,
+					["from"] = "Opacus",
+					["msg"] = "I also cant imagine your wife saying anything negative either",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [27]
+				{
+					["type"] = 1,
+					["time"] = 1357091488,
+					["from"] = "Voltrinity",
+					["msg"] = "so i'll see you tomorrow night? lol",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [28]
+				{
+					["type"] = 1,
+					["time"] = 1357091496,
+					["from"] = "Voltrinity",
+					["msg"] = "not going to get personal about all this",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [29]
+				{
+					["type"] = 1,
+					["time"] = 1357091523,
+					["from"] = "Voltrinity",
+					["msg"] = "dont worry about guild politics- just try and be on at raid time, i think you're a player",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [30]
+				{
+					["type"] = 1,
+					["time"] = 1357091541,
+					["from"] = "Opacus",
+					["msg"] = "But of course I could be wrong... but im also a good judge of character.. but again, mumble is a hard place to judge... nevertheless, I am around people like that all the time.. not the warlock but ppl that talk like that about the new guy or others... ",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [31]
+				{
+					["type"] = 1,
+					["time"] = 1357091541,
+					["from"] = "Opacus",
+					["msg"] = "its called finding an excuse to critique or be different in front of the boss so it looks like you are better than you actually are... I tend to let numbers do the talking ",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [32]
+				{
+					["type"] = 1,
+					["time"] = 1357091580,
+					["from"] = "Opacus",
+					["msg"] = "btw im hung over so I might be a little more open than I usually am rofl",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [33]
+				{
+					["type"] = 1,
+					["time"] = 1357091591,
+					["from"] = "Opacus",
+					["msg"] = "and yeah its cool... ill be here tomorrow for sure",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [34]
+				{
+					["type"] = 1,
+					["time"] = 1357091595,
+					["from"] = "Voltrinity",
+					["msg"] = "aiight",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [35]
+				{
+					["type"] = 1,
+					["time"] = 1357091600,
+					["from"] = "Voltrinity",
+					["msg"] = "peace NAH MEAN!?!?!",
+					["inbound"] = true,
+					["convo"] = "Voltrinity",
+				}, -- [36]
+				{
+					["type"] = 1,
+					["time"] = 1357091612,
+					["from"] = "Opacus",
+					["msg"] = "haha.. I know im chatty tn.. peace mang",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [37]
+				{
+					["type"] = 1,
+					["time"] = 1357091652,
+					["from"] = "Opacus",
+					["msg"] = "Was I right tho?",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [38]
+				{
+					["type"] = 1,
+					["time"] = 1357091656,
+					["from"] = "Opacus",
+					["msg"] = "aahahahah",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [39]
+				{
+					["type"] = 1,
+					["time"] = 1357091954,
+					["from"] = "Opacus",
+					["msg"] = "yo u wanna run a quick dungeon with ur priest? Ill tank one with my warr.. level 87",
+					["inbound"] = false,
+					["convo"] = "Voltrinity",
+				}, -- [40]
+				["info"] = {
+				},
+			},
+			["Tobinator"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357952621,
+					["from"] = "Tobinator",
+					["msg"] = "what you streaming",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357952638,
+					["from"] = "Opacus",
+					["msg"] = "Just random WoW shit... PVE.. raid and heroic content... UI building ,, shit like that",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357952649,
+					["from"] = "Opacus",
+					["msg"] = "tonight just doing some heroics and playing with tmorphg",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357952652,
+					["from"] = "Opacus",
+					["msg"] = "tmorph*",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357952682,
+					["from"] = "Tobinator",
+					["msg"] = "cool ill check it ouyt",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357952687,
+					["from"] = "Tobinator",
+					["msg"] = "out",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357952689,
+					["from"] = "Opacus",
+					["msg"] = "thx man",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357952695,
+					["from"] = "Tobinator",
+					["msg"] = "np",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357952933,
+					["from"] = "Tobinator",
+					["msg"] = "nice music",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357952939,
+					["from"] = "Opacus",
+					["msg"] = "thx",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357952944,
+					["from"] = "Opacus",
+					["msg"] = "u watching?",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357952949,
+					["from"] = "Opacus",
+					["msg"] = "check this out",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357952953,
+					["from"] = "Tobinator",
+					["msg"] = "eya",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357953016,
+					["from"] = "Tobinator",
+					["msg"] = "boss",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [14]
+				{
+					["type"] = 1,
+					["time"] = 1357953171,
+					["from"] = "Opacus",
+					["msg"] = "u seen that?",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [15]
+				{
+					["type"] = 1,
+					["time"] = 1357953175,
+					["from"] = "Tobinator",
+					["msg"] = "YEA",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [16]
+				{
+					["type"] = 1,
+					["time"] = 1357953205,
+					["from"] = "Opacus",
+					["msg"] = "I like BE anmations the best, but I still say that humans look the best in gear",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [17]
+				{
+					["type"] = 1,
+					["time"] = 1357953216,
+					["from"] = "Tobinator",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [18]
+				{
+					["type"] = 1,
+					["time"] = 1357953271,
+					["from"] = "Opacus",
+					["msg"] = "I can change my spell animation... watch this",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [19]
+				{
+					["type"] = 1,
+					["time"] = 1357953276,
+					["from"] = "Opacus",
+					["msg"] = "This is so sick",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [20]
+				{
+					["type"] = 1,
+					["time"] = 1357953382,
+					["from"] = "Tobinator",
+					["msg"] = "im watching",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [21]
+				{
+					["type"] = 1,
+					["time"] = 1357953796,
+					["from"] = "Tobinator",
+					["msg"] = "nice dps",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [22]
+				{
+					["type"] = 1,
+					["time"] = 1357953810,
+					["from"] = "Opacus",
+					["msg"] = "thx im hardlky playing tho lol",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [23]
+				{
+					["type"] = 1,
+					["time"] = 1357953815,
+					["from"] = "Tobinator",
+					["msg"] = "lol",
+					["inbound"] = true,
+					["convo"] = "Tobinator",
+				}, -- [24]
+				{
+					["type"] = 1,
+					["time"] = 1357953834,
+					["from"] = "Opacus",
+					["msg"] = "oO i like this song",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [25]
+				{
+					["type"] = 1,
+					["time"] = 1357953887,
+					["from"] = "Opacus",
+					["msg"] = "fell behind here for some reason",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [26]
+				{
+					["type"] = 1,
+					["time"] = 1357953891,
+					["from"] = "Opacus",
+					["msg"] = "lol",
+					["inbound"] = false,
+					["convo"] = "Tobinator",
+				}, -- [27]
+				["info"] = {
+				},
+			},
+			["Sweepstakes"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356974527,
+					["from"] = "Opacus",
+					["msg"] = "when this boss goes to other side throw a HOT on me because i move really fast to interrupt him",
+					["inbound"] = false,
+					["convo"] = "Sweepstakes",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1356974541,
+					["from"] = "Sweepstakes",
+					["msg"] = "ok",
+					["inbound"] = true,
+					["convo"] = "Sweepstakes",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1356974595,
+					["from"] = "Opacus",
+					["msg"] = "go",
+					["inbound"] = false,
+					["convo"] = "Sweepstakes",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1356974602,
+					["from"] = "Opacus",
+					["msg"] = "mt",
+					["inbound"] = false,
+					["convo"] = "Sweepstakes",
+				}, -- [4]
+				["info"] = {
+				},
+			},
+			["Xarxthes"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357434031,
+					["from"] = "Opacus",
+					["msg"] = "no grp 1 tonight?",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357434043,
+					["from"] = "Xarxthes",
+					["msg"] = "ya im coming to group 1, dont u worry",
+					["inbound"] = true,
+					["convo"] = "Xarxthes",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357434052,
+					["from"] = "Opacus",
+					["msg"] = "NIGGA PEEZ",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357434696,
+					["from"] = "Xarxthes",
+					["msg"] = "SHHHH",
+					["inbound"] = true,
+					["convo"] = "Xarxthes",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357434699,
+					["from"] = "Xarxthes",
+					["msg"] = "stop saying stuff",
+					["inbound"] = true,
+					["convo"] = "Xarxthes",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357434732,
+					["from"] = "Opacus",
+					["msg"] = "I left.. I was soo confused ... because u invited me to both I thought we was raiding at 6pm",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357434768,
+					["from"] = "Opacus",
+					["msg"] = "im out of mumble sorry bout that.. see u at 7",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357437265,
+					["from"] = "Opacus",
+					["msg"] = "inv?",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357437280,
+					["from"] = "Opacus",
+					["msg"] = "or am I sitting?",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357437295,
+					["from"] = "Xarxthes",
+					["msg"] = "PST XARI",
+					["inbound"] = true,
+					["convo"] = "Xarxthes",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357437321,
+					["from"] = "Opacus",
+					["msg"] = "I did",
+					["inbound"] = false,
+					["convo"] = "Xarxthes",
+				}, -- [11]
+				["info"] = {
+				},
+			},
+			["Mojomagik"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357598588,
+					["from"] = "Opacus",
+					["msg"] = "hey",
+					["inbound"] = false,
+					["convo"] = "Mojomagik",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357598606,
+					["from"] = "Opacus",
+					["msg"] = "is there anything on the calender for you this week yet?",
+					["inbound"] = false,
+					["convo"] = "Mojomagik",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357598689,
+					["from"] = "Mojomagik",
+					["msg"] = "not yet",
+					["inbound"] = true,
+					["convo"] = "Mojomagik",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357598697,
+					["from"] = "Opacus",
+					["msg"] = "alrighty",
+					["inbound"] = false,
+					["convo"] = "Mojomagik",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357598699,
+					["from"] = "Opacus",
+					["msg"] = "ty",
+					["inbound"] = false,
+					["convo"] = "Mojomagik",
+				}, -- [5]
+				["info"] = {
+				},
+			},
+			["Aryee"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357704082,
+					["from"] = "Opacus",
+					["msg"] = "grats",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357871799,
+					["from"] = "Opacus",
+					["msg"] = "do u want the plans?",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357874411,
+					["from"] = "Aryee",
+					["msg"] = "was it you with the account? Or was it convel?",
+					["inbound"] = true,
+					["convo"] = "Aryee",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357874416,
+					["from"] = "Opacus",
+					["msg"] = "me",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357874422,
+					["from"] = "Aryee",
+					["msg"] = "so what is the deal?",
+					["inbound"] = true,
+					["convo"] = "Aryee",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357874445,
+					["from"] = "Opacus",
+					["msg"] = "u can buy an unmerged account that will merge to ur battle.net and they will SOR it to level 80",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357874474,
+					["from"] = "Aryee",
+					["msg"] = "okay, tell me what i need to do in vent after we're done raiding",
+					["inbound"] = true,
+					["convo"] = "Aryee",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357877315,
+					["from"] = "Aryee",
+					["msg"] = "come down a channel and tell me what we gotta do",
+					["inbound"] = true,
+					["convo"] = "Aryee",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357877348,
+					["from"] = "Opacus",
+					["msg"] = "ight",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357877356,
+					["from"] = "Opacus",
+					["msg"] = "go down",
+					["inbound"] = false,
+					["convo"] = "Aryee",
+				}, -- [10]
+				["info"] = {
+				},
+			},
+			["Bearyandstuf"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357336312,
+					["from"] = "Bearyandstuf",
+					["msg"] = "how  much",
+					["inbound"] = true,
+					["convo"] = "Bearyandstuf",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357336320,
+					["from"] = "Opacus",
+					["msg"] = "they are 18K on the AH I will sell for 15K",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357336331,
+					["from"] = "Bearyandstuf",
+					["msg"] = "I've seen them way lower on the ah than t15k",
+					["inbound"] = true,
+					["convo"] = "Bearyandstuf",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357336347,
+					["from"] = "Opacus",
+					["msg"] = "the 496 pair? Doubtful... they just came down from 22",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357336353,
+					["from"] = "Opacus",
+					["msg"] = "so next time buy them when u see them",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357336355,
+					["from"] = "Bearyandstuf",
+					["msg"] = "I've seen them for 11k.",
+					["inbound"] = true,
+					["convo"] = "Bearyandstuf",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357336362,
+					["from"] = "Opacus",
+					["msg"] = "thats low.. next time bvuy them",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357336362,
+					["from"] = "Bearyandstuf",
+					["msg"] = "I will do that. you have a good one",
+					["inbound"] = true,
+					["convo"] = "Bearyandstuf",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357336383,
+					["from"] = "Opacus",
+					["msg"] = "know your prices before u whisper me",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357336508,
+					["from"] = "Opacus",
+					["msg"] = "u mad",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357336534,
+					["from"] = "Opacus",
+					["msg"] = "its 10K just for matts, autionator says 22K... and l2 use TSM and not some shit u think u know because u scanned the AH once",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357336536,
+					["from"] = "Opacus",
+					["msg"] = "rofl",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357336546,
+					["from"] = "Opacus",
+					["msg"] = "And thats 10K not including spirits ",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [13]
+				{
+					["type"] = 1,
+					["time"] = 1357336559,
+					["from"] = "Opacus",
+					["msg"] = "again, learn ur prices little nub",
+					["inbound"] = false,
+					["convo"] = "Bearyandstuf",
+				}, -- [14]
+				["info"] = {
+				},
+			},
+			["Davyjonès"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357777421,
+					["from"] = "Davyjonès",
+					["msg"] = "FAIL",
+					["inbound"] = true,
+					["convo"] = "Davyjonès",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357777439,
+					["from"] = "Opacus",
+					["msg"] = "u dont even know what that is",
+					["inbound"] = false,
+					["convo"] = "Davyjonès",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357777445,
+					["from"] = "Davyjonès",
+					["msg"] = "uh ok",
+					["inbound"] = true,
+					["convo"] = "Davyjonès",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357777458,
+					["from"] = "Davyjonès",
+					["msg"] = "its a pvp  hack",
+					["inbound"] = true,
+					["convo"] = "Davyjonès",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357777465,
+					["from"] = "Opacus",
+					["msg"] = "... beat it",
+					["inbound"] = false,
+					["convo"] = "Davyjonès",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357777479,
+					["from"] = "Davyjonès",
+					["msg"] = "are i embarrased",
+					["inbound"] = true,
+					["convo"] = "Davyjonès",
+				}, -- [6]
+				["info"] = {
+				},
+			},
+		},
+		["Alterboi"] = {
+			["Turilas"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357073405,
+					["from"] = "Alterboi",
+					["msg"] = "Art#1885",
+					["inbound"] = false,
+					["convo"] = "Turilas",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357073408,
+					["from"] = "Alterboi",
+					["msg"] = "add me",
+					["inbound"] = false,
+					["convo"] = "Turilas",
+				}, -- [2]
 				["info"] = {
 				},
 			},
@@ -9080,6 +16660,214 @@ WIM3_History = {
 					["inbound"] = true,
 					["convo"] = "Mortuous",
 				}, -- [163]
+				{
+					["type"] = 1,
+					["time"] = 1357502148,
+					["from"] = "Mortuous",
+					["msg"] = "hey are you saved terrace this week",
+					["inbound"] = true,
+					["convo"] = "Mortuous",
+				}, -- [164]
+				{
+					["type"] = 1,
+					["time"] = 1357502154,
+					["from"] = "Alterboi",
+					["msg"] = "ya",
+					["inbound"] = false,
+					["convo"] = "Mortuous",
+				}, -- [165]
+				["info"] = {
+				},
+			},
+			["Dødenridder"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357400948,
+					["from"] = "Alterboi",
+					["msg"] = "PULL EVERYTHING",
+					["inbound"] = false,
+					["convo"] = "Dødenridder",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357400957,
+					["from"] = "Alterboi",
+					["msg"] = "go",
+					["inbound"] = false,
+					["convo"] = "Dødenridder",
+				}, -- [2]
+				["info"] = {
+				},
+			},
+			["Tackfine"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356928168,
+					["from"] = "Tackfine",
+					["msg"] = "what troll are u talking about?",
+					["inbound"] = true,
+					["convo"] = "Tackfine",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1356928183,
+					["from"] = "Alterboi",
+					["msg"] = "nah lol was just talking random in guild",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1356928196,
+					["from"] = "Alterboi",
+					["msg"] = "because I was just trolling some dude and hes like.. \"u are so mad right now\"",
+					["inbound"] = false,
+					["convo"] = "Tackfine",
+				}, -- [3]
+				["info"] = {
+				},
+			},
+			["Aceharrdlife"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357355003,
+					["from"] = "Aceharrdlife",
+					["msg"] = "hey wanna come for molten core guild run",
+					["inbound"] = true,
+					["convo"] = "Aceharrdlife",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357355269,
+					["from"] = "Aceharrdlife",
+					["msg"] = "Hey im doing a molten core run with my guild. im wondering if you want to come. were almost ready.",
+					["inbound"] = true,
+					["convo"] = "Aceharrdlife",
+				}, -- [2]
+				["info"] = {
+				},
+			},
+			["Retrogrâde"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357354608,
+					["from"] = "Alterboi",
+					["msg"] = "wow youre an ignorant retard rofl",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357354636,
+					["from"] = "Retrogrâde",
+					["msg"] = "uhm ok?",
+					["inbound"] = true,
+					["convo"] = "Retrogrâde",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357354642,
+					["from"] = "Retrogrâde",
+					["msg"] = "i dont wanna do that shit again",
+					["inbound"] = true,
+					["convo"] = "Retrogrâde",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357354650,
+					["from"] = "Alterboi",
+					["msg"] = "next time read",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357354660,
+					["from"] = "Alterboi",
+					["msg"] = "im inches from 59 then we coulda just queued random",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357354670,
+					["from"] = "Retrogrâde",
+					["msg"] = "no you read...",
+					["inbound"] = true,
+					["convo"] = "Retrogrâde",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357354677,
+					["from"] = "Retrogrâde",
+					["msg"] = "i didnt want to do that shit again",
+					["inbound"] = true,
+					["convo"] = "Retrogrâde",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357354680,
+					["from"] = "Alterboi",
+					["msg"] = "it doesnt matter... I just wanted a shorter queue... but once again showing your ignorance",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357354691,
+					["from"] = "Alterboi",
+					["msg"] = "u fucking newb... GL getting a healer whos gunna let u fail tank too",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357354694,
+					["from"] = "Alterboi",
+					["msg"] = "peace",
+					["inbound"] = false,
+					["convo"] = "Retrogrâde",
+				}, -- [10]
+				["info"] = {
+				},
+			},
+			["Avp"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357344682,
+					["from"] = "Alterboi",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Avp",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357344682,
+					["from"] = "Avp",
+					["msg"] = "<Deadly Boss Mods> Avp is busy fighting against Raid Finder - Wind Lord Mel'jarak (97%, 25/25 people alive)",
+					["inbound"] = true,
+					["convo"] = "Avp",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357345025,
+					["from"] = "Avp",
+					["msg"] = "<DBM> Avp has defeated Raid Finder - Wind Lord Mel'jarak! They have 4 total victories.",
+					["inbound"] = true,
+					["convo"] = "Avp",
+				}, -- [3]
+				["info"] = {
+				},
+			},
+			["Ëmery"] = {
+				{
+					["type"] = 1,
+					["time"] = 1356838448,
+					["from"] = "Alterboi",
+					["msg"] = "why are u healing?",
+					["inbound"] = false,
+					["convo"] = "Ëmery",
+				}, -- [1]
 				["info"] = {
 				},
 			},
@@ -9143,102 +16931,6 @@ WIM3_History = {
 				["info"] = {
 				},
 			},
-			["Xarî"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356493431,
-					["from"] = "Alterboi",
-					["msg"] = "hey",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356493432,
-					["from"] = "Xarî",
-					["msg"] = "<Deadly Boss Mods> Xarî is busy fighting against Raid Finder - Tsulong (5%, 25/25 people alive)",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356493441,
-					["from"] = "Xarî",
-					["msg"] = "<DBM> Xarî has defeated Raid Finder - Tsulong!",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356493473,
-					["from"] = "Alterboi",
-					["msg"] = "Hey, this is another Opacus alt.. would u mind inviting me to the guild?",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356493535,
-					["from"] = "Xarî",
-					["msg"] = "already in guild",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356493540,
-					["from"] = "Alterboi",
-					["msg"] = "doh",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356493546,
-					["from"] = "Alterboi",
-					["msg"] = "go ahead",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356493811,
-					["from"] = "Alterboi",
-					["msg"] = "ty btw and happy xmas",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356493812,
-					["from"] = "Xarî",
-					["msg"] = "<Deadly Boss Mods> Xarî is busy fighting against Raid Finder - Lei Shi (45%, 25/25 people alive)",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356493978,
-					["from"] = "Xarî",
-					["msg"] = "<DBM> Xarî has defeated Raid Finder - Lei Shi!",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [10]
-				["info"] = {
-				},
-			},
-			["Voltrinity"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357090033,
-					["from"] = "Voltrinity",
-					["msg"] = "hey opacus?",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [1]
-				["info"] = {
-				},
-			},
 			["Thoridal"] = {
 				{
 					["type"] = 1,
@@ -9291,86 +16983,262 @@ WIM3_History = {
 				["info"] = {
 				},
 			},
-			["Bakdoorampag"] = {
+			["Voltrinity"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356585845,
-					["from"] = "Bakdoorampag",
-					["msg"] = "doesnt help that he is guild masters brother ",
+					["time"] = 1357090033,
+					["from"] = "Voltrinity",
+					["msg"] = "hey opacus?",
 					["inbound"] = true,
-					["convo"] = "Bakdoorampag",
+					["convo"] = "Voltrinity",
+				}, -- [1]
+				["info"] = {
+				},
+			},
+			["Reder"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357398031,
+					["from"] = "Alterboi",
+					["msg"] = "ignorant man... youre the prob w the community... learn to take advice.. believe it or not... u dont know it all.. neither do I and neither does any1 else at level 60",
+					["inbound"] = false,
+					["convo"] = "Reder",
 				}, -- [1]
 				{
 					["type"] = 1,
-					["time"] = 1356585848,
-					["from"] = "Bakdoorampag",
-					["msg"] = "hurt",
+					["time"] = 1357398071,
+					["from"] = "Reder",
+					["msg"] = "you can suck my dick, and i can do w.e the fuck i want? did you see a problem with my tanking? i had everything on me",
 					["inbound"] = true,
-					["convo"] = "Bakdoorampag",
+					["convo"] = "Reder",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1356585856,
-					["from"] = "Bakdoorampag",
-					["msg"] = "jira is volts brother",
+					["time"] = 1357398079,
+					["from"] = "Reder",
+					["msg"] = "you need to learn to just keep your mouth shut",
 					["inbound"] = true,
-					["convo"] = "Bakdoorampag",
+					["convo"] = "Reder",
 				}, -- [3]
 				{
 					["type"] = 1,
-					["time"] = 1356585862,
+					["time"] = 1357398087,
 					["from"] = "Alterboi",
-					["msg"] = "oh nice",
+					["msg"] = "rofl u got issues",
 					["inbound"] = false,
-					["convo"] = "Bakdoorampag",
+					["convo"] = "Reder",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357398100,
+					["from"] = "Reder",
+					["msg"] = "says the one who started talkin",
+					["inbound"] = true,
+					["convo"] = "Reder",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357398137,
+					["from"] = "Alterboi",
+					["msg"] = "another reason u dont know what u are saying...... just anothet tank who thinks hes good because he pulled a lot of mobs... the reason u could is because I can hold the healing...",
+					["inbound"] = false,
+					["convo"] = "Reder",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357398154,
+					["from"] = "Alterboi",
+					["msg"] = "u are sitting there capped at 100 rage and I try to help u and u bug out.. calm down and listen once in a while",
+					["inbound"] = false,
+					["convo"] = "Reder",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357398162,
+					["from"] = "Reder",
+					["msg"] = "holy fuck no way, amazing",
+					["inbound"] = true,
+					["convo"] = "Reder",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357398199,
+					["from"] = "Alterboi",
+					["msg"] = "like my main has heroic content cleared and some1 told me yesterday to ue smite on my healer because dmg will heal also.... u know what I said? Not FUCK YOU ASSHOLE.. but cool and I did it.. and since then I do dmg and heals which is more fun",
+					["inbound"] = false,
+					["convo"] = "Reder",
+				}, -- [9]
+				["info"] = {
+				},
+			},
+			["Finnasone-Azuremyst"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357346457,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "healer. wanna back out and pick up a new group?",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357346462,
+					["from"] = "Alterboi",
+					["msg"] = "yes",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357346473,
+					["from"] = "Alterboi",
+					["msg"] = "tank is beyong retarded",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357346489,
+					["from"] = "Alterboi",
+					["msg"] = "we can just vote to kick tank",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [4]
+				{
+					["type"] = 1,
+					["time"] = 1357346539,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "yw",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [5]
+				{
+					["type"] = 1,
+					["time"] = 1357346544,
+					["from"] = "Alterboi",
+					["msg"] = "heh",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [6]
+				{
+					["type"] = 1,
+					["time"] = 1357346559,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "your welsome",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [7]
+				{
+					["type"] = 1,
+					["time"] = 1357346570,
+					["from"] = "Alterboi",
+					["msg"] = "ya I know what yw means rofl",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [8]
+				{
+					["type"] = 1,
+					["time"] = 1357346582,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "why you sau huh then?",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [9]
+				{
+					["type"] = 1,
+					["time"] = 1357346587,
+					["from"] = "Alterboi",
+					["msg"] = "I didnt...",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [10]
+				{
+					["type"] = 1,
+					["time"] = 1357346597,
+					["from"] = "Alterboi",
+					["msg"] = "I said \"heh\"",
+					["inbound"] = false,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [11]
+				{
+					["type"] = 1,
+					["time"] = 1357346611,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "okay sorry im hella brain dead",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [12]
+				{
+					["type"] = 1,
+					["time"] = 1357346636,
+					["from"] = "Finnasone-Azuremyst",
+					["msg"] = "rez dk",
+					["inbound"] = true,
+					["convo"] = "Finnasone-Azuremyst",
+				}, -- [13]
+				["info"] = {
+				},
+			},
+			["Flarrorian"] = {
+				{
+					["type"] = 1,
+					["time"] = 1357072245,
+					["from"] = "Alterboi",
+					["msg"] = "yo",
+					["inbound"] = false,
+					["convo"] = "Flarrorian",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357072369,
+					["from"] = "Flarrorian",
+					["msg"] = "sup",
+					["inbound"] = true,
+					["convo"] = "Flarrorian",
+				}, -- [2]
+				{
+					["type"] = 1,
+					["time"] = 1357072414,
+					["from"] = "Alterboi",
+					["msg"] = "whats more fun? Disc or Holy?",
+					["inbound"] = false,
+					["convo"] = "Flarrorian",
+				}, -- [3]
+				{
+					["type"] = 1,
+					["time"] = 1357072437,
+					["from"] = "Flarrorian",
+					["msg"] = "disc no doubt",
+					["inbound"] = true,
+					["convo"] = "Flarrorian",
 				}, -- [4]
 				["info"] = {
 				},
 			},
-			["Turilas"] = {
+			["Elvz"] = {
 				{
 					["type"] = 1,
-					["time"] = 1357073405,
+					["time"] = 1357434968,
 					["from"] = "Alterboi",
-					["msg"] = "Art#1885",
+					["msg"] = "Yo, not sure if u got my PM on the forums... but im MuteTV there... just wanted to let u know if u needed an extra hand around the community or anything I can do to help im down.. might not mean much but I figured id put it out there",
 					["inbound"] = false,
-					["convo"] = "Turilas",
+					["convo"] = "Elvz",
 				}, -- [1]
 				{
 					["type"] = 1,
-					["time"] = 1357073408,
-					["from"] = "Alterboi",
-					["msg"] = "add me",
-					["inbound"] = false,
-					["convo"] = "Turilas",
-				}, -- [2]
-				["info"] = {
-				},
-			},
-			["Tackfine"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356928168,
-					["from"] = "Tackfine",
-					["msg"] = "what troll are u talking about?",
+					["time"] = 1357436104,
+					["from"] = "Elvz",
+					["msg"] = "thx i appreciate it sorry i havnt responded it i'm super busy lately",
 					["inbound"] = true,
-					["convo"] = "Tackfine",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356928183,
-					["from"] = "Alterboi",
-					["msg"] = "nah lol was just talking random in guild",
-					["inbound"] = false,
-					["convo"] = "Tackfine",
+					["convo"] = "Elvz",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1356928196,
+					["time"] = 1357436198,
 					["from"] = "Alterboi",
-					["msg"] = "because I was just trolling some dude and hes like.. \"u are so mad right now\"",
+					["msg"] = "Yeah figured as much |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\happy.blp:16|t... I really respect what you do and I am eager to get involved. So let me know if anything opens up. |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\grin.blp:16|t",
 					["inbound"] = false,
-					["convo"] = "Tackfine",
+					["convo"] = "Elvz",
 				}, -- [3]
 				["info"] = {
 				},
@@ -9448,54 +17316,6 @@ WIM3_History = {
 					["inbound"] = true,
 					["convo"] = "Ezekîel-Ysondre",
 				}, -- [9]
-				["info"] = {
-				},
-			},
-			["Flarrorian"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357072245,
-					["from"] = "Alterboi",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1357072369,
-					["from"] = "Flarrorian",
-					["msg"] = "sup",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1357072414,
-					["from"] = "Alterboi",
-					["msg"] = "whats more fun? Disc or Holy?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1357072437,
-					["from"] = "Flarrorian",
-					["msg"] = "disc no doubt",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Eatyournalga"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356490511,
-					["from"] = "Eatyournalga",
-					["msg"] = "This is a new pvp guild trying to expan, come join us!",
-					["inbound"] = true,
-					["convo"] = "Eatyournalga",
-				}, -- [1]
 				["info"] = {
 				},
 			},
@@ -9655,6635 +17475,79 @@ WIM3_History = {
 				["info"] = {
 				},
 			},
-			["Ëmery"] = {
+			["Shotastic"] = {
 				{
 					["type"] = 1,
-					["time"] = 1356838448,
+					["time"] = 1357424751,
+					["from"] = "Shotastic",
+					["msg"] = "get some lvls bro so that we can run some stuff, dk is 70 and priest is 67",
+					["inbound"] = true,
+					["convo"] = "Shotastic",
+				}, -- [1]
+				{
+					["type"] = 1,
+					["time"] = 1357430031,
 					["from"] = "Alterboi",
-					["msg"] = "why are u healing?",
+					["msg"] = "whos this?",
 					["inbound"] = false,
-					["convo"] = "Ëmery",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-		},
-		["Snô"] = {
-			["Greenbug"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356217675,
-					["from"] = "Greenbug",
-					["msg"] = "Can I have 50 silver please I'm new : )",
-					["inbound"] = true,
-					["convo"] = "Greenbug",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-		},
-		["Opacus"] = {
-			["Silentsight"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357335827,
-					["from"] = "Silentsight",
-					["msg"] = "do you happen to have any  |cff0070dd|Hitem:76061:0:0:0:0:0:0:1879931904:90:0:0|h[Spirit of Harmony]|h|r?",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1357335875,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
+					["convo"] = "Shotastic",
 				}, -- [2]
 				{
 					["type"] = 1,
-					["time"] = 1357335887,
-					["from"] = "Opacus",
-					["msg"] = "what do u need?",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
+					["time"] = 1357430049,
+					["from"] = "Shotastic",
+					["msg"] = "hellior the dk, or slatharan the priet",
+					["inbound"] = true,
+					["convo"] = "Shotastic",
 				}, -- [3]
 				{
 					["type"] = 1,
-					["time"] = 1357335897,
-					["from"] = "Silentsight",
-					["msg"] = "if i send you 50 exotic leather do you think you could make me angerhide leg armor?",
+					["time"] = 1357430051,
+					["from"] = "Shotastic",
+					["msg"] = "priest",
 					["inbound"] = true,
-					["convo"] = "Silentsight",
+					["convo"] = "Shotastic",
 				}, -- [4]
 				{
 					["type"] = 1,
-					["time"] = 1357335907,
-					["from"] = "Silentsight",
-					["msg"] = "ill pay you for the spirit",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
+					["time"] = 1357430056,
+					["from"] = "Alterboi",
+					["msg"] = "oh word",
+					["inbound"] = false,
+					["convo"] = "Shotastic",
 				}, -- [5]
 				{
 					["type"] = 1,
-					["time"] = 1357335909,
-					["from"] = "Opacus",
-					["msg"] = "who is this",
+					["time"] = 1357430078,
+					["from"] = "Alterboi",
+					["msg"] = "bout to raid on my main tho... but Ill get this guy higher.. was playing my tank for a bit",
 					["inbound"] = false,
-					["convo"] = "Silentsight",
+					["convo"] = "Shotastic",
 				}, -- [6]
 				{
 					["type"] = 1,
-					["time"] = 1357335914,
-					["from"] = "Silentsight",
-					["msg"] = "silent lol",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
+					["time"] = 1357430086,
+					["from"] = "Alterboi",
+					["msg"] = "hes 88",
+					["inbound"] = false,
+					["convo"] = "Shotastic",
 				}, -- [7]
 				{
 					["type"] = 1,
-					["time"] = 1357335917,
-					["from"] = "Silentsight",
-					["msg"] = "this is my main",
+					["time"] = 1357430103,
+					["from"] = "Shotastic",
+					["msg"] = "ahh nice",
 					["inbound"] = true,
-					["convo"] = "Silentsight",
+					["convo"] = "Shotastic",
 				}, -- [8]
 				{
 					["type"] = 1,
-					["time"] = 1357335919,
-					["from"] = "Silentsight",
-					["msg"] = "im in group 2",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
+					["time"] = 1357430111,
+					["from"] = "Alterboi",
+					["msg"] = "brb 1 sec",
+					["inbound"] = false,
+					["convo"] = "Shotastic",
 				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1357335942,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1357335944,
-					["from"] = "Opacus",
-					["msg"] = "send",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1357335967,
-					["from"] = "Silentsight",
-					["msg"] = "how much do you want for the spirit?",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1357336069,
-					["from"] = "Opacus",
-					["msg"] = "nothing just owe me one or some shit I dont care",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1357336108,
-					["from"] = "Silentsight",
-					["msg"] = "lol well ok then... i can make you a belt buckle or something whenever you need one",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1357336118,
-					["from"] = "Silentsight",
-					["msg"] = "but if you ever want something for that spirit just let me know",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1357336137,
-					["from"] = "Opacus",
-					["msg"] = "I sent it",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1357336156,
-					["from"] = "Silentsight",
-					["msg"] = "awesome bro, thanks so much",
-					["inbound"] = true,
-					["convo"] = "Silentsight",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1357336218,
-					["from"] = "Opacus",
-					["msg"] = "np",
-					["inbound"] = false,
-					["convo"] = "Silentsight",
-				}, -- [18]
-				["info"] = {
-				},
-			},
-			["Avan"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357177176,
-					["from"] = "Avan",
-					["msg"] = ":D",
-					["inbound"] = true,
-					["convo"] = "Avan",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1357177181,
-					["from"] = "Opacus",
-					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\heart.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Avan",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1357270877,
-					["from"] = "Opacus",
-					["msg"] = "thx bro.. im not greedy at all so u know u arent giving it to a jerk off.. i gave up the shoulders last week",
-					["inbound"] = false,
-					["convo"] = "Avan",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1357270880,
-					["from"] = "Opacus",
-					["msg"] = "to some1",
-					["inbound"] = false,
-					["convo"] = "Avan",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Wuzy"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357336440,
-					["from"] = "Wuzy",
-					["msg"] = "Fuck you, you dumb cunt, My auctionator even said so. So know yours before selling",
-					["inbound"] = true,
-					["convo"] = "Wuzy",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Mortuous"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356312799,
-					["from"] = "Opacus",
-					["msg"] = "he meant he was typing it out |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\happy.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356312808,
-					["from"] = "Mortuous",
-					["msg"] = "yeah but i talk to fuckin much anyway lol",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356312813,
-					["from"] = "Opacus",
-					["msg"] = "good",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356312813,
-					["from"] = "Mortuous",
-					["msg"] = "and volt is driving.",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356312819,
-					["from"] = "Opacus",
-					["msg"] = "better than the anti social weirdos",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356312819,
-					["from"] = "Mortuous",
-					["msg"] = "last night i had to talk more ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356312840,
-					["from"] = "Opacus",
-					["msg"] = "just during encounters I wouldnt.. at least thats the rule I try to stand by",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356312874,
-					["from"] = "Mortuous",
-					["msg"] = "i talk like crazy while i'm tanking",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356319232,
-					["from"] = "Opacus",
-					["msg"] = "totals u are 2K less lmao",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356319241,
-					["from"] = "Mortuous",
-					["msg"] = "dem dk healz",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356319245,
-					["from"] = "Opacus",
-					["msg"] = "oh no... u arent but his heals is still terrible",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356319254,
-					["from"] = "Opacus",
-					["msg"] = "17K total is not good",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356319265,
-					["from"] = "Mortuous",
-					["msg"] = "no shit",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356319270,
-					["from"] = "Opacus",
-					["msg"] = "DUDE",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356319278,
-					["from"] = "Opacus",
-					["msg"] = "DONT GET SNIPPY ",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356319281,
-					["from"] = "Opacus",
-					["msg"] = "I KEEL U",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356319287,
-					["from"] = "Mortuous",
-					["msg"] = "i keep almost dying during normal tanking too",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356319290,
-					["from"] = "Mortuous",
-					["msg"] = "its bullshit",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356319292,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356319295,
-					["from"] = "Opacus",
-					["msg"] = "heals suck",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356319298,
-					["from"] = "Opacus",
-					["msg"] = "atm",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356319308,
-					["from"] = "Mortuous",
-					["msg"] = "every week healing sucks with this group",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356319316,
-					["from"] = "Opacus",
-					["msg"] = "yar.. last 2 weeks",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356319319,
-					["from"] = "Mortuous",
-					["msg"] = "then i get yelled at for not popping a cd",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1356319322,
-					["from"] = "Opacus",
-					["msg"] = "is only time i been here",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1356319325,
-					["from"] = "Opacus",
-					["msg"] = "welll",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1356319327,
-					["from"] = "Mortuous",
-					["msg"] = "4 for me",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1356319327,
-					["from"] = "Opacus",
-					["msg"] = "volt knows",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1356319330,
-					["from"] = "Mortuous",
-					["msg"] = "every damn time",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1356319330,
-					["from"] = "Opacus",
-					["msg"] = "he tell me",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1356319351,
-					["from"] = "Opacus",
-					["msg"] = "but ya I lol when volt sounds like hes blaming DPS ahah but he knows",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1356319650,
-					["from"] = "Mortuous",
-					["msg"] = "might be shopping a new grp",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1356319669,
-					["from"] = "Mortuous",
-					["msg"] = "thought this one was gonna be it",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1356319679,
-					["from"] = "Opacus",
-					["msg"] = "u mean guild?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1356319691,
-					["from"] = "Opacus",
-					["msg"] = "this be my training dog.. im going to heroic group eventually",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1356319703,
-					["from"] = "Opacus",
-					["msg"] = "and this aint regulars",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1356320178,
-					["from"] = "Opacus",
-					["msg"] = "yo... this aint regulatrs so dont leave.. im gunna talk to volt",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1356320190,
-					["from"] = "Mortuous",
-					["msg"] = "alright.  ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1356320205,
-					["from"] = "Mortuous",
-					["msg"] = "gonna try to find terrace tomorrow i guess.  ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1356320233,
-					["from"] = "Mortuous",
-					["msg"] = "i'm on dps standby somewhere else but would loe this group to do well",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1356320259,
-					["from"] = "Opacus",
-					["msg"] = "it will... not regular healers doing it etc...",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1356322345,
-					["from"] = "Mortuous",
-					["msg"] = "you looking for another raid tongiht",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1356322355,
-					["from"] = "Opacus",
-					["msg"] = "When?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1356322359,
-					["from"] = "Mortuous",
-					["msg"] = "whenever ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1356322361,
-					["from"] = "Opacus",
-					["msg"] = "yeah",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1356322366,
-					["from"] = "Mortuous",
-					["msg"] = "elegon or hof lol",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1356322371,
-					["from"] = "Mortuous",
-					["msg"] = "i'll go into hof at garalon ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1356322372,
-					["from"] = "Opacus",
-					["msg"] = "Not looking but if u find one.. let me know",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1356322377,
-					["from"] = "Mortuous",
-					["msg"] = "okay i will",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1356322387,
-					["from"] = "Opacus",
-					["msg"] = "if we dont get one.. lets just chain heroics so i can cap valor",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1356322390,
-					["from"] = "Mortuous",
-					["msg"] = "i'm looking but not hopeful.  probably be on a bit tomorrow as well",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1356322405,
-					["from"] = "Mortuous",
-					["msg"] = "yeahhhh",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1356322421,
-					["from"] = "Mortuous",
-					["msg"] = "guess i should do dailies again",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = "Skada: Damage taken for Total, 19:58:14 - 23:14:09:",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 1. Epicwarrior   87.39M (20951.5, 23.9%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 2. Mortuous   54.84M (11777.9, 15.0%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 3. Xarxthes   39.08M (8473.0, 10.7%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 4. Tetraa   32.08M (7372.2, 8.8%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 5. Tackfine   30.17M (7078.1, 8.2%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 6. |cff1784d1Opacus|r   25.81M (5757.9, 7.1%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 7. Convel   25.11M (5731.2, 6.9%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 8. Moonbreese   24.36M (5296.7, 6.7%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [62]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = " 9. Silentsight   22.51M (4934.0, 6.2%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [63]
-				{
-					["type"] = 1,
-					["time"] = 1356322449,
-					["from"] = "Opacus",
-					["msg"] = "10. Aluney   14.14M (4505.6, 3.9%)",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [64]
-				{
-					["type"] = 1,
-					["time"] = 1356322452,
-					["from"] = "Opacus",
-					["msg"] = "mt",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [65]
-				{
-					["type"] = 1,
-					["time"] = 1356322481,
-					["from"] = "Mortuous",
-					["msg"] = "still interesting",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [66]
-				{
-					["type"] = 1,
-					["time"] = 1356322493,
-					["from"] = "Mortuous",
-					["msg"] = "you talking to volt",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [67]
-				{
-					["type"] = 1,
-					["time"] = 1356327353,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [68]
-				{
-					["type"] = 1,
-					["time"] = 1356327371,
-					["from"] = "Opacus",
-					["msg"] = "oh youre on mobile.. thought u were logged in",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [69]
-				{
-					["type"] = 1,
-					["time"] = 1356378998,
-					["from"] = "Mortuous",
-					["msg"] = "you looking to raid?",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [70]
-				{
-					["type"] = 1,
-					["time"] = 1356379004,
-					["from"] = "Opacus",
-					["msg"] = "Right now?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [71]
-				{
-					["type"] = 1,
-					["time"] = 1356379013,
-					["from"] = "Mortuous",
-					["msg"] = "if we can get a group",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [72]
-				{
-					["type"] = 1,
-					["time"] = 1356379019,
-					["from"] = "Opacus",
-					["msg"] = "ya if u get one ill roll",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [73]
-				{
-					["type"] = 1,
-					["time"] = 1356380617,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [74]
-				{
-					["type"] = 1,
-					["time"] = 1356380617,
-					["from"] = "Mortuous",
-					["msg"] = "<Deadly Boss Mods> Mortuous is busy fighting against Raid Finder - Tsulong (86%, 25/25 people alive)",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [75]
-				{
-					["type"] = 1,
-					["time"] = 1356381163,
-					["from"] = "Mortuous",
-					["msg"] = "<DBM> Mortuous has defeated Raid Finder - Tsulong! They have 3 total victories.",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [76]
-				{
-					["type"] = 1,
-					["time"] = 1356383833,
-					["from"] = "Mortuous",
-					["msg"] = "i take it you didn't get a guild",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [77]
-				{
-					["type"] = 1,
-					["time"] = 1356383838,
-					["from"] = "Mortuous",
-					["msg"] = "i mean raid",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [78]
-				{
-					["type"] = 1,
-					["time"] = 1356383860,
-					["from"] = "Opacus",
-					["msg"] = "nah I said if you found one let me know... but I have to leave for xmas party soon anyway so at this point I cant raid",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [79]
-				{
-					["type"] = 1,
-					["time"] = 1356383887,
-					["from"] = "Mortuous",
-					["msg"] = "my wife just got her sha touched mage staff in LFR along with 483 pants",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [80]
-				{
-					["type"] = 1,
-					["time"] = 1356383896,
-					["from"] = "Opacus",
-					["msg"] = "nice",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [81]
-				{
-					["type"] = 1,
-					["time"] = 1356383907,
-					["from"] = "Opacus",
-					["msg"] = "whos your wife?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [82]
-				{
-					["type"] = 1,
-					["time"] = 1356383911,
-					["from"] = "Mortuous",
-					["msg"] = "Senchi",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [83]
-				{
-					["type"] = 1,
-					["time"] = 1356383919,
-					["from"] = "Opacus",
-					["msg"] = "ah, never met her",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [84]
-				{
-					["type"] = 1,
-					["time"] = 1356383930,
-					["from"] = "Mortuous",
-					["msg"] = "hoping to get her into a MV normal.  she's 475",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [85]
-				{
-					["type"] = 1,
-					["time"] = 1356383955,
-					["from"] = "Opacus",
-					["msg"] = "ah",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [86]
-				{
-					["type"] = 1,
-					["time"] = 1356886436,
-					["from"] = "Opacus",
-					["msg"] = "yoyo u wanna tank some heroics?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [87]
-				{
-					["type"] = 1,
-					["time"] = 1356886602,
-					["from"] = "Mortuous",
-					["msg"] = "dont have time really :(",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [88]
-				{
-					["type"] = 1,
-					["time"] = 1356886609,
-					["from"] = "Opacus",
-					["msg"] = "k",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [89]
-				{
-					["type"] = 1,
-					["time"] = 1356886982,
-					["from"] = "Mortuous",
-					["msg"] = "i really need my last 2 lfr's",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [90]
-				{
-					["type"] = 1,
-					["time"] = 1356887003,
-					["from"] = "Opacus",
-					["msg"] = "so do them?",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [91]
-				{
-					["type"] = 1,
-					["time"] = 1356887013,
-					["from"] = "Mortuous",
-					["msg"] = "hour long queue",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [92]
-				{
-					["type"] = 1,
-					["time"] = 1356887016,
-					["from"] = "Mortuous",
-					["msg"] = "sucks",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [93]
-				{
-					["type"] = 1,
-					["time"] = 1356887024,
-					["from"] = "Mortuous",
-					["msg"] = "need to start doing them all on tuesdays",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [94]
-				{
-					["type"] = 1,
-					["time"] = 1356887035,
-					["from"] = "Opacus",
-					["msg"] = "cant wait until Snday to do them,.. shorter queues closer to Tuesday",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [95]
-				{
-					["type"] = 1,
-					["time"] = 1356887038,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [96]
-				{
-					["type"] = 1,
-					["time"] = 1356887059,
-					["from"] = "Opacus",
-					["msg"] = "I learned that just a few weeks ago... pain in the ass",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [97]
-				{
-					["type"] = 1,
-					["time"] = 1356888320,
-					["from"] = "Mortuous",
-					["msg"] = "wow queue popped already ",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [98]
-				{
-					["type"] = 1,
-					["time"] = 1356888325,
-					["from"] = "Mortuous",
-					["msg"] = "must be a lot on this morning",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [99]
-				{
-					["type"] = 1,
-					["time"] = 1356888421,
-					["from"] = "Opacus",
-					["msg"] = "lol forever I tohught u were some1 else",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [100]
-				{
-					["type"] = 1,
-					["time"] = 1356888478,
-					["from"] = "Mortuous",
-					["msg"] = "who?",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [101]
-				{
-					["type"] = 1,
-					["time"] = 1357182050,
-					["from"] = "Mortuous",
-					["msg"] = "you doing LFR?",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [102]
-				{
-					["type"] = 1,
-					["time"] = 1357182058,
-					["from"] = "Mortuous",
-					["msg"] = "gawt damn",
-					["inbound"] = true,
-					["convo"] = "Mortuous",
-				}, -- [103]
-				{
-					["type"] = 1,
-					["time"] = 1357182063,
-					["from"] = "Opacus",
-					["msg"] = "no HM",
-					["inbound"] = false,
-					["convo"] = "Mortuous",
-				}, -- [104]
-				["info"] = {
-				},
-			},
-			["Xarî"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356660084,
-					["from"] = "Opacus",
-					["msg"] = "do u like me using leeching or would u feel u can heal me better if I talented into feint and popped it during certain abilities might be better for u?",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356660122,
-					["from"] = "Xarî",
-					["msg"] = "either way you're comfortable with.  Doesn't matter to me.",
-					["inbound"] = true,
-					["convo"] = "Xarî",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356660152,
-					["from"] = "Opacus",
-					["msg"] = "oh ok.. maybe ill try it both ways and well see which one is best.. just wanna make it easier for u uknow",
-					["inbound"] = false,
-					["convo"] = "Xarî",
-				}, -- [3]
-				["info"] = {
-				},
-			},
-			["Tontodruid-Dalvengyr"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356140378,
-					["from"] = "Opacus",
-					["msg"] = "u there?",
-					["inbound"] = false,
-					["convo"] = "Tontodruid-Dalvengyr",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Schizzm"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356649163,
-					["from"] = "Schizzm",
-					["msg"] = "Will you open a box for me? Standing right behind you",
-					["inbound"] = true,
-					["convo"] = "Schizzm",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Ströbe"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356140222,
-					["from"] = "Opacus",
-					["msg"] = "Target some1",
-					["inbound"] = false,
-					["convo"] = "Ströbe",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Minderbender"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356322603,
-					["from"] = "Minderbender",
-					["msg"] = "can you whisper me death count?",
-					["inbound"] = true,
-					["convo"] = "Minderbender",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356322611,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Skada: Deaths for Total, 19:58:14 - 23:17:16:",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Convel   10 (22:36:28)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Xarxthes   10 (22:36:10)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Mortuous   10 (22:36:04)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "|cff1784d1Opacus|r   9 (22:36:00)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Moonbreese   10 (22:35:59)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Tackfine   8 (22:35:57)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Silentsight   8 (22:35:54)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Epicwarrior   9 (22:34:54)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Fuzzybut   3 (22:34:38)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356322636,
-					["from"] = "Opacus",
-					["msg"] = "Tetraa   20 (22:30:49)",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356322647,
-					["from"] = "Opacus",
-					["msg"] = "they are not sorted by deaths",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356322651,
-					["from"] = "Minderbender",
-					["msg"] = "awesome thanks",
-					["inbound"] = true,
-					["convo"] = "Minderbender",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356322667,
-					["from"] = "Opacus",
-					["msg"] = "and I only keep boss logs.. not trash.. so that is all boss attempts",
-					["inbound"] = false,
-					["convo"] = "Minderbender",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356322672,
-					["from"] = "Minderbender",
-					["msg"] = "nice",
-					["inbound"] = true,
-					["convo"] = "Minderbender",
-				}, -- [17]
-				["info"] = {
-				},
-			},
-			["Exspartin"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356140420,
-					["from"] = "Opacus",
-					["msg"] = "hey",
-					["inbound"] = false,
-					["convo"] = "Exspartin",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356140425,
-					["from"] = "Opacus",
-					["msg"] = "plz target something",
-					["inbound"] = false,
-					["convo"] = "Exspartin",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356140427,
-					["from"] = "Opacus",
-					["msg"] = "some1 rather",
-					["inbound"] = false,
-					["convo"] = "Exspartin",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356140609,
-					["from"] = "Exspartin",
-					["msg"] = "what?",
-					["inbound"] = true,
-					["convo"] = "Exspartin",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356140611,
-					["from"] = "Exspartin",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Exspartin",
-				}, -- [5]
-				["info"] = {
-				},
-			},
-			["Hellsshadow"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356972506,
-					["from"] = "Hellsshadow",
-					["msg"] = "yeah he finds out hi sister loves  love him",
-					["inbound"] = true,
-					["convo"] = "Hellsshadow",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356972532,
-					["from"] = "Opacus",
-					["msg"] = "ya but they didnt make that weird.. they made it twisted.. which was good.. and then the ending.. omg what acting",
-					["inbound"] = false,
-					["convo"] = "Hellsshadow",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356972550,
-					["from"] = "Hellsshadow",
-					["msg"] = "yeah i couldnt believe she shot the captain ",
-					["inbound"] = true,
-					["convo"] = "Hellsshadow",
-				}, -- [3]
-				["info"] = {
-				},
-			},
-			["Sowwylol"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356140444,
-					["from"] = "Opacus",
-					["msg"] = "Hey",
-					["inbound"] = false,
-					["convo"] = "Sowwylol",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356140449,
-					["from"] = "Opacus",
-					["msg"] = "plz target some1 for me for a SS",
-					["inbound"] = false,
-					["convo"] = "Sowwylol",
-				}, -- [2]
-				["info"] = {
-				},
-			},
-			["Ninjashadow"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356414744,
-					["from"] = "Opacus",
-					["msg"] = "yoyo",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356414763,
-					["from"] = "Ninjashadow",
-					["msg"] = "hey",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356414768,
-					["from"] = "Opacus",
-					["msg"] = "How u been ?",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356414787,
-					["from"] = "Ninjashadow",
-					["msg"] = "pretty good, wbu?",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356414803,
-					["from"] = "Opacus",
-					["msg"] = "same ol... merry xmas and all that",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356414825,
-					["from"] = "Opacus",
-					["msg"] = "was actually thinkin.. I wonder how that cool dude I used to run heroics w is doing lol and u there u were... online haha",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356414840,
-					["from"] = "Opacus",
-					["msg"] = "I kinda just bounced and I remember u hitting me up and me kinda being all over the place and ninja logging",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356414868,
-					["from"] = "Ninjashadow",
-					["msg"] = "haha yea been wondering where u were",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356414877,
-					["from"] = "Opacus",
-					["msg"] = "I know u got like a few toons right?",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356414907,
-					["from"] = "Opacus",
-					["msg"] = "u wanna run a heroic or 2? I ned to cap",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356414934,
-					["from"] = "Ninjashadow",
-					["msg"] = "sure i will after this raid",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356414942,
-					["from"] = "Opacus",
-					["msg"] = "How long u think?",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356414975,
-					["from"] = "Ninjashadow",
-					["msg"] = "its usually 45min-1 hr but the last LFR i just did sucked ass so hopefully this one is better",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356414996,
-					["from"] = "Opacus",
-					["msg"] = "kkz.. imma run w/e and if u are back before then cool if not u catch the next one",
-					["inbound"] = false,
-					["convo"] = "Ninjashadow",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356415004,
-					["from"] = "Ninjashadow",
-					["msg"] = "aight sounds good",
-					["inbound"] = true,
-					["convo"] = "Ninjashadow",
-				}, -- [15]
-				["info"] = {
-				},
-			},
-			["Aldelia"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356661619,
-					["from"] = "Opacus",
-					["msg"] = "Was that the only thing that wrecked us at the end?",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356661636,
-					["from"] = "Aldelia",
-					["msg"] = "Yes, the thing that kept exploding",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356661638,
-					["from"] = "Opacus",
-					["msg"] = "What was crushing me that VOlt was calling me to feint on",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356661640,
-					["from"] = "Aldelia",
-					["msg"] = "Was foodwag",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356661643,
-					["from"] = "Opacus",
-					["msg"] = "ahh kkz",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356661647,
-					["from"] = "Aldelia",
-					["msg"] = "Their is an ability called crush he does",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356661649,
-					["from"] = "Opacus",
-					["msg"] = "u have a lot of patience lol",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356661654,
-					["from"] = "Aldelia",
-					["msg"] = "if you are within 10 yards of the boss",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356661657,
-					["from"] = "Aldelia",
-					["msg"] = "it hits you",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356661660,
-					["from"] = "Aldelia",
-					["msg"] = "so you need to feint it",
-					["inbound"] = true,
-					["convo"] = "Aldelia",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356661665,
-					["from"] = "Opacus",
-					["msg"] = "im gunna spec it",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356661682,
-					["from"] = "Opacus",
-					["msg"] = "right because im melee",
-					["inbound"] = false,
-					["convo"] = "Aldelia",
-				}, -- [12]
-				["info"] = {
-				},
-			},
-			["Elvz"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356705349,
-					["from"] = "Opacus",
-					["msg"] = "Test",
-					["inbound"] = false,
-					["convo"] = "Elvz",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356705352,
-					["from"] = "Elvz",
-					["msg"] = "hi",
-					["inbound"] = true,
-					["convo"] = "Elvz",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356705367,
-					["from"] = "Opacus",
-					["msg"] = "good morning... is that all u needed?",
-					["inbound"] = false,
-					["convo"] = "Elvz",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356705378,
-					["from"] = "Elvz",
-					["msg"] = "yup",
-					["inbound"] = true,
-					["convo"] = "Elvz",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356705409,
-					["from"] = "Elvz",
-					["msg"] = "ty",
-					["inbound"] = true,
-					["convo"] = "Elvz",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356705435,
-					["from"] = "Opacus",
-					["msg"] = "np gl... im off to work now",
-					["inbound"] = false,
-					["convo"] = "Elvz",
-				}, -- [6]
-				["info"] = {
-				},
-			},
-			["Convel"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356661467,
-					["from"] = "Opacus",
-					["msg"] = "okay.. just 2 questions",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356661474,
-					["from"] = "Convel",
-					["msg"] = "k",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356661476,
-					["from"] = "Opacus",
-					["msg"] = "what was crushing us towards the end?",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356661483,
-					["from"] = "Opacus",
-					["msg"] = "dog dude not interrupting?",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356661512,
-					["from"] = "Convel",
-					["msg"] = "if someone dies in the construct",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356661518,
-					["from"] = "Convel",
-					["msg"] = "it becomes a npc",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356661525,
-					["from"] = "Convel",
-					["msg"] = "that automatically explodes",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356662315,
-					["from"] = "Opacus",
-					["msg"] = "dude im crying",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356662323,
-					["from"] = "Convel",
-					["msg"] = "like laughing",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356662325,
-					["from"] = "Convel",
-					["msg"] = "?",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356662326,
-					["from"] = "Opacus",
-					["msg"] = "literally crying",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356662328,
-					["from"] = "Opacus",
-					["msg"] = "yes",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356662354,
-					["from"] = "Opacus",
-					["msg"] = "dude u arent?",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356662360,
-					["from"] = "Opacus",
-					["msg"] = "I wish I recorded that",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356662365,
-					["from"] = "Convel",
-					["msg"] = "i'm bummed about it",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356662370,
-					["from"] = "Convel",
-					["msg"] = "the 2 things i needed is from this boss",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356662375,
-					["from"] = "Opacus",
-					["msg"] = "I dont blame u",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356662467,
-					["from"] = "Opacus",
-					["msg"] = "he is pretty bad and he doesnt shut up.. I am surprised they let him raid",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356662501,
-					["from"] = "Convel",
-					["msg"] = "yeah i am a bit too, i've raided with these people in different tiems often",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356662513,
-					["from"] = "Convel",
-					["msg"] = "just i haven't been here much longer then you for mists",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356662513,
-					["from"] = "Opacus",
-					["msg"] = "but now im mad u didnt get ur gear.. was actually glad u were getting into group A ",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356662535,
-					["from"] = "Opacus",
-					["msg"] = "me and u are kinda around the same gear level ... and it was nice to come up w some1 I liked",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356662558,
-					["from"] = "Convel",
-					["msg"] = "yeah and one of the two things,  |cffa335ee|Hitem:86219:0:0:0:0:0:0:0:90:0:0|h[Scimitar of Seven Stars]|h|r",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356662562,
-					["from"] = "Convel",
-					["msg"] = "would help loads",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1357260837,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1357261460,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1357261473,
-					["from"] = "Convel",
-					["msg"] = "?",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1357261487,
-					["from"] = "Opacus",
-					["msg"] = "why arent u in home brew?",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1357261520,
-					["from"] = "Convel",
-					["msg"] = "idk, but im in this guild to help it. i did some talking and it's fine that im not in-guild.",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1357261887,
-					["from"] = "Opacus",
-					["msg"] = "that warlock is super condescending",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1357261915,
-					["from"] = "Convel",
-					["msg"] = "trying to remember what that word means exactly, i don't use it often.",
-					["inbound"] = true,
-					["convo"] = "Convel",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1357261933,
-					["from"] = "Opacus",
-					["msg"] = "like when people are talking down to others",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1357261958,
-					["from"] = "Opacus",
-					["msg"] = "like his tone... its negative... i like positivity",
-					["inbound"] = false,
-					["convo"] = "Convel",
-				}, -- [33]
-				["info"] = {
-				},
-			},
-			["Xarxthes"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = "Skada: Damage taken for Kor'thik Extremist, 20:29:06 - 20:29:52:",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = " 1. Mortuous   3.10M (68950.9, 84.3%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = " 2. Convel   194.7K (4327.3, 5.3%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = " 3. Aluney   155.0K (3445.3, 4.2%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = " 4. Xarxthes   93.1K (2115.0, 2.5%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356313948,
-					["from"] = "Opacus",
-					["msg"] = " 5. Tackfine   75.1K (1746.6, 2.0%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356313955,
-					["from"] = "Opacus",
-					["msg"] = "oops",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356313960,
-					["from"] = "Xarxthes",
-					["msg"] = "hehe",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356313972,
-					["from"] = "Opacus",
-					["msg"] = "that was damage taken.. looks so pretty being 9th lol",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356314959,
-					["from"] = "Opacus",
-					["msg"] = "too many ring fails from same person.. is that pug?",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356314969,
-					["from"] = "Xarxthes",
-					["msg"] = "ya im bout ready to replace",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356315489,
-					["from"] = "Opacus",
-					["msg"] = "that sham keeps dying to rings",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356315500,
-					["from"] = "Xarxthes",
-					["msg"] = "they stayed aliv all of phase 2 that time",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356315514,
-					["from"] = "Opacus",
-					["msg"] = "the sham died",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356315524,
-					["from"] = "Opacus",
-					["msg"] = "and anked I think or got BR",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356315534,
-					["from"] = "Opacus",
-					["msg"] = "im just saying.. ill shut up now",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356316177,
-					["from"] = "Opacus",
-					["msg"] = "Skada: Damage taken for Imperial Vizier Zor'lok, 20:59:23 - 21:06:34:",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356316177,
-					["from"] = "Opacus",
-					["msg"] = " 1. Epicwarrior   8.84M (23141.7, 29.5%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356316177,
-					["from"] = "Opacus",
-					["msg"] = " 2. Xarxthes   3.36M (8080.5, 11.2%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356316177,
-					["from"] = "Opacus",
-					["msg"] = " 3. Convel   2.64M (6345.4, 8.8%)",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356316193,
-					["from"] = "Opacus",
-					["msg"] = "Skada: DPS for Imperial Vizier Zor'lok, 20:59:23 - 21:06:34:",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356316193,
-					["from"] = "Opacus",
-					["msg"] = " 1. |cff1784d1Opacus|r   63041.7",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356316193,
-					["from"] = "Opacus",
-					["msg"] = " 2. Convel   61968.6",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356316193,
-					["from"] = "Opacus",
-					["msg"] = " 3. Xarxthes   50942.2",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1356316198,
-					["from"] = "Opacus",
-					["msg"] = "thats wtong.. wtf ",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1356316200,
-					["from"] = "Xarxthes",
-					["msg"] = "GJ",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1356316203,
-					["from"] = "Opacus",
-					["msg"] = "no",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1356316214,
-					["from"] = "Opacus",
-					["msg"] = "I did 72... I reported wrong one. forget it",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1356316230,
-					["from"] = "Opacus",
-					["msg"] = "Skada: DPS for Imperial Vizier Zor'lok, 21:21:00 - 21:28:31:",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1356316230,
-					["from"] = "Opacus",
-					["msg"] = " 1. |cff1784d1Opacus|r   70905.9",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1356316230,
-					["from"] = "Opacus",
-					["msg"] = " 2. Convel   68816.3",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1356316230,
-					["from"] = "Opacus",
-					["msg"] = " 3. Tackfine   63346.9",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1356316233,
-					["from"] = "Opacus",
-					["msg"] = "there we go",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1356316257,
-					["from"] = "Opacus",
-					["msg"] = "I think thats solid no? Big increase from last week for sure",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1356316266,
-					["from"] = "Xarxthes",
-					["msg"] = "what's a no?",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1356316274,
-					["from"] = "Xarxthes",
-					["msg"] = "oh ya- ur dmg looking pretty good",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1356316299,
-					["from"] = "Opacus",
-					["msg"] = "ya dont mean to be chatty.. just been taking this seriously.. letting u know im on top of my shit",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1356316309,
-					["from"] = "Xarxthes",
-					["msg"] = "ya that's what i need to see",
-					["inbound"] = true,
-					["convo"] = "Xarxthes",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1356318336,
-					["from"] = "Opacus",
-					["msg"] = "Im not gunna call it out publicly.. but I waited to use to get heals and no heals were really going out",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1356318348,
-					["from"] = "Opacus",
-					["msg"] = "waited to use boots*",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1356319149,
-					["from"] = "Opacus",
-					["msg"] = "if uw anna call it 3 healers...",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1356319153,
-					["from"] = "Opacus",
-					["msg"] = "Shaman is at 14K",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1356320384,
-					["from"] = "Opacus",
-					["msg"] = "Ya, so def looking to improve and make core.. but it might be tough with this group... ;/",
-					["inbound"] = false,
-					["convo"] = "Xarxthes",
-				}, -- [43]
-				["info"] = {
-				},
-			},
-			["Gqùit"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356322054,
-					["from"] = "Gqùit",
-					["msg"] = " |cffa335ee|Hitem:87061:3365:0:0:0:0:0:704873664:90:144:445|h[Starshatter]|h|r",
-					["inbound"] = true,
-					["convo"] = "Gqùit",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356322117,
-					["from"] = "Gqùit",
-					["msg"] = "Recount - Damage Done for Last Fight",
-					["inbound"] = true,
-					["convo"] = "Gqùit",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356660885,
-					["from"] = "Opacus",
-					["msg"] = "that dude is annoying",
-					["inbound"] = false,
-					["convo"] = "Gqùit",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356660906,
-					["from"] = "Gqùit",
-					["msg"] = "extremely",
-					["inbound"] = true,
-					["convo"] = "Gqùit",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Lilnegruh"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356456910,
-					["from"] = "Opacus",
-					["msg"] = "lol how r u doing that?",
-					["inbound"] = false,
-					["convo"] = "Lilnegruh",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356456919,
-					["from"] = "Opacus",
-					["msg"] = "oh the ball lol",
-					["inbound"] = false,
-					["convo"] = "Lilnegruh",
-				}, -- [2]
-				["info"] = {
-				},
-			},
-			["Jirah"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356655488,
-					["from"] = "Opacus",
-					["msg"] = "I was going to tell you last night",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356655502,
-					["from"] = "Jirah",
-					["msg"] = "what??",
-					["inbound"] = true,
-					["convo"] = "Jirah",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356655502,
-					["from"] = "Opacus",
-					["msg"] = "I make music myself... when raid is over I will give u my datpiff link",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356655512,
-					["from"] = "Opacus",
-					["msg"] = "to my mix tape |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\tongue.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356655515,
-					["from"] = "Jirah",
-					["msg"] = "cool man",
-					["inbound"] = true,
-					["convo"] = "Jirah",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1357269037,
-					["from"] = "Opacus",
-					["msg"] = "it dont mix like two dicks and no bitch.. find urself in some serious shit",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1357269059,
-					["from"] = "Jirah",
-					["msg"] = "what?",
-					["inbound"] = true,
-					["convo"] = "Jirah",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1357269062,
-					["from"] = "Opacus",
-					["msg"] = "biggie",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1357269076,
-					["from"] = "Jirah",
-					["msg"] = "oh",
-					["inbound"] = true,
-					["convo"] = "Jirah",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1357269531,
-					["from"] = "Opacus",
-					["msg"] = "was listening to him.. thought ud laugh... no biggie",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1357269544,
-					["from"] = "Opacus",
-					["msg"] = "youre dude was talking bout hip hop w no?",
-					["inbound"] = false,
-					["convo"] = "Jirah",
-				}, -- [11]
-				["info"] = {
-				},
-			},
-			["Trictagon"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356578763,
-					["from"] = "Trictagon",
-					["msg"] = "be more careful with standing on tanks",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356578767,
-					["from"] = "Trictagon",
-					["msg"] = "you died from splash damage",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356578782,
-					["from"] = "Opacus",
-					["msg"] = "k",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356578795,
-					["from"] = "Opacus",
-					["msg"] = "its hard with killing spree",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356578811,
-					["from"] = "Opacus",
-					["msg"] = "I am jusy going to save it for when I have a bit more freedome",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1357173058,
-					["from"] = "Opacus",
-					["msg"] = "yo do u have a few agil flasks I can buy?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1357173065,
-					["from"] = "Opacus",
-					["msg"] = "I only gots 2 on me",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1357173067,
-					["from"] = "Trictagon",
-					["msg"] = "i have 74",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1357173069,
-					["from"] = "Trictagon",
-					["msg"] = "ill give u some",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1357173071,
-					["from"] = "Opacus",
-					["msg"] = "and forgot to grab",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1357173079,
-					["from"] = "Opacus",
-					["msg"] = "ok cool lemme get 73",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1357173089,
-					["from"] = "Trictagon",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1357173428,
-					["from"] = "Opacus",
-					["msg"] = "yo real quick",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1357173433,
-					["from"] = "Opacus",
-					["msg"] = "can u explain something to me?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1357173439,
-					["from"] = "Trictagon",
-					["msg"] = "sure",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1357173446,
-					["from"] = "Opacus",
-					["msg"] = "in here... what is with the glowing tiles",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1357173459,
-					["from"] = "Trictagon",
-					["msg"] = "each lit tile gives raid +1% dmg",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1357173461,
-					["from"] = "Trictagon",
-					["msg"] = "we want 100 stacks",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1357173464,
-					["from"] = "Trictagon",
-					["msg"] = "you run TWICE on pull",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1357173467,
-					["from"] = "Trictagon",
-					["msg"] = "of the color we call",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1357174008,
-					["from"] = "Opacus",
-					["msg"] = "What does he mean blue wont hurt?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1357174138,
-					["from"] = "Trictagon",
-					["msg"] = "when a mob is petrifying",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1357174142,
-					["from"] = "Trictagon",
-					["msg"] = "you take 90% reduced damage from its color",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1357174155,
-					["from"] = "Opacus",
-					["msg"] = "so I could have stood int he blue traps?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1357174155,
-					["from"] = "Trictagon",
-					["msg"] = "if red is petrifying u take 90% reduced damage from chains + red crystal",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1357174163,
-					["from"] = "Trictagon",
-					["msg"] = "if blue is petrifying u take 90% reduced from traps",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1357174170,
-					["from"] = "Trictagon",
-					["msg"] = "green u take 90% reduced damage from random aoe",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1357174181,
-					["from"] = "Trictagon",
-					["msg"] = "u could have been breaking traps with feint either way",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1357174188,
-					["from"] = "Trictagon",
-					["msg"] = "but yes anyone can break traps with blue",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1357174192,
-					["from"] = "Trictagon",
-					["msg"] = "u only get hit like 30k",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1357174346,
-					["from"] = "Opacus",
-					["msg"] = "got it",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1357174356,
-					["from"] = "Opacus",
-					["msg"] = "now this fight.. stay in when called and move out when called",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1357174361,
-					["from"] = "Trictagon",
-					["msg"] = "yep",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1357176829,
-					["from"] = "Opacus",
-					["msg"] = "fucking broken weapon... so focused on not fucking up I fuck up...",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1357177562,
-					["from"] = "Opacus",
-					["msg"] = "it says u are busy .. can u trade those pots?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1357177575,
-					["from"] = "Trictagon",
-					["msg"] = "inside",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1357180495,
-					["from"] = "Opacus",
-					["msg"] = "so just to confirm.. when exactly do I reset stacks the second time? At the next add or after following my assigned add and killing?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1357180510,
-					["from"] = "Trictagon",
-					["msg"] = "just before first orb spawns",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1357180514,
-					["from"] = "Trictagon",
-					["msg"] = "unless that conflicts with add explosion",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1357180523,
-					["from"] = "Trictagon",
-					["msg"] = "btw if  |cffa335ee|Hitem:87057:0:0:0:0:0:0:844520640:90:166:447|h[Bottle of Infinite Stars]|h|r drops noone needs it",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1357180552,
-					["from"] = "Opacus",
-					["msg"] = "ok so lets say I reset stacks and we are killing each small add that we are assigned... after I kill I reset right.. like run out and in",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1357180558,
-					["from"] = "Opacus",
-					["msg"] = "and ya I am really hoping that drops",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1357180572,
-					["from"] = "Trictagon",
-					["msg"] = "yes",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1357180576,
-					["from"] = "Opacus",
-					["msg"] = "ill have BIS trinkets if it does... the BOE trink I have is BIS for rogues",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1357180649,
-					["from"] = "Trictagon",
-					["msg"] = "i think heroic lei shi trinket is better than dmc",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1357180653,
-					["from"] = "Trictagon",
-					["msg"] = "even though crit sucks for rogues",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1357180660,
-					["from"] = "Trictagon",
-					["msg"] = "crit is +1.06% damage per 600 rating for ALL classes",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1357180672,
-					["from"] = "Trictagon",
-					["msg"] = "and dmc uptime for a class like rogues isnt amazing",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1357180744,
-					["from"] = "Opacus",
-					["msg"] = "terror of the mists is",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1357181076,
-					["from"] = "Trictagon",
-					["msg"] = "for YOU specifically, using our logs, darkmoon card only has 317.892222222223496 more agility than lfr bottle",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1357181118,
-					["from"] = "Opacus",
-					["msg"] = "interesting",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1357181125,
-					["from"] = "Trictagon",
-					["msg"] = "574 mastery & 382 haste vs 318 agi",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1357181129,
-					["from"] = "Opacus",
-					["msg"] = "moral of the story... heroic bottle is from narnia",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1357181130,
-					["from"] = "Trictagon",
-					["msg"] = "considering reforge",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1357181159,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1357181170,
-					["from"] = "Trictagon",
-					["msg"] = "i would expect 509 terror to be 1-1.2k increase for u over dmc",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1357181175,
-					["from"] = "Trictagon",
-					["msg"] = "sites are wrong",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1357181185,
-					["from"] = "Trictagon",
-					["msg"] = "on spirit kings your dmc only had 21% uptime",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1357181189,
-					["from"] = "Trictagon",
-					["msg"] = "bottle has 44.444%",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1357181202,
-					["from"] = "Opacus",
-					["msg"] = "over dmc... but I wouldnt replace DMC until I got mists.. because I will replace talon",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1357181204,
-					["from"] = "Trictagon",
-					["msg"] = "dmc is 1591.67 agi for you",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1357181215,
-					["from"] = "Opacus",
-					["msg"] = "its a 3-4K increase when replacing talon",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [62]
-				{
-					["type"] = 1,
-					["time"] = 1357181222,
-					["from"] = "Opacus",
-					["msg"] = " |cffa335ee|Hitem:89082:0:0:0:0:0:0:0:90:0:445|h[Hawkmaster's Talon]|h|r",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [63]
-				{
-					["type"] = 1,
-					["time"] = 1357181239,
-					["from"] = "Trictagon",
-					["msg"] = "but talon is 898.75 avg haste",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [64]
-				{
-					["type"] = 1,
-					["time"] = 1357181242,
-					["from"] = "Trictagon",
-					["msg"] = "which isnt TERRIBLE",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [65]
-				{
-					["type"] = 1,
-					["time"] = 1357181273,
-					["from"] = "Opacus",
-					["msg"] = "understood.. but its not agility",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [66]
-				{
-					["type"] = 1,
-					["time"] = 1357181281,
-					["from"] = "Trictagon",
-					["msg"] = "but",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [67]
-				{
-					["type"] = 1,
-					["time"] = 1357181283,
-					["from"] = "Trictagon",
-					["msg"] = "if you do the math",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [68]
-				{
-					["type"] = 1,
-					["time"] = 1357181284,
-					["from"] = "Opacus",
-					["msg"] = "Agility > Haste > ",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [69]
-				{
-					["type"] = 1,
-					["time"] = 1357181289,
-					["from"] = "Trictagon",
-					["msg"] = "rogues gem straight haste right",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [70]
-				{
-					["type"] = 1,
-					["time"] = 1357181291,
-					["from"] = "Trictagon",
-					["msg"] = "so 2 haste>1 agi",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [71]
-				{
-					["type"] = 1,
-					["time"] = 1357181305,
-					["from"] = "Trictagon",
-					["msg"] = "900 haste vs 500 agi",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [72]
-				{
-					["type"] = 1,
-					["time"] = 1357181308,
-					["from"] = "Trictagon",
-					["msg"] = "its pretty close",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [73]
-				{
-					["type"] = 1,
-					["time"] = 1357181310,
-					["from"] = "Opacus",
-					["msg"] = "not exactly.. but something like that",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [74]
-				{
-					["type"] = 1,
-					["time"] = 1357181319,
-					["from"] = "Opacus",
-					["msg"] = "there is a soft cap",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [75]
-				{
-					["type"] = 1,
-					["time"] = 1357181326,
-					["from"] = "Trictagon",
-					["msg"] = "for what",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [76]
-				{
-					["type"] = 1,
-					["time"] = 1357181330,
-					["from"] = "Trictagon",
-					["msg"] = "energy cap?",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [77]
-				{
-					["type"] = 1,
-					["time"] = 1357181342,
-					["from"] = "Opacus",
-					["msg"] = "sec",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [78]
-				{
-					["type"] = 1,
-					["time"] = 1357181959,
-					["from"] = "Opacus",
-					["msg"] = "what killed us here?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [79]
-				{
-					["type"] = 1,
-					["time"] = 1357181966,
-					["from"] = "Trictagon",
-					["msg"] = "tank mistake after healer mistake",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [80]
-				{
-					["type"] = 1,
-					["time"] = 1357181973,
-					["from"] = "Opacus",
-					["msg"] = "ah",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [81]
-				{
-					["type"] = 1,
-					["time"] = 1357261105,
-					["from"] = "Opacus",
-					["msg"] = "can i buy a few more flasks",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [82]
-				{
-					["type"] = 1,
-					["time"] = 1357269465,
-					["from"] = "Opacus",
-					["msg"] = "u saw chat?",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [83]
-				{
-					["type"] = 1,
-					["time"] = 1357269470,
-					["from"] = "Trictagon",
-					["msg"] = "yep",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [84]
-				{
-					["type"] = 1,
-					["time"] = 1357269472,
-					["from"] = "Opacus",
-					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\happy.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [85]
-				{
-					["type"] = 1,
-					["time"] = 1357269474,
-					["from"] = "Opacus",
-					["msg"] = "BIS",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [86]
-				{
-					["type"] = 1,
-					["time"] = 1357269476,
-					["from"] = "Trictagon",
-					["msg"] = "grats",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [87]
-				{
-					["type"] = 1,
-					["time"] = 1357269492,
-					["from"] = "Opacus",
-					["msg"] = "ya... Id rather hroic bottle but at least if it drops next week ill have BIS trinks",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [88]
-				{
-					["type"] = 1,
-					["time"] = 1357269501,
-					["from"] = "Trictagon",
-					["msg"] = "EVERYONE has bottle in this group",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [89]
-				{
-					["type"] = 1,
-					["time"] = 1357269504,
-					["from"] = "Trictagon",
-					["msg"] = "me mojo bear",
-					["inbound"] = true,
-					["convo"] = "Trictagon",
-				}, -- [90]
-				{
-					["type"] = 1,
-					["time"] = 1357269509,
-					["from"] = "Opacus",
-					["msg"] = "except me |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\sad.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [91]
-				{
-					["type"] = 1,
-					["time"] = 1357271041,
-					["from"] = "Opacus",
-					["msg"] = "where do we turn in tier pieces",
-					["inbound"] = false,
-					["convo"] = "Trictagon",
-				}, -- [92]
-				["info"] = {
-				},
-			},
-			["Shãmwøw"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356913075,
-					["from"] = "Shãmwøw",
-					["msg"] = "yoyjkasdjka",
-					["inbound"] = true,
-					["convo"] = "Shãmwøw",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Yonkersx-Dalvengyr"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357335826,
-					["from"] = "Opacus",
-					["msg"] = " |cffffff00|Hachievement:6724:05800000075C0E33:1:1:3:13:4294967295:4294967295:4294967295:4294967295|h[Heroic: Will of the Emperor]|h|r hush",
-					["inbound"] = false,
-					["convo"] = "Yonkersx-Dalvengyr",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Yowhadup"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356139880,
-					["from"] = "Opacus",
-					["msg"] = "Target that dude on the mount",
-					["inbound"] = false,
-					["convo"] = "Yowhadup",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356139912,
-					["from"] = "Opacus",
-					["msg"] = "please",
-					["inbound"] = false,
-					["convo"] = "Yowhadup",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356139942,
-					["from"] = "Opacus",
-					["msg"] = "dude",
-					["inbound"] = false,
-					["convo"] = "Yowhadup",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356139949,
-					["from"] = "Opacus",
-					["msg"] = "plz target the guy on mount",
-					["inbound"] = false,
-					["convo"] = "Yowhadup",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Evelandris-Icecrown"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356651709,
-					["from"] = "Opacus",
-					["msg"] = "trix me",
-					["inbound"] = false,
-					["convo"] = "Evelandris-Icecrown",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356651712,
-					["from"] = "Opacus",
-					["msg"] = "on CD",
-					["inbound"] = false,
-					["convo"] = "Evelandris-Icecrown",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356651717,
-					["from"] = "Evelandris-Icecrown",
-					["msg"] = "sec",
-					["inbound"] = true,
-					["convo"] = "Evelandris-Icecrown",
-				}, -- [3]
-				["info"] = {
-				},
-			},
-			["Shinkokami"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356235442,
-					["from"] = "Shinkokami",
-					["msg"] = "Casting |cff71d5ff|Hspell:7328|h[Redemption]|h|r on You!",
-					["inbound"] = true,
-					["convo"] = "Shinkokami",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356235451,
-					["from"] = "Shinkokami",
-					["msg"] = "Successfully resurrected You!",
-					["inbound"] = true,
-					["convo"] = "Shinkokami",
-				}, -- [2]
-				["info"] = {
-				},
-			},
-			["Bearyandstuf"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357336312,
-					["from"] = "Bearyandstuf",
-					["msg"] = "how  much",
-					["inbound"] = true,
-					["convo"] = "Bearyandstuf",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1357336320,
-					["from"] = "Opacus",
-					["msg"] = "they are 18K on the AH I will sell for 15K",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1357336331,
-					["from"] = "Bearyandstuf",
-					["msg"] = "I've seen them way lower on the ah than t15k",
-					["inbound"] = true,
-					["convo"] = "Bearyandstuf",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1357336347,
-					["from"] = "Opacus",
-					["msg"] = "the 496 pair? Doubtful... they just came down from 22",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1357336353,
-					["from"] = "Opacus",
-					["msg"] = "so next time buy them when u see them",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1357336355,
-					["from"] = "Bearyandstuf",
-					["msg"] = "I've seen them for 11k.",
-					["inbound"] = true,
-					["convo"] = "Bearyandstuf",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1357336362,
-					["from"] = "Opacus",
-					["msg"] = "thats low.. next time bvuy them",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1357336362,
-					["from"] = "Bearyandstuf",
-					["msg"] = "I will do that. you have a good one",
-					["inbound"] = true,
-					["convo"] = "Bearyandstuf",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1357336383,
-					["from"] = "Opacus",
-					["msg"] = "know your prices before u whisper me",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1357336508,
-					["from"] = "Opacus",
-					["msg"] = "u mad",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1357336534,
-					["from"] = "Opacus",
-					["msg"] = "its 10K just for matts, autionator says 22K... and l2 use TSM and not some shit u think u know because u scanned the AH once",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1357336536,
-					["from"] = "Opacus",
-					["msg"] = "rofl",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1357336546,
-					["from"] = "Opacus",
-					["msg"] = "And thats 10K not including spirits ",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1357336559,
-					["from"] = "Opacus",
-					["msg"] = "again, learn ur prices little nub",
-					["inbound"] = false,
-					["convo"] = "Bearyandstuf",
-				}, -- [14]
-				["info"] = {
-				},
-			},
-			["Degreez"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356228544,
-					["from"] = "Opacus",
-					["msg"] = ";/",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356228548,
-					["from"] = "Opacus",
-					["msg"] = "I HATE U",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356228550,
-					["from"] = "Opacus",
-					["msg"] = " B BETTA",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356228553,
-					["from"] = "Opacus",
-					["msg"] = "|TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\tongue.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356228576,
-					["from"] = "Opacus",
-					["msg"] = "im kidding btw",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356228580,
-					["from"] = "Degreez",
-					["msg"] = "i know",
-					["inbound"] = true,
-					["convo"] = "Degreez",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356230505,
-					["from"] = "Opacus",
-					["msg"] = "ill just keep trix on CD on you",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356230518,
-					["from"] = "Opacus",
-					["msg"] = "U shouldnt have any aggro issues then",
-					["inbound"] = false,
-					["convo"] = "Degreez",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356230523,
-					["from"] = "Degreez",
-					["msg"] = "its just because i cant taunt initially he is immune until he is down",
-					["inbound"] = true,
-					["convo"] = "Degreez",
-				}, -- [9]
-				["info"] = {
-				},
-			},
-			["Luciela-Velen"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356973359,
-					["from"] = "Luciela-Velen",
-					["msg"] = "I'm up for more if you want to to continue with me",
-					["inbound"] = true,
-					["convo"] = "Luciela-Velen",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Nomnomgnome"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356446199,
-					["from"] = "Nomnomgnome",
-					["msg"] = "whatcha need",
-					["inbound"] = true,
-					["convo"] = "Nomnomgnome",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356446213,
-					["from"] = "Opacus",
-					["msg"] = "Red Winter CLothes",
-					["inbound"] = false,
-					["convo"] = "Nomnomgnome",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356446247,
-					["from"] = "Nomnomgnome",
-					["msg"] = " |cffffffff|Hitem:14048:0:0:0:0:0:0:0:90:0:0|h[Bolt of Runecloth]|h|rx4,  |cffffffff|Hitem:2997:0:0:0:0:0:0:0:90:0:0|h[Bolt of Woolen Cloth]|h|rx1 free with your mats",
-					["inbound"] = true,
-					["convo"] = "Nomnomgnome",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356446304,
-					["from"] = "Opacus",
-					["msg"] = "come to me",
-					["inbound"] = false,
-					["convo"] = "Nomnomgnome",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356446353,
-					["from"] = "Nomnomgnome",
-					["msg"] = "sure thing",
-					["inbound"] = true,
-					["convo"] = "Nomnomgnome",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356446365,
-					["from"] = "Opacus",
-					["msg"] = "getting achievement |TInterface\\AddOns\\ElvUI\\media\\textures\\smileys\\happy.blp:16|t",
-					["inbound"] = false,
-					["convo"] = "Nomnomgnome",
-				}, -- [6]
-				["info"] = {
-				},
-			},
-			["Ammenakhti"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356971773,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356971785,
-					["from"] = "Opacus",
-					["msg"] = "I need u to heal the shit out of me.. testing an addon.. I will tip",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356971933,
-					["from"] = "Opacus",
-					["msg"] = "how u like ur priest? Im rolling one atm",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356971962,
-					["from"] = "Ammenakhti",
-					["msg"] = "for spellcaster dps id much rather run mage im kinda like the ret pally of spellcasters more utility than dps",
-					["inbound"] = true,
-					["convo"] = "Ammenakhti",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356971975,
-					["from"] = "Opacus",
-					["msg"] = "ya im rolling him for heals tho",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356971985,
-					["from"] = "Opacus",
-					["msg"] = "Disc and Holy are just too OP atm",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356972001,
-					["from"] = "Ammenakhti",
-					["msg"] = "o im not too accustomed on the healing spec but trying to kill disc priests is pretty hard",
-					["inbound"] = true,
-					["convo"] = "Ammenakhti",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356972005,
-					["from"] = "Opacus",
-					["msg"] = "I like the priest spell effects tho.. look sick",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356972016,
-					["from"] = "Opacus",
-					["msg"] = "oh youre pvp",
-					["inbound"] = false,
-					["convo"] = "Ammenakhti",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356972020,
-					["from"] = "Ammenakhti",
-					["msg"] = "arms warriors will always be ur worst enemies though ",
-					["inbound"] = true,
-					["convo"] = "Ammenakhti",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356972045,
-					["from"] = "Ammenakhti",
-					["msg"] = "yea i havent been in abit though random bgs creep me out sometimes lol",
-					["inbound"] = true,
-					["convo"] = "Ammenakhti",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356972081,
-					["from"] = "Ammenakhti",
-					["msg"] = "i love rbgs and arenas but this server uptight with ratings too much im newer to rbgs ",
-					["inbound"] = true,
-					["convo"] = "Ammenakhti",
-				}, -- [12]
-				["info"] = {
-				},
-			},
-			["Voltrinity"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356450449,
-					["from"] = "Voltrinity",
-					["msg"] = "hey this is volt",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356450452,
-					["from"] = "Voltrinity",
-					["msg"] = "can u inv me to guild?",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356450463,
-					["from"] = "Opacus",
-					["msg"] = "can I?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356450464,
-					["from"] = "Opacus",
-					["msg"] = "lol",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356450468,
-					["from"] = "Voltrinity",
-					["msg"] = "idk",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356450480,
-					["from"] = "Opacus",
-					["msg"] = "if you were volt you'd know that no?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356450500,
-					["from"] = "Voltrinity",
-					["msg"] = "ok you got me",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356450523,
-					["from"] = "Opacus",
-					["msg"] = "who is this?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356450533,
-					["from"] = "Voltrinity",
-					["msg"] = "volt/xarxthes",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356450537,
-					["from"] = "Opacus",
-					["msg"] = "it says youre in the guild already",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356450561,
-					["from"] = "Voltrinity",
-					["msg"] = "ya sith just inv'd me",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356450606,
-					["from"] = "Opacus",
-					["msg"] = "ahh kk my bad... I wasnt sure if u were Volt or not or a troll.. got a few fake peeps do that in Indy... Nevertheless, my rank is Alt anyway",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356450626,
-					["from"] = "Opacus",
-					["msg"] = "merry xmas btw",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356450639,
-					["from"] = "Voltrinity",
-					["msg"] = "ty, likewise",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = "Skada: DPS for Protector Kaolan, 10:59:44 - 11:07:31:",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = " 1. |cff1784d1Opacus|r   118923.2",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = " 2. Pyrömancer   88613.7",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = " 3. Sìth   88401.6",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = " 4. Bronzeshot   85004.0",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356451694,
-					["from"] = "Opacus",
-					["msg"] = " 5. Toivo   81929.4",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356451701,
-					["from"] = "Opacus",
-					["msg"] = "was 120",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356451743,
-					["from"] = "Voltrinity",
-					["msg"] = "looking good",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1357091179,
-					["from"] = "Opacus",
-					["msg"] = "Just out of curiousity... did u talk to any1 about me as a raider?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1357091186,
-					["from"] = "Opacus",
-					["msg"] = "Just curious what the others felt about me",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1357091192,
-					["from"] = "Voltrinity",
-					["msg"] = "yes",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1357091196,
-					["from"] = "Voltrinity",
-					["msg"] = "4 others",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1357091238,
-					["from"] = "Opacus",
-					["msg"] = "mostly positive? or nay?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1357091240,
-					["from"] = "Voltrinity",
-					["msg"] = "3 of them seemed to agree that, you might/prolly be pulling competiive dps if your gear was better, bc rogues are very gear dependant",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1357091249,
-					["from"] = "Voltrinity",
-					["msg"] = "1 was negative",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1357091251,
-					["from"] = "Voltrinity",
-					["msg"] = "3 positive",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1357091271,
-					["from"] = "Voltrinity",
-					["msg"] = "like i said i was ready to bring you for heroic mogushan tonight but you no show lol",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1357091273,
-					["from"] = "Opacus",
-					["msg"] = "u dont have to tell me who the negative was.. but what was the negative statement that was made?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1357091281,
-					["from"] = "Voltrinity",
-					["msg"] = "'i think he sux'",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1357091283,
-					["from"] = "Voltrinity",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1357091288,
-					["from"] = "Voltrinity",
-					["msg"] = "you know how people can be though-",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1357091292,
-					["from"] = "Voltrinity",
-					["msg"] = "you have to prove yourself",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1357091305,
-					["from"] = "Opacus",
-					["msg"] = "Well thats pretty empty and actually baseless if u review any log from our raids",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1357091307,
-					["from"] = "Voltrinity",
-					["msg"] = "and, he's just looking at meters prob seeing that OH we have to gear another player or w/e",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1357091311,
-					["from"] = "Voltrinity",
-					["msg"] = "ya i know",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1357091317,
-					["from"] = "Opacus",
-					["msg"] = "7th in damage taken... 6th in deaths... 3rd in melee DPS",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1357091349,
-					["from"] = "Opacus",
-					["msg"] = "thats total boss recordings and most of those encounters were the first time",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1357091359,
-					["from"] = "Opacus",
-					["msg"] = "But I bet I know who said that",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1357091364,
-					["from"] = "Voltrinity",
-					["msg"] = "who?",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1357091371,
-					["from"] = "Voltrinity",
-					["msg"] = "(probably wont answer)",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1357091376,
-					["from"] = "Opacus",
-					["msg"] = "its fine",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1357091384,
-					["from"] = "Opacus",
-					["msg"] = "I know your brother and the hunter like me",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1357091397,
-					["from"] = "Opacus",
-					["msg"] = "If I had to make a bet, I'd say the warlock",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1357091414,
-					["from"] = "Opacus",
-					["msg"] = "Aldelia",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1357091431,
-					["from"] = "Opacus",
-					["msg"] = "I also cant imagine your wife saying anything negative either",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1357091488,
-					["from"] = "Voltrinity",
-					["msg"] = "so i'll see you tomorrow night? lol",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1357091496,
-					["from"] = "Voltrinity",
-					["msg"] = "not going to get personal about all this",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1357091523,
-					["from"] = "Voltrinity",
-					["msg"] = "dont worry about guild politics- just try and be on at raid time, i think you're a player",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1357091541,
-					["from"] = "Opacus",
-					["msg"] = "But of course I could be wrong... but im also a good judge of character.. but again, mumble is a hard place to judge... nevertheless, I am around people like that all the time.. not the warlock but ppl that talk like that about the new guy or others... ",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1357091541,
-					["from"] = "Opacus",
-					["msg"] = "its called finding an excuse to critique or be different in front of the boss so it looks like you are better than you actually are... I tend to let numbers do the talking ",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1357091580,
-					["from"] = "Opacus",
-					["msg"] = "btw im hung over so I might be a little more open than I usually am rofl",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1357091591,
-					["from"] = "Opacus",
-					["msg"] = "and yeah its cool... ill be here tomorrow for sure",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1357091595,
-					["from"] = "Voltrinity",
-					["msg"] = "aiight",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1357091600,
-					["from"] = "Voltrinity",
-					["msg"] = "peace NAH MEAN!?!?!",
-					["inbound"] = true,
-					["convo"] = "Voltrinity",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1357091612,
-					["from"] = "Opacus",
-					["msg"] = "haha.. I know im chatty tn.. peace mang",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1357091652,
-					["from"] = "Opacus",
-					["msg"] = "Was I right tho?",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1357091656,
-					["from"] = "Opacus",
-					["msg"] = "aahahahah",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1357091954,
-					["from"] = "Opacus",
-					["msg"] = "yo u wanna run a quick dungeon with ur priest? Ill tank one with my warr.. level 87",
-					["inbound"] = false,
-					["convo"] = "Voltrinity",
-				}, -- [62]
-				["info"] = {
-				},
-			},
-			["Deüces"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356286899,
-					["from"] = "Opacus",
-					["msg"] = "quit grillin son",
-					["inbound"] = false,
-					["convo"] = "Deüces",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356286908,
-					["from"] = "Deüces",
-					["msg"] = "NO",
-					["inbound"] = true,
-					["convo"] = "Deüces",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356286911,
-					["from"] = "Opacus",
-					["msg"] = "hah",
-					["inbound"] = false,
-					["convo"] = "Deüces",
-				}, -- [3]
-				["info"] = {
-				},
-			},
-			["Voltrannus"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356224063,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356224070,
-					["from"] = "Voltrannus",
-					["msg"] = "yes?",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356224080,
-					["from"] = "Voltrannus",
-					["msg"] = "moonbreese is sending out inv's",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356224092,
-					["from"] = "Opacus",
-					["msg"] = "ya I know... I am in the gorup",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356224096,
-					["from"] = "Voltrannus",
-					["msg"] = "k",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356224101,
-					["from"] = "Opacus",
-					["msg"] = "Was gunna say did u see 5.2 patch notes?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356224106,
-					["from"] = "Voltrannus",
-					["msg"] = "no",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356224131,
-					["from"] = "Opacus",
-					["msg"] = "They are pre patch notes.. but Rogues atm on the strongest class on the PTR",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356224138,
-					["from"] = "Opacus",
-					["msg"] = "are*",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356224141,
-					["from"] = "Voltrannus",
-					["msg"] = "wooo",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356224159,
-					["from"] = "Opacus",
-					["msg"] = "told u.. they were gunna fix them.. and every1 would be other classes because of us being broken",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356229796,
-					["from"] = "Opacus",
-					["msg"] = "Just did 115K on stoneguard",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356229802,
-					["from"] = "Voltrannus",
-					["msg"] = "ooh",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356229804,
-					["from"] = "Voltrannus",
-					["msg"] = "vn",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356229846,
-					["from"] = "Opacus",
-					["msg"] = "ya... this week was good for me.. told u I was gunna spike.. didnt get my 4 set, but I got my leg gem and upgrade two pieces... 10K total DPS increase as per calculations",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356229855,
-					["from"] = "Voltrannus",
-					["msg"] = "hmm",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356229859,
-					["from"] = "Voltrannus",
-					["msg"] = "pst recount",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356229954,
-					["from"] = "Opacus",
-					["msg"] = " wtf",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356229966,
-					["from"] = "Opacus",
-					["msg"] = "Had to do it theree",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356229977,
-					["from"] = "Voltrannus",
-					["msg"] = "woo gj",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356229988,
-					["from"] = "Opacus",
-					["msg"] = "wouldnt whisper... DPS dropped it was 115.. but u know when boss dies and it is still running",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356495103,
-					["from"] = "Voltrannus",
-					["msg"] = "hey did you get my mail?",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356495112,
-					["from"] = "Opacus",
-					["msg"] = "No, I didnt.. whats up?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356495119,
-					["from"] = "Opacus",
-					["msg"] = "I can read it now if u want",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1356495122,
-					["from"] = "Voltrannus",
-					["msg"] = "sure",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1356495179,
-					["from"] = "Opacus",
-					["msg"] = "Ya im in",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1356495192,
-					["from"] = "Opacus",
-					["msg"] = "and yeah... I will start studying the fights tonight... thanks a lot for the chance man",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1356495205,
-					["from"] = "Voltrannus",
-					["msg"] = "ya i'd like to bring you to heroic mogu'shun",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1356495220,
-					["from"] = "Voltrannus",
-					["msg"] = "6/6 heroic this week... we really need a rouge to beat heroic will i think-",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1356495226,
-					["from"] = "Voltrannus",
-					["msg"] = "catch is- as long as feint",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1356495235,
-					["from"] = "Voltrannus",
-					["msg"] = "will absorb the dmg from the sparks in heroic will",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1356495238,
-					["from"] = "Voltrannus",
-					["msg"] = "and i think they do...",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1356495247,
-					["from"] = "Opacus",
-					["msg"] = "cool, ill crush it",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1356495255,
-					["from"] = "Voltrannus",
-					["msg"] = "even if feint dont work-",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1356495255,
-					["from"] = "Opacus",
-					["msg"] = "they may.. ill look it and and I will spec into it",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1356495261,
-					["from"] = "Opacus",
-					["msg"] = " |cff71d5ff|Htalent:19241|h[Elusiveness]|h|r",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1356495262,
-					["from"] = "Voltrannus",
-					["msg"] = "i know cloak of shadows will",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1356495269,
-					["from"] = "Voltrannus",
-					["msg"] = "yes that's the talent",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1356495284,
-					["from"] = "Voltrannus",
-					["msg"] = "thx bro",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1356495287,
-					["from"] = "Voltrannus",
-					["msg"] = "NAH MEAN!?!?!",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1356495288,
-					["from"] = "Voltrannus",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1356495298,
-					["from"] = "Opacus",
-					["msg"] = "hah.. ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1356495316,
-					["from"] = "Opacus",
-					["msg"] = "sooooooooooo if I do well will this be a permanent thing? or just temp",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1356495346,
-					["from"] = "Voltrannus",
-					["msg"] = "looking for permanent",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1356495353,
-					["from"] = "Voltrannus",
-					["msg"] = "we need a good consistnat melee",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1356495366,
-					["from"] = "Voltrannus",
-					["msg"] = "it's either gonna be you- a ret pally, or convel the warrior",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1356495369,
-					["from"] = "Voltrannus",
-					["msg"] = "might keep 2 of you",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1356495371,
-					["from"] = "Opacus",
-					["msg"] = "awesome.. ill do my best.. and yeah u can count on me for good attendance.. during the week is super easy for me",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1356495379,
-					["from"] = "Voltrannus",
-					["msg"] = "but prolly you and 1 of them for permanent hopefully",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1356495426,
-					["from"] = "Opacus",
-					["msg"] = "me and Convel were neck anad neck this weekend, but I beat him DPS wise overall... he seems good tho",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1356495437,
-					["from"] = "Voltrannus",
-					["msg"] = "yep",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1356495453,
-					["from"] = "Opacus",
-					["msg"] = "another quick question.. when are we doing the fight?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1356495457,
-					["from"] = "Opacus",
-					["msg"] = "what day",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1356495479,
-					["from"] = "Voltrannus",
-					["msg"] = "well, i sent inv's for wed/thurs",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1356495487,
-					["from"] = "Voltrannus",
-					["msg"] = "but im not sure if we'll do it tomorrow or thurs yet",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1356495500,
-					["from"] = "Voltrannus",
-					["msg"] = "id like us to raid a 3rd day... but idk when",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1356495508,
-					["from"] = "Voltrannus",
-					["msg"] = "new years eve mon night",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1356495515,
-					["from"] = "Voltrannus",
-					["msg"] = "group 2 raids weekend",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1356495521,
-					["from"] = "Opacus",
-					["msg"] = "ya",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1356495523,
-					["from"] = "Voltrannus",
-					["msg"] = "missed tues (today) bc of christams",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1356495532,
-					["from"] = "Voltrannus",
-					["msg"] = "frigin holidays :P",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1356495539,
-					["from"] = "Voltrannus",
-					["msg"] = "hard to get progression",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [62]
-				{
-					["type"] = 1,
-					["time"] = 1356495550,
-					["from"] = "Opacus",
-					["msg"] = "yeah.. the only reason im saying is becuase I was hoping I'd catch some farm mode and maybe gear a bit for the fight",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [63]
-				{
-					["type"] = 1,
-					["time"] = 1356495560,
-					["from"] = "Voltrannus",
-					["msg"] = "i feel you",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [64]
-				{
-					["type"] = 1,
-					["time"] = 1356495570,
-					["from"] = "Opacus",
-					["msg"] = "but we're going right into progression?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [65]
-				{
-					["type"] = 1,
-					["time"] = 1356495581,
-					["from"] = "Voltrannus",
-					["msg"] = "not sure yet- we may only have 2 nite",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [66]
-				{
-					["type"] = 1,
-					["time"] = 1356495586,
-					["from"] = "Voltrannus",
-					["msg"] = "*nights",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [67]
-				{
-					["type"] = 1,
-					["time"] = 1356495632,
-					["from"] = "Opacus",
-					["msg"] = "ya.. we'll play it by ear... not being greedy, I truly would just like to be better equip if I am going to have a strong roll in the encounter... but ill work what I got",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [68]
-				{
-					["type"] = 1,
-					["time"] = 1356495640,
-					["from"] = "Opacus",
-					["msg"] = "oh boy what a nice xmas gift! ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [69]
-				{
-					["type"] = 1,
-					["time"] = 1356495653,
-					["from"] = "Voltrannus",
-					["msg"] = "that fight not about dps",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [70]
-				{
-					["type"] = 1,
-					["time"] = 1356495662,
-					["from"] = "Voltrannus",
-					["msg"] = "lol but i know u want to make a good impression on the team",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [71]
-				{
-					["type"] = 1,
-					["time"] = 1356495664,
-					["from"] = "Opacus",
-					["msg"] = "oh? ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [72]
-				{
-					["type"] = 1,
-					["time"] = 1356495671,
-					["from"] = "Voltrannus",
-					["msg"] = "it has a long enrage",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [73]
-				{
-					["type"] = 1,
-					["time"] = 1356495672,
-					["from"] = "Opacus",
-					["msg"] = "exactly",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [74]
-				{
-					["type"] = 1,
-					["time"] = 1356495718,
-					["from"] = "Opacus",
-					["msg"] = "im sure you guys will be able to see tho... I mean, if I nail mechanics but my DPS isn't top melee, no1 is going to blame me for it",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [75]
-				{
-					["type"] = 1,
-					["time"] = 1356495731,
-					["from"] = "Opacus",
-					["msg"] = "Altho its always a nice cushion",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [76]
-				{
-					["type"] = 1,
-					["time"] = 1356495763,
-					["from"] = "Opacus",
-					["msg"] = "my ilvl is 488 tho... not amazing.. but it should be fine",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [77]
-				{
-					["type"] = 1,
-					["time"] = 1356495799,
-					["from"] = "Opacus",
-					["msg"] = "anyways.. imma go hang out w my girl.. catch u tomorrow.. and thx again!",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [78]
-				{
-					["type"] = 1,
-					["time"] = 1356495823,
-					["from"] = "Voltrannus",
-					["msg"] = "k, night, cya",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [79]
-				{
-					["type"] = 1,
-					["time"] = 1356569071,
-					["from"] = "Opacus",
-					["msg"] = "im gunna need a quick explaination for this fight ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [80]
-				{
-					["type"] = 1,
-					["time"] = 1356569081,
-					["from"] = "Opacus",
-					["msg"] = "like whats different than normal mode type shit",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [81]
-				{
-					["type"] = 1,
-					["time"] = 1356569782,
-					["from"] = "Opacus",
-					["msg"] = "my bad.. I got confused with the tiles thing.. I need to read up on that... and when I am able to break chains was confusing me as well.. wont happen again",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [82]
-				{
-					["type"] = 1,
-					["time"] = 1356571872,
-					["from"] = "Voltrannus",
-					["msg"] = "grats on shoulders",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [83]
-				{
-					["type"] = 1,
-					["time"] = 1356571883,
-					["from"] = "Opacus",
-					["msg"] = "yeah thx .. much needed",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [84]
-				{
-					["type"] = 1,
-					["time"] = 1356573051,
-					["from"] = "Opacus",
-					["msg"] = "this guy is a bitch",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [85]
-				{
-					["type"] = 1,
-					["time"] = 1356573058,
-					["from"] = "Opacus",
-					["msg"] = "*boss",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [86]
-				{
-					["type"] = 1,
-					["time"] = 1356573891,
-					["from"] = "Opacus",
-					["msg"] = "I had to just adhust to multi tasking from the flank order and the no attack.. but Im good now.. I understand the fight",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [87]
-				{
-					["type"] = 1,
-					["time"] = 1356573907,
-					["from"] = "Voltrannus",
-					["msg"] = "ok",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [88]
-				{
-					["type"] = 1,
-					["time"] = 1356574705,
-					["from"] = "Opacus",
-					["msg"] = "that fight is a nightmare for melee.. but I got the mechanics.. just gotta work on my DPS for that fight.. but I know what to do DPS wise... hate to say it, but every whipe I learn something important..  but I wont make same mistake twice.. ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [89]
-				{
-					["type"] = 1,
-					["time"] = 1356574715,
-					["from"] = "Voltrannus",
-					["msg"] = "our melee shamna does 100k",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [90]
-				{
-					["type"] = 1,
-					["time"] = 1356574718,
-					["from"] = "Opacus",
-					["msg"] = "Just trying to catch up experience wise on fights is tough",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [91]
-				{
-					["type"] = 1,
-					["time"] = 1356574721,
-					["from"] = "Voltrannus",
-					["msg"] = "we cant kill it bc he's not here",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [92]
-				{
-					["type"] = 1,
-					["time"] = 1356575262,
-					["from"] = "Opacus",
-					["msg"] = "trust me I wont let u down... once I catch up with mechanics and gear... youll see.. then when 5.2 drops .. youll see why I ranked on 3 bosses out of 8",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [93]
-				{
-					["type"] = 1,
-					["time"] = 1356577487,
-					["from"] = "Opacus",
-					["msg"] = "3rd in DPS that fight",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [94]
-				{
-					["type"] = 1,
-					["time"] = 1356577504,
-					["from"] = "Voltrannus",
-					["msg"] = "much better",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [95]
-				{
-					["type"] = 1,
-					["time"] = 1356580465,
-					["from"] = "Opacus",
-					["msg"] = "ya.. those shoulders did jack.. I ran them thru to calculate.. and they are too monk.. might be better for mute tho.. either way, Avon getting 4 set so I dont mind at allNow I know the encounters and have a basis to study tonight.. my DPS at the end of ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [96]
-				{
-					["type"] = 1,
-					["time"] = 1356580465,
-					["from"] = "Opacus",
-					["msg"] = "the night was much better..  ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [97]
-				{
-					["type"] = 1,
-					["time"] = 1356580491,
-					["from"] = "Opacus",
-					["msg"] = "Sorry about that.. I sent that a while ago but didnt hit enter on WIM.. sry about that",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [98]
-				{
-					["type"] = 1,
-					["time"] = 1356658643,
-					["from"] = "Opacus",
-					["msg"] = "showing up > DPS... ill do the homework",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [99]
-				{
-					["type"] = 1,
-					["time"] = 1356658652,
-					["from"] = "Voltrannus",
-					["msg"] = "heh",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [100]
-				{
-					["type"] = 1,
-					["time"] = 1356658653,
-					["from"] = "Opacus",
-					["msg"] = "150K easy next week",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [101]
-				{
-					["type"] = 1,
-					["time"] = 1356658656,
-					["from"] = "Voltrannus",
-					["msg"] = "ok",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [102]
-				{
-					["type"] = 1,
-					["time"] = 1356660776,
-					["from"] = "Opacus",
-					["msg"] = "am I raiding next week?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [103]
-				{
-					["type"] = 1,
-					["time"] = 1356660791,
-					["from"] = "Voltrannus",
-					["msg"] = "havent discussed it with the team yet",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [104]
-				{
-					["type"] = 1,
-					["time"] = 1356660795,
-					["from"] = "Voltrannus",
-					["msg"] = "have to get back to you",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [105]
-				{
-					["type"] = 1,
-					["time"] = 1356660801,
-					["from"] = "Opacus",
-					["msg"] = "alright",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [106]
-				{
-					["type"] = 1,
-					["time"] = 1356662393,
-					["from"] = "Opacus",
-					["msg"] = "bro",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [107]
-				{
-					["type"] = 1,
-					["time"] = 1356662396,
-					["from"] = "Opacus",
-					["msg"] = "I am crying",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [108]
-				{
-					["type"] = 1,
-					["time"] = 1356662400,
-					["from"] = "Voltrannus",
-					["msg"] = "lol dont",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [109]
-				{
-					["type"] = 1,
-					["time"] = 1356662401,
-					["from"] = "Voltrannus",
-					["msg"] = "sry",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [110]
-				{
-					["type"] = 1,
-					["time"] = 1356662404,
-					["from"] = "Opacus",
-					["msg"] = "no lkaughing",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [111]
-				{
-					["type"] = 1,
-					["time"] = 1356662407,
-					["from"] = "Voltrannus",
-					["msg"] = "i am logging",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [112]
-				{
-					["type"] = 1,
-					["time"] = 1356662409,
-					["from"] = "Voltrannus",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [113]
-				{
-					["type"] = 1,
-					["time"] = 1356662409,
-					["from"] = "Opacus",
-					["msg"] = "tears",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [114]
-				{
-					["type"] = 1,
-					["time"] = 1356662417,
-					["from"] = "Opacus",
-					["msg"] = "peace lol",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [115]
-				{
-					["type"] = 1,
-					["time"] = 1356662422,
-					["from"] = "Opacus",
-					["msg"] = "plz tell me u recorded that",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [116]
-				{
-					["type"] = 1,
-					["time"] = 1356662495,
-					["from"] = "Voltrannus",
-					["msg"] = "nah i didnt",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [117]
-				{
-					["type"] = 1,
-					["time"] = 1356662846,
-					["from"] = "Voltrannus",
-					["msg"] = "LISTEN TO THIS",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [118]
-				{
-					["type"] = 1,
-					["time"] = 1356662940,
-					["from"] = "Opacus",
-					["msg"] = "IM WAY BETTER THAN YOU",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [119]
-				{
-					["type"] = 1,
-					["time"] = 1357172388,
-					["from"] = "Opacus",
-					["msg"] = "IM HERE",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [120]
-				{
-					["type"] = 1,
-					["time"] = 1357172391,
-					["from"] = "Opacus",
-					["msg"] = "PUT ME IN COACH",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [121]
-				{
-					["type"] = 1,
-					["time"] = 1357172400,
-					["from"] = "Voltrannus",
-					["msg"] = "HEYYY",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [122]
-				{
-					["type"] = 1,
-					["time"] = 1357172403,
-					["from"] = "Voltrannus",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [123]
-				{
-					["type"] = 1,
-					["time"] = 1357172410,
-					["from"] = "Opacus",
-					["msg"] = "lawl",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [124]
-				{
-					["type"] = 1,
-					["time"] = 1357172467,
-					["from"] = "Opacus",
-					["msg"] = " yo, just wanted to add the other night... really like the guild as a whole man.. every1 seems real cool and besides some funny drama, which was hysterical anyway, I cant remember a guild with a better vibe... ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [125]
-				{
-					["type"] = 1,
-					["time"] = 1357172479,
-					["from"] = "Voltrannus",
-					["msg"] = "ah nice",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [126]
-				{
-					["type"] = 1,
-					["time"] = 1357172494,
-					["from"] = "Opacus",
-					["msg"] = "most other guilds have a lot of ego pompous assholes",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [127]
-				{
-					["type"] = 1,
-					["time"] = 1357172518,
-					["from"] = "Voltrannus",
-					["msg"] = "thx dewd",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [128]
-				{
-					["type"] = 1,
-					["time"] = 1357172523,
-					["from"] = "Voltrannus",
-					["msg"] = "i just told dedee in mumble",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [129]
-				{
-					["type"] = 1,
-					["time"] = 1357172615,
-					["from"] = "Opacus",
-					["msg"] = "and I can tell you are like me.. street smart in a sense... its not easy to pull the wool over your eyes... like what you said about not listening to the warlock... like.. ive been in guilds where dudes who do nothing but point fingers and quick to ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [130]
-				{
-					["type"] = 1,
-					["time"] = 1357172615,
-					["from"] = "Opacus",
-					["msg"] = "correct someone else get favored by raid leaders and GMs... I like how you keep it real ",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [131]
-				{
-					["type"] = 1,
-					["time"] = 1357172661,
-					["from"] = "Opacus",
-					["msg"] = "That type of shit is important to me... just saying.. I was gunna say this the other day.. but forgot.. im happy here man and hope I can make the main squad",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [132]
-				{
-					["type"] = 1,
-					["time"] = 1357174216,
-					["from"] = "Opacus",
-					["msg"] = "so if blue is petrifying I can take dmg from traps right?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [133]
-				{
-					["type"] = 1,
-					["time"] = 1357174245,
-					["from"] = "Voltrannus",
-					["msg"] = "ya- u take 90% reduced dmg",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [134]
-				{
-					["type"] = 1,
-					["time"] = 1357174248,
-					["from"] = "Voltrannus",
-					["msg"] = "from whatever color",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [135]
-				{
-					["type"] = 1,
-					["time"] = 1357174252,
-					["from"] = "Voltrannus",
-					["msg"] = "blue= traps",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [136]
-				{
-					["type"] = 1,
-					["time"] = 1357174255,
-					["from"] = "Voltrannus",
-					["msg"] = "red- fire chain",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [137]
-				{
-					["type"] = 1,
-					["time"] = 1357174267,
-					["from"] = "Voltrannus",
-					["msg"] = "purple= puddles on ground (didnt have those this week)",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [138]
-				{
-					["type"] = 1,
-					["time"] = 1357174268,
-					["from"] = "Opacus",
-					["msg"] = "ya I move out of the trap .. shouldnt jhave",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [139]
-				{
-					["type"] = 1,
-					["time"] = 1357174275,
-					["from"] = "Voltrannus",
-					["msg"] = "green= random raid nature dmg",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [140]
-				{
-					["type"] = 1,
-					["time"] = 1357174277,
-					["from"] = "Opacus",
-					["msg"] = "Now I got everything in that fight",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [141]
-				{
-					["type"] = 1,
-					["time"] = 1357174285,
-					["from"] = "Voltrannus",
-					["msg"] = "only took 2 weeks! ",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [142]
-				{
-					["type"] = 1,
-					["time"] = 1357174289,
-					["from"] = "Voltrannus",
-					["msg"] = "lol jk dude",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [143]
-				{
-					["type"] = 1,
-					["time"] = 1357174293,
-					["from"] = "Opacus",
-					["msg"] = "I was doing like 130-140K too.. fucking annoyed",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [144]
-				{
-					["type"] = 1,
-					["time"] = 1357174306,
-					["from"] = "Opacus",
-					["msg"] = "nah I need u hard on me.. I gotta catch up",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [145]
-				{
-					["type"] = 1,
-					["time"] = 1357174309,
-					["from"] = "Opacus",
-					["msg"] = "no homo",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [146]
-				{
-					["type"] = 1,
-					["time"] = 1357174311,
-					["from"] = "Opacus",
-					["msg"] = "whoa",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [147]
-				{
-					["type"] = 1,
-					["time"] = 1357174326,
-					["from"] = "Voltrannus",
-					["msg"] = "haha",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [148]
-				{
-					["type"] = 1,
-					["time"] = 1357178596,
-					["from"] = "Opacus",
-					["msg"] = "I dont think that was that bad for me seeing that fight only the second time.. ever no?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [149]
-				{
-					["type"] = 1,
-					["time"] = 1357178605,
-					["from"] = "Voltrannus",
-					["msg"] = "great job",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [150]
-				{
-					["type"] = 1,
-					["time"] = 1357179683,
-					["from"] = "Voltrannus",
-					["msg"] = "ridin that azzz now",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [151]
-				{
-					["type"] = 1,
-					["time"] = 1357179684,
-					["from"] = "Voltrannus",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [152]
-				{
-					["type"] = 1,
-					["time"] = 1357179688,
-					["from"] = "Voltrannus",
-					["msg"] = "u told me to go hard on you ahaha",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [153]
-				{
-					["type"] = 1,
-					["time"] = 1357179700,
-					["from"] = "Voltrannus",
-					["msg"] = "dont get pissed",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [154]
-				{
-					["type"] = 1,
-					["time"] = 1357179711,
-					["from"] = "Opacus",
-					["msg"] = "lol im not dude",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [155]
-				{
-					["type"] = 1,
-					["time"] = 1357179714,
-					["from"] = "Voltrannus",
-					["msg"] = "kk",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [156]
-				{
-					["type"] = 1,
-					["time"] = 1357179767,
-					["from"] = "Opacus",
-					["msg"] = "I just hate being behind in knowlege",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [157]
-				{
-					["type"] = 1,
-					["time"] = 1357179772,
-					["from"] = "Voltrannus",
-					["msg"] = "watch vids",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [158]
-				{
-					["type"] = 1,
-					["time"] = 1357179775,
-					["from"] = "Voltrannus",
-					["msg"] = "like we talked about",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [159]
-				{
-					["type"] = 1,
-					["time"] = 1357179777,
-					["from"] = "Opacus",
-					["msg"] = "mechanics... well thats it I do",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [160]
-				{
-					["type"] = 1,
-					["time"] = 1357179781,
-					["from"] = "Voltrannus",
-					["msg"] = "and you're not behind- ur prepared and ready",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [161]
-				{
-					["type"] = 1,
-					["time"] = 1357179781,
-					["from"] = "Opacus",
-					["msg"] = "all day at work",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [162]
-				{
-					["type"] = 1,
-					["time"] = 1357179800,
-					["from"] = "Opacus",
-					["msg"] = "but its like... easy to forget certain things and I feel certain things I have to see and touch the stove",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [163]
-				{
-					["type"] = 1,
-					["time"] = 1357179869,
-					["from"] = "Opacus",
-					["msg"] = "rofl thought that was my fault ahahaha",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [164]
-				{
-					["type"] = 1,
-					["time"] = 1357179874,
-					["from"] = "Opacus",
-					["msg"] = "IM LIKE NOOO WHAT I DO",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [165]
-				{
-					["type"] = 1,
-					["time"] = 1357180103,
-					["from"] = "Voltrannus",
-					["msg"] = "lol",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [166]
-				{
-					["type"] = 1,
-					["time"] = 1357182127,
-					["from"] = "Opacus",
-					["msg"] = "I downed it with you all last week np",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [167]
-				{
-					["type"] = 1,
-					["time"] = 1357182134,
-					["from"] = "Voltrannus",
-					["msg"] = "ok",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [168]
-				{
-					["type"] = 1,
-					["time"] = 1357182141,
-					["from"] = "Voltrannus",
-					["msg"] = "b ut he needs the 2h weapon off this",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [169]
-				{
-					["type"] = 1,
-					["time"] = 1357182143,
-					["from"] = "Voltrannus",
-					["msg"] = "biggest upgrade",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [170]
-				{
-					["type"] = 1,
-					["time"] = 1357182151,
-					["from"] = "Voltrannus",
-					["msg"] = "we set him for spirit kings- u sit this one",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [171]
-				{
-					["type"] = 1,
-					["time"] = 1357182155,
-					["from"] = "Opacus",
-					["msg"] = "trinket is BIS for me also.. but its all good he sat last time",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [172]
-				{
-					["type"] = 1,
-					["time"] = 1357182158,
-					["from"] = "Opacus",
-					["msg"] = "allg ood",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [173]
-				{
-					["type"] = 1,
-					["time"] = 1357182162,
-					["from"] = "Voltrannus",
-					["msg"] = "i know",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [174]
-				{
-					["type"] = 1,
-					["time"] = 1357182174,
-					["from"] = "Opacus",
-					["msg"] = "im not greedy im a team player all good",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [175]
-				{
-					["type"] = 1,
-					["time"] = 1357182180,
-					["from"] = "Voltrannus",
-					["msg"] = "kk",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [176]
-				{
-					["type"] = 1,
-					["time"] = 1357182186,
-					["from"] = "Voltrannus",
-					["msg"] = "want u back for will",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [177]
-				{
-					["type"] = 1,
-					["time"] = 1357182203,
-					["from"] = "Opacus",
-					["msg"] = "ya imma watch the video again",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [178]
-				{
-					["type"] = 1,
-					["time"] = 1357182434,
-					["from"] = "Opacus",
-					["msg"] = "actually im wrong.. I havent done HM elegon with u all.. it was normal mode I was thinking about.. so my fault",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [179]
-				{
-					["type"] = 1,
-					["time"] = 1357259945,
-					["from"] = "Opacus",
-					["msg"] = "DUDE... WOE AINT GOT SHIT ON ME... come at me",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [180]
-				{
-					["type"] = 1,
-					["time"] = 1357261280,
-					["from"] = "Opacus",
-					["msg"] = "we got this shit.. lets get some positive energy going! woooo",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [181]
-				{
-					["type"] = 1,
-					["time"] = 1357261308,
-					["from"] = "Voltrannus",
-					["msg"] = "lol im tryin",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [182]
-				{
-					["type"] = 1,
-					["time"] = 1357262483,
-					["from"] = "Opacus",
-					["msg"] = "I got a good trick for my CDs.. gunna do like double DPS this attempt",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [183]
-				{
-					["type"] = 1,
-					["time"] = 1357262544,
-					["from"] = "Voltrannus",
-					["msg"] = "cool",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [184]
-				{
-					["type"] = 1,
-					["time"] = 1357264517,
-					["from"] = "Opacus",
-					["msg"] = "WE GOT THIS",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [185]
-				{
-					["type"] = 1,
-					["time"] = 1357264536,
-					["from"] = "Voltrannus",
-					["msg"] = "ur doing well",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [186]
-				{
-					["type"] = 1,
-					["time"] = 1357266168,
-					["from"] = "Opacus",
-					["msg"] = "That last one I got nervous.. that was all",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [187]
-				{
-					["type"] = 1,
-					["time"] = 1357266173,
-					["from"] = "Voltrannus",
-					["msg"] = "haha",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [188]
-				{
-					["type"] = 1,
-					["time"] = 1357266174,
-					["from"] = "Voltrannus",
-					["msg"] = "gj tho",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [189]
-				{
-					["type"] = 1,
-					["time"] = 1357266177,
-					["from"] = "Opacus",
-					["msg"] = "because it wasnt slowed.. but I think I handled them well",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [190]
-				{
-					["type"] = 1,
-					["time"] = 1357266197,
-					["from"] = "Opacus",
-					["msg"] = "overall u think I did okay? Next time my DPS will be way better.. guna learn how to dance",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [191]
-				{
-					["type"] = 1,
-					["time"] = 1357267563,
-					["from"] = "Opacus",
-					["msg"] = "I can raid saturday as well",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [192]
-				{
-					["type"] = 1,
-					["time"] = 1357268924,
-					["from"] = "Opacus",
-					["msg"] = "Skull wasnt taunted",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [193]
-				{
-					["type"] = 1,
-					["time"] = 1357269580,
-					["from"] = "Opacus",
-					["msg"] = "u saw chat?",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [194]
-				{
-					["type"] = 1,
-					["time"] = 1357269585,
-					["from"] = "Voltrannus",
-					["msg"] = "nah sup?",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [195]
-				{
-					["type"] = 1,
-					["time"] = 1357269586,
-					["from"] = "Opacus",
-					["msg"] = "got BIS trinket",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [196]
-				{
-					["type"] = 1,
-					["time"] = 1357269589,
-					["from"] = "Opacus",
-					["msg"] = "from coin",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [197]
-				{
-					["type"] = 1,
-					["time"] = 1357269596,
-					["from"] = "Opacus",
-					["msg"] = "well 2nd BIS",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [198]
-				{
-					["type"] = 1,
-					["time"] = 1357269601,
-					["from"] = "Voltrannus",
-					["msg"] = "yesss",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [199]
-				{
-					["type"] = 1,
-					["time"] = 1357269629,
-					["from"] = "Opacus",
-					["msg"] = "ya need it but 4 set is the priority... its a 20K increase for me minimum",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [200]
-				{
-					["type"] = 1,
-					["time"] = 1357270972,
-					["from"] = "Opacus",
-					["msg"] = "4th in deeps that fight... trust me when I get gear ill b your best melee.. just saying im on my game brotha... catch u tomorrow",
-					["inbound"] = false,
-					["convo"] = "Voltrannus",
-				}, -- [201]
-				{
-					["type"] = 1,
-					["time"] = 1357271404,
-					["from"] = "Voltrannus",
-					["msg"] = "gj tonight and grats on the loot",
-					["inbound"] = true,
-					["convo"] = "Voltrannus",
-				}, -- [202]
-				["info"] = {
-				},
-			},
-			["Flarrorian"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356322159,
-					["from"] = "Flarrorian",
-					["msg"] = "lol gquit sucks",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356322170,
-					["from"] = "Flarrorian",
-					["msg"] = "no offense to him",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356322175,
-					["from"] = "Opacus",
-					["msg"] = "o",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356322180,
-					["from"] = "Flarrorian",
-					["msg"] = "but the dude talking isnt very good",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356322196,
-					["from"] = "Opacus",
-					["msg"] = "which 1 are u in mumble?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356322205,
-					["from"] = "Opacus",
-					["msg"] = "silentmind?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356322209,
-					["from"] = "Flarrorian",
-					["msg"] = "mythadend",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356322216,
-					["from"] = "Opacus",
-					["msg"] = "ah",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356322226,
-					["from"] = "Opacus",
-					["msg"] = "the dude talking is gquit no?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356322231,
-					["from"] = "Flarrorian",
-					["msg"] = "yup",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356322235,
-					["from"] = "Flarrorian",
-					["msg"] = "right now",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356322247,
-					["from"] = "Opacus",
-					["msg"] = "oh ok.. u confused me.. but hes not good? or are u trolling im so confused",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356322249,
-					["from"] = "Opacus",
-					["msg"] = "lol",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356322259,
-					["from"] = "Flarrorian",
-					["msg"] = "lol i mean he is decent",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356322265,
-					["from"] = "Flarrorian",
-					["msg"] = "but he has failed so much in group 1",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356322271,
-					["from"] = "Flarrorian",
-					["msg"] = "they used him as a replacement",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356322279,
-					["from"] = "Flarrorian",
-					["msg"] = "the guild leader is my real life cousin",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356322280,
-					["from"] = "Flarrorian",
-					["msg"] = "volt",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356322286,
-					["from"] = "Flarrorian",
-					["msg"] = "and his wife is xari",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356322308,
-					["from"] = "Opacus",
-					["msg"] = "oh nice.. ya Volt is good people",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356322320,
-					["from"] = "Flarrorian",
-					["msg"] = "ya hes a good guy",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356322322,
-					["from"] = "Opacus",
-					["msg"] = "Xari is nice as well... they both look out for me",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356322341,
-					["from"] = "Opacus",
-					["msg"] = "looked* .. got me in even tho I am a bit undergeared.. ",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356322362,
-					["from"] = "Flarrorian",
-					["msg"] = "been in this guild since we were parabellum on anatheron LOL..we used to be so sorry. My brother, Mavlon, used to be one of the best mages on the server. He built this guild from the ground up..and had to quit",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1356322389,
-					["from"] = "Flarrorian",
-					["msg"] = "gear will come, most important thing is to know the mechanics, and to show up on time.",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1356322406,
-					["from"] = "Opacus",
-					["msg"] = "mechanics are easy",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1356322424,
-					["from"] = "Flarrorian",
-					["msg"] = "sure for some lol",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1356322427,
-					["from"] = "Flarrorian",
-					["msg"] = "youd be surprised",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = "Skada: Damage taken for Total, 19:58:14 - 23:14:50:",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 1. Epicwarrior   87.39M (20951.5, 23.9%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 2. Mortuous   54.84M (11777.9, 15.0%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 3. Xarxthes   39.08M (8473.0, 10.7%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 4. Tetraa   32.08M (7372.2, 8.8%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 5. Tackfine   30.17M (7078.1, 8.2%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 6. |cff1784d1Opacus|r   25.81M (5757.9, 7.1%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 7. Convel   25.11M (5731.2, 6.9%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 8. Moonbreese   24.36M (5296.7, 6.7%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = " 9. Silentsight   22.51M (4934.0, 6.2%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1356322490,
-					["from"] = "Opacus",
-					["msg"] = "10. Aluney   14.14M (4505.6, 3.9%)",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1356322498,
-					["from"] = "Opacus",
-					["msg"] = "that is damage taken total",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1356322502,
-					["from"] = "Flarrorian",
-					["msg"] = "nice bro",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1356322510,
-					["from"] = "Opacus",
-					["msg"] = "u 6th for melee is amazing.. ",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1356322536,
-					["from"] = "Opacus",
-					["msg"] = "6th for deaths also.. and tied with a afew",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1356322557,
-					["from"] = "Flarrorian",
-					["msg"] = "ya i mean dont worry about it..like i said, just show up on time every week, and do the proper mechanics, and be a good sport. I promise that the gear will come, and youll work your way into group 1",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1356322560,
-					["from"] = "Flarrorian",
-					["msg"] = "in time",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1356322564,
-					["from"] = "Flarrorian",
-					["msg"] = "just be patient",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1356322602,
-					["from"] = "Opacus",
-					["msg"] = "oh yeah.. I know Volt will do the right thing. I am patient... I just dont wanna raid with people way below my level... it is annoying in general.. but knowing that wasnt main group is good. Volt told me same thing that not to worry",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1356322674,
-					["from"] = "Flarrorian",
-					["msg"] = "ya you just have to understand, just like in business...you may start at the bottom, regardless of how good you are, and work your way to the top. You have to realize that a lot of the people in group 1 have been in there since like wrath of the lich king",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1356322684,
-					["from"] = "Opacus",
-					["msg"] = "yep",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1356322693,
-					["from"] = "Opacus",
-					["msg"] = "And there are 0 rogues.. so",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1356322699,
-					["from"] = "Flarrorian",
-					["msg"] = "haha yup",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1356322701,
-					["from"] = "Flarrorian",
-					["msg"] = "all u bro",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1356322735,
-					["from"] = "Opacus",
-					["msg"] = "Ya im not worried and dont think I am impatient.. im here for the long haul.. I stayed in Indy for 6 months because I was TOLD I may be able to raid again if something opens up.. even tho they didnt give a shit",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1356322740,
-					["from"] = "Opacus",
-					["msg"] = "I am very loyal",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1356322766,
-					["from"] = "Opacus",
-					["msg"] = "dont think as in I dont want u to think I am being annoying",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1356322769,
-					["from"] = "Flarrorian",
-					["msg"] = "ya bro, i can tell you are a good player. just stay in mumble and get good with everyone haha",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1356322774,
-					["from"] = "Flarrorian",
-					["msg"] = "no no no",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1356322779,
-					["from"] = "Flarrorian",
-					["msg"] = "you are not annoying bro!",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1356322786,
-					["from"] = "Opacus",
-					["msg"] = "|cFFFFFFFF[|Hurl:http://www.wowinterface.com/downloads/info21922-OPUI.html|hhttp://www.wowinterface.com/downloads/info21922-OPUI.html|h]|r ",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1356322789,
-					["from"] = "Opacus",
-					["msg"] = "boom",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1356322789,
-					["from"] = "Flarrorian",
-					["msg"] = "i know where you are coming from completely",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1356322792,
-					["from"] = "Flarrorian",
-					["msg"] = "hahaha",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [62]
-				{
-					["type"] = 1,
-					["time"] = 1356322793,
-					["from"] = "Opacus",
-					["msg"] = "perfection",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [63]
-				{
-					["type"] = 1,
-					["time"] = 1356322801,
-					["from"] = "Opacus",
-					["msg"] = "u seen it?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [64]
-				{
-					["type"] = 1,
-					["time"] = 1356322801,
-					["from"] = "Flarrorian",
-					["msg"] = "is that for rogue only or anyone?",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [65]
-				{
-					["type"] = 1,
-					["time"] = 1356322805,
-					["from"] = "Flarrorian",
-					["msg"] = "i might use it",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [66]
-				{
-					["type"] = 1,
-					["time"] = 1356322805,
-					["from"] = "Opacus",
-					["msg"] = "for anyone",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [67]
-				{
-					["type"] = 1,
-					["time"] = 1356322807,
-					["from"] = "Flarrorian",
-					["msg"] = "LOL",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [68]
-				{
-					["type"] = 1,
-					["time"] = 1356322814,
-					["from"] = "Opacus",
-					["msg"] = "a lot of people do",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [69]
-				{
-					["type"] = 1,
-					["time"] = 1356322828,
-					["from"] = "Flarrorian",
-					["msg"] = "i dont have a ton of extra time to work for my interface",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [70]
-				{
-					["type"] = 1,
-					["time"] = 1356322832,
-					["from"] = "Flarrorian",
-					["msg"] = "so thatd be perfect",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [71]
-				{
-					["type"] = 1,
-					["time"] = 1356322836,
-					["from"] = "Opacus",
-					["msg"] = "dude.. ive editted everything inside and out... it runs super light and keeps screen perfectly clear",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [72]
-				{
-					["type"] = 1,
-					["time"] = 1356322843,
-					["from"] = "Opacus",
-					["msg"] = "ya.. and I update it frequently",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [73]
-				{
-					["type"] = 1,
-					["time"] = 1356322847,
-					["from"] = "Flarrorian",
-					["msg"] = "im about to try it out",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [74]
-				{
-					["type"] = 1,
-					["time"] = 1356322848,
-					["from"] = "Flarrorian",
-					["msg"] = "sec",
-					["inbound"] = true,
-					["convo"] = "Flarrorian",
-				}, -- [75]
-				{
-					["type"] = 1,
-					["time"] = 1356322856,
-					["from"] = "Opacus",
-					["msg"] = "what is your resolution?",
-					["inbound"] = false,
-					["convo"] = "Flarrorian",
-				}, -- [76]
-				["info"] = {
-				},
-			},
-			["Thzraek"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356140764,
-					["from"] = "Thzraek",
-					["msg"] = "wanna run MC with me?",
-					["inbound"] = true,
-					["convo"] = "Thzraek",
-				}, -- [1]
-				["info"] = {
-				},
-			},
-			["Sweepstakes"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356974527,
-					["from"] = "Opacus",
-					["msg"] = "when this boss goes to other side throw a HOT on me because i move really fast to interrupt him",
-					["inbound"] = false,
-					["convo"] = "Sweepstakes",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356974541,
-					["from"] = "Sweepstakes",
-					["msg"] = "ok",
-					["inbound"] = true,
-					["convo"] = "Sweepstakes",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356974595,
-					["from"] = "Opacus",
-					["msg"] = "go",
-					["inbound"] = false,
-					["convo"] = "Sweepstakes",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356974602,
-					["from"] = "Opacus",
-					["msg"] = "mt",
-					["inbound"] = false,
-					["convo"] = "Sweepstakes",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Daddiie"] = {
-				{
-					["type"] = 1,
-					["time"] = 1356650372,
-					["from"] = "Opacus",
-					["msg"] = "what u need?",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1356650382,
-					["from"] = "Opacus",
-					["msg"] = " |cffffd000|Htrade:110423:600:600:5800000075C0E33:e+WFFPCtCbG0yWBg2AcDJQYAgBYFPEAAAYAAgj//HBAAAABCCBA+BAAt4Bw3fx//////P/fAAAAAAAggEAAGA+///TABACAAYAGA4P8//HEAgQAGgf7sB8H|h[Leatherworking]|h|r",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1356650386,
-					["from"] = "Daddiie",
-					["msg"] = "contenders dragon",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1356650398,
-					["from"] = "Opacus",
-					["msg"] = "I can learn it",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1356650403,
-					["from"] = "Opacus",
-					["msg"] = "gimme a sec",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1356650421,
-					["from"] = "Daddiie",
-					["msg"] = "i only need specific sets tho",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1356650468,
-					["from"] = "Opacus",
-					["msg"] = "tell me what u need",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1356650474,
-					["from"] = "Opacus",
-					["msg"] = "I have a shit ton of spirit shards",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1356650489,
-					["from"] = "Opacus",
-					["msg"] = "and nothing to do until raid so shoot",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1356650512,
-					["from"] = "Daddiie",
-					["msg"] = "lol hmk gime a sec",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1356650515,
-					["from"] = "Daddiie",
-					["msg"] = "i need",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1356650521,
-					["from"] = "Daddiie",
-					["msg"] = " |cffffd000|Henchant:124617|h[Leatherworking: Contender's Dragonscale Boots]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1356650530,
-					["from"] = "Daddiie",
-					["msg"] = "  |cffffd000|Henchant:124618|h[Leatherworking: Contender's Dragonscale Belt]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1356650534,
-					["from"] = "Daddiie",
-					["msg"] = " |cffffd000|Henchant:124614|h[Leatherworking: Contender's Dragonscale Gloves]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1356650540,
-					["from"] = "Daddiie",
-					["msg"] = " |cffffd000|Henchant:124616|h[Leatherworking: Contender's Dragonscale Bracers]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1356650544,
-					["from"] = "Daddiie",
-					["msg"] = " |cffffd000|Henchant:124613|h[Leatherworking: Contender's Dragonscale Chestguard]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1356650550,
-					["from"] = "Daddiie",
-					["msg"] = " |cffffd000|Henchant:124612|h[Leatherworking: Contender's Dragonscale Shoulders]|h|r",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1356650556,
-					["from"] = "Daddiie",
-					["msg"] = "thats all i need",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1356650574,
-					["from"] = "Opacus",
-					["msg"] = "ok go get me the matts",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1356650586,
-					["from"] = "Daddiie",
-					["msg"] = "got them ^_^",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1356650592,
-					["from"] = "Opacus",
-					["msg"] = "kk",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1356650700,
-					["from"] = "Opacus",
-					["msg"] = "lol im just gunna learn them all",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1356650712,
-					["from"] = "Daddiie",
-					["msg"] = "its cool i can wait ^_^",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1356650993,
-					["from"] = "Daddiie",
-					["msg"] = "tks",
-					["inbound"] = true,
-					["convo"] = "Daddiie",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1356651000,
-					["from"] = "Opacus",
-					["msg"] = "lol little cheap on the tip side!",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1356651005,
-					["from"] = "Opacus",
-					["msg"] = "but all good",
-					["inbound"] = false,
-					["convo"] = "Daddiie",
-				}, -- [26]
-				["info"] = {
-				},
-			},
-			["Tackfine"] = {
-				{
-					["type"] = 1,
-					["time"] = 1357091633,
-					["from"] = "Opacus",
-					["msg"] = "yo",
-					["inbound"] = false,
-					["convo"] = "Tackfine",
-				}, -- [1]
 				["info"] = {
 				},
 			},

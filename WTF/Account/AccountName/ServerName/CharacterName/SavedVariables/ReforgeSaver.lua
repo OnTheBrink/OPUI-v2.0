@@ -1,6 +1,6 @@
 
 ReforgeSaverDB = {
+	["Format"] = 2,
 	["Profiles"] = {
 	},
-	["Format"] = 2,
 }

@@ -3,7 +3,7 @@ AzCastBar_Config = {
 	["GlobalCooldown"] = {
 		["enabled"] = true,
 		["backdropIndent"] = -2,
-		["alpha"] = 1,
+		["left"] = 669.0001831054688,
 		["showInstants"] = true,
 		["colBackGround"] = {
 			0.3019607843137255, -- [1]
@@ -12,14 +12,9 @@ AzCastBar_Config = {
 			0, -- [4]
 		},
 		["reverseGrowth"] = false,
-		["left"] = 669.0001831054688,
+		["showSpark"] = true,
 		["width"] = 582,
-		["colBackdrop"] = {
-			0.1019607843137255, -- [1]
-			0.2196078431372549, -- [2]
-			0.3490196078431372, -- [3]
-			0, -- [4]
-		},
+		["showTime"] = false,
 		["showLabel"] = false,
 		["colNormal"] = {
 			0.4, -- [1]
@@ -27,11 +22,16 @@ AzCastBar_Config = {
 			0.8, -- [3]
 			0, -- [4]
 		},
-		["bottom"] = 135.9998474121094,
-		["height"] = 16,
 		["iconAnchor"] = "NONE",
-		["showTime"] = false,
-		["showSpark"] = true,
+		["height"] = 16,
+		["bottom"] = 135.9998474121094,
+		["colBackdrop"] = {
+			0.1019607843137255, -- [1]
+			0.2196078431372549, -- [2]
+			0.3490196078431372, -- [3]
+			0, -- [4]
+		},
+		["alpha"] = 1,
 	},
 	["Pet"] = {
 		["enabled"] = false,
@@ -46,51 +46,30 @@ AzCastBar_Config = {
 			0.8, -- [3]
 		},
 		["bottom"] = 403.7693748338992,
-		["colFailed"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0.5, -- [3]
-		},
+		["showRank"] = false,
 		["colNonInterruptable"] = {
 			0.78, -- [1]
 			0.82, -- [2]
 			0.86, -- [3]
 		},
-		["showRank"] = false,
 		["left"] = 820.2307764272441,
+		["colFailed"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0.5, -- [3]
+		},
 	},
 	["optionsLeft"] = 144.1538803790048,
-	["LootRolls"] = {
-		["left"] = 779,
-		["anchorPoint"] = "TOP",
-		["anchorOffset"] = 35,
-		["timeFontFlags"] = "OUTLINE",
-		["colBackdrop"] = {
-			0, -- [1]
-			0, -- [2]
-			0, -- [3]
-			1, -- [4]
+	["Mirror"] = {
+		["enabled"] = false,
+		["colNormal"] = {
+			0.4, -- [1]
+			0.6, -- [2]
+			0.8, -- [3]
 		},
-		["texture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour4",
-		["nameOffsetY"] = -10,
-		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
-		["bottom"] = 694,
-		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
-		["hideIconBorder"] = true,
-		["colBackGround"] = {
-			0.8745098039215686, -- [1]
-			0.8745098039215686, -- [2]
-			0.8745098039215686, -- [3]
-			0.6000000238418579, -- [4]
-		},
-		["timeFontSize"] = 18,
-		["enabled"] = true,
-		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
-		["nameOffsetX"] = -1,
-		["height"] = 12,
-		["nameFontFlags"] = "OUTLINE",
-		["nameFontSize"] = 16,
-		["iconOffset"] = 2,
+		["bottom"] = 581.7693316766771,
+		["fadeTime"] = 1,
+		["left"] = 820.2307764272441,
 	},
 	["Focus"] = {
 		["strata"] = "HIGH",
@@ -108,9 +87,9 @@ AzCastBar_Config = {
 			0.6, -- [2]
 			0.8, -- [3]
 		},
-		["vertTile"] = false,
+		["left"] = 566,
 		["timeFontFlags"] = "OUTLINE",
-		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+		["iconAnchor"] = "NONE",
 		["colBackdrop"] = {
 			1, -- [1]
 			0.9568627450980392, -- [2]
@@ -118,35 +97,35 @@ AzCastBar_Config = {
 			1, -- [4]
 		},
 		["texture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour4",
-		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
-		["backdropIndent"] = 1.5,
-		["nameFontSize"] = 14,
-		["iconAnchor"] = "NONE",
 		["colBackGround"] = {
 			0.09803921568627451, -- [1]
 			0.09803921568627451, -- [2]
 			0.09803921568627451, -- [3]
 			1, -- [4]
 		},
+		["backdropIndent"] = 1.5,
+		["timeFontSize"] = 14,
+		["bottom"] = 201,
+		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
 		["fadeTime"] = 0.5,
 		["showRank"] = false,
 		["width"] = 148,
-		["timeFontSize"] = 14,
-		["nameFontFlags"] = "OUTLINE",
+		["nameFontSize"] = 14,
+		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
 		["colFailed"] = {
 			1, -- [1]
 			0.5, -- [2]
 			0.5, -- [3]
 		},
-		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["nameFontFlags"] = "OUTLINE",
 		["height"] = 18,
 		["colNonInterruptable"] = {
 			0.78, -- [1]
 			0.82, -- [2]
 			0.86, -- [3]
 		},
-		["bottom"] = 201,
-		["left"] = 566,
+		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+		["vertTile"] = false,
 	},
 	["Target"] = {
 		["strata"] = "HIGH",
@@ -163,9 +142,9 @@ AzCastBar_Config = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["backdropIndent"] = 1.5,
+		["vertTile"] = false,
 		["timeFontFlags"] = "OUTLINE",
-		["iconAnchor"] = "NONE",
+		["showSpark"] = true,
 		["colBackdrop"] = {
 			1, -- [1]
 			0.9568627450980392, -- [2]
@@ -173,27 +152,27 @@ AzCastBar_Config = {
 			1, -- [4]
 		},
 		["texture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour4",
-		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
-		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
-		["nameFontFlags"] = "OUTLINE",
-		["bottom"] = 201,
 		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+		["nameFontSize"] = 14,
+		["bottom"] = 201,
+		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
 		["fadeTime"] = 0.5,
 		["showRank"] = false,
 		["width"] = 215,
-		["nameFontSize"] = 14,
+		["nameFontFlags"] = "OUTLINE",
+		["timeFontSize"] = 14,
+		["colFailed"] = {
+			1, -- [1]
+			0.5, -- [2]
+			0.5, -- [3]
+		},
 		["colBackGround"] = {
 			0.9137254901960784, -- [1]
 			0.9137254901960784, -- [2]
 			0.9137254901960784, -- [3]
 			1, -- [4]
 		},
-		["colFailed"] = {
-			1, -- [1]
-			0.5, -- [2]
-			0.5, -- [3]
-		},
-		["timeFontSize"] = 14,
 		["height"] = 18,
 		["colNonInterruptable"] = {
 			0.1254901960784314, -- [1]
@@ -201,24 +180,18 @@ AzCastBar_Config = {
 			0.1372549019607843, -- [3]
 			1, -- [4]
 		},
-		["showSpark"] = true,
-		["vertTile"] = false,
-	},
-	["optionsBottom"] = 533.4154289599439,
-	["Player"] = {
-		["left"] = 725,
-		["vertTile"] = false,
-		["colSafezone"] = {
-			0.3, -- [1]
-			0.8, -- [2]
-			0.3, -- [3]
-			0.6, -- [4]
-		},
 		["iconAnchor"] = "NONE",
-		["useSameBGTexture"] = true,
+		["backdropIndent"] = 1.5,
+	},
+	["Player"] = {
+		["vertTile"] = false,
+		["strata"] = "HIGH",
 		["reverseGrowth"] = true,
+		["backdropIndent"] = 1.5,
+		["useSameBGTexture"] = true,
+		["showSpellTarget"] = false,
 		["showSpark"] = true,
-		["mergeTrade"] = false,
+		["bottom"] = 201,
 		["anchorPoint"] = "BOTTOM",
 		["colInterrupt"] = {
 			1, -- [1]
@@ -231,9 +204,9 @@ AzCastBar_Config = {
 			0.8627450980392157, -- [3]
 			1, -- [4]
 		},
-		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+		["nameFontFlags"] = "OUTLINE",
 		["timeFontFlags"] = "OUTLINE",
-		["safeZone"] = false,
+		["iconAnchor"] = "NONE",
 		["colBackdrop"] = {
 			1, -- [1]
 			0.9568627450980392, -- [2]
@@ -241,28 +214,28 @@ AzCastBar_Config = {
 			1, -- [4]
 		},
 		["texture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour4",
+		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["mergeTrade"] = false,
+		["timeFontSize"] = 14,
+		["safeZone"] = false,
+		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["fadeTime"] = 0.5,
+		["showRank"] = false,
+		["width"] = 215,
+		["nameFontSize"] = 14,
 		["colBackGround"] = {
 			0.1294117647058823, -- [1]
 			0.1294117647058823, -- [2]
 			0.1294117647058823, -- [3]
 			1, -- [4]
 		},
-		["backdropIndent"] = 1.5,
-		["nameFontSize"] = 14,
-		["bottom"] = 201,
-		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
-		["fadeTime"] = 0.5,
-		["showRank"] = false,
-		["width"] = 215,
-		["nameFontFlags"] = "OUTLINE",
-		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
 		["colFailed"] = {
 			1, -- [1]
 			0.5019607843137255, -- [2]
 			0.5019607843137255, -- [3]
 			1, -- [4]
 		},
-		["timeFontSize"] = 14,
+		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
 		["height"] = 18,
 		["colNonInterruptable"] = {
 			0.788235294117647, -- [1]
@@ -270,18 +243,45 @@ AzCastBar_Config = {
 			0.8705882352941177, -- [3]
 			1, -- [4]
 		},
-		["showSpellTarget"] = false,
-		["strata"] = "HIGH",
-	},
-	["Mirror"] = {
-		["enabled"] = false,
-		["colNormal"] = {
-			0.4, -- [1]
-			0.6, -- [2]
-			0.8, -- [3]
+		["colSafezone"] = {
+			0.3, -- [1]
+			0.8, -- [2]
+			0.3, -- [3]
+			0.6, -- [4]
 		},
-		["bottom"] = 581.7693316766771,
-		["fadeTime"] = 1,
-		["left"] = 820.2307764272441,
+		["left"] = 725,
+	},
+	["optionsBottom"] = 533.4154289599439,
+	["LootRolls"] = {
+		["left"] = 779,
+		["anchorPoint"] = "TOP",
+		["anchorOffset"] = 35,
+		["timeFontFlags"] = "OUTLINE",
+		["colBackdrop"] = {
+			0, -- [1]
+			0, -- [2]
+			0, -- [3]
+			1, -- [4]
+		},
+		["texture"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour4",
+		["nameOffsetY"] = -10,
+		["bgFile"] = "Interface\\Buttons\\WHITE8X8",
+		["bottom"] = 694,
+		["timeFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["hideIconBorder"] = true,
+		["timeFontSize"] = 18,
+		["nameFontSize"] = 16,
+		["nameFontFlags"] = "OUTLINE",
+		["nameFontFace"] = "Interface\\Addons\\SharedMedia\\fonts\\BigNoodleTitling.ttf",
+		["nameOffsetX"] = -1,
+		["height"] = 12,
+		["enabled"] = true,
+		["colBackGround"] = {
+			0.8745098039215686, -- [1]
+			0.8745098039215686, -- [2]
+			0.8745098039215686, -- [3]
+			0.6000000238418579, -- [4]
+		},
+		["iconOffset"] = 2,
 	},
 }
